@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\ClassPracticesCode\\Linq\\Linq.csproj",
+      "projectUniqueName": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\ClassPracticesCode\\classTwo\\Linq\\Linq.csproj",
       "projectName": "Linq",
-      "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\ClassPracticesCode\\Linq\\Linq.csproj",
+      "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\ClassPracticesCode\\classTwo\\Linq\\Linq.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\ClassPracticesCode\\Linq\\obj\\",
+      "outputPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\ClassPracticesCode\\classTwo\\Linq\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
