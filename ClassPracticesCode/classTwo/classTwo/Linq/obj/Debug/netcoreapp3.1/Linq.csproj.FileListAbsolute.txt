@@ -1,0 +1,13 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\bin\Debug\netcoreapp3.1\Linq.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\bin\Debug\netcoreapp3.1\Linq.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\bin\Debug\netcoreapp3.1\Linq.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\bin\Debug\netcoreapp3.1\Linq.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\bin\Debug\netcoreapp3.1\Linq.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\bin\Debug\netcoreapp3.1\Linq.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\obj\Debug\netcoreapp3.1\Linq.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\obj\Debug\netcoreapp3.1\Linq.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\obj\Debug\netcoreapp3.1\Linq.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\obj\Debug\netcoreapp3.1\Linq.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\obj\Debug\netcoreapp3.1\Linq.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\obj\Debug\netcoreapp3.1\Linq.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\classTwo\Linq\obj\Debug\netcoreapp3.1\Linq.genruntimeconfig.cache
