@@ -10,16 +10,33 @@ namespace Linq
         {
             Student students = new Student();
             //StudentData studentsData = new StudentData();
-
-            var find =
+            
+            //find the name query
+            var query1 =
                 from sD in studentData
                 where sD.Name.StartsWith("A")
                 select sD;
 
-            foreach(var item in find)
+            //foreach(var item in find)
+            //{
+            //    Console.WriteLine($"SHOW: {item.Name}");
+            //}
+
+            //find the person name who has 350 score
+            var query2 =
+                from sD2 in studentData
+                let totalScore = sD2.Score.Sum()
+                where totalScore >= 350
+                select sD2.Name + " " + totalScore;
+
+            foreach(var item in query2)
             {
-                Console.WriteLine($"SHOW: {item.Name}");
+                Console.WriteLine($"Name: {item}");
             }
+
+
+
+
         }
 
         static List<Student> studentData = new List<Student>
