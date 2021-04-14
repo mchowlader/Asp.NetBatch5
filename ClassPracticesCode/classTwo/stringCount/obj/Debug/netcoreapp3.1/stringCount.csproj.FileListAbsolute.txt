@@ -1,0 +1,13 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\bin\Debug\netcoreapp3.1\stringCount.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\bin\Debug\netcoreapp3.1\stringCount.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\bin\Debug\netcoreapp3.1\stringCount.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\bin\Debug\netcoreapp3.1\stringCount.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\bin\Debug\netcoreapp3.1\stringCount.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\bin\Debug\netcoreapp3.1\stringCount.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\obj\Debug\netcoreapp3.1\stringCount.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\obj\Debug\netcoreapp3.1\stringCount.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\obj\Debug\netcoreapp3.1\stringCount.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\obj\Debug\netcoreapp3.1\stringCount.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\obj\Debug\netcoreapp3.1\stringCount.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\obj\Debug\netcoreapp3.1\stringCount.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\stringCount\obj\Debug\netcoreapp3.1\stringCount.genruntimeconfig.cache

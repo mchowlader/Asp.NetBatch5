@@ -1,0 +1,4 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\UppercaseLowercase\obj\Debug\netcoreapp3.1\UppercaseLowercase.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\UppercaseLowercase\obj\Debug\netcoreapp3.1\UppercaseLowercase.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\UppercaseLowercase\obj\Debug\netcoreapp3.1\UppercaseLowercase.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\UppercaseLowercase\obj\Debug\netcoreapp3.1\UppercaseLowercase.csproj.CoreCompileInputs.cache
