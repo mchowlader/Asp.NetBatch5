@@ -7,11 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linq", "Linq\Linq.csproj", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinqExample", "LinqExample", "{7FED1149-77D3-4FB3-9A9B-BE7213AA7723}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "weekNamePrint", "weekNamePrint\weekNamePrint.csproj", "{9EE6E6B0-432C-43FD-B16F-24E77E851A2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "weekNamePrint", "weekNamePrint\weekNamePrint.csproj", "{9EE6E6B0-432C-43FD-B16F-24E77E851A2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stringCount", "stringCount\stringCount.csproj", "{40D6C47E-4218-4947-BC3A-0EB5A5FD1661}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "stringCount", "stringCount\stringCount.csproj", "{40D6C47E-4218-4947-BC3A-0EB5A5FD1661}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UppercaseLowercase", "UppercaseLowercase\UppercaseLowercase.csproj", "{006375BF-7377-4910-9C16-60F163DA8432}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UppercaseLowercase", "UppercaseLowercase\UppercaseLowercase.csproj", "{006375BF-7377-4910-9C16-60F163DA8432}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinqMSDNExample", "LinqMSDNExample", "{46574BFE-45F7-4636-AA55-F6E766B5A29C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq_MSDN", "Linq_MSDN\Linq_MSDN.csproj", "{6E6BE80A-8F5D-48A2-B69A-07B1F9EB3D54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,10 @@ Global
 		{006375BF-7377-4910-9C16-60F163DA8432}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{006375BF-7377-4910-9C16-60F163DA8432}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{006375BF-7377-4910-9C16-60F163DA8432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E6BE80A-8F5D-48A2-B69A-07B1F9EB3D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6BE80A-8F5D-48A2-B69A-07B1F9EB3D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6BE80A-8F5D-48A2-B69A-07B1F9EB3D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6BE80A-8F5D-48A2-B69A-07B1F9EB3D54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +52,7 @@ Global
 		{9EE6E6B0-432C-43FD-B16F-24E77E851A2C} = {7FED1149-77D3-4FB3-9A9B-BE7213AA7723}
 		{40D6C47E-4218-4947-BC3A-0EB5A5FD1661} = {7FED1149-77D3-4FB3-9A9B-BE7213AA7723}
 		{006375BF-7377-4910-9C16-60F163DA8432} = {7FED1149-77D3-4FB3-9A9B-BE7213AA7723}
+		{6E6BE80A-8F5D-48A2-B69A-07B1F9EB3D54} = {46574BFE-45F7-4636-AA55-F6E766B5A29C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30D5BCC3-6C70-4263-BB62-E00A5DAEDEEA}

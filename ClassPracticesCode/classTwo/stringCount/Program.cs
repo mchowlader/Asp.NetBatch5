@@ -13,7 +13,7 @@ namespace stringCount
             var Query1 =
                 from inp in input
                 orderby inp
-                group inp by inp.ToString().ToUpper();
+                group inp by inp.ToString();
                                
             foreach(var item in Query1)
             {

@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\bin\Debug\net5.0\Linq_MSDN.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\bin\Debug\net5.0\Linq_MSDN.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\bin\Debug\net5.0\Linq_MSDN.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\bin\Debug\net5.0\Linq_MSDN.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\bin\Debug\net5.0\Linq_MSDN.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\bin\Debug\net5.0\ref\Linq_MSDN.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\bin\Debug\net5.0\Linq_MSDN.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\obj\Debug\net5.0\Linq_MSDN.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\obj\Debug\net5.0\Linq_MSDN.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\obj\Debug\net5.0\Linq_MSDN.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\obj\Debug\net5.0\Linq_MSDN.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\obj\Debug\net5.0\Linq_MSDN.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\obj\Debug\net5.0\Linq_MSDN.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\obj\Debug\net5.0\ref\Linq_MSDN.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\obj\Debug\net5.0\Linq_MSDN.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classTwo\Linq_MSDN\obj\Debug\net5.0\Linq_MSDN.genruntimeconfig.cache
