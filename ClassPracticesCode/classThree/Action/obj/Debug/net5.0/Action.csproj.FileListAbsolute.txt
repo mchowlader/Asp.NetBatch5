@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\bin\Debug\net5.0\Action.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\bin\Debug\net5.0\Action.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\bin\Debug\net5.0\Action.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\bin\Debug\net5.0\Action.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\bin\Debug\net5.0\Action.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\bin\Debug\net5.0\ref\Action.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\bin\Debug\net5.0\Action.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\obj\Debug\net5.0\Action.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\obj\Debug\net5.0\Action.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\obj\Debug\net5.0\Action.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\obj\Debug\net5.0\Action.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\obj\Debug\net5.0\Action.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\obj\Debug\net5.0\Action.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\obj\Debug\net5.0\ref\Action.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\obj\Debug\net5.0\Action.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ClassPracticesCode\classThree\Action\obj\Debug\net5.0\Action.genruntimeconfig.cache
