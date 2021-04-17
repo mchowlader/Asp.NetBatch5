@@ -1,0 +1,15 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\bin\Debug\net5.0\ThreadEx.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\bin\Debug\net5.0\ThreadEx.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\bin\Debug\net5.0\ThreadEx.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\bin\Debug\net5.0\ThreadEx.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\bin\Debug\net5.0\ThreadEx.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\bin\Debug\net5.0\ref\ThreadEx.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\bin\Debug\net5.0\ThreadEx.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ThreadEx.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ThreadEx.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ThreadEx.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ThreadEx.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ThreadEx.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ref\ThreadEx.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ThreadEx.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ThreadEx.genruntimeconfig.cache

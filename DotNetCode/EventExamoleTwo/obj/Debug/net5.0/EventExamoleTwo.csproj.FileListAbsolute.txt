@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\bin\Debug\net5.0\EventExamoleTwo.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\bin\Debug\net5.0\EventExamoleTwo.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\bin\Debug\net5.0\EventExamoleTwo.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\bin\Debug\net5.0\EventExamoleTwo.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\bin\Debug\net5.0\EventExamoleTwo.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\bin\Debug\net5.0\ref\EventExamoleTwo.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\bin\Debug\net5.0\EventExamoleTwo.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\obj\Debug\net5.0\EventExamoleTwo.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\obj\Debug\net5.0\EventExamoleTwo.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\obj\Debug\net5.0\EventExamoleTwo.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\obj\Debug\net5.0\EventExamoleTwo.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\obj\Debug\net5.0\EventExamoleTwo.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\obj\Debug\net5.0\EventExamoleTwo.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\obj\Debug\net5.0\ref\EventExamoleTwo.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\obj\Debug\net5.0\EventExamoleTwo.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\EventExamoleTwo\obj\Debug\net5.0\EventExamoleTwo.genruntimeconfig.cache
