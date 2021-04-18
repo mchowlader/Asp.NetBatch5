@@ -14,8 +14,12 @@ namespace EventExamole3
 
         public void Sometthing()
         {
+            Console.Write("Enter 1st number: ");
             var numOne = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter 1st number: ");
             var numTwo = Convert.ToInt32(Console.ReadLine());
+
             var sum = numOne + numTwo;
 
             if(sum % 2 == 0)

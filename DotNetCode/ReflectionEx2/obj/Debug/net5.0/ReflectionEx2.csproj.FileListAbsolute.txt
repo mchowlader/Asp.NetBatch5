@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\bin\Debug\net5.0\ReflectionEx2.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\bin\Debug\net5.0\ReflectionEx2.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\bin\Debug\net5.0\ReflectionEx2.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\bin\Debug\net5.0\ReflectionEx2.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\bin\Debug\net5.0\ReflectionEx2.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\bin\Debug\net5.0\ref\ReflectionEx2.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\bin\Debug\net5.0\ReflectionEx2.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\obj\Debug\net5.0\ReflectionEx2.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\obj\Debug\net5.0\ReflectionEx2.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\obj\Debug\net5.0\ReflectionEx2.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\obj\Debug\net5.0\ReflectionEx2.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\obj\Debug\net5.0\ReflectionEx2.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\obj\Debug\net5.0\ReflectionEx2.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\obj\Debug\net5.0\ref\ReflectionEx2.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\obj\Debug\net5.0\ReflectionEx2.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ReflectionEx2\obj\Debug\net5.0\ReflectionEx2.genruntimeconfig.cache

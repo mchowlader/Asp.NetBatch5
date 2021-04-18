@@ -9,7 +9,7 @@ namespace EventExamoleTwo
             Notify notify = new Notify();
            
 
-            notify.notification += new Notify.SendMessage(new SendSMS().Send);
+            notify.notification += new Notify.SendMessage(new SendSMS().Send); //method pass keno delegate signature method er moddhe kora holo/
             notify.notification += new Notify.SendMessage(new SendEmail().Send);
             notify.notification += new Notify.SendMessage(SendMMS.MMS);
             notify.Notifier(Contact.contacts);
