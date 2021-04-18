@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\DotNetCode\\EventExamoleTwo\\EventExamole2.csproj",
-      "projectName": "EventExamole2",
-      "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\DotNetCode\\EventExamoleTwo\\EventExamole2.csproj",
+      "projectUniqueName": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\DotNetCode\\EventExamole3\\EventExamole3.csproj",
+      "projectName": "EventExamole3",
+      "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\DotNetCode\\EventExamole3\\EventExamole3.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\DotNetCode\\EventExamoleTwo\\obj\\",
+      "outputPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\DotNetCode\\EventExamole3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
