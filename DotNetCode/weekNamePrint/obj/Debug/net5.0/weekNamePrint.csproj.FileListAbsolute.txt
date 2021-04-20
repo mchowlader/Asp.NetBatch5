@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\bin\Debug\net5.0\weekNamePrint.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\bin\Debug\net5.0\weekNamePrint.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\bin\Debug\net5.0\weekNamePrint.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\bin\Debug\net5.0\weekNamePrint.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\bin\Debug\net5.0\weekNamePrint.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\bin\Debug\net5.0\ref\weekNamePrint.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\bin\Debug\net5.0\weekNamePrint.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\obj\Debug\net5.0\weekNamePrint.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\obj\Debug\net5.0\weekNamePrint.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\obj\Debug\net5.0\weekNamePrint.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\obj\Debug\net5.0\weekNamePrint.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\obj\Debug\net5.0\weekNamePrint.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\obj\Debug\net5.0\weekNamePrint.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\obj\Debug\net5.0\ref\weekNamePrint.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\obj\Debug\net5.0\weekNamePrint.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\weekNamePrint\obj\Debug\net5.0\weekNamePrint.genruntimeconfig.cache

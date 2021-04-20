@@ -13,3 +13,4 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ThreadE
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ref\ThreadEx.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ThreadEx.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ThreadEx.genruntimeconfig.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Thread\obj\Debug\net5.0\ThreadEx.csprojAssemblyReference.cache

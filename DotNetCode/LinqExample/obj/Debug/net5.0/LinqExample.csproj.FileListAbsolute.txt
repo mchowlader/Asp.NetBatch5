@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\bin\Debug\net5.0\LinqExample.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\bin\Debug\net5.0\LinqExample.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\bin\Debug\net5.0\LinqExample.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\bin\Debug\net5.0\LinqExample.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\bin\Debug\net5.0\LinqExample.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\bin\Debug\net5.0\ref\LinqExample.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\bin\Debug\net5.0\LinqExample.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\obj\Debug\net5.0\LinqExample.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\obj\Debug\net5.0\LinqExample.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\obj\Debug\net5.0\LinqExample.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\obj\Debug\net5.0\LinqExample.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\obj\Debug\net5.0\LinqExample.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\obj\Debug\net5.0\LinqExample.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\obj\Debug\net5.0\ref\LinqExample.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\obj\Debug\net5.0\LinqExample.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqExample\obj\Debug\net5.0\LinqExample.genruntimeconfig.cache

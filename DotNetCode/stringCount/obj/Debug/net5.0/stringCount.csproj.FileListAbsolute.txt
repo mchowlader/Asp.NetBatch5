@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\obj\Debug\net5.0\stringCount.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\obj\Debug\net5.0\stringCount.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\obj\Debug\net5.0\stringCount.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\obj\Debug\net5.0\stringCount.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\obj\Debug\net5.0\stringCount.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\bin\Debug\net5.0\stringCount.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\bin\Debug\net5.0\stringCount.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\bin\Debug\net5.0\stringCount.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\bin\Debug\net5.0\stringCount.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\bin\Debug\net5.0\stringCount.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\bin\Debug\net5.0\ref\stringCount.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\bin\Debug\net5.0\stringCount.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\obj\Debug\net5.0\stringCount.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\obj\Debug\net5.0\ref\stringCount.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\obj\Debug\net5.0\stringCount.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\stringCount\obj\Debug\net5.0\stringCount.genruntimeconfig.cache

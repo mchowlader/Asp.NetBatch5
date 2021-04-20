@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\bin\Debug\net5.0\ThreadLock.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\bin\Debug\net5.0\ThreadLock.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\bin\Debug\net5.0\ThreadLock.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\bin\Debug\net5.0\ThreadLock.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\bin\Debug\net5.0\ThreadLock.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\bin\Debug\net5.0\ref\ThreadLock.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\bin\Debug\net5.0\ThreadLock.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\obj\Debug\net5.0\ThreadLock.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\obj\Debug\net5.0\ThreadLock.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\obj\Debug\net5.0\ThreadLock.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\obj\Debug\net5.0\ThreadLock.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\obj\Debug\net5.0\ThreadLock.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\obj\Debug\net5.0\ref\ThreadLock.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\obj\Debug\net5.0\ThreadLock.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\obj\Debug\net5.0\ThreadLock.genruntimeconfig.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadLock\obj\Debug\net5.0\ThreadLock.csprojAssemblyReference.cache

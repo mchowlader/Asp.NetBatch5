@@ -1,0 +1,15 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\bin\Debug\net5.0\List.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\bin\Debug\net5.0\List.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\bin\Debug\net5.0\List.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\bin\Debug\net5.0\List.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\bin\Debug\net5.0\List.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\bin\Debug\net5.0\ref\List.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\bin\Debug\net5.0\List.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\List.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\List.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\List.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\List.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\List.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\ref\List.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\List.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\List.genruntimeconfig.cache

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ThreadEx2Priority/1.0.0": {
+        "runtime": {
+          "ThreadEx2Priority.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ThreadEx2Priority/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

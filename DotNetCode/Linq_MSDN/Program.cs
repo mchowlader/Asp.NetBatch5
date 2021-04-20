@@ -21,7 +21,7 @@ namespace Linq_MSDN
                 Console.WriteLine($"{item}");
             }
 
-
+           
             //var Query1 =
             //      from st in students
             //      where st.Last == "Hupko"

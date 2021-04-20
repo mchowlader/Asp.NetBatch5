@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\bin\Debug\net5.0\ThreadEx2Priority.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\bin\Debug\net5.0\ThreadEx2Priority.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\bin\Debug\net5.0\ThreadEx2Priority.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\bin\Debug\net5.0\ThreadEx2Priority.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\bin\Debug\net5.0\ThreadEx2Priority.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\bin\Debug\net5.0\ref\ThreadEx2Priority.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\bin\Debug\net5.0\ThreadEx2Priority.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\obj\Debug\net5.0\ThreadEx2Priority.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\obj\Debug\net5.0\ThreadEx2Priority.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\obj\Debug\net5.0\ThreadEx2Priority.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\obj\Debug\net5.0\ThreadEx2Priority.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\obj\Debug\net5.0\ThreadEx2Priority.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\obj\Debug\net5.0\ThreadEx2Priority.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\obj\Debug\net5.0\ref\ThreadEx2Priority.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\obj\Debug\net5.0\ThreadEx2Priority.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadEx2Priority\obj\Debug\net5.0\ThreadEx2Priority.genruntimeconfig.cache

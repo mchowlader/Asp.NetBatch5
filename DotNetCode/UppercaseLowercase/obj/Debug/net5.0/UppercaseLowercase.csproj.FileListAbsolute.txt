@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\bin\Debug\net5.0\UppercaseLowercase.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\bin\Debug\net5.0\UppercaseLowercase.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\bin\Debug\net5.0\UppercaseLowercase.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\bin\Debug\net5.0\UppercaseLowercase.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\bin\Debug\net5.0\UppercaseLowercase.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\bin\Debug\net5.0\ref\UppercaseLowercase.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\bin\Debug\net5.0\UppercaseLowercase.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\obj\Debug\net5.0\UppercaseLowercase.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\obj\Debug\net5.0\UppercaseLowercase.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\obj\Debug\net5.0\UppercaseLowercase.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\obj\Debug\net5.0\UppercaseLowercase.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\obj\Debug\net5.0\UppercaseLowercase.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\obj\Debug\net5.0\UppercaseLowercase.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\obj\Debug\net5.0\ref\UppercaseLowercase.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\obj\Debug\net5.0\UppercaseLowercase.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\UppercaseLowercase\obj\Debug\net5.0\UppercaseLowercase.genruntimeconfig.cache
