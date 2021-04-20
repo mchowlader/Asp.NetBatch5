@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\bin\Debug\net5.0\DictionaryEx1.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\bin\Debug\net5.0\DictionaryEx1.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\bin\Debug\net5.0\DictionaryEx1.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\bin\Debug\net5.0\DictionaryEx1.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\bin\Debug\net5.0\DictionaryEx1.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\bin\Debug\net5.0\ref\DictionaryEx1.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\bin\Debug\net5.0\DictionaryEx1.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\obj\Debug\net5.0\DictionaryEx1.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\obj\Debug\net5.0\DictionaryEx1.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\obj\Debug\net5.0\DictionaryEx1.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\obj\Debug\net5.0\DictionaryEx1.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\obj\Debug\net5.0\DictionaryEx1.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\obj\Debug\net5.0\DictionaryEx1.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\obj\Debug\net5.0\ref\DictionaryEx1.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\obj\Debug\net5.0\DictionaryEx1.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\DictionaryEx1\obj\Debug\net5.0\DictionaryEx1.genruntimeconfig.cache
