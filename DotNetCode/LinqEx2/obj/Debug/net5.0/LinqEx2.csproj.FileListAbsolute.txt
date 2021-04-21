@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\bin\Debug\net5.0\LinqEx2.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\bin\Debug\net5.0\LinqEx2.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\bin\Debug\net5.0\LinqEx2.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\bin\Debug\net5.0\LinqEx2.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\bin\Debug\net5.0\LinqEx2.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\bin\Debug\net5.0\ref\LinqEx2.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\bin\Debug\net5.0\LinqEx2.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\obj\Debug\net5.0\LinqEx2.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\obj\Debug\net5.0\LinqEx2.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\obj\Debug\net5.0\LinqEx2.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\obj\Debug\net5.0\LinqEx2.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\obj\Debug\net5.0\LinqEx2.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\obj\Debug\net5.0\LinqEx2.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\obj\Debug\net5.0\ref\LinqEx2.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\obj\Debug\net5.0\LinqEx2.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LinqEx2\obj\Debug\net5.0\LinqEx2.genruntimeconfig.cache

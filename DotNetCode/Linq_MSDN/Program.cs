@@ -14,11 +14,11 @@ namespace Linq_MSDN
 
             var query =
                 from st in info.studentsInfo
-                where st.Id == 1
+                //where st.Id == 1
                 select st;
             foreach (var item in query)
             {
-                Console.WriteLine($"{item}");
+                Console.WriteLine($"{item.First} {item.Last} ");
             }
 
            
