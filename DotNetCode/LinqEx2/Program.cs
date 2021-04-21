@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 namespace LinqEx2
 {
@@ -8,8 +9,10 @@ namespace LinqEx2
         {
             ArrayData array = new ArrayData();
 
-
-
+            IDictionary<int, string> dictionaryData = new Dictionary<int, string>();
+          
+                dictionaryData.Add(1,"a");
+           
 
 
 

@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace LinqEx2
 {
-   public class Dictionary
+   public class DictionaryC
     {
         public IDictionary<int, string> dictionaryValue = new Dictionary<int, string>();
+ 
+       
     }
 }
