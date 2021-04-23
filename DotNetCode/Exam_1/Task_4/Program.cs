@@ -31,12 +31,12 @@ namespace Task_4
 
             List<string> result = null;
 
-            var listCombined = 
+            var listMerge = 
                 from st in list1.Concat(list2)
                 orderby st.Name , st.Age ascending
                 select st.Name;
 
-            foreach(var item in listCombined)
+            foreach(var item in listMerge)
             {
                 Console.WriteLine(item);
             }
