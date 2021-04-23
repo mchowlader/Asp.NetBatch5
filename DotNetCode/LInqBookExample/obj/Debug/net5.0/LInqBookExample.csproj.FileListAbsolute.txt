@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\bin\Debug\net5.0\LInqBookExample.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\bin\Debug\net5.0\LInqBookExample.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\bin\Debug\net5.0\LInqBookExample.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\bin\Debug\net5.0\LInqBookExample.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\bin\Debug\net5.0\LInqBookExample.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\bin\Debug\net5.0\ref\LInqBookExample.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\bin\Debug\net5.0\LInqBookExample.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\obj\Debug\net5.0\LInqBookExample.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\obj\Debug\net5.0\LInqBookExample.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\obj\Debug\net5.0\LInqBookExample.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\obj\Debug\net5.0\LInqBookExample.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\obj\Debug\net5.0\LInqBookExample.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\obj\Debug\net5.0\LInqBookExample.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\obj\Debug\net5.0\ref\LInqBookExample.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\obj\Debug\net5.0\LInqBookExample.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\LInqBookExample\obj\Debug\net5.0\LInqBookExample.genruntimeconfig.cache

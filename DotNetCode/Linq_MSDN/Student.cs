@@ -21,7 +21,7 @@ namespace Linq_MSDN
         public List<int> Score { get; set; }
 
 
-        public List<Student> studentsInfo = new List<Student>()
+        public  List<Student> studentsInfo = new List<Student>()
         {
             new Student{First = "Andreas",Last = "Hupko", Dept = "EEE", Id = 1,Gender = G.M, Score = new List<int>{ 80,70,60,96,40} },
             new Student{First = "Anna",Last = "Hupko", Dept = "CSE", Id = 2,Gender = G.F ,Score = new List<int>{ 70,80,50,86,50} },
