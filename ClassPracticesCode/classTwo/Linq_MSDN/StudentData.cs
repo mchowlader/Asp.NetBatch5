@@ -6,22 +6,9 @@ using System.Threading.Tasks;
 
 namespace Linq_MSDN
 {
-    public class Student
+   public class StudentData
     {
-        public string First { get; set; }
-
-        public string Last { get; set; }
-
-        public string Dept { get; set; }
-
-        public int Id { get; set; }
-
-        public G Gender { get; set; }
-        
-        public List<int> Score { get; set; }
-
-
-       public  List<Student> studentsInfo = new List<Student>()
+        static List<Student> students = new List<Student>()
         {
             new Student{First = "Andreas",Last = "Hupko", Dept = "EEE", Id = 1,Gender = G.M, Score = new List<int>{ 80,70,60,96,40} },
             new Student{First = "Anna",Last = "", Dept = "CSE", Id = 2,Gender = G.F ,Score = new List<int>{ 70,80,50,86,50} },
@@ -33,7 +20,4 @@ namespace Linq_MSDN
         };
 
     }
-
-
-
 }
