@@ -13,4 +13,3 @@ namespace Task_4
         B = 2
     }
 }
-}

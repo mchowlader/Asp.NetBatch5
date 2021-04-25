@@ -11,23 +11,28 @@ namespace Task_4
             List<string> result = null;
 
             var Query1 =
-                from item in Student.studentsInfo.Concat(Student.studentsInfo2)
-                orderby item.First, item.Id ascending
-                select item.First;
-
-            result = new List<string>();
-            foreach (var item in Query1)
+                (from item in Student.studentsInfo.Concat(Student.studentsInfo2)
+                 orderby item.First, item.Id ascending
+                 select item.First).ToList();
+            result = Query1;
+            foreach(var i in result)
             {
-                result.Add(item);
+                Console.WriteLine(i);
             }
 
-            foreach (var item2 in result)
-            {
-                if (String.IsNullOrWhiteSpace(item2))
-                {
-                    break;
-                }
-                Console.WriteLine($"Name :{item2}");
-            }
+            //result = new List<string>();
+            //foreach (var item in Query1)
+            //{
+            //    result.Add(item);
+            //}
+
+            //foreach (var item2 in result)
+            //{
+            //    if (String.IsNullOrWhiteSpace(item2))
+            //    {
+            //        break;
+            //    }
+            //    Console.WriteLine($"Name :{item2}");
+            //}
     }   }   
 }
