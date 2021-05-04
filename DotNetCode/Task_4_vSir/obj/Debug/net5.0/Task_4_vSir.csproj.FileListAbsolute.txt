@@ -1,0 +1,15 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\bin\Debug\net5.0\Task_4_vSir.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\bin\Debug\net5.0\Task_4_vSir.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\bin\Debug\net5.0\Task_4_vSir.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\bin\Debug\net5.0\Task_4_vSir.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\bin\Debug\net5.0\Task_4_vSir.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\bin\Debug\net5.0\ref\Task_4_vSir.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\bin\Debug\net5.0\Task_4_vSir.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\Task_4_vSir.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\Task_4_vSir.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\Task_4_vSir.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\Task_4_vSir.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\Task_4_vSir.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\ref\Task_4_vSir.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\Task_4_vSir.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\Task_4_vSir.genruntimeconfig.cache
