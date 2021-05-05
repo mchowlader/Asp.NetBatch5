@@ -13,3 +13,4 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\List.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\ref\List.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\List.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\List.genruntimeconfig.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\List\obj\Debug\net5.0\List.csprojAssemblyReference.cache

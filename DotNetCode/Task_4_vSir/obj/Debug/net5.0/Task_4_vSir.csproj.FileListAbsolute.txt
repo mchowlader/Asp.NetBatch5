@@ -13,3 +13,4 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\Ta
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\ref\Task_4_vSir.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\Task_4_vSir.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\Task_4_vSir.genruntimeconfig.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\Task_4_vSir\obj\Debug\net5.0\Task_4_vSir.csprojAssemblyReference.cache

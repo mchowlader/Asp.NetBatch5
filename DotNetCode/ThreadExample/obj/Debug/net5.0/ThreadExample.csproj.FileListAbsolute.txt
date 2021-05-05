@@ -13,3 +13,4 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadExample\obj\Debug\net5.0\
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadExample\obj\Debug\net5.0\ref\ThreadExample.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadExample\obj\Debug\net5.0\ThreadExample.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadExample\obj\Debug\net5.0\ThreadExample.genruntimeconfig.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DotNetCode\ThreadExample\obj\Debug\net5.0\ThreadExample.csprojAssemblyReference.cache
