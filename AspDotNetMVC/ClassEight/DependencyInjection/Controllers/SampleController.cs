@@ -1,4 +1,5 @@
-﻿using DependencyInjection.Service;
+﻿using DependencyInjection.Models;
+using DependencyInjection.Service;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -17,16 +18,33 @@ namespace DependencyInjection.Controllers
         }
 
         public IActionResult Index()
+
         {
-            return View();
+            SampleView sampleView = new SampleView();
+            return View(sampleView);
         }
 
         public IActionResult SampleView()
         {
+
+            SampleView sampleView2 = new SampleView(); 
             var name = _databaseService.GetName();
 
-            return View();
+            return View(sampleView2);
            
+        }
+
+        public IActionResult Privacy()
+        {
+
+
+            return View();
+
+        }
+
+        public IActionResult Change()
+        {
+            return View();
         }
     }
 }

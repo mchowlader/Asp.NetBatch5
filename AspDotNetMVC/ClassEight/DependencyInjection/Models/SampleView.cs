@@ -7,5 +7,13 @@ namespace DependencyInjection.Models
 {
     public class SampleView
     {
+        public string Name { get; set; }
+        public string NewText { get; set; }
+
+        public SampleView()
+        {
+            Name = "Hello";
+            NewText = "This only for Privacy!!";
+        }
     }
 }

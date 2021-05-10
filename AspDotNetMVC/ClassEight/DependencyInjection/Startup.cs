@@ -68,6 +68,8 @@ namespace DependencyInjection
             });
 
 
+            
+            services.AddTransient<IDatabaseService, AdvanceDatabaseService>();
             services.AddTransient<IDatabaseService, SimpleDatabaseService>();
 
             services.AddControllersWithViews();

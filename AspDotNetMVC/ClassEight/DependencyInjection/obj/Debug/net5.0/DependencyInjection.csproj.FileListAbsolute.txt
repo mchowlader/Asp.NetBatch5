@@ -403,3 +403,7 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEight\DependencyInjectio
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEight\DependencyInjection\bin\Debug\net5.0\Serilog.Sinks.Console.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEight\DependencyInjection\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEight\DependencyInjection\bin\Debug\net5.0\Serilog.Sinks.File.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEight\DependencyInjection\obj\Debug\net5.0\Razor\Views\Sample\Index.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEight\DependencyInjection\obj\Debug\net5.0\Razor\Views\Sample\Privacy.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEight\DependencyInjection\obj\Debug\net5.0\Razor\Views\Home\Change.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEight\DependencyInjection\obj\Debug\net5.0\Razor\Views\Sample\Change.cshtml.g.cs
