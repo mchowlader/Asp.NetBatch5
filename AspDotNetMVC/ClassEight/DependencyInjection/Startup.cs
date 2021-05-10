@@ -69,8 +69,8 @@ namespace DependencyInjection
 
 
             
-            services.AddTransient<IDatabaseService, AdvanceDatabaseService>();
             services.AddTransient<IDatabaseService, SimpleDatabaseService>();
+            services.AddTransient<IDriverService, LocalDriverService>();
 
             services.AddControllersWithViews();
             services.AddHttpContextAccessor();

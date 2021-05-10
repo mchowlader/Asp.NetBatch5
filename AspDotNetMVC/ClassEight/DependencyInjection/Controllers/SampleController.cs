@@ -17,6 +17,8 @@ namespace DependencyInjection.Controllers
             _databaseService = databaseService;
         }
 
+        
+
         public IActionResult Index()
 
         {
@@ -29,6 +31,7 @@ namespace DependencyInjection.Controllers
 
             SampleView sampleView2 = new SampleView(); 
             var name = _databaseService.GetName();
+            
 
             return View(sampleView2);
            

@@ -7,6 +7,13 @@ namespace DependencyInjection.Service
 {
     public class SimpleDatabaseService : IDatabaseService
     {
+        private IDriverService _driverService;
+
+        public SimpleDatabaseService(IDriverService driverService )
+        {
+            _driverService = driverService;
+        }
+
         public string GetName()
         {
             return "SimpleDatabaseService";
