@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\bin\Debug\net5.0\Task_2.1.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\bin\Debug\net5.0\Task_2.1.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\bin\Debug\net5.0\Task_2.1.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\bin\Debug\net5.0\Task_2.1.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\bin\Debug\net5.0\Task_2.1.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\bin\Debug\net5.0\ref\Task_2.1.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\bin\Debug\net5.0\Task_2.1.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\obj\Debug\net5.0\Task_2.1.csprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\obj\Debug\net5.0\Task_2.1.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\obj\Debug\net5.0\Task_2.1.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\obj\Debug\net5.0\Task_2.1.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\obj\Debug\net5.0\Task_2.1.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\obj\Debug\net5.0\Task_2.1.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\obj\Debug\net5.0\ref\Task_2.1.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\obj\Debug\net5.0\Task_2.1.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_1\Task_2.1\obj\Debug\net5.0\Task_2.1.genruntimeconfig.cache
