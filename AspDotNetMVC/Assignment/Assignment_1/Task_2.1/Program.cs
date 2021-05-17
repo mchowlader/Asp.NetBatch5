@@ -23,13 +23,23 @@ namespace Task_2._1
             var item = classWithPrivateMethod.GetType()
                 .GetMethod("Print", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
                 .Invoke(classWithPrivateMethod, args);
-            
+
+            var item2 = classWithPrivateMethod.GetType()
+                .GetMethod("Save", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
+                .Invoke(classWithPrivateMethod, args);
+
         }
     }
 
     public class ClassWithPrivateMethod
     {
         private void Print(string name)
+        {
+            Console.WriteLine(name);
+        }
+
+
+        protected void Save(string name)
         {
             Console.WriteLine(name);
         }
