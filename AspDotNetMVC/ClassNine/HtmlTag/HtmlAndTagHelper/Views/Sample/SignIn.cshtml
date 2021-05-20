@@ -1,0 +1,67 @@
+﻿@model SampleView
+
+<h1>Sign In Here </h1>
+<h3>Create a new account</h3>
+
+<h6>Email</h6>
+@Html.TextBox("Name", Model.Name)
+<h6>Password</h6>
+@Html.TextBox("Password", Model.Password)
+<h6>Confirm Password</h6>
+@Html.TextBox("Confirm Password", Model.ConfirmPassword)
+<br />
+<br />
+@Html.TextBox("button", "Submit", new { type = "Submit" })
+<br />
+<br />
+@Html.TextArea("CommentBox", "Comments")
+<br />
+@Html.ActionLink("facebook", "Privacy", "Home")
+
+<br />
+
+<input type="text" , name="summerytext" ,"", value="@Model.Name" />
+<br />
+<a asp-action="SignIn" asp-controller="Sample">Instagram</a>
+<br />
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Female</label>
+<br>
+
+<input type="checkbox" name="check" value="check" />
+<label for="check" style="color:orangered">Male</label>
+<input type="checkbox" name="check" value="check"/>
+<label for="check"  style="color:aqua">Female</label>
+
+
+
+
+<br />
+<input type="button" name="button" value="Test"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
