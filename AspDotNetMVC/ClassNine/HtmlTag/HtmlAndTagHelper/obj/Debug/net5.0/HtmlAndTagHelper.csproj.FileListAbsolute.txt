@@ -398,3 +398,15 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagH
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\obj\Debug\net5.0\Razor\Views\Shared\CustomPartial\_SignInPartial.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\obj\Debug\net5.0\Razor\Views\Sample\SignIn.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\obj\Debug\net5.0\Razor\Views\Sample\LogIn.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\obj\Debug\net5.0\Razor\Views\Sample\Account.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\bin\Debug\net5.0\Autofac.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\bin\Debug\net5.0\Serilog.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\bin\Debug\net5.0\Serilog.AspNetCore.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassNine\HtmlTag\HtmlAndTagHelper\bin\Debug\net5.0\Serilog.Sinks.File.dll

@@ -1,4 +1,5 @@
 ﻿using HtmlAndTagHelper.Models;
+using HtmlAndTagHelper.Service;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,13 @@ namespace HtmlAndTagHelper.Controllers
 {
     public class SampleController : Controller
     {
+        private IDatabaseService _databaseService;
+
+        public SampleController(IDatabaseService databaseService)
+        {
+            _databaseService = databaseService;
+        }
+
         public IActionResult Index()
         {
             SampleView view = new SampleView();
@@ -24,6 +32,14 @@ namespace HtmlAndTagHelper.Controllers
         public IActionResult LogIn()
         {
            
+            return View();
+
+            var name = _databaseService.GetName();
+        }
+
+        public IActionResult Account()
+        {
+
             return View();
         }
 
