@@ -1,0 +1,8 @@
+//mixing 
+
+@mixin para-style ($size,$style){
+    font-size: $size;
+    text-align: $style;
+    margin: 10px 0 ;
+    background: rgb(167, 78, 5);
+}

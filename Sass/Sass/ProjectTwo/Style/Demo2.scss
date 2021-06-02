@@ -1,0 +1,108 @@
+@import "_BrowserResetPartial";
+
+
+@mixin setProperty($size,$color) {
+    @if $size==small {
+        font-size: 12px;
+    }
+    @else if $size == medium{
+        font-size: 16px;
+    }
+    @else if $size==large{
+        font-size: 30px;
+    }
+    @else{
+        font-size: none;
+    }
+    background: $color;
+    
+}
+
+.btn{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 25px 40px 10px 10px;
+}
+.btn-download{
+    @extend .btn;
+    color: rgb(255, 102, 0);
+}
+
+.btn-lern-more{
+    @extend .btn;
+    color: brown;
+}
+
+#education p{
+    font-size: 20px;
+}
+
+
+@mixin Font-Size($value) {
+    font-size: $value;
+}
+
+#education p{
+    @include Font-Size(20px);
+}
+
+
+@mixin  para-color($color){
+    background: $color;    
+}
+
+#education p{
+    @include para-color(red);
+}
+
+
+nav{
+    padding: 15px;
+    ul{
+        list-style-type: none;
+         li{
+            display: inline-block;
+            margin: 0 15px;
+            a{
+                display: inline-block;
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                padding: 10px;
+                transition: 0.4s;
+                border-radius: 5px;          
+            }
+            a:hover{
+                background: rgb(243, 14, 14); 
+            }
+        
+        }
+    }
+}
+
+
+
+@each $color in green,blue,red {
+    .#{$color}-text {color:$color}
+    
+}
+
+
+
+#education p{
+    @include setProperty(large,yellow);
+}
+
+
+[class*="col-5"]
+{
+    float: left;
+}
+[class*="col-4"]
+{
+    float: left;
+}
+
+

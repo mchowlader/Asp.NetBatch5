@@ -1,0 +1,88 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn, .btn-download, .btn-lern-more {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 25px 40px 10px 10px;
+}
+
+.btn-download {
+  color: #ff6600;
+}
+
+.btn-lern-more {
+  color: brown;
+}
+
+#education p {
+  font-size: 20px;
+}
+
+#education p {
+  font-size: 20px;
+}
+
+#education p {
+  background: red;
+}
+
+nav {
+  padding: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background: #f30e0e;
+}
+
+.green-text {
+  color: green;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.red-text {
+  color: red;
+}
+
+#education p {
+  font-size: 30px;
+  background: yellow;
+}
+
+[class*="col-5"] {
+  float: left;
+}
+
+[class*="col-4"] {
+  float: left;
+}
+/*# sourceMappingURL=Demo2.css.map */
