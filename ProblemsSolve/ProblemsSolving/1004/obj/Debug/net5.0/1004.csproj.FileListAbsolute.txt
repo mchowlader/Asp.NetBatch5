@@ -13,3 +13,4 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1004\obj\Deb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1004\obj\Debug\net5.0\ref\1004.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1004\obj\Debug\net5.0\1004.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1004\obj\Debug\net5.0\1004.genruntimeconfig.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1004\obj\Debug\net5.0\1004.csproj.AssemblyReference.cache
