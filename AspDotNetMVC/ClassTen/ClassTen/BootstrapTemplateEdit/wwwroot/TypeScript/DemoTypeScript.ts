@@ -293,4 +293,42 @@ console.log(`grid1 = ${grid1.calculateDistanceFormOrigin({ x: 10, y: 10 })}`);
 
 console.log(`grid2 = ${grid2.calculateDistanceFormOrigin({ x: 10, y: 10 })}`);
 
+//==============================
+
+namespace Validation {
+    export interface StringVadilator {
+        isAcceptable(s: string): boolean;
+    }
+
+    const lettersRegexp = /^[A-Za-z]+$/;
+    const numberRegexp = /^[0-9]+$/;
+
+    export class letterValidator implements StringVadilator {
+        isAcceptable(s: string) {
+            return lettersRegexp.test(s);
+        }
+    }
+
+    export class zipValidator implements StringVadilator {
+        isAcceptable(s: string) {
+            return s.length == 4 && numberRegexp.test(s);
+        }
+    }
+}
+
+
+let strings = ["Hello", "1216", "101"];
+
+let validations: { [s: string]: Validation.StringVadilator } = {};
+
+validations["zip"] = new Validation.zipValidator();
+validations["letter"] = new Validation.letterValidator();
+
+for (let i of strings) {
+    for (let name in validations) {
+        console.log(`${i}- ${validations[name].isAcceptable(i) ? "match:" : "Does not match"} ${name}`);
+    }
+}
+
+
 
