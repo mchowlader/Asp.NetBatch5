@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\bin\Debug\net5.0\1015.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\bin\Debug\net5.0\1015.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\bin\Debug\net5.0\1015.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\bin\Debug\net5.0\1015.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\bin\Debug\net5.0\1015.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\bin\Debug\net5.0\ref\1015.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\bin\Debug\net5.0\1015.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\obj\Debug\net5.0\1015.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\obj\Debug\net5.0\1015.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\obj\Debug\net5.0\1015.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\obj\Debug\net5.0\1015.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\obj\Debug\net5.0\1015.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\obj\Debug\net5.0\ref\1015.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\obj\Debug\net5.0\1015.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\obj\Debug\net5.0\1015.genruntimeconfig.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\ProblemsSolve\ProblemsSolving\1015\obj\Debug\net5.0\1015.csproj.AssemblyReference.cache
