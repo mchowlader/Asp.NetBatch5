@@ -70,6 +70,15 @@ namespace BootstrapTemplateEdit
                     );
                 });
 
+                app.UseEndpoints(endpoints =>
+                {
+                    endpoints.MapControllerRoute(
+                      name: "areas",
+                      pattern: "{area:exists}/{controller=User}/{action=SignUp}/{id?}"
+                    );
+                });
+
+
 
                 endpoints.MapControllerRoute(
                     name: "default",

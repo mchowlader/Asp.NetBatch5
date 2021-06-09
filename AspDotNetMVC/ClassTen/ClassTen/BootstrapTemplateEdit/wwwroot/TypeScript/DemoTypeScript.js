@@ -219,4 +219,38 @@ var grid1 = new Grid(1.0);
 var grid2 = new Grid(5.0);
 console.log("grid1 = " + grid1.calculateDistanceFormOrigin({ x: 10, y: 10 }));
 console.log("grid2 = " + grid2.calculateDistanceFormOrigin({ x: 10, y: 10 }));
+//==============================
+var Validation;
+(function (Validation) {
+    var lettersRegexp = /^[A-Za-z]+$/;
+    var numberRegexp = /^[0-9]+$/;
+    var letterValidator = /** @class */ (function () {
+        function letterValidator() {
+        }
+        letterValidator.prototype.isAcceptable = function (s) {
+            return lettersRegexp.test(s);
+        };
+        return letterValidator;
+    }());
+    Validation.letterValidator = letterValidator;
+    var zipValidator = /** @class */ (function () {
+        function zipValidator() {
+        }
+        zipValidator.prototype.isAcceptable = function (s) {
+            return s.length == 4 && numberRegexp.test(s);
+        };
+        return zipValidator;
+    }());
+    Validation.zipValidator = zipValidator;
+})(Validation || (Validation = {}));
+var strings = ["Hello", "1216", "101"];
+var validations = {};
+validations["zip"] = new Validation.zipValidator();
+validations["letter"] = new Validation.letterValidator();
+for (var _i = 0, strings_1 = strings; _i < strings_1.length; _i++) {
+    var i = strings_1[_i];
+    for (var name_1 in validations) {
+        console.log(i + "- " + (validations[name_1].isAcceptable(i) ? "match:" : "Does not match") + " " + name_1);
+    }
+}
 //# sourceMappingURL=DemoTypeScript.js.map
