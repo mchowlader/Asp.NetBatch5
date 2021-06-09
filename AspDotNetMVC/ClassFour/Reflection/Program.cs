@@ -20,37 +20,39 @@ namespace Reflection
             {
                if (type.Name == initClassName)
                 {
-                    var constroctor = type.GetConstructor(new Type[0]);
+                    var constroctor = type.GetConstructor(new Type[] { typeof(int)});
+                    var InitializerInstance = constroctor.Invoke(new object[] { 5 });       
+
+                    MethodInfo[] M = type.GetMethods();
+                    foreach(var me in M)
+                    {
+                        if(me.Name == "InitStartup")
+                        {
+                            me.Invoke(InitializerInstance, new object[0]);                                                       
+                        }
+                    }
                 }
+            }
+
+            
+           
+            
+         
+            Type type2 = typeof(Product);
+
+            //foreach (var properti in type2.GetProperties())
+            //{
+            //    Console.WriteLine(properti.Name);
+            //}
+
+            foreach (var method in type2.GetMethods())
+            {
+                Console.WriteLine(method.Name);
             }
 
 
 
-            Console.WriteLine(initClassName);
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-             /*
-            Type type = typeof(Product);
-
+            /*
             Product product = new Product();
             Type productType = product.GetType();
             */
