@@ -1,0 +1,57 @@
+﻿@model UserInfo
+
+<form asp-action="SignUP" asp-controller="User" asp-antiforgery="true" method="post" class="form-horizontal">
+    <h2>create your account</h2>
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="First" class="col control-label"></label>
+                    <div class="col-6">
+                        <input asp-for="First" class="form-control" />
+                        <span asp-validation-for="First" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="Last" class="col control-label"></label>
+                    <div class="col-6">
+                        <input asp-for="Last" class="form-control" />
+                        <span asp-validation-for="Last" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">col-6</div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="form-group">
+        <label asp-for="Email" class="col-md-2 control-label"></label>
+        <div class="col-md-4">
+            <input asp-for="Email" class="form-control"/>
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password" class="col-md-2 control-label"></label>
+        <div class="col-md-4">
+            <input asp-for="Password" type="password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger "></span>
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <input type="submit" class="btn-default" value="Confirm"/>
+    </div>
+
+</form>

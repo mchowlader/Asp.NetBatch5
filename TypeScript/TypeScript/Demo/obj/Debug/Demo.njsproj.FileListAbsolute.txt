@@ -1,0 +1,3 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\TypeScript\TypeScript\Demo\obj\Debug\Demo.njsprojAssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\TypeScript\TypeScript\Demo\obj\Debug\Demo.njsproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\TypeScript\TypeScript\Demo\obj\Debug\Demo.njsproj.AssemblyReference.cache

@@ -1,0 +1,26 @@
+﻿
+@model UserInfo
+
+<form asp-action="LogIn" asp-controller="Dashboard" asp-antiforgery="true" method="post" class="form-horizontal">
+    <h2>Login your account</h2>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Email" class="col-md-2 control-label"></label>
+        <div class="col-md-4">
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password" class="col-md-2 control-label"></label>
+        <div class="col-md-4">
+            <input asp-for="Password" type="password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <input type="submit" class="btn-default" value="Login" />
+    </div>
+</form>

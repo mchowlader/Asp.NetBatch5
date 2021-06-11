@@ -62,21 +62,11 @@ namespace BootstrapTemplateEdit
             app.UseEndpoints(endpoints =>
             {
 
-                app.UseEndpoints(endpoints =>
-                {
-                    endpoints.MapControllerRoute(
+                  endpoints.MapControllerRoute(
                       name: "areas",
-                      pattern: "{area:exists}/{controller=Dashboard}/{action=Login}/{id?}"
+                      pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
                     );
-                });
-
-                app.UseEndpoints(endpoints =>
-                {
-                    endpoints.MapControllerRoute(
-                      name: "areas",
-                      pattern: "{area:exists}/{controller=User}/{action=SignUp}/{id?}"
-                    );
-                });
+ 
 
 
 
