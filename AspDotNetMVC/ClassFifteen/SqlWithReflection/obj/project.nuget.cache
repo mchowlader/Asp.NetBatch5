@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rKkFIaGuKo0zbwrUrBMRhIXZyGu6qcXYCTXnldLPEU8zFsJ4sKBtuJ5CHluoPQZti6OANj98qPhQM5+i6ThgGw==",
+  "dgSpecHash": "FBVasyvgrhR8gbU6KMBSU3qMyqw/LlOPXKAZBp/yQJeP5PImGWrmF7y4rxrXJGq6UmXWPNUJirdcytC1I5cDUw==",
   "success": true,
-  "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\ClassFifteen\\SqlDatabase\\SqlDatabase.csproj",
+  "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\ClassFifteen\\SqlWithReflection\\SqlWithReflection.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
