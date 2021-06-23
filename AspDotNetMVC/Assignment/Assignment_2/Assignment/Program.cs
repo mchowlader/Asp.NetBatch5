@@ -27,15 +27,15 @@ namespace Assignment
 
             StudentInfos student = new StudentInfos() {Id=1,Name = "Mithun", Dept = "CSE", Address = "CTG" };
             //orm.Insert(student);
-            //orm.Delete(student);
+            orm.Delete(student);
             //orm.Delete(4);
             //orm.Update(student);
             //var uu = orm.GetById(1);
-            var uu = orm.GetAll();
-            foreach (var value in uu)
-            {
-                Console.WriteLine($"Id: {value.Id} Name:{value.Name} Dept:{value.Dept} Address:{value.Address}");
-            }
+            //var uu = orm.GetAll();
+            //foreach (var value in uu)
+            //{
+            //    Console.WriteLine($"Id: {value.Id} Name:{value.Name} Dept:{value.Dept} Address:{value.Address}");
+            //}
 
 
 

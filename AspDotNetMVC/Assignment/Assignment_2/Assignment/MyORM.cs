@@ -150,52 +150,8 @@ namespace Assignment
 
         public void Delete(T item)
         {
-            if (_sqlConnection.State == System.Data.ConnectionState.Closed)
-            {
-                _sqlConnection.Open();
-            }
 
-            var sql = new StringBuilder("delete from ");
-
-            var type = item.GetType();
-            var properties = type.GetProperties();
-
-            sql.Append(type.Name);
-
-            sql.Append(" where ");
-
-            foreach (var property in properties)
-            {
-                if (property.Name == "Id")
-                {
-                    sql.Append(property.Name);
-                    sql.Append(" = @");
-                    sql.Append(property.Name);
-                }
-            }
-
-            var query = sql.ToString();
-            SqlCommand command = new SqlCommand(query, _sqlConnection);
-            try
-            {
-                foreach(var property in properties)
-                {
-                    command.Parameters.AddWithValue(property.Name, property.GetValue(item));
-                }
-                command.ExecuteNonQuery();
-                Console.WriteLine("Delete by item");
-            }
-            catch(SqlException ex)
-            {
-                Console.WriteLine($"Error :{ex}");
-            }
-            finally
-            {
-                _sqlConnection.Close();
-                command.Dispose();
-                _sqlConnection.Dispose();
-                Console.WriteLine("Finish");
-            }
+            Delete(item.Id);
         }
 
         public void Delete(int id)
