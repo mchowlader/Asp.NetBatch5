@@ -32,6 +32,6 @@ namespace Assignment
 
         DbSet<StudentInfos> StudentInfos { get; set; }
 
-        DbSet<Course> Courses { get; set; }
+        DbSet<Courses> Courses { get; set; }
     }
 }

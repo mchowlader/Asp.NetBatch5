@@ -23,8 +23,6 @@ namespace Assignment
 
         }
 
-        //var insert = "insert into friendList ([Name], DOB, [Address], Contract) values (@Name, @DOB, @Address, @Contract)";
-
         public void Insert(T item)
         {
             if(_sqlConnection.State == System.Data.ConnectionState.Closed)
@@ -185,7 +183,7 @@ namespace Assignment
                     command.Parameters.AddWithValue(property.Name, property.GetValue(item));
                 }
                 command.ExecuteNonQuery();
-                Console.WriteLine("Done");
+                Console.WriteLine("Delete by item");
             }
             catch(SqlException ex)
             {
@@ -233,7 +231,7 @@ namespace Assignment
             {
                 
                 command.ExecuteNonQuery();
-                Console.WriteLine("Done");
+                Console.WriteLine("Delete by id");
             }
             catch (SqlException ex)
             {
@@ -263,20 +261,21 @@ namespace Assignment
             var list = new List<T>();
 
             SqlCommand command = new SqlCommand(query, _sqlConnection);
-            var i = 0;
+
             try
             {
                 var reader = command.ExecuteReader();
-                var instances = (T)Activator.CreateInstance(type);
+                
                 while (reader.Read())
                 {
+                    var instances = (T)Activator.CreateInstance(type);
                     type.GetProperties().ToList().ForEach(x => 
                         { 
                             x.SetValue(instances, reader[x.Name]);
                         });
 
                     list.Add(instances);
-                }
+                }             
             }
             catch (SqlException ex)
             {

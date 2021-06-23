@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment
 {
-    public class Course : IData
+    public class Courses : IData
     {
         public int Id { get; set; }
 
