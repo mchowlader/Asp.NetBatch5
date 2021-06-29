@@ -30,5 +30,7 @@ namespace MVC.Data
         public DbSet<Course> Course { get; set; }
 
         public DbSet<Student> Student { get; set; }
+
+        public DbSet<Topic> Topic { get; set; }
     }
 }

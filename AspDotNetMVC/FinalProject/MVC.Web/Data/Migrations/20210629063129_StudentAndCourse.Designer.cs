@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVC.Web.Data.Migrations
 {
     [DbContext(typeof(TrainingDbContext))]
-    [Migration("20210629061334_AddTopic")]
-    partial class AddTopic
+    [Migration("20210629063129_StudentAndCourse")]
+    partial class StudentAndCourse
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace MVC.Web.Migrations.ApplicationDb
+namespace MVC.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210628131713_StudentAndCourse")]
-    partial class StudentAndCourse
+    [Migration("20210629063029_ApplicationDb")]
+    partial class ApplicationDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
