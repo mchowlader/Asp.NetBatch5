@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MVC.Data
 {
@@ -11,5 +12,7 @@ namespace MVC.Data
         public int Fees { get; set; }
 
         public DateTime StartDate { get; set; }
+
+        public List<Topic> Topics { get; set; }
     }
 }
