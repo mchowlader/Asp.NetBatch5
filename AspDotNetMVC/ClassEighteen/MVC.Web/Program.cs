@@ -31,6 +31,7 @@ namespace MVC.Web
             {
                 Log.Information("Application Starting up");
                 CreateHostBuilder(args).Build().Run();
+                Log.Information("Application Started Successfully");
             }
             catch (Exception ex)
             {
@@ -42,19 +43,15 @@ namespace MVC.Web
             }
         }
 
-
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-            .UseServiceProviderFactory(new AutofacServiceProviderFactory())
+                .UseServiceProviderFactory(new AutofacServiceProviderFactory())
                 .UseSerilog()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
                     webBuilder.UseUrls("http://*:80");
                 });
-
-
     }
-
 
 }

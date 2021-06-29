@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MVC.Training.Entities
 {
@@ -10,12 +7,12 @@ namespace MVC.Training.Entities
     {
         public int Id { get; set; }
 
-        public string Titel { get; set; }
+        public string Title { get; set; }
 
-        public double Fees { get; set; }
+        public int Fees { get; set; }
 
         public DateTime StartDate { get; set; }
 
-        public IList<Topic> Topic { get; set; }
+        public List<Topic> Topics { get; set; }
     }
 }

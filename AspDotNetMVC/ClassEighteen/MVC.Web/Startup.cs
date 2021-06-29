@@ -11,7 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MVC.Training;
 using MVC.Training.Contexts;
-using MVC.Web.Data; 
+using MVC.Web.Data;
+using MVC.Web.Models;
+using MVC.Web.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,34 +44,33 @@ namespace MVC.Web
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            var connectionInfo = GetConnectionstringAndAssemblyName();
+            var connectionInfo = GetConnectionStringAndAssemblyName();
 
-            builder.RegisterModule(new TrainingModule(connectionInfo.connectionString, 
-                connectionInfo.migrationAssemblyName)); 
+            builder.RegisterModule(new TrainingModule(connectionInfo.connectionString, connectionInfo.migrationAssemblyName));
+            builder.RegisterModule(new WebModule());
         }
 
-        private(string connectionString, string migrationAssemblyName) GetConnectionstringAndAssemblyName()
+        private (string connectionString, string migrationAssemblyName) GetConnectionStringAndAssemblyName()
         {
-            var connectionStringName = "DefaultConnection";
-            var connectionString = Configuration.GetConnectionString(connectionStringName);
+            var connectionStrinName = "DefaultConnection";
+            var connectionString = Configuration.GetConnectionString(connectionStrinName);
             var migrationAssemblyName = typeof(Startup).Assembly.FullName;
 
-            return (connectionString,migrationAssemblyName);
+            return (connectionString, migrationAssemblyName);
         }
-
-
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connectionInfo =  GetConnectionstringAndAssemblyName();
+            var connectionInfo = GetConnectionStringAndAssemblyName();
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionInfo.connectionString));         
-            
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionInfo.connectionString,
-                b => b.MigrationsAssembly(connectionInfo.migrationAssemblyName)));
+                options.UseSqlServer(connectionInfo.connectionString));
+
+            services.AddDbContext<TrainingDbContext>(options =>
+                options.UseSqlServer(connectionInfo.connectionString, b =>
+                b.MigrationsAssembly(connectionInfo.migrationAssemblyName)));
+
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -92,18 +93,20 @@ namespace MVC.Web
                 options.Cookie.IsEssential = true;
             });
 
+            services.AddTransient<IDriverService, LocalDriver>();
+
+            services.Configure<SmtpConfiguration>(Configuration.GetSection("Smtp"));
 
             services.AddControllersWithViews();
             services.AddHttpContextAccessor();
             services.AddRazorPages();
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-        }
+        }       
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-
             AutofacContainer = app.ApplicationServices.GetAutofacRoot();
 
             if (env.IsDevelopment())
@@ -124,23 +127,20 @@ namespace MVC.Web
 
             app.UseAuthentication();
             app.UseAuthorization();
-
             app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                name: "areas",
-                pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{Id?}"
-              );
+                    name: "areas",
+                    pattern: "{area:exists}/{controller=Course}/{action=index}/{Id?}");
+
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{Id?}");
+                    pattern: "{controller=Dashboard}/{action=Summery}/{id?}");
 
                 endpoints.MapRazorPages();
-
             });
-
         }
     }
 }

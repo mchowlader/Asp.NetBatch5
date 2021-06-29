@@ -1,0 +1,16 @@
+﻿@model CourseListModel
+@{
+    ViewData["Title"] = "Course Details";
+}
+
+<h1>Index</h1>
+@{ 
+    foreach(var course in Model.Courses) 
+    {
+        <h1>@course.Id</h1>
+        <h1>@course.Titel</h1>
+        <h2>@course.Fees</h2>
+        <h2>@course.StartDate</h2><br />
+    }
+}
+
