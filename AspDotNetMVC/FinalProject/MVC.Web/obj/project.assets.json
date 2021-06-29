@@ -3083,7 +3083,7 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "MVC.Data/1.0.0": {
+      "MVC.Traning/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -3093,10 +3093,10 @@
           "System.Data.SqlClient": "4.8.2"
         },
         "compile": {
-          "bin/placeholder/MVC.Data.dll": {}
+          "bin/placeholder/MVC.Traning.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MVC.Data.dll": {}
+          "bin/placeholder/MVC.Traning.dll": {}
         }
       }
     }
@@ -9906,16 +9906,16 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "MVC.Data/1.0.0": {
+    "MVC.Traning/1.0.0": {
       "type": "project",
-      "path": "../MVC.Data/MVC.Data.csproj",
-      "msbuildProject": "../MVC.Data/MVC.Data.csproj"
+      "path": "../MVC.Data/MVC.Traning.csproj",
+      "msbuildProject": "../MVC.Data/MVC.Traning.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Autofac.Extensions.DependencyInjection >= 7.1.0",
-      "MVC.Data >= 1.0.0",
+      "MVC.Traning >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 5.0.7",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.7",
       "Microsoft.AspNetCore.Identity.UI >= 5.0.7",
@@ -9956,8 +9956,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Data.csproj": {
-              "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Data.csproj"
+            "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Traning.csproj": {
+              "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Traning.csproj"
             }
           }
         }

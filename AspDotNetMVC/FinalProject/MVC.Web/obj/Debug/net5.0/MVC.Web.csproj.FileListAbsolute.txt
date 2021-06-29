@@ -460,3 +460,8 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debu
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\MVC.Data.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\MVC.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Course\Index.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Partial\_FooterMenuPartial.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_Layout.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs

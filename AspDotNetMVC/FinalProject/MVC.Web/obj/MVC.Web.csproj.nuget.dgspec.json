@@ -4,12 +4,12 @@
     "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Web\\MVC.Web.csproj": {}
   },
   "projects": {
-    "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Data.csproj": {
+    "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Traning.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Data.csproj",
-        "projectName": "MVC.Data",
-        "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Data.csproj",
+        "projectUniqueName": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Traning.csproj",
+        "projectName": "MVC.Traning",
+        "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Traning.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
         "outputPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\obj\\",
         "projectStyle": "PackageReference",
@@ -106,8 +106,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Data.csproj": {
-                "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Data.csproj"
+              "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Traning.csproj": {
+                "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Traning.csproj"
               }
             }
           }

@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MVC.Data\MVC.Data.csproj" />
+    <ProjectReference Include="..\MVC.Data\MVC.Traning.csproj" />
   </ItemGroup>
 
 </Project>
