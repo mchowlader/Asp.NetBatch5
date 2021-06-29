@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MVC.Data;
 using MVC.Web.Data;
 using MVC.Web.Models;
 using MVC.Web.Services;
@@ -42,18 +43,33 @@ namespace MVC.Web
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
+            var connectionInfo = GetConnectionStringAndAssemblyName();
+
+            builder.RegisterModule(new TrainingModule(connectionInfo.connectionString, connectionInfo.migrationAssemblyName));
             builder.RegisterModule(new WebModule());
         }
 
+        private (string connectionString, string migrationAssemblyName) GetConnectionStringAndAssemblyName()
+        {
+            var connectionStrinName = "DefaultConnection";
+            var connectionString = Configuration.GetConnectionString(connectionStrinName);
+            var migrationAssemblyName = typeof(Startup).Assembly.FullName;
 
+            return (connectionString, migrationAssemblyName);
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionInfo = GetConnectionStringAndAssemblyName();
+
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            
+                options.UseSqlServer(connectionInfo.connectionString));
+
+            services.AddDbContext<TrainingDbContext>(options =>
+                options.UseSqlServer(connectionInfo.connectionString, b =>
+                b.MigrationsAssembly(connectionInfo.migrationAssemblyName)));
+
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -85,7 +101,7 @@ namespace MVC.Web
             services.AddRazorPages();
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-        }
+        }       
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

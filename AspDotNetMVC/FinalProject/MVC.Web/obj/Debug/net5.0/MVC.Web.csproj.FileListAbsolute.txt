@@ -450,3 +450,13 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\obj\Debu
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\obj\Debug\net5.0\Razor\Views\Dashboard\Summery.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\Autofac.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\MVC.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\MVC.Data.pdb
