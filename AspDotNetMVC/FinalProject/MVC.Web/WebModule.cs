@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using MVC.Web.Areas.Admin.Models;
 using MVC.Web.Services;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,8 @@ namespace MVC.Web
         {
             builder.RegisterType<SimpleDatabaseService>().As<IDatabaseService>()
                 .InstancePerLifetimeScope();
+
+            builder.RegisterType<CourseListModel>().AsSelf();
 
             base.Load(builder);
         }

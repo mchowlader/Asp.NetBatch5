@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MVC.Traning
+namespace MVC.Traning.Entities
 {
     public class Student
     {

@@ -26,11 +26,10 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MVC.Data\MVC.Traning.csproj" />
+    <ProjectReference Include="..\MVC.Training\MVC.Training.csproj" />
   </ItemGroup>
 
 </Project>

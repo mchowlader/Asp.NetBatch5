@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MVC.Traning.Entities;
 using System;
 
-namespace MVC.Traning
+namespace MVC.Traning.Contexts
 {
     public class TrainingDbContext : DbContext
     {
@@ -27,10 +28,10 @@ namespace MVC.Traning
             base.OnConfiguring(dbContextOptionsBuilder);
         }
 
-        public DbSet<Course> Course { get; set; }
+        public DbSet<Course> Courses { get; set; }
 
-        public DbSet<Student> Student { get; set; }
+        public DbSet<Student> Students { get; set; }
 
-        public DbSet<Topic> Topic { get; set; }
+        public DbSet<Topic> Topics { get; set; }
     }
 }

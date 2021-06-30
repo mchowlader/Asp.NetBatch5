@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVC.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210629063029_ApplicationDb")]
-    partial class ApplicationDb
+    [Migration("20210630070029_AddApplicationDbContext")]
+    partial class AddApplicationDbContext
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

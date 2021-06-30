@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MVC.Web.Areas.Admin.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,9 @@ namespace MVC.Web.Areas.Admin.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var model = new CourseListModel();
+            model.LoadModelData();
+            return View(model);
         }
     }
 }

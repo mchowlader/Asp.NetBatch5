@@ -1,4 +1,6 @@
 ﻿using Autofac;
+using MVC.Training.Services;
+using MVC.Traning.Contexts;
 using System;
 
 namespace MVC.Traning
@@ -19,6 +21,8 @@ namespace MVC.Traning
                  .WithParameter("connectionString", _connectionString)
                  .WithParameter("migrationsAssemblyName", _migrationAssemblyName)
                  .InstancePerLifetimeScope();
+
+            builder.RegisterType<CourseService>().As<ICourseService>().InstancePerLifetimeScope();
 
             base.Load(builder);
         }
