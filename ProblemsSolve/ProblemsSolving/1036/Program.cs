@@ -14,7 +14,7 @@ namespace _1036
             var B = double.Parse(inputSplit[1]);
             var C = double.Parse(inputSplit[2]);
 
-            var root = Math.Sqrt(Math.Pow(B, 2) - 4 * A * C);
+            var root = Math.Pow(B, 2) - 4 * A * C;
 
             if (root < 0 || A == 0)
             {
@@ -22,13 +22,17 @@ namespace _1036
             }
             else
             {
-                var R1 = ((-B + root) / (2*A));
-                var R2 = ((-B - root) / (2*A));
+                var R1 = ((-B + Math.Sqrt(root)) / (2 * A));
+                var R2 = ((-B - Math.Sqrt(root)) / (2 * A));
 
-                Console.WriteLine($"R1 = {string.Format("{0:0.00000}",R1)}");
-                Console.WriteLine($"R2 = {string.Format("{0:0.00000}",R2)}");
+                Console.WriteLine("R1 = {0:0.00000}", R1);
+                Console.WriteLine("R2 = {0:0.00000}", R2);
             }
             
         }
     }
 }
+
+
+//Console.WriteLine($"R1 = {string.Format("{0:0.00000}",R1)}");
+//Console.WriteLine($"R2 = {string.Format("{0:0.00000}",R2)}");
