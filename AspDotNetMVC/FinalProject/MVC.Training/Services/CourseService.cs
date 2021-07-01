@@ -1,4 +1,5 @@
 ﻿using MVC.Training.BusinessObjects;
+using MVC.Training.UnitOfWorks;
 using MVC.Traning.Contexts;
 using System;
 using System.Collections.Generic;
@@ -10,16 +11,16 @@ namespace MVC.Training.Services
 {
     public class CourseService : ICourseService
     {
-        public readonly TrainingDbContext _trainingDbContext;
+        public readonly ITrainingUnitOfWork _trainingUnitOfWork ;
 
-        public CourseService(TrainingDbContext trainingDbContext)
+        public CourseService(ITrainingUnitOfWork trainingUnitOfWork)
         {
-            _trainingDbContext = trainingDbContext;
+            _trainingUnitOfWork = trainingUnitOfWork;
         }
 
         public IList<Course> GetAllCourses()
         {
-            var courseentities = _trainingDbContext.Courses.ToList();
+            var courseentities = _trainingUnitOfWork.courseRepository.GetAll();
             var courses = new List<Course>();
 
             foreach(var entity in courseentities)
@@ -36,6 +37,22 @@ namespace MVC.Training.Services
             }
 
             return courses;
+        }
+
+        public void CreateCourse(Course course)
+        {
+            _trainingUnitOfWork.courseRepository.Add
+                (
+                    new Traning.Entities.Course
+                    { 
+                        Id = course.Id,
+                        Title = course.Title,
+                        Fees = course.Fees,
+                        StartDate = course.StartDate
+                    }
+                );
+
+            _trainingUnitOfWork.Save();
         }
     }
 }

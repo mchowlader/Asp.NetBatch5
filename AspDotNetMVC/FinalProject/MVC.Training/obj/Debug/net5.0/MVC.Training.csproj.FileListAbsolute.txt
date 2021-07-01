@@ -13,3 +13,6 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Training\obj
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Training\obj\Debug\net5.0\ref\MVC.Training.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Training\obj\Debug\net5.0\MVC.Training.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Training\obj\Debug\net5.0\MVC.Training.genruntimeconfig.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Training\bin\Debug\net5.0\MVC.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Training\bin\Debug\net5.0\MVC.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Training\obj\Debug\net5.0\MVC.Training.csproj.CopyComplete
