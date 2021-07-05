@@ -12,12 +12,10 @@ namespace MVC.Training.Services
     public class CourseService : ICourseService
     {
         public readonly ITrainingUnitOfWork _trainingUnitOfWork ;
-
         public CourseService(ITrainingUnitOfWork trainingUnitOfWork)
         {
             _trainingUnitOfWork = trainingUnitOfWork;
         }
-
         public IList<Course> GetAllCourses()
         {
             var courseentities = _trainingUnitOfWork.courseRepository.GetAll();
@@ -38,7 +36,6 @@ namespace MVC.Training.Services
 
             return courses;
         }
-
         public void CreateCourse(Course course)
         {
             _trainingUnitOfWork.courseRepository.Add

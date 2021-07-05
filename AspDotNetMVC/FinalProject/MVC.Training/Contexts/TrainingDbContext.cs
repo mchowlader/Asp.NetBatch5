@@ -16,7 +16,6 @@ namespace MVC.Traning.Contexts
 
             _migrationsAssemblyName = migrationsAssemblyName;
         }
-
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder )
         {
             if(!dbContextOptionsBuilder.IsConfigured)
@@ -27,11 +26,8 @@ namespace MVC.Traning.Contexts
             }
             base.OnConfiguring(dbContextOptionsBuilder);
         }
-
         public DbSet<Course> Courses { get; set; }
-
         public DbSet<Student> Students { get; set; }
-
         public DbSet<Topic> Topics { get; set; }
     }
 }

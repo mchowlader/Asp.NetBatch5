@@ -12,7 +12,6 @@ namespace MVC.Training.Repositories
 {
     public class StudentRepository : Repository<Student>
     {
-        
         public StudentRepository(TrainingDbContext context)
             : base(context)
         {

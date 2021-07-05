@@ -1,0 +1,152 @@
+2021-07-04 00:05:03.171 +06:00 [INF] Application Starting up
+2021-07-04 00:11:20.513 +06:00 [INF] Application Starting up
+2021-07-04 00:13:02.440 +06:00 [INF] Application Starting up
+2021-07-04 00:15:15.984 +06:00 [INF] Application Starting up
+2021-07-04 00:17:39.844 +06:00 [INF] Application Starting up
+2021-07-04 00:18:23.527 +06:00 [INF] Application Starting up
+2021-07-04 00:33:27.017 +06:00 [INF] Application Starting up
+2021-07-04 00:34:12.519 +06:00 [INF] Application Starting up
+2021-07-04 00:35:20.450 +06:00 [INF] Application Starting up
+2021-07-04 00:38:53.989 +06:00 [INF] Application Starting up
+2021-07-04 00:43:18.423 +06:00 [INF] Application Starting up
+2021-07-04 00:50:09.938 +06:00 [INF] Application Starting up
+2021-07-04 00:52:56.162 +06:00 [INF] Application Starting up
+2021-07-04 00:53:54.626 +06:00 [INF] Application Starting up
+2021-07-04 10:17:16.379 +06:00 [INF] Application Starting up
+2021-07-04 10:18:24.131 +06:00 [INF] Application Starting up
+2021-07-04 10:20:13.891 +06:00 [INF] Application Starting up
+2021-07-04 10:23:02.265 +06:00 [INF] Application Starting up
+2021-07-04 10:44:49.514 +06:00 [INF] Application Starting up
+2021-07-04 10:45:08.869 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Areas/Admin/Views/Shared/_Layout.cshtml': 'style, script'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-04 10:45:09.725 +06:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.Views.DatabaseErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseDeveloperPageExceptionFilter.HandleExceptionAsync(ErrorContext errorContext, Func`2 next)
+2021-07-04 10:46:21.028 +06:00 [INF] Application Starting up
+2021-07-04 10:46:27.904 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Areas/Admin/Views/Shared/_Layout.cshtml': 'Styles'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-04 10:46:28.734 +06:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.Views.DatabaseErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseDeveloperPageExceptionFilter.HandleExceptionAsync(ErrorContext errorContext, Func`2 next)
+2021-07-04 11:02:07.188 +06:00 [INF] Application Starting up
+2021-07-04 11:05:32.510 +06:00 [INF] Application Starting up
+2021-07-04 11:08:50.633 +06:00 [INF] Application Starting up
+2021-07-04 11:10:31.214 +06:00 [INF] Application Starting up
+2021-07-04 14:53:26.225 +06:00 [INF] Application Starting up
+2021-07-04 16:26:59.537 +06:00 [INF] Application Starting up
+2021-07-04 16:28:41.276 +06:00 [ERR] Create Course Failed
+System.InvalidOperationException: Titel already exits
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Training\Services\CourseService.cs:line 60
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 36
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 56
+2021-07-04 17:06:32.144 +06:00 [INF] Application Starting up
+2021-07-04 17:08:35.920 +06:00 [INF] Application Starting up
+2021-07-04 17:09:50.265 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.InvalidParameterException: Course was not provided
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Training\Services\CourseService.cs:line 44
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 36
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 56
+2021-07-04 17:11:28.716 +06:00 [INF] Application Starting up
+2021-07-04 17:12:00.155 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.InvalidParameterException: Course was not provided
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Training\Services\CourseService.cs:line 44
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 36
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 56
+2021-07-04 17:14:58.630 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.InvalidParameterException: Course was not provided
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Training\Services\CourseService.cs:line 44
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 36
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 56
+2021-07-04 17:16:42.585 +06:00 [INF] Application Starting up
+2021-07-04 17:26:22.239 +06:00 [INF] Application Starting up
+2021-07-04 17:27:07.745 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.DuplicateTitelException: Titel already exits
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Training\Services\CourseService.cs:line 60
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 36
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 56
+2021-07-04 17:27:47.249 +06:00 [INF] Application Starting up
+2021-07-04 17:28:06.057 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.DuplicateTitelException: Course titel already exits
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Training\Services\CourseService.cs:line 60
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 36
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 56
+2021-07-04 17:28:10.057 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.DuplicateTitelException: Course titel already exits
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Training\Services\CourseService.cs:line 60
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 36
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 56
+2021-07-04 18:52:15.229 +06:00 [INF] Application Starting up
+2021-07-04 19:05:37.306 +06:00 [INF] Application Starting up
+2021-07-04 19:07:59.763 +06:00 [INF] Application Starting up
+2021-07-04 19:09:35.367 +06:00 [INF] Application Starting up
+2021-07-04 19:58:14.715 +06:00 [INF] Application Starting up
+2021-07-04 19:59:27.992 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.InvalidParameterException: Start date should be atleast ahead 30 days
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Training\Services\CourseService.cs:line 54
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 36
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassTwentyTwo\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 56

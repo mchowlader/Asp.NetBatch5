@@ -14,9 +14,7 @@ namespace MVC.Training.UnitOfWorks
     public class TrainingUnitOfWork : UnitOfWork, ITrainingUnitOfWork
     {
         public IRepository<Student> studentRepository { get; private set; }
-
         public IRepository<Course> courseRepository { get; private set; }
-
         public TrainingUnitOfWork(TrainingDbContext context)
             : base(context)
         {
