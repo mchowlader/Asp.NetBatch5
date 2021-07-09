@@ -1,0 +1,15 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\obj\Debug\net5.0\DemoProject.Training.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\obj\Debug\net5.0\DemoProject.Training.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\obj\Debug\net5.0\DemoProject.Training.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\obj\Debug\net5.0\DemoProject.Training.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\obj\Debug\net5.0\DemoProject.Training.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\bin\Debug\net5.0\DemoProject.Training.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\bin\Debug\net5.0\DemoProject.Training.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\bin\Debug\net5.0\ref\DemoProject.Training.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\bin\Debug\net5.0\DemoProject.Training.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\obj\Debug\net5.0\DemoProject.Training.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\obj\Debug\net5.0\ref\DemoProject.Training.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\obj\Debug\net5.0\DemoProject.Training.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\bin\Debug\net5.0\DemoProject.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\bin\Debug\net5.0\DemoProject.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject.Training\obj\Debug\net5.0\DemoProject.Training.csproj.CopyComplete

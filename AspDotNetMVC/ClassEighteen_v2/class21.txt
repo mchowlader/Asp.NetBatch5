@@ -1,0 +1,3 @@
+relation 3 vabe kora jai
+1.Conventionaly
+2.annotation

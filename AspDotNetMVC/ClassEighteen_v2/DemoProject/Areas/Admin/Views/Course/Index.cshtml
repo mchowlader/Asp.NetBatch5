@@ -1,0 +1,10 @@
+﻿@model CourseListModel
+<h1>Course</h1>
+@{ 
+    foreach(var course in Model.Courses)
+    {
+        <h1>@course.Titel</h1>
+        <h1>@course.Fees</h1>
+    }
+}
+
