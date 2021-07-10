@@ -25,9 +25,9 @@ namespace Assignment
             //}
 
 
-            StudentInfos student = new StudentInfos() {Id=5,Name = "Mithun", Dept = "CSE", Address = "CTG" };
-            orm.Insert(student);
-            //orm.Delete(student);
+            StudentInfos student = new StudentInfos() {Id=7, Name = "Mithun", Dept = "TXT", Address = "BSL" };
+            //orm.Insert(student);
+            orm.Delete(student);
             //orm.Delete(4);
             //orm.Update(student);
             //var uu = orm.GetById(1);

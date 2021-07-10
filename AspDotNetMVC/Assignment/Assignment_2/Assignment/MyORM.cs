@@ -58,7 +58,6 @@ namespace Assignment
             var query = sql.ToString();
             var command = new SqlCommand(query, _sqlConnection);
 
-
             try
             {
 
@@ -83,9 +82,7 @@ namespace Assignment
                 _sqlConnection.Dispose();
                 Console.WriteLine("Finish");
             }
-
         }
-
         public void Update(T item)
         {
             if (_sqlConnection.State == System.Data.ConnectionState.Closed)
@@ -99,7 +96,6 @@ namespace Assignment
             sql.Append(type.Name);
             sql.Append(" set ");
 
-          
             foreach(var property in properties)
             {
                 sql.Append(property.Name);
@@ -118,7 +114,6 @@ namespace Assignment
                     sql.Append(property.Name);
                     sql.Append(" = @" + property.Name);
                 }
-                
             }
 
             var query = sql.ToString();
@@ -133,7 +128,6 @@ namespace Assignment
 
                 sqlCommand.ExecuteNonQuery();
                 Console.WriteLine("updated");
-
             }
             catch(SqlException ex)
             {
@@ -147,13 +141,11 @@ namespace Assignment
                 Console.WriteLine("Finish");
             }
         }
-
         public void Delete(T item)
         {
 
             Delete(item.Id);
         }
-
         public void Delete(int id)
         {
             if (_sqlConnection.State == System.Data.ConnectionState.Closed)
@@ -176,9 +168,7 @@ namespace Assignment
                     sql.Append(@id);
                 }
             }
-
             
-
             var query = sql.ToString();
 
             SqlCommand command = new SqlCommand(query, _sqlConnection);
@@ -200,9 +190,7 @@ namespace Assignment
                 _sqlConnection.Dispose();
                 Console.WriteLine("Finish");
             }
-
         }
-
         public IList<T> GetAll()
         {
             if (_sqlConnection.State == System.Data.ConnectionState.Closed)
@@ -248,7 +236,6 @@ namespace Assignment
             return list;
 
         }
-
         public IList<T> GetById(int id)
         {
             if (_sqlConnection.State == System.Data.ConnectionState.Closed)
@@ -307,7 +294,7 @@ namespace Assignment
                 _sqlConnection.Close();
                 command.Dispose();
                 _sqlConnection.Dispose();
-                Console.WriteLine("Finish");
+                Console.WriteLine("Get By ID");
             }
 
             return list;

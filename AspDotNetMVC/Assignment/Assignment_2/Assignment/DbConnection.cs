@@ -8,6 +8,7 @@ namespace Assignment
 {
     public class DbConnection
     {
-        public static string connectionString = @" Server=DESKTOP-VCDQ38S\SQLEXPRESS;Database=AssignmentTwo;User Id=ASP_B5;Password=682672;";
+        public static string connectionString = @"Server=DESKTOP-VCDQ38S\SQLEXPRESS;Database=AssignmentTwo;
+        User Id=ASP_B5;Password=682672;";
     }
 }
