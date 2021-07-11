@@ -9,20 +9,9 @@ namespace DemoProject.Data
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly DbContext _context;
-        public UnitOfWork(DbContext context)
-        {
-            _context = context;
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Save()
-        {
-            _context.SaveChanges();
-        }
+        private readonly DbContext _dbContext;
+        public UnitOfWork(DbContext dbContext) => _dbContext = dbContext;
+        public void Dispose() => _dbContext?.Dispose();
+        public void Save() => _dbContext?.SaveChanges();
     }
 }

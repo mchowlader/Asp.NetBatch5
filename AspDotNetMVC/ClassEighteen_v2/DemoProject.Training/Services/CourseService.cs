@@ -1,5 +1,6 @@
 ﻿using DemoProject.Training.BusinessObjects;
 using DemoProject.Training.Contexts;
+using DemoProject.Training.Exceptions;
 using DemoProject.Training.UnitOfWorks;
 using System;
 using System.Collections.Generic;
@@ -31,17 +32,25 @@ namespace DemoProject.Training.Services
         }
         public void CreateCourse(Course course)
         {
-            _trainingUnitOfWork.Courses.Add
-            (
-                new Entities.Course 
-                {
-                    Titel = course.Titel,
-                    Fees = course.Fees,
-                    StartDate = course.StartDate
-                }
-            );
+            if (course == null)
+                throw new InvalidParameterException("Course was not provided");
+            if (IsTitleAlreadyUsed(course.Titel))
+                throw new InvalidOperationException("Title already Exits");
 
-            _trainingUnitOfWork.Save();
+            {
+                _trainingUnitOfWork.Courses.Add
+                (
+                    new Entities.Course
+                    {
+                        Titel = course.Titel,
+                        Fees = course.Fees,
+                        StartDate = course.StartDate
+                    }
+                );
+
+                _trainingUnitOfWork.Save();
+            }
+
         }
         public void EnrollStudent(Course course, Student student)
         {
@@ -64,6 +73,9 @@ namespace DemoProject.Training.Services
 
             _trainingUnitOfWork.Save();
         }
+
+        private bool IsTitleAlreadyUsed(string title) =>
+            _trainingUnitOfWork.Courses.GetCount(x => x.Titel == title) > 0;
 
     }
 }

@@ -30,9 +30,8 @@ namespace MVC.Traning
                 .InstancePerLifetimeScope();
             builder.RegisterType<TrainingUnitOfWork>().As<ITrainingUnitOfWork>()
                 .InstancePerLifetimeScope();
-
-
-            builder.RegisterType<CourseService>().As<ICourseService>().InstancePerLifetimeScope();
+            builder.RegisterType<CourseService>().As<ICourseService>()
+                .InstancePerLifetimeScope();
 
             base.Load(builder);
         }

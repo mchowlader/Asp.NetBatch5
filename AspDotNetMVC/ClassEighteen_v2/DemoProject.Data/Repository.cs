@@ -19,7 +19,7 @@ namespace DemoProject.Data
         }
         public virtual void Add(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Add(entity);
         }
 
         public virtual void Edit(TEntity entityToDelete)
@@ -54,7 +54,14 @@ namespace DemoProject.Data
 
         public virtual int GetCount(Expression<Func<TEntity, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            IQueryable<TEntity> query = _dbSet;
+            var count = 0;
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+            count = query.Count();
+            return count;
         }
 
         public virtual (IList<TEntity> data, int total, int totalDisplay) GetDynamic(Expression<Func<TEntity, bool>> filter = null, string orderby = null, string includeProperties = " ", int pageIndex = 1, int pageSize = 10, bool isTrackingoff = false)

@@ -11,6 +11,6 @@ namespace DemoProject.Training.Services
     {
         IList<Course> GetAllCourse();
         void EnrollStudent(Course course, Student student);
-
+        void CreateCourse(Course course);
     }
 }

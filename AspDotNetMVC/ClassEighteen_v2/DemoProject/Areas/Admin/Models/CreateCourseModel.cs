@@ -1,18 +1,18 @@
-﻿using MVC.Training.Services;
+﻿using DemoProject.Training.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Autofac;
-using MVC.Training.BusinessObjects;
+using DemoProject.Training.BusinessObjects;
 
-namespace MVC.Web.Areas.Admin.Models
+namespace DemoProject.Areas.Admin.Models
 {
     public class CreateCourseModel
     {
-        public string Titel { get; set; }
+        public string Title { get; set; }
         public int Fees { get; set; }
-        public DateTime StartDate { get; set; }
+        public DateTime Startdate { get; set; }
 
         private readonly ICourseService _courseService;
         public CreateCourseModel()
@@ -26,11 +26,11 @@ namespace MVC.Web.Areas.Admin.Models
 
         internal void CreateCourse()
         {
-            var course = new Course() 
+            var course = new Course()
             {
-                Title = Titel,
+                Titel = Title,
                 Fees = Fees,
-                StartDate = StartDate
+                StartDate = Startdate
             };
 
             _courseService.CreateCourse(course);

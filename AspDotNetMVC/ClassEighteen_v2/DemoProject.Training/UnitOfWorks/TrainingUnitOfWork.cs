@@ -10,9 +10,9 @@ namespace DemoProject.Training.UnitOfWorks
     {
         public IStudentRepository Students { get; set; }
         public ICourseRepository Courses { get; set; }
-        public TrainingUnitOfWork(ITrainingDbContext context,
-            IStudentRepository studentRepository, ICourseRepository courseRepository)
-            : base((TrainingDbContext)context)    //base((TrainingDbContext)context)
+        public TrainingUnitOfWork(TrainingDbContext context,
+            IStudentRepository studentRepository, 
+            ICourseRepository courseRepository): base(context)
         {
             Students = studentRepository;
             Courses = courseRepository;

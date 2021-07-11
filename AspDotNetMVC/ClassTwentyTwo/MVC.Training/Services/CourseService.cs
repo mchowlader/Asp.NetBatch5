@@ -52,6 +52,7 @@ namespace MVC.Training.Services
 
             if (!IsValidStartDate(course.StartDate))
                 throw new InvalidParameterException("Start date should be atleast ahead 30 days");
+
             {
                 _trainingUnitOfWork.CourseRepository.Add(
                         new Traning.Entities.Course
