@@ -1,11 +1,12 @@
 ﻿using MVC.Data;
+using MVC.Training.Repositories;
 using MVC.Traning.Entities;
 
 namespace MVC.Training.UnitOfWorks
 {
     public interface ITrainingUnitOfWork : IUnitOfWork
     {
-        IRepository<Course> courseRepository { get; }
-        IRepository<Student> studentRepository { get; }
+        ICourseRepository CourseRepository { get; }
+        IStudentRepository StudentRepository { get; }
     }
 }

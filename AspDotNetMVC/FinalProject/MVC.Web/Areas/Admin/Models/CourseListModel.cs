@@ -12,9 +12,7 @@ namespace MVC.Web.Areas.Admin.Models
     public class CourseListModel
     {
         private readonly ICourseService _courseService;
-
         public IList<Course> Courses { get; set; }
-
         public CourseListModel()
         {
             _courseService = Startup.AutofacContainer.Resolve<ICourseService>();

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MVC.Training.Repositories
 {
-    public class StudentRepository : Repository<Student>
+    public class StudentRepository : Repository<Student, int>, IStudentRepository
     {
         public StudentRepository(TrainingDbContext context)
             : base(context)

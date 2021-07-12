@@ -29,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MVC.Data\MVC.Data.csproj" />
     <ProjectReference Include="..\MVC.Training\MVC.Training.csproj" />
   </ItemGroup>
 

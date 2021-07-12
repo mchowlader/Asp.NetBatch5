@@ -10,13 +10,9 @@ namespace MVC.Data
     public class UnitOfWork : IUnitOfWork
     {
         private readonly DbContext _context;
-        public UnitOfWork(DbContext context)
-        {
-            _context = context;
-        }
-        public void Save()
-        {
-            _context.SaveChanges();
-        }
+        public UnitOfWork(DbContext context) => _context = context;
+        public void Dispose() => _context.Dispose();
+        public void Save() => _context.SaveChanges();
+
     }
 }

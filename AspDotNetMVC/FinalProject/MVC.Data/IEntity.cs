@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace MVC.Data
 {
-    public interface IUnitOfWork : IDisposable
+   public interface IEntity<T>
     {
-        void Save();
+        T Id { get; set; }
     }
 }

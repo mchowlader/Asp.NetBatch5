@@ -18,7 +18,7 @@ namespace MVC.Training.Services
         }
         public IList<Course> GetAllCourses()
         {
-            var courseentities = _trainingUnitOfWork.courseRepository.GetAll();
+            var courseentities = _trainingUnitOfWork.CourseRepository.GetAll();
             var courses = new List<Course>();
 
             foreach(var entity in courseentities)
@@ -38,7 +38,7 @@ namespace MVC.Training.Services
         }
         public void CreateCourse(Course course)
         {
-            _trainingUnitOfWork.courseRepository.Add
+            _trainingUnitOfWork.CourseRepository.Add
                 (
                     new Traning.Entities.Course
                     { 
@@ -51,5 +51,7 @@ namespace MVC.Training.Services
 
             _trainingUnitOfWork.Save();
         }
+
+       
     }
 }

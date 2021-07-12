@@ -166,6 +166,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Data.csproj": {
+                "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Data\\MVC.Data.csproj"
+              },
               "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Training\\MVC.Training.csproj": {
                 "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\FinalProject\\MVC.Training\\MVC.Training.csproj"
               }

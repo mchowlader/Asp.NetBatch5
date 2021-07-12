@@ -34,6 +34,7 @@
       "MVC.Web/1.0.0": {
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "7.1.0",
+          "MVC.Data": "1.0.0",
           "MVC.Training": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "5.0.7",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.7",

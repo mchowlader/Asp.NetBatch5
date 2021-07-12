@@ -1,9 +1,10 @@
-﻿using System;
+﻿using MVC.Data;
+using System;
 using System.Collections.Generic;
 
 namespace MVC.Traning.Entities
 {
-    public class Course
+    public class Course : IEntity<int>
     {
         public int Id { get; set; }
         public string Title { get; set; }

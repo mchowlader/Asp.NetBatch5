@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MVC.Training.Contexts;
 using MVC.Traning.Entities;
 using System;
 
 namespace MVC.Traning.Contexts
 {
-    public class TrainingDbContext : DbContext
+    public class TrainingDbContext :DbContext, ITrainingDbContext
     {
         private readonly string _connectionString;
 

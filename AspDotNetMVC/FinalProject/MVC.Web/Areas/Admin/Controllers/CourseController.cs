@@ -12,6 +12,25 @@ namespace MVC.Web.Areas.Admin.Controllers
     {
         public IActionResult Index()
         {
+          
+            return View();
+        }
+
+        public IActionResult CreateCourse()
+        {
+            var model = new CreateCourseModel();
+            return View(model);
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult CreateCourse(CreateCourseModel model)
+        {
+            model.CreateCourse();
+            return View(model);
+        }
+
+        public IActionResult CourseTable()
+        {
             var model = new CourseListModel();
             model.LoadModelData();
             return View(model);

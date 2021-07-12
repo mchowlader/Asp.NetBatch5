@@ -13,14 +13,15 @@ namespace MVC.Training.UnitOfWorks
 {
     public class TrainingUnitOfWork : UnitOfWork, ITrainingUnitOfWork
     {
-        public IRepository<Student> studentRepository { get; private set; }
-        public IRepository<Course> courseRepository { get; private set; }
-        public TrainingUnitOfWork(TrainingDbContext context)
+        public IStudentRepository StudentRepository { get; private set; }
+        public ICourseRepository CourseRepository { get; private set; }
+        public TrainingUnitOfWork(TrainingDbContext context,
+            IStudentRepository studentRepository,
+            ICourseRepository courseRepository)
             : base(context)
         {
-            studentRepository = new StudentRepository(context);
-
-            courseRepository = new CourseRepository(context);
+            StudentRepository = studentRepository;
+            CourseRepository = courseRepository;
         }
     }
 }

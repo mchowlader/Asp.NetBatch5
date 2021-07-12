@@ -461,3 +461,5 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debu
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\MVC.Training.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\MVC.Data.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\bin\Debug\net5.0\MVC.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Course\CreateCourse.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\FinalProject\MVC.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Course\CourseTable.cshtml.g.cs
