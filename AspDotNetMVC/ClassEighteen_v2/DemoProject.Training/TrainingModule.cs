@@ -37,6 +37,8 @@ namespace DemoProject.Training
                 .InstancePerLifetimeScope();    
             builder.RegisterType<CourseRepository>().As<ICourseRepository>()
                 .InstancePerLifetimeScope();
+            builder.RegisterType<StudentService>().As<IStudentService>()
+                .InstancePerLifetimeScope();
 
             base.Load(builder);
         }

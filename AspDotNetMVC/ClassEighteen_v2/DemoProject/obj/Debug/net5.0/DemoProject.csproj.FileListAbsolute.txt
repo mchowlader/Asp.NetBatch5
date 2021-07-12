@@ -872,3 +872,6 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject\
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Course\Enroll.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Course\CreateCourse.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Course\DataTable.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Student\StudentRegistration.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Student\StudentData.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\ClassEighteen_v2\DemoProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Student\Index.cshtml.g.cs
