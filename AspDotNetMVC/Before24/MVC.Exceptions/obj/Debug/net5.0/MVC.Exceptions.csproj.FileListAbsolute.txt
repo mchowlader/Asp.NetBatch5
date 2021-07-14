@@ -1,0 +1,12 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Exceptions\bin\Debug\net5.0\MVC.Exceptions.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Exceptions\bin\Debug\net5.0\MVC.Exceptions.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Exceptions\bin\Debug\net5.0\ref\MVC.Exceptions.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Exceptions\bin\Debug\net5.0\MVC.Exceptions.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Exceptions\obj\Debug\net5.0\MVC.Exceptions.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Exceptions\obj\Debug\net5.0\MVC.Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Exceptions\obj\Debug\net5.0\MVC.Exceptions.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Exceptions\obj\Debug\net5.0\MVC.Exceptions.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Exceptions\obj\Debug\net5.0\MVC.Exceptions.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Exceptions\obj\Debug\net5.0\MVC.Exceptions.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Exceptions\obj\Debug\net5.0\ref\MVC.Exceptions.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Exceptions\obj\Debug\net5.0\MVC.Exceptions.pdb

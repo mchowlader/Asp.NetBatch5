@@ -1,0 +1,25 @@
+2021-07-14 01:11:54.275 +06:00 [INF] Application Starting up
+2021-07-14 01:12:23.850 +06:00 [ERR] Course create failed
+MVC.Exceptions.DuplicateTitleException: Title already exits
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Training\Services\CourseService.cs:line 29
+   at MVC.Web.Areas.Admin.Models.CreateCourseModelcs.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\Areas\Admin\Models\CreateCourseModelcs.cs:line 34
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Form(CreateCourseModelcs model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 40
+2021-07-14 01:13:41.150 +06:00 [ERR] Course create failed
+MVC.Exceptions.InvalidDateException: Invalid Date
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Training\Services\CourseService.cs:line 31
+   at MVC.Web.Areas.Admin.Models.CreateCourseModelcs.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\Areas\Admin\Models\CreateCourseModelcs.cs:line 34
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Form(CreateCourseModelcs model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 40
+2021-07-14 01:15:14.422 +06:00 [INF] Application Starting up
+2021-07-14 01:16:11.422 +06:00 [ERR] Course create failed
+MVC.Exceptions.InvalidParameterException: Invalid Course
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Training\Services\CourseService.cs:line 27
+   at MVC.Web.Areas.Admin.Models.CreateCourseModelcs.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\Areas\Admin\Models\CreateCourseModelcs.cs:line 34
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Form(CreateCourseModelcs model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 40
+2021-07-14 01:18:07.607 +06:00 [INF] Application Starting up
+2021-07-14 01:18:29.033 +06:00 [ERR] Course create failed
+MVC.Exceptions.DuplicateTitleException: Title already exits
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Training\Services\CourseService.cs:line 29
+   at MVC.Web.Areas.Admin.Models.CreateCourseModelcs.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\Areas\Admin\Models\CreateCourseModelcs.cs:line 34
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Form(CreateCourseModelcs model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 42
+2021-07-14 01:20:04.143 +06:00 [INF] Application Starting up
+2021-07-14 01:24:04.782 +06:00 [INF] Application Starting up
