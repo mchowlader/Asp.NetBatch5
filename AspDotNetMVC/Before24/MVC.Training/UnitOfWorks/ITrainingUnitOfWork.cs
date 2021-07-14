@@ -10,7 +10,7 @@ namespace MVC.Training.UnitOfWorks
 {
     public interface ITrainingUnitOfWork : IUnitofWork
     {
-        //IStudentRepository Students { get; set; }
+        IStudentRepository Students { get; set; }
         ICourseRepository Courses { get; set; }
     }
 }

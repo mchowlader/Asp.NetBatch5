@@ -23,7 +23,7 @@ namespace MVC.Training.Services
 
         public void CreateCourse(Course course)
         {
-            if (course.Title == null)
+            if (course == null)
                 throw new InvalidParameterException("Invalid Course");
             if (IsTitleAlreadyUsed(course.Title))
                 throw new DuplicateTitleException("Title already exits");

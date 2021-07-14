@@ -16,10 +16,12 @@ namespace MVC.Training.UnitOfWorks
         public ICourseRepository Courses { get; set; }
 
         public TrainingUnitOfWork(TrainingDbContext context,
-            ICourseRepository courses)
+            ICourseRepository courses,
+            IStudentRepository students)
             : base(context) 
         {
             Courses = courses;
+            Students = students;
         }
 
     }

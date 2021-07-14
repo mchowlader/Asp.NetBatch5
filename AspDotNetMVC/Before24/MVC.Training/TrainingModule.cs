@@ -31,10 +31,15 @@ namespace MVC.Training
                 .InstancePerLifetimeScope();
             builder.RegisterType<CourseRepository>().As<ICourseRepository>()
                 .InstancePerLifetimeScope();
+            builder.RegisterType<StudentRepository>().As<IStudentRepository>()
+                .InstancePerLifetimeScope();
             builder.RegisterType<TrainingUnitOfWork>().As<ITrainingUnitOfWork>()
                 .InstancePerLifetimeScope();
             builder.RegisterType<TrainingDbContext>().As<ITrainingDbContext>()
                .InstancePerLifetimeScope();
+            builder.RegisterType<StudentService>().As<IStudentService>()
+              .InstancePerLifetimeScope();
+
 
             base.Load(builder);
         }
