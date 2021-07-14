@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\bin\Debug\net5.0\SelectionSort.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\bin\Debug\net5.0\SelectionSort.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\bin\Debug\net5.0\SelectionSort.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\bin\Debug\net5.0\SelectionSort.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\bin\Debug\net5.0\SelectionSort.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\bin\Debug\net5.0\ref\SelectionSort.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\bin\Debug\net5.0\SelectionSort.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\obj\Debug\net5.0\SelectionSort.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\obj\Debug\net5.0\SelectionSort.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\obj\Debug\net5.0\SelectionSort.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\obj\Debug\net5.0\SelectionSort.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\obj\Debug\net5.0\SelectionSort.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\obj\Debug\net5.0\SelectionSort.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\obj\Debug\net5.0\ref\SelectionSort.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\obj\Debug\net5.0\SelectionSort.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\DataStructure\SelectionSort\obj\Debug\net5.0\SelectionSort.genruntimeconfig.cache
