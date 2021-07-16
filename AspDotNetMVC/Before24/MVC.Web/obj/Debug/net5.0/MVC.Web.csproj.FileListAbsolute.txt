@@ -472,3 +472,7 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\bin\Debug\ne
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\bin\Debug\net5.0\MVC.Exceptions.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Student\Data.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Student\Form.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\bin\Debug\net5.0\MailKit.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\bin\Debug\net5.0\MimeKit.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\bin\Debug\net5.0\Serilog.Sinks.Email.dll

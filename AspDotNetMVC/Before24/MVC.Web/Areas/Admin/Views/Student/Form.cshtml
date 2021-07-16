@@ -28,6 +28,7 @@
     <!-- /.card-header -->
     <!-- form start -->
     <form class="form-horizontal" asp-action="Form" asp-controller="Student" method="post" asp-antiforgery="true">
+        <div asp-validation-summary="All" class="text-danger"></div>
         <div class="card-body">
             <div class="form-group row">
                 <label asp-for="Name" class="col-sm-2 col-form-label">Name</label>

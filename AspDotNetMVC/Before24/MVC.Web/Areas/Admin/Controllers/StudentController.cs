@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using MVC.Web.Areas.Admin.Models;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,12 @@ namespace MVC.Web.Areas.Admin.Controllers
     [Area("Admin")]
     public class StudentController : Controller
     {
+        private readonly ILogger<StudentController> _logger;
+
+        public StudentController(ILogger<StudentController> logger)
+        {
+            _logger = logger;
+        }
         public IActionResult Index()
         {
             return View();
@@ -31,7 +38,19 @@ namespace MVC.Web.Areas.Admin.Controllers
         [HttpPost,ValidateAntiForgeryToken]
         public IActionResult Form(CreateStudentModel model)
         {
-            model.CreateStudent();
+            if(ModelState.IsValid)
+            {
+                try
+                {
+                    model.CreateStudent();
+                }
+                catch(Exception ex)
+                {
+                    ModelState.AddModelError("", "Failed to create Student");
+                    _logger.LogError(ex, "Create course failed");
+                }
+            }
+            
             return View(model);
         }
 
