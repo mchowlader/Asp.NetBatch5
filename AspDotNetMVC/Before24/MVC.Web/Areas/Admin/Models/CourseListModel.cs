@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Autofac;
 using MVC.Training.BusinessObjects;
+using MVC.Web.Models;
 
 namespace MVC.Web.Areas.Admin.Models
 {
@@ -25,5 +26,32 @@ namespace MVC.Web.Areas.Admin.Models
         {
             Courses = _courseService.GetAllCourses();
         }
+
+        internal object GetCourses(DataTablesAjaxRequestModel tablesModel)
+        {
+            var data = _courseService.GetCourses(
+                
+                tablesModel.PageIndex,
+                tablesModel.PageSize,
+                tablesModel.SearchText,
+                tablesModel.GetSortText(new string[] { "Titel", "Fees", "StartDate"}));
+
+            return new
+            {
+                recordsTotal = data.total,
+                recordsFiltered = data.totalDisplay,
+                data = (from record in data.records
+                        select new string[]
+                        {
+                            record.Title,
+                            record.Fees.ToString(),
+                            record.StartDate.ToString(),
+                            record.Id.ToString()
+                        }
+                      ).ToArray()
+            };
+
+        }
     }
 }
+//FormanImageUrl(record.Image?.firstDefault()?.Location

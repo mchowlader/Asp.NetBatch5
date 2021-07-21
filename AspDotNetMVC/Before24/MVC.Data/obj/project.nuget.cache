@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6MnEj7TCXS+xD9bNBr2TOuhAezKQIM0BplzpsDaXgnUPHwO+pcIXI13/Qdnj5bbgZU7HLerDKDprqR7fFpiuaA==",
+  "dgSpecHash": "HS/nowdogeiHJvnlUuM56hr4yqatozwfesn89iXNPRFLVzOlyvp9TLO5j2jTT2WaMhAZyr383B4ZtJgEWYgYpA==",
   "success": true,
   "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Before24\\MVC.Data\\MVC.Data.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,8 @@
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\lenovo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+    "C:\\Users\\lenovo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\system.linq.dynamic.core\\1.2.11\\system.linq.dynamic.core.1.2.11.nupkg.sha512"
   ],
   "logs": []
 }

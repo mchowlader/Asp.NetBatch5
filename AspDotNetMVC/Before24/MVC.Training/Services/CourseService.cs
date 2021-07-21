@@ -60,6 +60,22 @@ namespace MVC.Training.Services
             return courseList;
         }
 
+        public (IList<Course> records, int total, int totalDisplay) GetCourses(int pageIndex, int pageSize, 
+            string searchText, string sortText)
+        {
+            var courseData = _trainingUnitOfWork.Courses.GetDynamic(x => x.Title == searchText, sortText, 
+                string.Empty, pageIndex, pageSize);
+            var resultData = (from course in courseData.data
+                              select new Course
+                              {
+                                  Id = course.Id,
+                                  Title = course.Title,
+                                  Fees = course.Fees,
+                                  StartDate = course.StartDate
+                              }).ToList();
+            return (resultData, courseData.total, courseData.totalDisplay);
+        }
+
         private bool IsTitleAlreadyUsed(string title) => 
             _trainingUnitOfWork.Courses.GetCount(x => x.Title == title) > 0;
         private bool IsValidstartDate(DateTime dateTime) => 

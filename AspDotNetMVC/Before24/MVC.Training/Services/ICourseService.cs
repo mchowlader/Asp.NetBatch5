@@ -11,5 +11,7 @@ namespace MVC.Training.Services
     {
         IList<Course> GetAllCourses();
         void CreateCourse(Course course);
+        (IList<Course>records, int total, int totalDisplay) GetCourses
+            (int pageIndex, int pageSize, string searchText, string sortText);
     }
 }

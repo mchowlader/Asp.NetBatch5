@@ -476,3 +476,4 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\bin\Debug\ne
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\bin\Debug\net5.0\MimeKit.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\bin\Debug\net5.0\BouncyCastle.Crypto.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\bin\Debug\net5.0\Serilog.Sinks.Email.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before24\MVC.Web\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll

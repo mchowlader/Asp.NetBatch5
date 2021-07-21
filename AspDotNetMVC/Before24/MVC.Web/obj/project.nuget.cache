@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3U/Z4zA/gbUSNTI/Csn+aL3mvRFWwBK84EZPAmppv6Dw67Y7ZWExC8hKmL25J4VfRgIvDYNZhzpRjmW2ETnL2w==",
+  "dgSpecHash": "xblnOhhSo1d3DehnlFVH4iJMMnEan3Tz5gICDZQRPaHmWfg5P1NCHzYMMhriWOAIUPCXZ1sqSYEgWOw7t3/W6w==",
   "success": true,
   "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Before24\\MVC.Web\\MVC.Web.csproj",
   "expectedPackageFiles": [
@@ -140,6 +140,7 @@
     "C:\\Users\\lenovo\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\system.linq.dynamic.core\\1.2.11\\system.linq.dynamic.core.1.2.11.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",

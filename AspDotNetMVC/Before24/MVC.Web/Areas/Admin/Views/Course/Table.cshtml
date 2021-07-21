@@ -38,24 +38,15 @@
                                     <th>Title</th>
                                     <th>Fees</th>
                                     <th>Start Date</th>
+                                    <th>ID</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                @{ foreach (var item in Model.Courses)
-                                    {
-                                        <tr>
-                                            <td>@item.Title</td>
-                                            <td>@item.Fees</td>
-                                            <td>@item.StartDate</td>
-                                        </tr> 
-                                        }
-                                    }
-                             </tbody>
                             <tfoot>
                                 <tr>
                                     <th>Title</th>
                                     <th>Fees</th>
                                     <th>Start Date</th>
+                                    <th>ID</th>
                                 </tr>
                             </tfoot>
                         </table>
@@ -72,7 +63,11 @@
     <script src="/Admin/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
     <script>
         $(function () {
-            $('#Course').DataTable();
+            $('#Course').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": "/Admin/Course/GetCourse"
+            });
         });
     </script>
 }

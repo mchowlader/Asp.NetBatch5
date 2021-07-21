@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PAOZUbtSFmqCHiGsXOYibgNcwpSrjoPPoQWtkiHG0RIWbY6zOot6iSX9tJ0fLWIbrMpW7PLDbLYsm6sJ8/KWIw==",
+  "dgSpecHash": "p4rPe5U4Bv9dIuBDbRdiShdV3KQrxHF8yHvviHsUsp1EnOTSPAGeFeMRngjjcSOQc8YxNFDmOFqRVwO/gasG3Q==",
   "success": true,
   "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Before24\\MVC.Training\\MVC.Training.csproj",
   "expectedPackageFiles": [
@@ -58,6 +58,7 @@
     "C:\\Users\\lenovo\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\system.linq.dynamic.core\\1.2.11\\system.linq.dynamic.core.1.2.11.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace MVC.Data
 {
-    public interface IEntity<T>
+    public interface IEntity<Tkey>
     {
-        T Id { get; set; }
+        Tkey Id { get; set; }
     }
 }

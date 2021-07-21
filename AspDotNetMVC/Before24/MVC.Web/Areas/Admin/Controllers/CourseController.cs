@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MVC.Web.Areas.Admin.Models;
+using MVC.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,15 @@ namespace MVC.Web.Areas.Admin.Controllers
             model.LoadModelData();
             return View(model);
         }
+
+        public JsonResult GetCourseData()
+        {
+            var dataTablesModel = new DataTablesAjaxRequestModel(Request);
+            var model = new CourseListModel();
+            var data = model.GetCourses(dataTablesModel);
+            return Json(data);
+        }
+
         public IActionResult Form()
         {
             var model = new CreateCourseModelcs();
