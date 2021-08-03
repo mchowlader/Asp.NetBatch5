@@ -1,0 +1,17 @@
+2021-08-03 10:14:38.702 +06:00 [INF] Application Starting up
+2021-08-03 10:18:04.606 +06:00 [INF] Application Starting up
+2021-08-03 10:20:32.499 +06:00 [INF] Application Starting up
+2021-08-03 10:23:22.671 +06:00 [INF] Application Starting up
+2021-08-03 11:07:26.704 +06:00 [INF] Application Starting up
+2021-08-03 11:23:10.803 +06:00 [ERR] Update Product Failed
+TicketBookingSystem.Booking.Exceptions.DuplicateIdException: Product name already used in other Product
+   at TicketBookingSystem.Booking.Sevices.TicketService.UpdateTicket(Ticket ticket) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 88
+   at TicketBookingSystem.Web.Areas.Ticket.Models.EditTicketModel.Update() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\EditTicketModel.cs:line 55
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Edit(EditTicketModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 78
+2021-08-03 11:23:34.006 +06:00 [ERR] Update Product Failed
+TicketBookingSystem.Booking.Exceptions.DuplicateIdException: Product name already used in other Product
+   at TicketBookingSystem.Booking.Sevices.TicketService.UpdateTicket(Ticket ticket) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 88
+   at TicketBookingSystem.Web.Areas.Ticket.Models.EditTicketModel.Update() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\EditTicketModel.cs:line 55
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Edit(EditTicketModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 78
+2021-08-03 17:08:19.232 +06:00 [INF] Application Starting up
+2021-08-03 17:10:40.804 +06:00 [INF] Application Starting up

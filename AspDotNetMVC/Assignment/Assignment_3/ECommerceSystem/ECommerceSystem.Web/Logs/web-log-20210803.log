@@ -1,0 +1,6 @@
+2021-08-03 16:20:35.908 +06:00 [INF] Application Starting up
+2021-08-03 16:26:48.602 +06:00 [ERR] Update Product Failed
+ECommerceSystem.Item.Exceptions.DuplicateNameException: Product name already used in other Product
+   at ECommerceSystem.Item.Services.ProductService.UpdateProduct(Product product) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\ECommerceSystem\ECommerceSystem.Item\Services\ProductService.cs:line 86
+   at ECommerceSystem.Web.Areas.Admin.Models.EditProductModel.Update() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\ECommerceSystem\ECommerceSystem.Web\Areas\Admin\Models\EditProductModel.cs:line 51
+   at ECommerceSystem.Web.Areas.Admin.Controllers.ProductController.Edit(EditProductModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\ECommerceSystem\ECommerceSystem.Web\Areas\Admin\Controllers\ProductController.cs:line 80

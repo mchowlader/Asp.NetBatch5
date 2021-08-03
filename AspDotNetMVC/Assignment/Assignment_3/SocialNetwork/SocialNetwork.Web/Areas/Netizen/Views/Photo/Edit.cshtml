@@ -1,0 +1,73 @@
+﻿@model EditPhotoModel
+@section Styles
+{
+
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Photo</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Edit</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- Horizontal Form -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Photo Edit</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form class="form-horizontal" asp-action="Edit" asp-controller="Photo" method="post" asp-antiforgery="true">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id"/>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label asp-for="MemberId" class="col-sm-2 col-form-label">Member Id</label>
+                                <div class="col-sm-10">
+                                    <input asp-for="MemberId" type="number" class="form-control" id="MemberId" placeholder="Member Id">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label asp-for="PhotoFileName" class="col-sm-2 col-form-label">File Name</label>
+                                <div class="col-sm-10">
+                                    <input asp-for="PhotoFileName" type="text" class="form-control" id="PhotoFileName" placeholder="upload name">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-info">Update</button>
+                            <button asp-action="Data" asp-controller="Photo" type="submit" class="btn btn-default float-right">Cancel</button>
+                        </div>
+                        <!-- /.card-footer -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+@section Scripts
+{
+
+}
+
+

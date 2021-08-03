@@ -1,0 +1,18 @@
+2021-08-03 11:34:21.176 +06:00 [INF] Application Starting up
+2021-08-03 11:47:40.752 +06:00 [ERR] Failed
+System.InvalidOperationException: Invalid member
+   at SocialNetwork.Account.Services.PhotoService.CreatePhoto(Photo photo) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\SocialNetwork\SocialNetwork.Account\Services\PhotoService.cs:line 30
+   at SocialNetwork.Web.Areas.Netizen.Models.CreatePhotoModel.CreatePhoto() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Models\CreatePhotoModel.cs:line 38
+   at SocialNetwork.Web.Areas.Netizen.Controllers.PhotoController.Create(CreatePhotoModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Controllers\PhotoController.cs:line 39
+2021-08-03 12:10:35.781 +06:00 [INF] Application Starting up
+2021-08-03 12:11:42.636 +06:00 [ERR] Failed
+System.InvalidOperationException: Couldn't change user id
+   at SocialNetwork.Account.Services.PhotoService.UpdatePhoto(Photo photo) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\SocialNetwork\SocialNetwork.Account\Services\PhotoService.cs:line 78
+   at SocialNetwork.Web.Areas.Netizen.Models.EditPhotoModel.Update() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Models\EditPhotoModel.cs:line 49
+   at SocialNetwork.Web.Areas.Netizen.Controllers.PhotoController.Edit(EditPhotoModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Controllers\PhotoController.cs:line 77
+2021-08-03 16:52:35.517 +06:00 [INF] Application Starting up
+2021-08-03 17:02:23.508 +06:00 [ERR] Failed
+System.InvalidOperationException: Invalid member
+   at SocialNetwork.Account.Services.PhotoService.CreatePhoto(Photo photo) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\SocialNetwork\SocialNetwork.Account\Services\PhotoService.cs:line 30
+   at SocialNetwork.Web.Areas.Netizen.Models.CreatePhotoModel.CreatePhoto() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Models\CreatePhotoModel.cs:line 38
+   at SocialNetwork.Web.Areas.Netizen.Controllers.PhotoController.Create(CreatePhotoModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Controllers\PhotoController.cs:line 39

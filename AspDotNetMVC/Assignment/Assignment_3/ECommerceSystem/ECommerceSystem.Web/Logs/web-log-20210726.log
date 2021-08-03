@@ -1,0 +1,79 @@
+2021-07-26 00:07:49.486 +06:00 [INF] Application Starting up
+2021-07-26 00:20:54.177 +06:00 [INF] Application Starting up
+2021-07-26 00:21:58.335 +06:00 [INF] Application Starting up
+2021-07-26 00:23:31.887 +06:00 [INF] Application Starting up
+2021-07-26 00:25:12.900 +06:00 [INF] Application Starting up
+2021-07-26 00:37:44.003 +06:00 [INF] Application Starting up
+2021-07-26 00:40:17.299 +06:00 [INF] Application Starting up
+2021-07-26 00:46:06.660 +06:00 [INF] Application Starting up
+2021-07-26 00:47:22.990 +06:00 [INF] Application Starting up
+2021-07-26 00:48:33.985 +06:00 [INF] Application Starting up
+2021-07-26 01:34:53.717 +06:00 [INF] Application Starting up
+2021-07-26 01:52:50.904 +06:00 [INF] Application Starting up
+2021-07-26 01:56:15.475 +06:00 [INF] Application Starting up
+2021-07-26 01:58:49.322 +06:00 [INF] Application Starting up
+2021-07-26 02:00:03.072 +06:00 [INF] Application Starting up
+2021-07-26 02:01:52.742 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+ECommerceSystem.Item.Exceptions.DuplicateNameException: Product name already used in other Product
+   at ECommerceSystem.Item.Services.ProductService.UpdateProduct(Product product) in J:\ASP\Assignment_3\ECommerceSystem\ECommerceSystem.Item\Services\ProductService.cs:line 100
+   at ECommerceSystem.Web.Areas.Admin.Models.EditProductModel.Update() in J:\ASP\Assignment_3\ECommerceSystem\ECommerceSystem.Web\Areas\Admin\Models\EditProductModel.cs:line 51
+   at ECommerceSystem.Web.Areas.Admin.Controllers.ProductController.Edit(EditProductModel model) in J:\ASP\Assignment_3\ECommerceSystem\ECommerceSystem.Web\Areas\Admin\Controllers\ProductController.cs:line 76
+   at lambda_method635(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-26 02:01:54.840 +06:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.Views.DatabaseErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseDeveloperPageExceptionFilter.HandleExceptionAsync(ErrorContext errorContext, Func`2 next)
+2021-07-26 02:04:48.572 +06:00 [INF] Application Starting up
+2021-07-26 02:05:16.352 +06:00 [ERR] Update Product Failed
+ECommerceSystem.Item.Exceptions.DuplicateNameException: Product name already used in other Product
+   at ECommerceSystem.Item.Services.ProductService.UpdateProduct(Product product) in J:\ASP\Assignment_3\ECommerceSystem\ECommerceSystem.Item\Services\ProductService.cs:line 100
+   at ECommerceSystem.Web.Areas.Admin.Models.EditProductModel.Update() in J:\ASP\Assignment_3\ECommerceSystem\ECommerceSystem.Web\Areas\Admin\Models\EditProductModel.cs:line 51
+   at ECommerceSystem.Web.Areas.Admin.Controllers.ProductController.Edit(EditProductModel model) in J:\ASP\Assignment_3\ECommerceSystem\ECommerceSystem.Web\Areas\Admin\Controllers\ProductController.cs:line 80
+2021-07-26 12:19:07.380 +06:00 [INF] Application Starting up
+2021-07-26 12:26:44.864 +06:00 [INF] Application Starting up
+2021-07-26 13:24:00.407 +06:00 [INF] Application Starting up
+2021-07-26 13:27:18.489 +06:00 [INF] Application Starting up
+2021-07-26 13:28:45.040 +06:00 [INF] Application Starting up
+2021-07-26 13:30:19.199 +06:00 [INF] Application Starting up
+2021-07-26 13:32:02.878 +06:00 [INF] Application Starting up
+2021-07-26 13:32:52.883 +06:00 [INF] Application Starting up
+2021-07-26 13:34:01.693 +06:00 [INF] Application Starting up
+2021-07-26 13:58:05.079 +06:00 [INF] Application Starting up
+2021-07-26 14:02:43.229 +06:00 [INF] Application Starting up
+2021-07-26 14:04:37.068 +06:00 [INF] Application Starting up
+2021-07-26 14:12:13.534 +06:00 [INF] Application Starting up
+2021-07-26 14:15:50.301 +06:00 [INF] Application Starting up
+2021-07-26 14:22:41.363 +06:00 [INF] Application Starting up
+2021-07-26 14:27:41.185 +06:00 [INF] Application Starting up
+2021-07-26 14:30:34.250 +06:00 [INF] Application Starting up
+2021-07-26 14:34:35.506 +06:00 [INF] Application Starting up
+2021-07-26 14:36:40.075 +06:00 [INF] Application Starting up
+2021-07-26 19:48:12.083 +06:00 [INF] Application Starting up
+2021-07-26 19:49:45.250 +06:00 [INF] Application Starting up

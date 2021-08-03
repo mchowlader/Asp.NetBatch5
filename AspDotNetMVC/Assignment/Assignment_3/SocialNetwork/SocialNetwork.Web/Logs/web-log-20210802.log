@@ -1,0 +1,66 @@
+2021-08-02 00:27:40.110 +06:00 [INF] Application Starting up
+2021-08-02 00:28:00.788 +06:00 [INF] Application Starting up
+2021-08-02 00:30:29.189 +06:00 [INF] Application Starting up
+2021-08-02 10:52:39.737 +06:00 [INF] Application Starting up
+2021-08-02 10:53:45.386 +06:00 [ERR] Failed
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Photos_Members_MemberId". The conflict occurred in database "Assignment_3", table "dbo.Members", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:6bf896fe-3249-48c4-ae86-3cd8c42504b0
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at SocialNetwork.Data.UnitOfWork.Save() in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Data\UnitOfWork.cs:line 16
+   at SocialNetwork.Account.Services.PhotoService.UpdatePhoto(Photo photo) in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Account\Services\PhotoService.cs:line 86
+   at SocialNetwork.Web.Areas.Netizen.Models.EditPhotoModel.Update() in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Models\EditPhotoModel.cs:line 49
+   at SocialNetwork.Web.Areas.Netizen.Controllers.PhotoController.Edit(EditPhotoModel model) in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Controllers\PhotoController.cs:line 77
+2021-08-02 10:56:34.514 +06:00 [ERR] Failed
+System.InvalidOperationException: Invalid member
+   at SocialNetwork.Account.Services.PhotoService.CreatePhoto(Photo photo) in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Account\Services\PhotoService.cs:line 30
+   at SocialNetwork.Web.Areas.Netizen.Models.CreatePhotoModel.CreatePhoto() in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Models\CreatePhotoModel.cs:line 38
+   at SocialNetwork.Web.Areas.Netizen.Controllers.PhotoController.Create(CreatePhotoModel model) in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Controllers\PhotoController.cs:line 39
+2021-08-02 10:57:38.980 +06:00 [ERR] Failed
+System.InvalidOperationException: Invalid member
+   at SocialNetwork.Account.Services.PhotoService.CreatePhoto(Photo photo) in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Account\Services\PhotoService.cs:line 30
+   at SocialNetwork.Web.Areas.Netizen.Models.CreatePhotoModel.CreatePhoto() in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Models\CreatePhotoModel.cs:line 38
+   at SocialNetwork.Web.Areas.Netizen.Controllers.PhotoController.Create(CreatePhotoModel model) in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Controllers\PhotoController.cs:line 39
+2021-08-02 11:05:22.749 +06:00 [INF] Application Starting up
+2021-08-02 11:06:49.159 +06:00 [ERR] Failed
+System.InvalidOperationException: Invalid member
+   at SocialNetwork.Account.Services.PhotoService.CreatePhoto(Photo photo) in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Account\Services\PhotoService.cs:line 30
+   at SocialNetwork.Web.Areas.Netizen.Models.CreatePhotoModel.CreatePhoto() in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Models\CreatePhotoModel.cs:line 38
+   at SocialNetwork.Web.Areas.Netizen.Controllers.PhotoController.Create(CreatePhotoModel model) in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Controllers\PhotoController.cs:line 39
+2021-08-02 11:08:00.379 +06:00 [ERR] Failed
+System.InvalidOperationException: Invalid member
+   at SocialNetwork.Account.Services.PhotoService.CreatePhoto(Photo photo) in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Account\Services\PhotoService.cs:line 30
+   at SocialNetwork.Web.Areas.Netizen.Models.CreatePhotoModel.CreatePhoto() in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Models\CreatePhotoModel.cs:line 38
+   at SocialNetwork.Web.Areas.Netizen.Controllers.PhotoController.Create(CreatePhotoModel model) in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Controllers\PhotoController.cs:line 39
+2021-08-02 11:10:14.029 +06:00 [INF] Application Starting up
+2021-08-02 11:11:45.922 +06:00 [ERR] Failed
+System.InvalidOperationException: Invalid member
+   at SocialNetwork.Account.Services.PhotoService.CreatePhoto(Photo photo) in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Account\Services\PhotoService.cs:line 30
+   at SocialNetwork.Web.Areas.Netizen.Models.CreatePhotoModel.CreatePhoto() in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Models\CreatePhotoModel.cs:line 38
+   at SocialNetwork.Web.Areas.Netizen.Controllers.PhotoController.Create(CreatePhotoModel model) in J:\ASP\Assignment_3\SocialNetwork\SocialNetwork.Web\Areas\Netizen\Controllers\PhotoController.cs:line 39

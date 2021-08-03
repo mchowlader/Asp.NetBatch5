@@ -1,0 +1,79 @@
+2021-07-29 00:42:19.778 +06:00 [INF] Application Starting up
+2021-07-29 00:57:55.967 +06:00 [INF] Application Starting up
+2021-07-29 00:59:12.825 +06:00 [INF] Application Starting up
+2021-07-29 01:03:35.060 +06:00 [INF] Application Starting up
+2021-07-29 01:08:43.509 +06:00 [INF] Application Starting up
+2021-07-29 01:23:35.400 +06:00 [ERR] Failed to booking ticket
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at TicketBookingSystem.Booking.Sevices.TicketService.CreateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 28
+   at TicketBookingSystem.Web.Areas.Ticket.Models.CreateTicketModel.CreateTicket() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\CreateTicketModel.cs:line 41
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Create(CreateTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 37
+2021-07-29 01:23:42.936 +06:00 [ERR] Failed to booking ticket
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at TicketBookingSystem.Booking.Sevices.TicketService.CreateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 28
+   at TicketBookingSystem.Web.Areas.Ticket.Models.CreateTicketModel.CreateTicket() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\CreateTicketModel.cs:line 41
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Create(CreateTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 37
+2021-07-29 01:23:47.739 +06:00 [ERR] Failed to booking ticket
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at TicketBookingSystem.Booking.Sevices.TicketService.CreateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 28
+   at TicketBookingSystem.Web.Areas.Ticket.Models.CreateTicketModel.CreateTicket() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\CreateTicketModel.cs:line 41
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Create(CreateTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 37
+2021-07-29 01:23:51.572 +06:00 [ERR] Failed to booking ticket
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at TicketBookingSystem.Booking.Sevices.TicketService.CreateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 28
+   at TicketBookingSystem.Web.Areas.Ticket.Models.CreateTicketModel.CreateTicket() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\CreateTicketModel.cs:line 41
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Create(CreateTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 37
+2021-07-29 01:23:55.550 +06:00 [ERR] Failed to booking ticket
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at TicketBookingSystem.Booking.Sevices.TicketService.CreateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 28
+   at TicketBookingSystem.Web.Areas.Ticket.Models.CreateTicketModel.CreateTicket() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\CreateTicketModel.cs:line 41
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Create(CreateTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 37
+2021-07-29 01:23:59.549 +06:00 [ERR] Failed to booking ticket
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at TicketBookingSystem.Booking.Sevices.TicketService.CreateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 28
+   at TicketBookingSystem.Web.Areas.Ticket.Models.CreateTicketModel.CreateTicket() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\CreateTicketModel.cs:line 41
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Create(CreateTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 37
+2021-07-29 01:24:33.482 +06:00 [ERR] Failed to booking ticket
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at TicketBookingSystem.Booking.Sevices.TicketService.CreateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 28
+   at TicketBookingSystem.Web.Areas.Ticket.Models.CreateTicketModel.CreateTicket() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\CreateTicketModel.cs:line 41
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Create(CreateTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 37
+2021-07-29 01:25:28.135 +06:00 [ERR] Failed to booking ticket
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at TicketBookingSystem.Booking.Sevices.TicketService.CreateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 28
+   at TicketBookingSystem.Web.Areas.Ticket.Models.CreateTicketModel.CreateTicket() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\CreateTicketModel.cs:line 41
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Create(CreateTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 37
+2021-07-29 01:25:48.386 +06:00 [ERR] Failed to booking ticket
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at TicketBookingSystem.Booking.Sevices.TicketService.CreateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 28
+   at TicketBookingSystem.Web.Areas.Ticket.Models.CreateTicketModel.CreateTicket() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\CreateTicketModel.cs:line 41
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Create(CreateTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 37
+2021-07-29 01:30:58.249 +06:00 [ERR] Failed to booking ticket
+System.InvalidOperationException: Operation is not valid due to the current state of the object.
+   at TicketBookingSystem.Booking.Sevices.TicketService.CreateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 28
+   at TicketBookingSystem.Web.Areas.Ticket.Models.CreateTicketModel.CreateTicket() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\CreateTicketModel.cs:line 41
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Create(CreateTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 37
+2021-07-29 01:33:35.946 +06:00 [INF] Application Starting up
+2021-07-29 01:35:23.360 +06:00 [INF] Application Starting up
+2021-07-29 01:36:45.445 +06:00 [INF] Application Starting up
+2021-07-29 01:43:47.494 +06:00 [INF] Application Starting up
+2021-07-29 01:47:44.250 +06:00 [ERR] Update Product Failed
+TicketBookingSystem.Booking.Exceptions.DuplicateIdException: Product name already used in other Product
+   at TicketBookingSystem.Booking.Sevices.TicketService.UpdateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 88
+   at TicketBookingSystem.Web.Areas.Ticket.Models.EditTicketModel.Update() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\EditTicketModel.cs:line 55
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Edit(EditTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 78
+2021-07-29 01:51:03.903 +06:00 [ERR] Update Product Failed
+TicketBookingSystem.Booking.Exceptions.DuplicateIdException: Product name already used in other Product
+   at TicketBookingSystem.Booking.Sevices.TicketService.UpdateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 88
+   at TicketBookingSystem.Web.Areas.Ticket.Models.EditTicketModel.Update() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\EditTicketModel.cs:line 55
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Edit(EditTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 78
+2021-07-29 01:51:36.925 +06:00 [ERR] Update Product Failed
+TicketBookingSystem.Booking.Exceptions.DuplicateIdException: Product name already used in other Product
+   at TicketBookingSystem.Booking.Sevices.TicketService.UpdateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 88
+   at TicketBookingSystem.Web.Areas.Ticket.Models.EditTicketModel.Update() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\EditTicketModel.cs:line 55
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Edit(EditTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 78
+2021-07-29 01:54:28.537 +06:00 [ERR] Update Product Failed
+TicketBookingSystem.Booking.Exceptions.DuplicateIdException: Product name already used in other Product
+   at TicketBookingSystem.Booking.Sevices.TicketService.UpdateTicket(Ticket ticket) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Booking\Sevices\TicketService.cs:line 88
+   at TicketBookingSystem.Web.Areas.Ticket.Models.EditTicketModel.Update() in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Models\EditTicketModel.cs:line 55
+   at TicketBookingSystem.Web.Areas.Ticket.Controllers.TicketController.Edit(EditTicketModel model) in J:\ASP\Assignment_3\TicketBookingSystem\TicketBookingSystem.Web\Areas\Ticket\Controllers\TicketController.cs:line 78
