@@ -1,0 +1,15 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Account.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Account.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Account.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Account.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Account.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\bin\Debug\net5.0\SocialMedia.Account.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\bin\Debug\net5.0\SocialMedia.Account.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\bin\Debug\net5.0\ref\SocialMedia.Account.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\bin\Debug\net5.0\SocialMedia.Account.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\bin\Debug\net5.0\SocialMedia.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\bin\Debug\net5.0\SocialMedia.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Account.csproj.CopyComplete
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Account.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\ref\SocialMedia.Account.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Account.pdb

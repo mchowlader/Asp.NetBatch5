@@ -1,0 +1,12 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Common\bin\Debug\net5.0\SocialMedia.Common.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Common\bin\Debug\net5.0\SocialMedia.Common.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Common\bin\Debug\net5.0\ref\SocialMedia.Common.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Common\bin\Debug\net5.0\SocialMedia.Common.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Common\obj\Debug\net5.0\SocialMedia.Common.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Common\obj\Debug\net5.0\SocialMedia.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Common\obj\Debug\net5.0\SocialMedia.Common.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Common\obj\Debug\net5.0\SocialMedia.Common.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Common\obj\Debug\net5.0\SocialMedia.Common.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Common\obj\Debug\net5.0\SocialMedia.Common.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Common\obj\Debug\net5.0\ref\SocialMedia.Common.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Common\obj\Debug\net5.0\SocialMedia.Common.pdb

@@ -1,0 +1,5 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Acount.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Acount.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Acount.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Acount.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Personal\SocialMedia\SocialMedia.Profile\obj\Debug\net5.0\SocialMedia.Acount.csproj.CoreCompileInputs.cache
