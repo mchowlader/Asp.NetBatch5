@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMedia.Account", "Soci
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMedia.Data", "SocialMedia.Data\SocialMedia.Data.csproj", "{0EE9B9CD-2787-43C2-8111-467FAABED9B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia.Common", "SocialMedia.Common\SocialMedia.Common.csproj", "{C0F3E452-913A-4E4D-8FF9-1541A5BA8528}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMedia.Common", "SocialMedia.Common\SocialMedia.Common.csproj", "{C0F3E452-913A-4E4D-8FF9-1541A5BA8528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia.Membership", "SocialMedia.Membership\SocialMedia.Membership.csproj", "{B2F24AD4-D97D-4DAD-B169-77292EE555E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C0F3E452-913A-4E4D-8FF9-1541A5BA8528}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0F3E452-913A-4E4D-8FF9-1541A5BA8528}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0F3E452-913A-4E4D-8FF9-1541A5BA8528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2F24AD4-D97D-4DAD-B169-77292EE555E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2F24AD4-D97D-4DAD-B169-77292EE555E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2F24AD4-D97D-4DAD-B169-77292EE555E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2F24AD4-D97D-4DAD-B169-77292EE555E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

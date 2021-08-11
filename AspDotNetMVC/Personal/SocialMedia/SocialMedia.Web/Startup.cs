@@ -12,6 +12,10 @@ using Microsoft.Extensions.Hosting;
 using SocialMedia.Account;
 using SocialMedia.Account.Contexts;
 using SocialMedia.Common;
+using SocialMedia.Membership;
+using SocialMedia.Membership.Contexts;
+using SocialMedia.Membership.Entities;
+using SocialMedia.Membership.Services;
 using SocialMedia.Web.Data;
 using System;
 using System.Collections.Generic;
@@ -43,8 +47,9 @@ namespace SocialMedia.Web
         {
             var connectionInfo = GetConnectionAndAssemblyName();
 
-            builder.RegisterModule(new AccountModule(connectionInfo.connectionString, connectionInfo.migrationsAssemblyName));
             builder.RegisterModule(new CommonModule());
+            builder.RegisterModule(new AccountModule(connectionInfo.connectionString, connectionInfo.migrationsAssemblyName));
+            builder.RegisterModule(new MembershipModule(connectionInfo.connectionString, connectionInfo.migrationsAssemblyName));
         }
 
         private(string connectionString, string migrationsAssemblyName) GetConnectionAndAssemblyName()
@@ -62,13 +67,43 @@ namespace SocialMedia.Web
             var connectionInfo = GetConnectionAndAssemblyName();
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionInfo.connectionString));
-
-            services.AddDbContext<AccountDbContext>(startup => startup.UseSqlServer(connectionInfo.connectionString,
+                options.UseSqlServer(connectionInfo.connectionString,
                 x => x.MigrationsAssembly(connectionInfo.migrationsAssemblyName)));
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddDbContext<AccountDbContext>(startup => 
+                startup.UseSqlServer(connectionInfo.connectionString,
+                x => x.MigrationsAssembly(connectionInfo.migrationsAssemblyName)));
+
+            // Identity customization started here
+            services
+                .AddIdentity<ApplicationUser, Role>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddUserManager<UserManager>()
+                .AddRoleManager<RoleManager>()
+                .AddSignInManager<SignInManager>()
+                .AddDefaultUI()
+                .AddDefaultTokenProviders();
+
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Password settings.
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireUppercase = false;
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 1;
+
+                // Lockout settings.
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.AllowedForNewUsers = true;
+
+                // User settings.
+                options.User.AllowedUserNameCharacters =
+                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+                options.User.RequireUniqueEmail = false;
+            });
 
             services.ConfigureApplicationCookie(options =>
             {

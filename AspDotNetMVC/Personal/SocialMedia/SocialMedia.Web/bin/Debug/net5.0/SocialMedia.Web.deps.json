@@ -46,6 +46,7 @@
           "Serilog.Sinks.File": "5.0.0",
           "SocialMedia.Account": "1.0.0",
           "SocialMedia.Common": "1.0.0",
+          "SocialMedia.Membership": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -2286,6 +2287,21 @@
         },
         "compile": {
           "SocialMedia.Data.dll": {}
+        }
+      },
+      "SocialMedia.Membership/1.0.0": {
+        "dependencies": {
+          "Autofac.Extensions.DependencyInjection": "7.1.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.8",
+          "Microsoft.EntityFrameworkCore": "5.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.8",
+          "Microsoft.Extensions.Identity.Stores": "5.0.8"
+        },
+        "runtime": {
+          "SocialMedia.Membership.dll": {}
+        },
+        "compile": {
+          "SocialMedia.Membership.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -5090,6 +5106,11 @@
       "sha512": ""
     },
     "SocialMedia.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SocialMedia.Membership/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

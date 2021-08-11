@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SocialMedia.Common\SocialMedia.Common.csproj" />
+    <ProjectReference Include="..\SocialMedia.Membership\SocialMedia.Membership.csproj" />
     <ProjectReference Include="..\SocialMedia.Profile\SocialMedia.Account.csproj" />
   </ItemGroup>
 
