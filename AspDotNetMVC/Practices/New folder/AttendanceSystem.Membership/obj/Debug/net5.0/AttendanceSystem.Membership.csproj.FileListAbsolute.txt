@@ -1,0 +1,12 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Membership\bin\Debug\net5.0\AttendanceSystem.Membership.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Membership\bin\Debug\net5.0\AttendanceSystem.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Membership\bin\Debug\net5.0\ref\AttendanceSystem.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Membership\bin\Debug\net5.0\AttendanceSystem.Membership.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Membership\obj\Debug\net5.0\AttendanceSystem.Membership.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Membership\obj\Debug\net5.0\AttendanceSystem.Membership.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Membership\obj\Debug\net5.0\AttendanceSystem.Membership.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Membership\obj\Debug\net5.0\AttendanceSystem.Membership.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Membership\obj\Debug\net5.0\AttendanceSystem.Membership.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Membership\obj\Debug\net5.0\AttendanceSystem.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Membership\obj\Debug\net5.0\ref\AttendanceSystem.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Membership\obj\Debug\net5.0\AttendanceSystem.Membership.pdb

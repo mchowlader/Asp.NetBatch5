@@ -1,0 +1,280 @@
+2021-07-30 11:13:48.583 +06:00 [INF] Application Starting up
+2021-07-30 11:49:48.046 +06:00 [INF] Application Starting up
+2021-07-30 11:52:44.237 +06:00 [INF] Application Starting up
+2021-07-30 11:57:54.237 +06:00 [INF] Application Starting up
+2021-07-30 11:59:50.333 +06:00 [INF] Application Starting up
+2021-07-30 12:02:15.695 +06:00 [INF] Application Starting up
+2021-07-30 12:03:31.893 +06:00 [INF] Application Starting up
+2021-07-30 12:06:21.352 +06:00 [INF] Application Starting up
+2021-07-30 12:07:56.208 +06:00 [INF] Application Starting up
+2021-07-30 12:09:06.489 +06:00 [INF] Application Starting up
+2021-07-30 12:11:25.509 +06:00 [INF] Application Starting up
+2021-07-30 12:13:19.504 +06:00 [INF] Application Starting up
+2021-07-30 12:16:55.053 +06:00 [INF] Application Starting up
+2021-07-30 12:21:24.074 +06:00 [INF] Application Starting up
+2021-07-30 12:28:25.196 +06:00 [INF] Application Starting up
+2021-07-30 12:29:23.317 +06:00 [INF] Application Starting up
+2021-07-30 12:38:02.290 +06:00 [INF] Application Starting up
+2021-07-30 12:44:17.563 +06:00 [INF] Application Starting up
+2021-07-30 12:51:03.846 +06:00 [INF] Application Starting up
+2021-07-30 12:51:49.618 +06:00 [INF] Application Starting up
+2021-07-30 12:53:41.381 +06:00 [INF] Application Starting up
+2021-07-30 12:55:06.302 +06:00 [INF] Application Starting up
+2021-07-30 12:56:23.010 +06:00 [INF] Application Starting up
+2021-07-30 13:05:02.963 +06:00 [INF] Application Starting up
+2021-07-30 13:11:45.350 +06:00 [INF] Application Starting up
+2021-07-30 13:12:27.646 +06:00 [INF] Application Starting up
+2021-07-30 16:46:14.504 +06:00 [INF] Application Starting up
+2021-07-30 16:46:36.899 +06:00 [INF] Application Starting up
+2021-07-30 17:11:39.622 +06:00 [INF] Application Starting up
+2021-07-30 17:12:14.441 +06:00 [ERR] Failed
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Attendances_Students_StudentId". The conflict occurred in database "Assignment_3", table "dbo.Students", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:9a34d44c-2a09-401a-aa08-2fc90f3eb798
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at AttendanceSystem.Data.UnitOfWork.Save() in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Data\UnitOfWork.cs:line 16
+   at AttendanceSystem.Present.Services.AttendanceService.UpdateAttendance(Attendance attendance) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 98
+   at AttendanceSystem.Web.Areas.Education.Models.EditAttendanceModel.Update() in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\EditAttendanceModel.cs:line 49
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Edit(EditAttendanceModel model) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 75
+2021-07-30 17:17:48.830 +06:00 [INF] Application Starting up
+2021-07-30 17:19:30.685 +06:00 [ERR] Failed
+AttendanceSystem.Present.Exceptions.DuplicateValueException: Date already used
+   at AttendanceSystem.Present.Services.AttendanceService.UpdateAttendance(Attendance attendance) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 91
+   at AttendanceSystem.Web.Areas.Education.Models.EditAttendanceModel.Update() in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\EditAttendanceModel.cs:line 49
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Edit(EditAttendanceModel model) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 75
+2021-07-30 17:20:31.152 +06:00 [ERR] Failed
+AttendanceSystem.Present.Exceptions.DuplicateValueException: Date already used
+   at AttendanceSystem.Present.Services.AttendanceService.UpdateAttendance(Attendance attendance) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 91
+   at AttendanceSystem.Web.Areas.Education.Models.EditAttendanceModel.Update() in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\EditAttendanceModel.cs:line 49
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Edit(EditAttendanceModel model) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 75
+2021-07-30 17:22:01.392 +06:00 [ERR] Failed
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Attendances_Students_StudentId". The conflict occurred in database "Assignment_3", table "dbo.Students", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:4afba6ec-68f2-4911-a8b1-1afa727c1f1f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at AttendanceSystem.Data.UnitOfWork.Save() in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Data\UnitOfWork.cs:line 16
+   at AttendanceSystem.Present.Services.AttendanceService.UpdateAttendance(Attendance attendance) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 101
+   at AttendanceSystem.Web.Areas.Education.Models.EditAttendanceModel.Update() in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\EditAttendanceModel.cs:line 49
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Edit(EditAttendanceModel model) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 75
+2021-07-30 17:22:57.976 +06:00 [ERR] Failed
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Attendances_Students_StudentId". The conflict occurred in database "Assignment_3", table "dbo.Students", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:4afba6ec-68f2-4911-a8b1-1afa727c1f1f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at AttendanceSystem.Data.UnitOfWork.Save() in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Data\UnitOfWork.cs:line 16
+   at AttendanceSystem.Present.Services.AttendanceService.UpdateAttendance(Attendance attendance) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 101
+   at AttendanceSystem.Web.Areas.Education.Models.EditAttendanceModel.Update() in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\EditAttendanceModel.cs:line 49
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Edit(EditAttendanceModel model) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 75
+2021-07-30 17:28:04.265 +06:00 [INF] Application Starting up
+2021-07-30 17:28:44.929 +06:00 [ERR] Failed
+AttendanceSystem.Present.Exceptions.DuplicateValueException: Roll already Exit
+   at AttendanceSystem.Present.Services.StudentService.CreateStudent(Student student) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\StudentService.cs:line 30
+   at AttendanceSystem.Web.Areas.Education.Models.CreateStudentModel.CreateStudent() in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\CreateStudentModel.cs:line 34
+   at AttendanceSystem.Web.Areas.Education.Controllers.StudentController.Create(CreateStudentModel model) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\StudentController.cs:line 37
+2021-07-30 17:35:19.281 +06:00 [INF] Application Starting up
+2021-07-30 17:35:54.061 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at AttendanceSystem.Data.Repository`2.Remove(TEntity entityToDelete) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Data\Repository.cs:line 38
+   at AttendanceSystem.Data.Repository`2.Remove(TKey id) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Data\Repository.cs:line 33
+   at AttendanceSystem.Present.Services.AttendanceService.DeleteAttendance(Int32 id) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 110
+   at AttendanceSystem.Web.Areas.Education.Models.ListAttendanceModel.Delete(Int32 id) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\ListAttendanceModel.cs:line 70
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Delete(Int32 id) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 89
+   at lambda_method634(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-30 17:35:54.061 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at AttendanceSystem.Data.Repository`2.Remove(TEntity entityToDelete) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Data\Repository.cs:line 38
+   at AttendanceSystem.Data.Repository`2.Remove(TKey id) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Data\Repository.cs:line 33
+   at AttendanceSystem.Present.Services.AttendanceService.DeleteAttendance(Int32 id) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 110
+   at AttendanceSystem.Web.Areas.Education.Models.ListAttendanceModel.Delete(Int32 id) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\ListAttendanceModel.cs:line 70
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Delete(Int32 id) in J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 89
+   at lambda_method634(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-30 17:35:55.717 +06:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.Views.DatabaseErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseDeveloperPageExceptionFilter.HandleExceptionAsync(ErrorContext errorContext, Func`2 next)
+2021-07-30 17:35:55.717 +06:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.Views.DatabaseErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseDeveloperPageExceptionFilter.HandleExceptionAsync(ErrorContext errorContext, Func`2 next)
+2021-07-30 17:37:30.742 +06:00 [INF] Application Starting up
+2021-07-30 17:39:16.279 +06:00 [INF] Application Starting up
+2021-07-30 17:41:21.397 +06:00 [INF] Application Starting up
+2021-07-30 17:41:54.813 +06:00 [ERR] The view 'Delete' was not found. Searched locations: ["/Areas/Education/Views/Attendance/Delete.cshtml","/Areas/Education/Views/Shared/Delete.cshtml","/Views/Shared/Delete.cshtml","/Pages/Shared/Delete.cshtml"]
+2021-07-30 17:41:54.848 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Delete' was not found. The following locations were searched:
+/Areas/Education/Views/Attendance/Delete.cshtml
+/Areas/Education/Views/Shared/Delete.cshtml
+/Views/Shared/Delete.cshtml
+/Pages/Shared/Delete.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-30 17:41:59.826 +06:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.Views.DatabaseErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseDeveloperPageExceptionFilter.HandleExceptionAsync(ErrorContext errorContext, Func`2 next)
+2021-07-30 17:42:41.525 +06:00 [INF] Application Starting up
+2021-07-30 17:45:31.629 +06:00 [INF] Application Starting up
+2021-07-30 17:47:18.026 +06:00 [INF] Application Starting up
+2021-07-30 17:48:44.631 +06:00 [INF] Application Starting up
+2021-07-30 17:50:56.004 +06:00 [INF] Application Starting up
+2021-07-30 17:53:50.338 +06:00 [INF] Application Starting up

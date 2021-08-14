@@ -1,0 +1,45 @@
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Present.deps.json
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Present.dll
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\bin\Debug\net5.0\ref\AttendanceSystem.Present.dll
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Present.pdb
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.csprojAssemblyReference.cache
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.GeneratedMSBuildEditorConfig.editorconfig
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.AssemblyInfoInputs.cache
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.AssemblyInfo.cs
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.csproj.CoreCompileInputs.cache
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.dll
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\ref\AttendanceSystem.Present.dll
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.pdb
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Data.dll
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Data.pdb
+J:\ASP\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.csproj.CopyComplete
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Present.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Present.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\bin\Debug\net5.0\ref\AttendanceSystem.Present.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Present.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.csproj.CopyComplete
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\ref\AttendanceSystem.Present.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Present.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Present.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\bin\Debug\net5.0\ref\AttendanceSystem.Present.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Present.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\bin\Debug\net5.0\AttendanceSystem.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.csproj.CopyComplete
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\obj\Debug\net5.0\ref\AttendanceSystem.Present.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\New folder\AttendanceSystem.Present\obj\Debug\net5.0\AttendanceSystem.Present.pdb

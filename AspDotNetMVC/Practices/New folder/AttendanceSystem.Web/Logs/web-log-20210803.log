@@ -1,0 +1,103 @@
+2021-08-03 12:25:39.352 +06:00 [INF] Application Starting up
+2021-08-03 12:30:22.390 +06:00 [ERR] Failed
+AttendanceSystem.Present.Exceptions.DuplicateValueException: Roll already Exit
+   at AttendanceSystem.Present.Services.StudentService.CreateStudent(Student student) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\StudentService.cs:line 30
+   at AttendanceSystem.Web.Areas.Education.Models.CreateStudentModel.CreateStudent() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\CreateStudentModel.cs:line 34
+   at AttendanceSystem.Web.Areas.Education.Controllers.StudentController.Create(CreateStudentModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\StudentController.cs:line 37
+2021-08-03 12:31:17.088 +06:00 [ERR] Failed
+AttendanceSystem.Present.Exceptions.DuplicateValueException: Roll already exit
+   at AttendanceSystem.Present.Services.StudentService.UpdateStudent(Student student) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\StudentService.cs:line 76
+   at AttendanceSystem.Web.Areas.Education.Models.EditStudentModel.Update() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\EditStudentModel.cs:line 37
+   at AttendanceSystem.Web.Areas.Education.Controllers.StudentController.Edit(EditStudentModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\StudentController.cs:line 75
+2021-08-03 12:34:12.441 +06:00 [ERR] Failed
+AttendanceSystem.Present.Exceptions.DuplicateValueException: Roll already exit
+   at AttendanceSystem.Present.Services.StudentService.UpdateStudent(Student student) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\StudentService.cs:line 76
+   at AttendanceSystem.Web.Areas.Education.Models.EditStudentModel.Update() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\EditStudentModel.cs:line 37
+   at AttendanceSystem.Web.Areas.Education.Controllers.StudentController.Edit(EditStudentModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\StudentController.cs:line 75
+2021-08-03 12:39:37.007 +06:00 [ERR] Failed
+System.InvalidOperationException: Attendance already added
+   at AttendanceSystem.Present.Services.AttendanceService.CreateAttendance(Attendance attendance) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 28
+   at AttendanceSystem.Web.Areas.Education.Models.CreateAttendanceModel.CreateAttendance() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\CreateAttendanceModel.cs:line 37
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Create(CreateAttendanceModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 34
+2021-08-03 12:39:57.159 +06:00 [ERR] Failed
+AttendanceSystem.Present.Exceptions.DuplicateValueException: Date already used
+   at AttendanceSystem.Present.Services.AttendanceService.UpdateAttendance(Attendance attendance) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 89
+   at AttendanceSystem.Web.Areas.Education.Models.EditAttendanceModel.Update() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\EditAttendanceModel.cs:line 46
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Edit(EditAttendanceModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 72
+2021-08-03 12:40:14.687 +06:00 [ERR] Failed
+AttendanceSystem.Present.Exceptions.DuplicateValueException: Date already used
+   at AttendanceSystem.Present.Services.AttendanceService.UpdateAttendance(Attendance attendance) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 89
+   at AttendanceSystem.Web.Areas.Education.Models.EditAttendanceModel.Update() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\EditAttendanceModel.cs:line 46
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Edit(EditAttendanceModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 72
+2021-08-03 12:41:22.314 +06:00 [ERR] Failed
+System.InvalidOperationException: Attendance already added
+   at AttendanceSystem.Present.Services.AttendanceService.CreateAttendance(Attendance attendance) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 28
+   at AttendanceSystem.Web.Areas.Education.Models.CreateAttendanceModel.CreateAttendance() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\CreateAttendanceModel.cs:line 37
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Create(CreateAttendanceModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 34
+2021-08-03 12:45:29.853 +06:00 [INF] Application Starting up
+2021-08-03 14:24:58.579 +06:00 [INF] Application Starting up
+2021-08-03 14:25:52.343 +06:00 [ERR] Failed
+System.InvalidOperationException: Attendance already added
+   at AttendanceSystem.Present.Services.AttendanceService.CreateAttendance(Attendance attendance) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 31
+   at AttendanceSystem.Web.Areas.Education.Models.CreateAttendanceModel.CreateAttendance() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\CreateAttendanceModel.cs:line 37
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Create(CreateAttendanceModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 34
+2021-08-03 15:28:11.125 +06:00 [ERR] Failed
+System.InvalidOperationException: Attendance already added
+   at AttendanceSystem.Present.Services.AttendanceService.CreateAttendance(Attendance attendance) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 31
+   at AttendanceSystem.Web.Areas.Education.Models.CreateAttendanceModel.CreateAttendance() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\CreateAttendanceModel.cs:line 37
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Create(CreateAttendanceModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 34
+2021-08-03 15:30:43.624 +06:00 [ERR] Failed
+AttendanceSystem.Present.Exceptions.DateTimeException: invalid Date
+   at AttendanceSystem.Present.Services.AttendanceService.CreateAttendance(Attendance attendance) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 33
+   at AttendanceSystem.Web.Areas.Education.Models.CreateAttendanceModel.CreateAttendance() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\CreateAttendanceModel.cs:line 37
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Create(CreateAttendanceModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 34
+2021-08-03 15:35:57.145 +06:00 [ERR] Failed
+AttendanceSystem.Present.Exceptions.DuplicateValueException: Date already used
+   at AttendanceSystem.Present.Services.AttendanceService.UpdateAttendance(Attendance attendance) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Present\Services\AttendanceService.cs:line 91
+   at AttendanceSystem.Web.Areas.Education.Models.EditAttendanceModel.Update() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Models\EditAttendanceModel.cs:line 46
+   at AttendanceSystem.Web.Areas.Education.Controllers.AttendanceController.Edit(EditAttendanceModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_3\AttendanceSystem.Web\AttendanceSystem.Web\Areas\Education\Controllers\AttendanceController.cs:line 72
+2021-08-03 15:43:45.514 +06:00 [INF] Application Starting up
+2021-08-03 15:50:13.185 +06:00 [INF] Application Starting up
+2021-08-03 15:58:31.632 +06:00 [INF] Application Starting up
+2021-08-03 16:00:55.807 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'AttendanceSystem.Web.Areas.Education.Models.EditAttendanceModel', but this ViewDataDictionary instance requires a model item of type 'AttendanceSystem.Web.Areas.Education.Models.CreateAttendanceModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method673(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-03 16:00:58.503 +06:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.Views.DatabaseErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseDeveloperPageExceptionFilter.HandleExceptionAsync(ErrorContext errorContext, Func`2 next)
+2021-08-03 16:05:54.699 +06:00 [INF] Application Starting up
