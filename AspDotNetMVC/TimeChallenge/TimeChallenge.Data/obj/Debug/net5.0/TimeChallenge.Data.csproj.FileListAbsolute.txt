@@ -1,0 +1,12 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\bin\Debug\net5.0\TimeChallenge.Data.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\bin\Debug\net5.0\TimeChallenge.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\bin\Debug\net5.0\ref\TimeChallenge.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\bin\Debug\net5.0\TimeChallenge.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\obj\Debug\net5.0\TimeChallenge.Data.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\obj\Debug\net5.0\TimeChallenge.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\obj\Debug\net5.0\TimeChallenge.Data.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\obj\Debug\net5.0\TimeChallenge.Data.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\obj\Debug\net5.0\TimeChallenge.Data.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\obj\Debug\net5.0\TimeChallenge.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\obj\Debug\net5.0\ref\TimeChallenge.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\obj\Debug\net5.0\TimeChallenge.Data.pdb
