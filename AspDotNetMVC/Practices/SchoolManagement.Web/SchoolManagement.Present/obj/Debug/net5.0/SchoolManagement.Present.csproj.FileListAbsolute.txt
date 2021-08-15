@@ -1,0 +1,15 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\obj\Debug\net5.0\SchoolManagement.Present.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\obj\Debug\net5.0\SchoolManagement.Present.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\obj\Debug\net5.0\SchoolManagement.Present.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\obj\Debug\net5.0\SchoolManagement.Present.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\obj\Debug\net5.0\SchoolManagement.Present.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\bin\Debug\net5.0\SchoolManagement.Present.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\bin\Debug\net5.0\SchoolManagement.Present.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\bin\Debug\net5.0\ref\SchoolManagement.Present.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\bin\Debug\net5.0\SchoolManagement.Present.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\obj\Debug\net5.0\SchoolManagement.Present.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\obj\Debug\net5.0\ref\SchoolManagement.Present.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\obj\Debug\net5.0\SchoolManagement.Present.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\bin\Debug\net5.0\SchoolManagement.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\bin\Debug\net5.0\SchoolManagement.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Present\obj\Debug\net5.0\SchoolManagement.Present.csproj.CopyComplete

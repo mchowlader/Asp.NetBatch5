@@ -60,10 +60,9 @@ namespace AttendanceSystem.Web.Controllers
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    var callbackUrl = Url.Page(
+                    var callbackUrl = Url.ActionLink(
                         "/Account/ConfirmEmail",
-                        pageHandler: null,
-                        values: new { area = "Identity", userId = user.Id, code = code, returnUrl = model.ReturnUrl },
+                        values: new {userId = user.Id, code = code, returnUrl = model.ReturnUrl },
                         protocol: Request.Scheme);
 
                     await _emailSender.SendEmailAsync(model.Email, "Confirm your email",

@@ -4,7 +4,6 @@ using AttendanceSystem.Membership.Entities;
 using AttendanceSystem.Membership.Services;
 using AttendanceSystem.Present;
 using AttendanceSystem.Present.Contexts;
-using AttendanceSystem.Web.Data;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;

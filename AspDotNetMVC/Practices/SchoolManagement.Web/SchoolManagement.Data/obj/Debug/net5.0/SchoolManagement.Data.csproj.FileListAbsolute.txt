@@ -1,0 +1,12 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Data\bin\Debug\net5.0\SchoolManagement.Data.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Data\bin\Debug\net5.0\SchoolManagement.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Data\bin\Debug\net5.0\ref\SchoolManagement.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Data\bin\Debug\net5.0\SchoolManagement.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Data\obj\Debug\net5.0\SchoolManagement.Data.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Data\obj\Debug\net5.0\SchoolManagement.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Data\obj\Debug\net5.0\SchoolManagement.Data.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Data\obj\Debug\net5.0\SchoolManagement.Data.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Data\obj\Debug\net5.0\SchoolManagement.Data.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Data\obj\Debug\net5.0\SchoolManagement.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Data\obj\Debug\net5.0\ref\SchoolManagement.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Data\obj\Debug\net5.0\SchoolManagement.Data.pdb
