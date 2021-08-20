@@ -1,0 +1,12 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Membership\bin\Debug\net5.0\SchoolManagement.Membership.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Membership\bin\Debug\net5.0\SchoolManagement.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Membership\bin\Debug\net5.0\ref\SchoolManagement.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Membership\bin\Debug\net5.0\SchoolManagement.Membership.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Membership\obj\Debug\net5.0\SchoolManagement.Membership.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Membership\obj\Debug\net5.0\SchoolManagement.Membership.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Membership\obj\Debug\net5.0\SchoolManagement.Membership.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Membership\obj\Debug\net5.0\SchoolManagement.Membership.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Membership\obj\Debug\net5.0\SchoolManagement.Membership.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Membership\obj\Debug\net5.0\SchoolManagement.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Membership\obj\Debug\net5.0\ref\SchoolManagement.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Membership\obj\Debug\net5.0\SchoolManagement.Membership.pdb

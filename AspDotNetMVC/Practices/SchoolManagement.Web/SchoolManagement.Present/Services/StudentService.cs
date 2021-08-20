@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SchoolManagement.Present.Services
 {
-    public class StudentService
+    public class StudentService : IStudentService
     {
         private readonly IPresentUnitOfWork _presentUnitOfWork;
         private readonly IMapper _mapper;

@@ -1,4 +1,5 @@
-﻿using SchoolManagement.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using SchoolManagement.Data;
 using SchoolManagement.Present.Contexts;
 using SchoolManagement.Present.Entities;
 using System;
@@ -11,8 +12,8 @@ namespace SchoolManagement.Present.Repositories
 {
     public class CourseRepository : Repository<Course, int>, ICourseRepository
     {
-        public CourseRepository(PresentDbContext context)
-           : base(context)
+        public CourseRepository(IPresentDbContext context)
+           : base((DbContext)context)
         {
 
         }

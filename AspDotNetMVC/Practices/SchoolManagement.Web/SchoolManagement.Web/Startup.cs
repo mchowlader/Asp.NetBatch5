@@ -1,5 +1,6 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -9,6 +10,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SchoolManagement.Membership.BusinessObjects;
+using SchoolManagement.Membership.Contexts;
+using SchoolManagement.Membership.Entities;
+using SchoolManagement.Membership.Services;
 using SchoolManagement.Present;
 using SchoolManagement.Present.Contexts;
 using SchoolManagement.Web.Data;
@@ -58,14 +63,44 @@ namespace SchoolManagement.Web
             var connectionInfo = GetConnectionAndAssemblyName();
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionInfo.connectionString));
+                options.UseSqlServer(connectionInfo.connectionString,
+                 x => x.MigrationsAssembly(connectionInfo.migrationsAssemblyName)));
 
             services.AddDbContext<PresentDbContext>(startup =>
                 startup.UseSqlServer(connectionInfo.connectionString,
                 x => x.MigrationsAssembly(connectionInfo.migrationsAssemblyName)));
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            // Identity customization started here
+            services
+                .AddIdentity<ApplicationUser, Role>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddUserManager<UserManager>()
+                .AddRoleManager<RoleManager>()
+                .AddSignInManager<SignInManager>()
+                .AddDefaultUI()
+                .AddDefaultTokenProviders();
+
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Password settings.
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireUppercase = false;
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 1;
+
+                // Lockout settings.
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.AllowedForNewUsers = true;
+
+                // User settings.
+                options.User.AllowedUserNameCharacters =
+                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+                options.User.RequireUniqueEmail = false;
+            });
+
 
             services.ConfigureApplicationCookie(options =>
             {
@@ -86,12 +121,36 @@ namespace SchoolManagement.Web
             });
 
 
+            services.AddAuthorization(option => 
+            {
+                option.AddPolicy("StudentAccess", Policy => 
+                {
+                        Policy.RequireAuthenticatedUser();
+                        Policy.RequireRole("Admin");
+                        Policy.RequireRole("Student");
+                });
+
+                option.AddPolicy("RestrictedArea", policy =>
+                {
+                    policy.RequireAuthenticatedUser();
+                    policy.RequireClaim("View_Permission", "True");
+                });
+
+                option.AddPolicy("viewPermission", Policy =>
+                {
+                    Policy.RequireAuthenticatedUser();
+                    Policy.Requirements.Add(new ViewRequirement());
+
+                });
+            });
+
+            services.AddSingleton<IAuthorizationHandler, ViewRequirementHandler>();
+
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllersWithViews();
             services.AddHttpContextAccessor();
             services.AddRazorPages();
             services.AddDatabaseDeveloperPageExceptionFilter();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -121,8 +180,9 @@ namespace SchoolManagement.Web
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                name: "areas",
-                pattern: "{area:exists}/{controller=Student}/{action=Index}/{Id?}");
+                    name: "areas",
+                    pattern: "{area:exists}/{controller=Student}/{action=Index}/{Id?}");
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{Id?}");

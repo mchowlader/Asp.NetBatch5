@@ -289,7 +289,6 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.We
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\Humanizer.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
@@ -458,3 +457,13 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.We
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\SchoolManagement.Data.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\SchoolManagement.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\AutoMapper.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\SchoolManagement.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\SchoolManagement.Membership.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\obj\Debug\net5.0\Razor\Views\Account\Index.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Course\Index.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Student\Create.cshtml.g.cs
