@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SocialMedia.Web.Areas.Account.Models;
 using SocialMedia.Web.Models;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SocialMedia.Web.Areas.Account.Controllers
 {
-    [Area("Account")]
+    [Area("Account"), Authorize]
     public class UserController : Controller
     {
         private readonly ILogger<UserController> _logger; 

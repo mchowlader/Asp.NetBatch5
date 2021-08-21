@@ -467,3 +467,5 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.We
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Course\Index.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Student\Create.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Practices\SchoolManagement.Web\SchoolManagement.Web\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs

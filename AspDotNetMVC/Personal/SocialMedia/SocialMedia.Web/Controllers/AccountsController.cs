@@ -19,6 +19,7 @@ namespace SocialMedia.Web.Controllers
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<Role> _roleManager;
         private readonly ILogger<AccountsController> _logger;
         private readonly IEmailSender _emailSender;
 
@@ -26,11 +27,13 @@ namespace SocialMedia.Web.Controllers
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             ILogger<AccountsController> logger,
+            RoleManager<Role> roleManager,
             IEmailSender emailSender)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _roleManager = roleManager;
             _emailSender = emailSender;
         }
 
@@ -40,11 +43,15 @@ namespace SocialMedia.Web.Controllers
             var model = new RegisterModel();
             model.ReturnUrl = returnUrl;
             model.ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-            
+
+            //await _roleManager.CreateAsync(new Role("Admin"));
+            //await _roleManager.CreateAsync(new Role("Student"));
+            //await _roleManager.CreateAsync(new Role("Teacher"));
+
             return View(model);
         }
 
-        [HttpPost]
+        [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterModel model)
         {
             model.ReturnUrl ??= Url.Content("~/");
@@ -53,6 +60,10 @@ namespace SocialMedia.Web.Controllers
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await _userManager.CreateAsync(user, model.Password);
+
+                //await _userManager.AddToRoleAsync(user, "Student");
+
+
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
@@ -97,21 +108,20 @@ namespace SocialMedia.Web.Controllers
                 ModelState.AddModelError(string.Empty, ErrorMessage);
             }
 
-            returnUrl ??= Url.ActionLink("~/");
+            returnUrl ??= Url.Content("~/");//cng
 
             // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
             var model = new LoginModel();
             model.ReturnUrl = returnUrl;
-
             model.ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
 
             return View(model); 
         }
 
-        [HttpPost]
+        [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginModel model, string returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");

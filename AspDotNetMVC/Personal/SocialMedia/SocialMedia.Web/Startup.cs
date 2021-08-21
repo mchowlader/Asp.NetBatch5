@@ -122,6 +122,21 @@ namespace SocialMedia.Web
                 options.Cookie.IsEssential = true;
             });
 
+            services.AddAuthorization(option =>
+            {
+                option.AddPolicy("Restriction", Policy => 
+                {
+                    Policy.RequireAuthenticatedUser();
+                    Policy.RequireRole("Student");
+                });
+
+                option.AddPolicy("claim", Policy =>
+                {
+                    Policy.RequireAuthenticatedUser();
+                    Policy.RequireClaim("View_Permission");
+                });
+            });
+
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllersWithViews();
             services.AddHttpContextAccessor();

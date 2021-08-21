@@ -1,0 +1,42 @@
+2021-08-22 00:13:32.105 +06:00 [INF] Application Starting up
+2021-08-22 00:21:20.876 +06:00 [INF] Application Starting up
+2021-08-22 00:22:27.067 +06:00 [INF] Application Starting up
+2021-08-22 00:40:31.064 +06:00 [INF] Application Starting up
+2021-08-22 00:41:38.728 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.InvalidParameterException: Course was not provided
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Training\Services\CourseService.cs:line 52
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 42
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 38
+2021-08-22 00:42:44.204 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.InvalidParameterException: Course was not provided
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Training\Services\CourseService.cs:line 52
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 42
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 38
+2021-08-22 00:43:54.788 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.InvalidParameterException: Course was not provided
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Training\Services\CourseService.cs:line 52
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 42
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 38
+2021-08-22 00:51:04.060 +06:00 [INF] Application Starting up
+2021-08-22 00:52:34.841 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.InvalidParameterException: Start date should be atleast ahead 30 days
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Training\Services\CourseService.cs:line 58
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 43
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 38
+2021-08-22 00:53:18.734 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.InvalidParameterException: Start date should be atleast ahead 30 days
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Training\Services\CourseService.cs:line 58
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 43
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 38
+2021-08-22 00:55:41.700 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.InvalidParameterException: Start date should be atleast ahead 30 days
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Training\Services\CourseService.cs:line 58
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 43
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 38
+2021-08-22 00:57:41.005 +06:00 [ERR] Create Course Failed
+MVC.Training.Exceptions.InvalidParameterException: Start date should be atleast ahead 30 days
+   at MVC.Training.Services.CourseService.CreateCourse(Course course) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Training\Services\CourseService.cs:line 58
+   at MVC.Web.Areas.Admin.Models.CreateCourseModel.CreateCourse() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Models\CreateCourseModel.cs:line 43
+   at MVC.Web.Areas.Admin.Controllers.CourseController.Create(CreateCourseModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_31\MVC.Web\Areas\Admin\Controllers\CourseController.cs:line 38
+2021-08-22 01:00:42.209 +06:00 [INF] Application Starting up
+2021-08-22 01:27:22.697 +06:00 [INF] Application Starting up
