@@ -1,0 +1,12 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Membership\bin\Debug\net5.0\ExamTimeChallenge.Membership.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Membership\bin\Debug\net5.0\ExamTimeChallenge.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Membership\bin\Debug\net5.0\ref\ExamTimeChallenge.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Membership\bin\Debug\net5.0\ExamTimeChallenge.Membership.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Membership\obj\Debug\net5.0\ExamTimeChallenge.Membership.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Membership\obj\Debug\net5.0\ExamTimeChallenge.Membership.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Membership\obj\Debug\net5.0\ExamTimeChallenge.Membership.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Membership\obj\Debug\net5.0\ExamTimeChallenge.Membership.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Membership\obj\Debug\net5.0\ExamTimeChallenge.Membership.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Membership\obj\Debug\net5.0\ExamTimeChallenge.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Membership\obj\Debug\net5.0\ref\ExamTimeChallenge.Membership.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Membership\obj\Debug\net5.0\ExamTimeChallenge.Membership.pdb

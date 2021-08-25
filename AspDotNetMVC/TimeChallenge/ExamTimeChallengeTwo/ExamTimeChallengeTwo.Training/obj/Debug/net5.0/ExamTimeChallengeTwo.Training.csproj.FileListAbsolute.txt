@@ -1,0 +1,15 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\bin\Debug\net5.0\ExamTimeChallengeTwo.Training.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\bin\Debug\net5.0\ExamTimeChallengeTwo.Training.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\bin\Debug\net5.0\ref\ExamTimeChallengeTwo.Training.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\bin\Debug\net5.0\ExamTimeChallengeTwo.Training.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\obj\Debug\net5.0\ExamTimeChallengeTwo.Training.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\obj\Debug\net5.0\ExamTimeChallengeTwo.Training.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\obj\Debug\net5.0\ExamTimeChallengeTwo.Training.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\obj\Debug\net5.0\ExamTimeChallengeTwo.Training.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\obj\Debug\net5.0\ExamTimeChallengeTwo.Training.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\obj\Debug\net5.0\ExamTimeChallengeTwo.Training.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\obj\Debug\net5.0\ref\ExamTimeChallengeTwo.Training.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\obj\Debug\net5.0\ExamTimeChallengeTwo.Training.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\bin\Debug\net5.0\ExamTimeChallengeTwo.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\bin\Debug\net5.0\ExamTimeChallengeTwo.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Training\obj\Debug\net5.0\ExamTimeChallengeTwo.Training.csproj.CopyComplete

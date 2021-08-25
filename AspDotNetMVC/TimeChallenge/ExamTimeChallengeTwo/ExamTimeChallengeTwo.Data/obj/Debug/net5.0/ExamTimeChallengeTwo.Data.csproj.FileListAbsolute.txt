@@ -1,0 +1,12 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Data\bin\Debug\net5.0\ExamTimeChallengeTwo.Data.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Data\bin\Debug\net5.0\ExamTimeChallengeTwo.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Data\bin\Debug\net5.0\ref\ExamTimeChallengeTwo.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Data\bin\Debug\net5.0\ExamTimeChallengeTwo.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Data\obj\Debug\net5.0\ExamTimeChallengeTwo.Data.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Data\obj\Debug\net5.0\ExamTimeChallengeTwo.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Data\obj\Debug\net5.0\ExamTimeChallengeTwo.Data.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Data\obj\Debug\net5.0\ExamTimeChallengeTwo.Data.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Data\obj\Debug\net5.0\ExamTimeChallengeTwo.Data.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Data\obj\Debug\net5.0\ExamTimeChallengeTwo.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Data\obj\Debug\net5.0\ref\ExamTimeChallengeTwo.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallengeTwo\ExamTimeChallengeTwo.Data\obj\Debug\net5.0\ExamTimeChallengeTwo.Data.pdb
