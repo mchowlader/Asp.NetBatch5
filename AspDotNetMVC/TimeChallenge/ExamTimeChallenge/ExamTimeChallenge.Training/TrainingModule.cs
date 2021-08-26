@@ -36,7 +36,6 @@ namespace ExamTimeChallenge.Training
             builder.RegisterType<CourseService>().As<ICourseService>()
                .InstancePerLifetimeScope();
 
-
             base.Load(builder);
         }
 
