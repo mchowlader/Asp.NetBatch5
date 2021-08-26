@@ -132,8 +132,10 @@ namespace ExamTimeChallenge.Api
             services.AddAuthorization(options =>
             {
 
-                options.AddPolicy("ViewPermission", policy =>
+                options.AddPolicy("ApiPermission", policy =>
                 {
+                    policy.AuthenticationSchemes.Clear();
+                    policy.AuthenticationSchemes.Add(JwtBearerDefaults.AuthenticationScheme);
                     policy.RequireAuthenticatedUser();
                     policy.Requirements.Add(new ApiRequirement());
                 });
