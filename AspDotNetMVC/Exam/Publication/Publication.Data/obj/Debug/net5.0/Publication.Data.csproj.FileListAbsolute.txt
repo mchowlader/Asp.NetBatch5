@@ -1,0 +1,12 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Data\bin\Debug\net5.0\Publication.Data.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Data\bin\Debug\net5.0\Publication.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Data\bin\Debug\net5.0\ref\Publication.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Data\bin\Debug\net5.0\Publication.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Data\obj\Debug\net5.0\Publication.Data.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Data\obj\Debug\net5.0\Publication.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Data\obj\Debug\net5.0\Publication.Data.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Data\obj\Debug\net5.0\Publication.Data.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Data\obj\Debug\net5.0\Publication.Data.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Data\obj\Debug\net5.0\Publication.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Data\obj\Debug\net5.0\ref\Publication.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Data\obj\Debug\net5.0\Publication.Data.pdb

@@ -1,0 +1,15 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\bin\Debug\net5.0\Publication.Publisher.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\bin\Debug\net5.0\Publication.Publisher.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\bin\Debug\net5.0\ref\Publication.Publisher.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\bin\Debug\net5.0\Publication.Publisher.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\obj\Debug\net5.0\Publication.Publisher.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\obj\Debug\net5.0\Publication.Publisher.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\obj\Debug\net5.0\Publication.Publisher.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\obj\Debug\net5.0\Publication.Publisher.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\obj\Debug\net5.0\Publication.Publisher.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\obj\Debug\net5.0\Publication.Publisher.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\obj\Debug\net5.0\ref\Publication.Publisher.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\obj\Debug\net5.0\Publication.Publisher.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\bin\Debug\net5.0\Publication.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\bin\Debug\net5.0\Publication.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Publisher\obj\Debug\net5.0\Publication.Publisher.csproj.CopyComplete
