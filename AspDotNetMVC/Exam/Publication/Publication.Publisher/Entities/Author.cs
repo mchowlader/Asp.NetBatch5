@@ -12,7 +12,6 @@ namespace Publication.Publisher.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public DateTime DateOfBirth { get; set; }
-        //public IList<Book> WrittenBooks { get; set; }
         public IList<BookAuthor> WrittenBooks { get; set; }
 
     }

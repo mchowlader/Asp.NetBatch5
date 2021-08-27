@@ -15,6 +15,10 @@ namespace Publication.Web.Profiles
             CreateMap<CreateBookModel, Book>().ReverseMap();
             CreateMap<EditBookModel, Book>().ReverseMap();
             CreateMap<ListBookModel, Book>().ReverseMap();
+
+            CreateMap<CreateAuthorModel, Author>().ReverseMap();
+            CreateMap<ListAuthorModel, Author>().ReverseMap();
+            CreateMap<EditAuthorModel, Author>().ReverseMap();
         }
     }
 }

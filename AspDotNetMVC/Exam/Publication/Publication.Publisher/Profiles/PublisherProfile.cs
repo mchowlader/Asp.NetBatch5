@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using BO = Publication.Publisher.BusinessObjects;
 using EO = Publication.Publisher.Entities;
 
-namespace Publication.Publisher.Services
+namespace Publication.Publisher.Profiles
 {
     public class PublisherProfile : Profile
     {
