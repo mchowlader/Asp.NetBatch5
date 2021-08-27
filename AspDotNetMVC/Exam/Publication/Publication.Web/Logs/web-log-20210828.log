@@ -1,17 +1,13 @@
-2021-08-27 20:55:09.653 +06:00 [INF] Application Starting up
-2021-08-27 21:00:17.666 +06:00 [INF] Application Starting up
-2021-08-27 21:01:25.646 +06:00 [INF] Application Starting up
-2021-08-27 22:35:49.362 +06:00 [INF] Application Starting up
-2021-08-27 22:37:46.951 +06:00 [INF] Application Starting up
-2021-08-27 22:39:15.946 +06:00 [INF] Application Starting up
-2021-08-27 22:40:55.068 +06:00 [INF] Application Starting up
-2021-08-27 22:41:44.702 +06:00 [INF] Application Starting up
-2021-08-27 22:55:59.767 +06:00 [INF] Application Starting up
-2021-08-27 23:03:00.760 +06:00 [INF] Application Starting up
-2021-08-27 23:03:17.149 +06:00 [ERR] The view 'Edit' was not found. Searched locations: ["/Areas/Admin/Views/Book/Edit.cshtml","/Areas/Admin/Views/Shared/Edit.cshtml","/Views/Shared/Edit.cshtml","/Pages/Shared/Edit.cshtml"]
-2021-08-27 23:03:17.175 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+2021-08-28 00:01:25.981 +06:00 [INF] Application Starting up
+2021-08-28 00:10:28.270 +06:00 [INF] Application Starting up
+2021-08-28 00:11:12.007 +06:00 [INF] Application Starting up
+2021-08-28 00:23:10.947 +06:00 [INF] Application Starting up
+2021-08-28 00:26:30.551 +06:00 [INF] Application Starting up
+2021-08-28 00:28:57.243 +06:00 [INF] Application Starting up
+2021-08-28 00:29:10.950 +06:00 [ERR] The view 'Edit' was not found. Searched locations: ["/Areas/Admin/Views/Author/Edit.cshtml","/Areas/Admin/Views/Shared/Edit.cshtml","/Views/Shared/Edit.cshtml","/Pages/Shared/Edit.cshtml"]
+2021-08-28 00:29:10.973 +06:00 [ERR] An unhandled exception has occurred while executing the request.
 System.InvalidOperationException: The view 'Edit' was not found. The following locations were searched:
-/Areas/Admin/Views/Book/Edit.cshtml
+/Areas/Admin/Views/Author/Edit.cshtml
 /Areas/Admin/Views/Shared/Edit.cshtml
 /Views/Shared/Edit.cshtml
 /Pages/Shared/Edit.cshtml
@@ -36,7 +32,7 @@ System.InvalidOperationException: The view 'Edit' was not found. The following l
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2021-08-27 23:03:18.983 +06:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+2021-08-28 00:29:11.653 +06:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
 System.InvalidOperationException: StatusCode cannot be set because the response has already started.
    at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
    at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
@@ -45,15 +41,6 @@ System.InvalidOperationException: StatusCode cannot be set because the response 
    at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.Views.DatabaseErrorPage.ExecuteAsync()
    at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseDeveloperPageExceptionFilter.HandleExceptionAsync(ErrorContext errorContext, Func`2 next)
-2021-08-27 23:05:50.801 +06:00 [INF] Application Starting up
-2021-08-27 23:09:51.518 +06:00 [INF] Application Starting up
-2021-08-27 23:13:55.070 +06:00 [INF] Application Starting up
-2021-08-27 23:17:04.563 +06:00 [INF] Application Starting up
-2021-08-27 23:17:36.367 +06:00 [INF] Application Starting up
-2021-08-27 23:38:37.312 +06:00 [INF] Application Starting up
-2021-08-27 23:41:16.207 +06:00 [INF] Application Starting up
-2021-08-27 23:42:57.038 +06:00 [INF] Application Starting up
-2021-08-27 23:43:45.236 +06:00 [INF] Application Starting up
-2021-08-27 23:54:27.085 +06:00 [INF] Application Starting up
-2021-08-27 23:55:43.948 +06:00 [INF] Application Starting up
-2021-08-27 23:59:37.443 +06:00 [INF] Application Starting up
+2021-08-28 00:30:49.497 +06:00 [INF] Application Starting up
+2021-08-28 00:31:56.719 +06:00 [INF] Application Starting up
+2021-08-28 00:33:53.092 +06:00 [INF] Application Starting up

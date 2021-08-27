@@ -16,7 +16,6 @@ namespace Publication.Web.Areas.Admin.Controllers
             return View();
         }
 
-
         public IActionResult Create()
         {
             var model = new CreateAuthorModel();
@@ -44,25 +43,25 @@ namespace Publication.Web.Areas.Admin.Controllers
             return Json(data);
         }
 
-        //public IActionResult Edit(int id)
-        //{
-        //    var model = new EditBookModel();
-        //    model.LoadModelData(id);
-        //    return View(model);
-        //}
+        public IActionResult Edit(int id)
+        {
+            var model = new EditAuthorModel();
+            model.LoadModelData(id);
+            return View(model);
+        }
 
-        //[HttpPost, ValidateAntiForgeryToken]
-        //public IActionResult Edit(EditBookModel model)
-        //{
-        //    model.UpdateBook();
-        //    return View(model);
-        //}
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult Edit(EditAuthorModel model)
+        {
+            model.UpdateAuthor();
+            return View(model);
+        }
 
-        //public IActionResult Delete(int id)
-        //{
-        //    var model = new ListBookModel();
-        //    model.Delete(id);
-        //    return RedirectToAction(nameof(Data));
-        //}
+        public IActionResult Delete(int id)
+        {
+            var model = new ListAuthorModel();
+            model.Delete(id);
+            return RedirectToAction(nameof(Data));
+        }
     }
 }

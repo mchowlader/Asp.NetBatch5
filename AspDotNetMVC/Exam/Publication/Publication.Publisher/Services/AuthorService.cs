@@ -28,6 +28,12 @@ namespace Publication.Publisher.Services
             _publisherUnitOfWork.Save();
         }
 
+        public void DeleteAuthor(int id)
+        {
+            _publisherUnitOfWork.Authors.Remove(id);
+            _publisherUnitOfWork.Save();
+        }
+
         public (IList<Author> records, int total, int totalDisplay) GetAuthorData(int pageIndex, 
             int pageSize, string searchText, string sortText)
         {
@@ -39,6 +45,25 @@ namespace Publication.Publisher.Services
                               select _mapper.Map<Author>(data)).ToList();
 
             return (resultAuthor, resultData.total, resultData.totalDisplay);
+        }
+
+        public Author GetAuthors(int id)
+        {
+            var author = _publisherUnitOfWork.Authors.GetById(id);
+            return _mapper.Map<Author>(author);
+        }
+
+        public void UpdateAuthor(Author author)
+        {
+            if (author == null)
+                throw new InvalidOperationException();
+            var authorEntity = _publisherUnitOfWork.Authors.GetById(author.Id);
+
+            if (authorEntity != null)
+            {
+                _mapper.Map(author, authorEntity);
+                _publisherUnitOfWork.Save();
+            }
         }
     }
 }

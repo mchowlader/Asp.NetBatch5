@@ -12,6 +12,8 @@ namespace Publication.Publisher.Services
         void CreateAuthor(Author author);
         (IList<Author> records, int total, int totalDisplay) GetAuthorData(int pageIndex, 
             int pageSize, string searchText, string sortText);
-       
+        void DeleteAuthor(int id);
+        Author GetAuthors(int id);
+        void UpdateAuthor(Author author);
     }
 }

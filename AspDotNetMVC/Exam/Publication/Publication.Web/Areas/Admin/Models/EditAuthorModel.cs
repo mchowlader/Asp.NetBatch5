@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using AutoMapper;
+using Publication.Publisher.BusinessObjects;
 using Publication.Publisher.Services;
 using System;
 using System.Collections.Generic;
@@ -29,5 +30,16 @@ namespace Publication.Web.Areas.Admin.Models
             _authorService = authorService;
         }
 
+        internal void LoadModelData(int id)
+        {
+            var author = _authorService.GetAuthors(id);
+            _mapper.Map(author, this);
+        }
+
+        internal void UpdateAuthor()
+        {
+            var author = _mapper.Map<Author>(this);
+            _authorService.UpdateAuthor(author);
+        }
     }
 }

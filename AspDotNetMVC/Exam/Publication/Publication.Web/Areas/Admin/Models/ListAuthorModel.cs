@@ -32,7 +32,7 @@ namespace Publication.Web.Areas.Admin.Models
                dataTableModel.PageIndex,
                dataTableModel.PageSize,
                dataTableModel.SearchText,
-               dataTableModel.GetSortText(new string[] { "Name", "DateOfBirth"}));
+               dataTableModel.GetSortText(new string[] { "Name", "DateOfBirth" }));
 
             return new
             {
@@ -46,6 +46,11 @@ namespace Publication.Web.Areas.Admin.Models
                            record.Id.ToString()
                         }).ToArray()
             };
+        }
+
+        internal void Delete(int id)
+        {
+            _authorService.DeleteAuthor(id);
         }
     }
 }

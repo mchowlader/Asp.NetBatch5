@@ -466,3 +466,4 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Book\Edit.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Author\Create.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Author\Data.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Exam\Publication\Publication.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Author\Edit.cshtml.g.cs
