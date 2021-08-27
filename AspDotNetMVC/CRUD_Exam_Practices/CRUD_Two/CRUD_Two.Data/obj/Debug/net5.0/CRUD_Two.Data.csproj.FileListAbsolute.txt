@@ -1,0 +1,12 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_Two\CRUD_Two.Data\bin\Debug\net5.0\CRUD_Two.Data.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_Two\CRUD_Two.Data\bin\Debug\net5.0\CRUD_Two.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_Two\CRUD_Two.Data\bin\Debug\net5.0\ref\CRUD_Two.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_Two\CRUD_Two.Data\bin\Debug\net5.0\CRUD_Two.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_Two\CRUD_Two.Data\obj\Debug\net5.0\CRUD_Two.Data.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_Two\CRUD_Two.Data\obj\Debug\net5.0\CRUD_Two.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_Two\CRUD_Two.Data\obj\Debug\net5.0\CRUD_Two.Data.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_Two\CRUD_Two.Data\obj\Debug\net5.0\CRUD_Two.Data.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_Two\CRUD_Two.Data\obj\Debug\net5.0\CRUD_Two.Data.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_Two\CRUD_Two.Data\obj\Debug\net5.0\CRUD_Two.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_Two\CRUD_Two.Data\obj\Debug\net5.0\ref\CRUD_Two.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_Two\CRUD_Two.Data\obj\Debug\net5.0\CRUD_Two.Data.pdb
