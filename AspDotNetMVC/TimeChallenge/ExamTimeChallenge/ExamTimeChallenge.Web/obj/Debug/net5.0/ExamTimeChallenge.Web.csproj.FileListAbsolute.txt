@@ -941,3 +941,4 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallen
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Web\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Web\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Testing\Index.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\ExamTimeChallenge\ExamTimeChallenge.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
