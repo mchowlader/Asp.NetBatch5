@@ -1,0 +1,15 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\bin\Debug\net5.0\CRUD_One.Training.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\bin\Debug\net5.0\CRUD_One.Training.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\bin\Debug\net5.0\ref\CRUD_One.Training.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\bin\Debug\net5.0\CRUD_One.Training.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\obj\Debug\net5.0\CRUD_One.Training.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\obj\Debug\net5.0\CRUD_One.Training.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\obj\Debug\net5.0\CRUD_One.Training.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\obj\Debug\net5.0\CRUD_One.Training.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\obj\Debug\net5.0\CRUD_One.Training.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\obj\Debug\net5.0\CRUD_One.Training.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\obj\Debug\net5.0\ref\CRUD_One.Training.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\obj\Debug\net5.0\CRUD_One.Training.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\bin\Debug\net5.0\CRUD_One.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\bin\Debug\net5.0\CRUD_One.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CRUD_Exam_Practices\CRUD_One\CRUD_One.Training\obj\Debug\net5.0\CRUD_One.Training.csproj.CopyComplete
