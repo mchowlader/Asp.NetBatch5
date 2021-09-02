@@ -9,7 +9,7 @@ using StockData.Trend.Contexts;
 namespace StockData.Worker.Migrations
 {
     [DbContext(typeof(TrendDbContext))]
-    [Migration("20210902163606_AddCompanyAndStockPrice")]
+    [Migration("20210902175522_AddCompanyAndStockPrice")]
     partial class AddCompanyAndStockPrice
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

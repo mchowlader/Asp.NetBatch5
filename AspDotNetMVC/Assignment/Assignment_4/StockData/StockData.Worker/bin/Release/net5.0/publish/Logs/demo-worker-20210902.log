@@ -18,3 +18,13 @@ System.IndexOutOfRangeException: Index was outside the bounds of the array.
    at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
    at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
    at StockData.Worker.Program.Main(String[] args) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\Program.cs:line 38
+2021-09-02 23:55:40.190 +06:00 [INF] Application Starting up
+2021-09-02 23:55:48.180 +06:00 [FTL] Application start-up failed
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at StockData.Worker.Model.StockPriceModel.GetStockData() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\Model\StockPriceModel.cs:line 41
+   at StockData.Worker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\Worker.cs:line 37
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at StockData.Worker.Program.Main(String[] args) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\Program.cs:line 38
