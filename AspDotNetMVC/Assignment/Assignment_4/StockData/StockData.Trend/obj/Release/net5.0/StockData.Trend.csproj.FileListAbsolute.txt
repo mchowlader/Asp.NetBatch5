@@ -1,0 +1,15 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\bin\Release\net5.0\StockData.Trend.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\bin\Release\net5.0\StockData.Trend.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\bin\Release\net5.0\ref\StockData.Trend.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\bin\Release\net5.0\StockData.Trend.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\bin\Release\net5.0\StockData.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\bin\Release\net5.0\StockData.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\obj\Release\net5.0\StockData.Trend.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\obj\Release\net5.0\StockData.Trend.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\obj\Release\net5.0\StockData.Trend.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\obj\Release\net5.0\StockData.Trend.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\obj\Release\net5.0\StockData.Trend.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\obj\Release\net5.0\StockData.Trend.csproj.CopyComplete
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\obj\Release\net5.0\StockData.Trend.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\obj\Release\net5.0\ref\StockData.Trend.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Trend\obj\Release\net5.0\StockData.Trend.pdb

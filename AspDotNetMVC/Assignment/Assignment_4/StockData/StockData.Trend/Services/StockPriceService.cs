@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using StockData.Trend.BusinessObject;
 using StockData.Trend.UnitIfWorks;
 using System;
 using System.Collections.Generic;
@@ -11,12 +12,11 @@ namespace StockData.Trend.Services
     public class StockPriceService : IStockPriceService
     {
         private readonly ITrendUnitOfWork _trendUnitOfWork;
-        private readonly IMapper _mapper;
 
-        public StockPriceService(IMapper mapper, ITrendUnitOfWork trendUnitOfWork)
+        public StockPriceService( ITrendUnitOfWork trendUnitOfWork)
         {
-            _mapper = mapper;
             _trendUnitOfWork = trendUnitOfWork;
         }
+
     }
 }

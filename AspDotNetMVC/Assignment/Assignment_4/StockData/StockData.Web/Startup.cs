@@ -89,7 +89,7 @@ namespace StockData.Web
                 options.Cookie.IsEssential = true;
             });
 
-
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllersWithViews();
             services.AddHttpContextAccessor();
             services.AddRazorPages();

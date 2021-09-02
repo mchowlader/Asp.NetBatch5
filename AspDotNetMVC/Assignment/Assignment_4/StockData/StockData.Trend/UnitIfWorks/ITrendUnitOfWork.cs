@@ -1,4 +1,5 @@
-﻿using StockData.Trend.Repositories;
+﻿using StockData.Data;
+using StockData.Trend.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace StockData.Trend.UnitIfWorks
 {
-    public interface ITrendUnitOfWork
+    public interface ITrendUnitOfWork : IUnitOfWork
     {
         ICompanyRepository Companys { get; }
         IStockPriceRepository StockPrices { get; }

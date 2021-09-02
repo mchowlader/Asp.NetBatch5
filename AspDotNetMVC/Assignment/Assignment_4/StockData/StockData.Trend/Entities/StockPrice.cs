@@ -9,6 +9,7 @@ namespace StockData.Trend.Entities
 {
     public class StockPrice : IEntity<int>
     {
+
         public int Id { get; set; }
         public int CompanyId { get; set; }
         public double LastTradingPrice { get; set; }
@@ -24,4 +25,5 @@ namespace StockData.Trend.Entities
 
 
     }
+
 }

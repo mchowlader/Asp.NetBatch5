@@ -1,5 +1,9 @@
 ﻿using Autofac;
+using Microsoft.Extensions.Configuration;
 using StockData.Trend.Contexts;
+using StockData.Trend.Repositories;
+using StockData.Trend.Services;
+using StockData.Trend.UnitIfWorks;
 using System;
 
 namespace StockData.Trend
@@ -8,11 +12,14 @@ namespace StockData.Trend
     {
         private readonly string _connectionString;
         private readonly string _migrationAssemblyName;
+        private readonly IConfiguration _configuration;
 
-        public TrendModule(string connectionString, string migrationAssemblyName)
+        public TrendModule(string connectionString, string migrationAssemblyName, 
+            IConfiguration configuration)
         {
             _connectionString = connectionString;
             _migrationAssemblyName = migrationAssemblyName;
+           _configuration = configuration;
         }
 
         protected override void Load(ContainerBuilder builder)
@@ -27,15 +34,18 @@ namespace StockData.Trend
                 .WithParameter("migrationAssemblyName", _migrationAssemblyName)
                 .InstancePerLifetimeScope();
 
-            //builder.RegisterType<StudentRepository>().As<IStudentRepository>()
-            //    .InstancePerLifetimeScope();
-            //builder.RegisterType<CourseRepository>().As<ICourseRepository>()
-            //    .InstancePerLifetimeScope();
-            //builder.RegisterType<TrainingUnitOfWork>().As<ITrainingUnitOfWork>()
-            //    .InstancePerLifetimeScope();
+            builder.RegisterType<CompanyService>().As<ICompanyService>()
+                .InstancePerLifetimeScope();
+            builder.RegisterType<StockPriceService>().As<IStockPriceService>()
+                .InstancePerLifetimeScope();
 
-            //builder.RegisterType<CourseService>().As<ICourseService>()
-            //    .InstancePerLifetimeScope();
+            builder.RegisterType<CompanyRepository>().As<ICompanyRepository>()
+                .InstancePerLifetimeScope();
+            builder.RegisterType<StockPriceRepository>().As<IStockPriceRepository>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<TrendUnitOfWork>().As<ITrendUnitOfWork>()
+             .InstancePerLifetimeScope();
 
             base.Load(builder);
         }

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper.Configuration;
+using Microsoft.EntityFrameworkCore;
 using StockData.Trend.Entities;
 using System;
 using System.Collections.Generic;
@@ -41,3 +42,4 @@ namespace StockData.Trend.Contexts
         public DbSet<StockPrice> StockPrices { get; set; }
     }
 }
+
