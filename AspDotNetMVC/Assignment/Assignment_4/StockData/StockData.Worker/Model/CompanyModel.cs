@@ -35,12 +35,17 @@ namespace StockData.Worker.Model
             HtmlNode[] aNodes = node.SelectNodes(".//a").ToArray();
             foreach (HtmlNode item in aNodes)
             {
-                var company = new Company()
+                var data = item.InnerText;
+                var itemValue = System.Text.RegularExpressions.Regex.Replace(data, "(<[a|A][^>]*>|[<>]|['\t']|['\n']|['\r'])", "");
+                if(!string.IsNullOrWhiteSpace(itemValue))
                 {
-                    TradeCode = item.InnerText
-                };
-
-                _companyService.DataSet(company);
+                    var company = new Company()
+                    {
+                        TradeCode = itemValue
+                    };
+                    _companyService.DataSet(company);
+                }
+             
             }
         }
     }

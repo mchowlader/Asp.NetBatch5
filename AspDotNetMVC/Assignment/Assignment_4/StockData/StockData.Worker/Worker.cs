@@ -18,10 +18,12 @@ namespace StockData.Worker
         private readonly ILogger<Worker> _logger;
         private readonly CompanyModel _companyModel;
         private readonly StockPriceModel  _stockPriceModel;
+        private readonly MarketStatus  _marketStatus;
 
-        public Worker(ILogger<Worker> logger, CompanyModel model, StockPriceModel priceModel)
+        public Worker(ILogger<Worker> logger, CompanyModel model, StockPriceModel priceModel, MarketStatus marketStatus)
         {
             _logger = logger;
+            _marketStatus = marketStatus;
             _companyModel = model;
             _stockPriceModel = priceModel;
         }
@@ -33,6 +35,8 @@ namespace StockData.Worker
             {
                 //_companyModel.GetCompanyData();
                 _stockPriceModel.GetStockData();
+                //_marketStatus.StatusCheck();
+
 
 
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);

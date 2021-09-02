@@ -50,7 +50,10 @@ namespace StockData.Worker.Model
 
             foreach (HtmlNode item in nodes)
             {
-                list[a] = Convert.ToString(item.InnerText);
+                var data = item.InnerText;
+                var itemValue = System.Text.RegularExpressions.Regex.Replace(data, "(<[a|A][^>]*>|[<>]|['\t']|['\n']|['\r'])", "");
+                list[a] = Convert.ToString(itemValue);
+
                 a++;
             }
 

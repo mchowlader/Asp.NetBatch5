@@ -29,6 +29,7 @@ namespace StockData.Worker
         {
             builder.RegisterType<CompanyModel>().AsSelf();
             builder.RegisterType<StockPriceModel>().AsSelf();
+            builder.RegisterType<MarketStatus>().AsSelf();
 
             builder.RegisterType<CompanyService>().As<ICompanyService>()
                 .InstancePerLifetimeScope(); 
