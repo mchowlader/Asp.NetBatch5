@@ -12,14 +12,11 @@ namespace StockData.Trend
     {
         private readonly string _connectionString;
         private readonly string _migrationAssemblyName;
-        private readonly IConfiguration _configuration;
 
-        public TrendModule(string connectionString, string migrationAssemblyName, 
-            IConfiguration configuration)
+        public TrendModule(string connectionString, string migrationAssemblyName)
         {
             _connectionString = connectionString;
             _migrationAssemblyName = migrationAssemblyName;
-           _configuration = configuration;
         }
 
         protected override void Load(ContainerBuilder builder)

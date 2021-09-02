@@ -9,8 +9,8 @@ using StockData.Trend.Contexts;
 namespace StockData.Worker.Migrations
 {
     [DbContext(typeof(TrendDbContext))]
-    [Migration("20210831054301_AddCompanyStockPrice")]
-    partial class AddCompanyStockPrice
+    [Migration("20210902082000_AddCompanyAndStockPrice")]
+    partial class AddCompanyAndStockPrice
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,9 +28,13 @@ namespace StockData.Worker.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("TradeCode")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("TradeCode")
+                        .IsUnique()
+                        .HasFilter("[TradeCode] IS NOT NULL");
 
                     b.ToTable("Companies");
                 });
@@ -42,35 +46,35 @@ namespace StockData.Worker.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<double>("Change")
-                        .HasColumnType("float");
+                    b.Property<string>("Change")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("ClosePrice")
-                        .HasColumnType("float");
+                    b.Property<string>("ClosePrice")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("CompanyId")
                         .HasColumnType("int");
 
-                    b.Property<double>("High")
-                        .HasColumnType("float");
+                    b.Property<string>("High")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("LastTradingPrice")
-                        .HasColumnType("float");
+                    b.Property<string>("LastTradingPrice")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Low")
-                        .HasColumnType("float");
+                    b.Property<string>("Low")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Trade")
-                        .HasColumnType("int");
+                    b.Property<string>("Trade")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Value")
-                        .HasColumnType("float");
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Volume")
-                        .HasColumnType("float");
+                    b.Property<string>("Volume")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("YesterdayClosePrice")
-                        .HasColumnType("float");
+                    b.Property<string>("YesterdayClosePrice")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

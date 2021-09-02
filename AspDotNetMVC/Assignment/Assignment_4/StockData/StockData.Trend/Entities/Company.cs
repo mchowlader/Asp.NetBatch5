@@ -1,4 +1,5 @@
-﻿using StockData.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using StockData.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;

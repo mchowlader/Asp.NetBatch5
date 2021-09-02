@@ -15,47 +15,75 @@ namespace StockData.Worker.Model
     {
         public int Id { get; set; }
         public int CompanyId { get; set; }
-        public double LastTradingPrice { get; set; }
-        public double High { get; set; }
-        public double Low { get; set; }
-        public double ClosePrice { get; set; }
-        public double YesterdayClosePrice { get; set; }
-        public double Change { get; set; }
-        public int Trade { get; set; }
-        public double Value { get; set; }
-        public double Volume { get; set; }
+        public string LastTradingPrice { get; set; }
+        public string High { get; set; }
+        public string Low { get; set; }
+        public string ClosePrice { get; set; }
+        public string YesterdayClosePrice { get; set; }
+        public string Change { get; set; }
+        public string Trade { get; set; }
+        public string Value { get; set; }
+        public string Volume { get; set; }
+        public string TradeCode { get; set; }
 
         private readonly IStockPriceService  _stockPriceService;
         public StockPriceModel()
         {
+
         }
         public StockPriceModel(IStockPriceService stockPriceService)
         {
             _stockPriceService = stockPriceService;
         }
 
-       
-        public void GetStockPrice()
+        public void GetStockData()
         {
-            var StockPriceList = new ArrayList();
+            var html = @"https://www.dse.com.bd/latest_share_price_scroll_l.php";
 
             HtmlWeb web = new HtmlWeb();
-            HtmlDocument document = web.Load("https://www.dse.com.bd/latest_share_price_scroll_l.php");
+            var htmlDoc = web.Load(html);
+            var node = htmlDoc.DocumentNode.SelectNodes("//*[@id='RightBody']/div[1]").First();
+            HtmlNode[] nodes = node.SelectNodes(".//td").ToArray();
+            var list = new string[nodes.Length];
+            var i = 0;
+            var a = 0;
 
-            HtmlNode node = document.DocumentNode.SelectNodes("//*[@id='RightBody']/div[1]").First();
-
-            HtmlNode[] aNodes = node.SelectNodes(".//tr").ToArray();
-
-            foreach (HtmlNode item in aNodes)
+            foreach (HtmlNode item in nodes)
             {
-                var innerData = item.InnerText;
-
-                var value = innerData.Replace(" <.*?> ", " ");
-
-                StockPriceList.Add(value);
+                list[a] = Convert.ToString(item.InnerText);
+                a++;
             }
 
-            //_stockPriceService.GetCompanyId
+            foreach (HtmlNode item in nodes)
+            {
+                TradeCode = list[i = i + 1];
+                LastTradingPrice = list[i = i + 1];
+                High = list[i = i + 1];
+                Low = list[i = i + 1];
+                ClosePrice = list[i = i + 1];
+                YesterdayClosePrice = list[i = i + 1];
+                Change = list[i = i + 1];
+                Trade = list[i = i + 1];
+                Value = list[i = i + 1];
+                Volume = list[i = i + 1];
+                i = i + 1;
+
+                var stockBusiness = new StockPrice()
+                {
+                    TradeCode = TradeCode,
+                    LastTradingPrice = LastTradingPrice,
+                    High = High,
+                    Low = Low,
+                    ClosePrice = ClosePrice,
+                    YesterdayClosePrice = YesterdayClosePrice,
+                    Change = Change,
+                    Trade = Trade,
+                    Value = Value,
+                    Volume = Volume,
+                };
+
+                _stockPriceService.SetStockData(stockBusiness);
+            }
         }
 
     }

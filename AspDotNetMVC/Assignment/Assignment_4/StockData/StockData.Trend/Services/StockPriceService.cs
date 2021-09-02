@@ -18,5 +18,24 @@ namespace StockData.Trend.Services
             _trendUnitOfWork = trendUnitOfWork;
         }
 
+        public void SetStockData(StockPrice stockPricee)
+        {
+            _trendUnitOfWork.StockPrices.Add(
+               new Entities.StockPrice
+               {
+                   CompanyId = 4,
+                   Trade = stockPricee.Trade,
+                   LastTradingPrice = stockPricee.LastTradingPrice,
+                   Change = stockPricee.Change,
+                   ClosePrice = stockPricee.ClosePrice,
+                   High = stockPricee.High,
+                   Low = stockPricee.Low,
+                   Value = stockPricee.Value,
+                   Volume = stockPricee.Volume,
+                   YesterdayClosePrice = stockPricee.YesterdayClosePrice
+               });
+
+            _trendUnitOfWork.Save();
+        }
     }
 }

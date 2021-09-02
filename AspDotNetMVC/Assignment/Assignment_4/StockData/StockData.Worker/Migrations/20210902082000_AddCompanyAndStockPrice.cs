@@ -2,7 +2,7 @@
 
 namespace StockData.Worker.Migrations
 {
-    public partial class AddCompanyStockPrice : Migration
+    public partial class AddCompanyAndStockPrice : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,7 +12,7 @@ namespace StockData.Worker.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    TradeCode = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    TradeCode = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -26,15 +26,15 @@ namespace StockData.Worker.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CompanyId = table.Column<int>(type: "int", nullable: false),
-                    LastTradingPrice = table.Column<double>(type: "float", nullable: false),
-                    High = table.Column<double>(type: "float", nullable: false),
-                    Low = table.Column<double>(type: "float", nullable: false),
-                    ClosePrice = table.Column<double>(type: "float", nullable: false),
-                    YesterdayClosePrice = table.Column<double>(type: "float", nullable: false),
-                    Change = table.Column<double>(type: "float", nullable: false),
-                    Trade = table.Column<int>(type: "int", nullable: false),
-                    Value = table.Column<double>(type: "float", nullable: false),
-                    Volume = table.Column<double>(type: "float", nullable: false)
+                    LastTradingPrice = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    High = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Low = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ClosePrice = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    YesterdayClosePrice = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Change = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Trade = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Value = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Volume = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -46,6 +46,13 @@ namespace StockData.Worker.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Companies_TradeCode",
+                table: "Companies",
+                column: "TradeCode",
+                unique: true,
+                filter: "[TradeCode] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_StockPrices_CompanyId",

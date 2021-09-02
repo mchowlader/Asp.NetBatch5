@@ -12,15 +12,15 @@ namespace StockData.Trend.Entities
 
         public int Id { get; set; }
         public int CompanyId { get; set; }
-        public double LastTradingPrice { get; set; }
-        public double High { get; set; }
-        public double Low { get; set; }
-        public double ClosePrice { get; set; }
-        public double YesterdayClosePrice { get; set; }
-        public double Change { get; set; }
-        public int Trade { get; set; }
-        public double Value { get; set; }
-        public double Volume { get; set; }
+        public string LastTradingPrice { get; set; }
+        public string High { get; set; }
+        public string Low { get; set; }
+        public string ClosePrice { get; set; }
+        public string YesterdayClosePrice { get; set; }
+        public string Change { get; set; }
+        public string Trade { get; set; }
+        public string Value { get; set; }
+        public string Volume { get; set; }
         public Company Company { get; set; }
 
 

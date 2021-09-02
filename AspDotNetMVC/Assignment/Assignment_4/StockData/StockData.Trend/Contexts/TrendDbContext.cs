@@ -34,6 +34,9 @@ namespace StockData.Trend.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Company>()
+                .HasIndex(x => x.TradeCode)
+                .IsUnique();
 
             base.OnModelCreating(modelBuilder);
         }

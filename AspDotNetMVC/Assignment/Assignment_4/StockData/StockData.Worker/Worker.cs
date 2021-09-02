@@ -16,14 +16,14 @@ namespace StockData.Worker
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
-        private readonly CompanyModel companyModel;
-        private readonly StockPriceModel  stockPriceModel;
+        private readonly CompanyModel _companyModel;
+        private readonly StockPriceModel  _stockPriceModel;
 
         public Worker(ILogger<Worker> logger, CompanyModel model, StockPriceModel priceModel)
         {
             _logger = logger;
-            companyModel = model;
-            stockPriceModel = priceModel;
+            _companyModel = model;
+            _stockPriceModel = priceModel;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -31,8 +31,8 @@ namespace StockData.Worker
 
             while (!stoppingToken.IsCancellationRequested)
             {
-                companyModel.GetCompanyData();
-                stockPriceModel.GetStockPrice();
+                //_companyModel.GetCompanyData();
+                _stockPriceModel.GetStockData();
 
 
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
