@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tBXuSdUlD+CA1UKWltSWucGrEm/A88n8tPfY1jplkyQlAoEg62VPD7ICkqbTnNi4JCUTFAHabutsRjbwXEk/kQ==",
+  "dgSpecHash": "B722PL6ltWH/bupw1npxjj6Ijr8cozT2CkJTHPVz4jpfgCOJo1t0lE5qZicGRd2jauDzDY3JqzImTgrGQHzrsQ==",
   "success": true,
   "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Assignment\\Assignment_4\\StockData\\StockData.Worker\\StockData.Worker.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\lenovo\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\fsharp.core\\4.5.2\\fsharp.core.4.5.2.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\htmlagilitypack\\1.11.36\\htmlagilitypack.1.11.36.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -81,6 +82,7 @@
     "C:\\Users\\lenovo\\.nuget\\packages\\runtime.win.system.io.filesystem\\4.3.0\\runtime.win.system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\runtime.win.system.net.primitives\\4.3.0\\runtime.win.system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\runtime.win.system.runtime.extensions\\4.3.0\\runtime.win.system.runtime.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\scrapysharp\\3.0.0\\scrapysharp.3.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\serilog.extensions.hosting\\4.1.2\\serilog.extensions.hosting.4.1.2.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\serilog.extensions.logging\\3.0.1\\serilog.extensions.logging.3.0.1.nupkg.sha512",

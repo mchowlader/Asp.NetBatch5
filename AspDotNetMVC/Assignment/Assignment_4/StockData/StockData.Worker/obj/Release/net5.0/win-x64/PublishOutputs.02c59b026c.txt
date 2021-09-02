@@ -227,6 +227,7 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\Stock
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\Autofac.Extensions.DependencyInjection.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\AutoMapper.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\FSharp.Core.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\HtmlAgilityPack.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\Microsoft.Data.SqlClient.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\Microsoft.EntityFrameworkCore.dll
@@ -270,6 +271,8 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\Stock
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\Microsoft.IdentityModel.Tokens.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\Microsoft.Win32.SystemEvents.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\Newtonsoft.Json.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\ScrapySharp.Core.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\ScrapySharp.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\Serilog.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\Serilog.Extensions.Hosting.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\Serilog.Extensions.Logging.dll
@@ -285,6 +288,20 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\Stock
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\System.Security.Permissions.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\System.ServiceProcess.ServiceController.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\System.Windows.Extensions.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\cs\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\de\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\en\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\es\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\fr\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\it\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\ja\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\ko\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\pl\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\pt-BR\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\ru\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\tr\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\zh-Hans\FSharp.Core.resources.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\zh-Hant\FSharp.Core.resources.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\Microsoft.Data.SqlClient.SNI.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\Microsoft.Data.SqlClient.SNI.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\bin\Release\net5.0\publish\StockData.Data.dll
