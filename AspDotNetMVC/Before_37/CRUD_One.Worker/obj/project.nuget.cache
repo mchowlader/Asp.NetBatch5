@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "H/RVd3piC8NiGPsbzTBYO0qI36eyp1BuuQn2ex2CeKtpq9+/fx42aoQEWsV1VHWYGZoCZbGV0T9BUHsyNt8Wwg==",
+  "dgSpecHash": "dx+fuO3JdGdr4MCMNks7UIn1ZD4DHPq//Mh912x5cCu9HFtJh9biE0s0sAf5pKwWIStDk2nu2qzbX/y2bCEHVA==",
   "success": true,
   "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Before_37\\CRUD_One.Worker\\CRUD_One.Worker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
-    "C:\\Users\\lenovo\\.nuget\\packages\\htmlagilitypack\\1.11.36\\htmlagilitypack.1.11.36.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.extensions.configuration.binder\\5.0.0\\microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
