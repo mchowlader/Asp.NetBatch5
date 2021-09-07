@@ -13,5 +13,35 @@ namespace DataImporter.Web.Controllers
             return View();
         }
 
+        public IActionResult Group()
+        {
+            return View();
+        }
+        public IActionResult CreateGroup()
+        {
+            return View();
+        }
+
+        public IActionResult CustomFields()
+        {
+            return View();
+        }
+
+        public IActionResult Contacts()
+        {
+            return View();
+        }
+
+        public IActionResult Imports()
+        {
+            return View();
+        }
+
+        public IActionResult Exports()
+        {
+            return View();
+        }
+
+
     }
 }
