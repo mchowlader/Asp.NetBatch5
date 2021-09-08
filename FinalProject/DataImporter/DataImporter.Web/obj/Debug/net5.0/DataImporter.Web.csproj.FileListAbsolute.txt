@@ -468,3 +468,6 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\DataImporter.Transfer.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\DataImporter.User.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\DataImporter.User.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Shared\Partial\_RegisterLoginNavPartial.cshtml.g.cs

@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Web", "DataImporter.Web\DataImporter.Web.csproj", "{C050EE5E-835F-46FA-A3C0-009408623484}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImporter.Data", "DataImporter.Data\DataImporter.Data.csproj", "{DD665442-9016-43D7-9F83-AC6D4D3DC883}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Data", "DataImporter.Data\DataImporter.Data.csproj", "{DD665442-9016-43D7-9F83-AC6D4D3DC883}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImporter.Transfer", "DataImporter.Transfer\DataImporter.Transfer.csproj", "{19EC0F11-C699-45FF-985F-5425553619C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Transfer", "DataImporter.Transfer\DataImporter.Transfer.csproj", "{19EC0F11-C699-45FF-985F-5425553619C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImporter.User", "DataImporter.User\DataImporter.User.csproj", "{E3C47A17-C510-49EB-A28F-8D059F8D52BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.User", "DataImporter.User\DataImporter.User.csproj", "{E3C47A17-C510-49EB-A28F-8D059F8D52BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
