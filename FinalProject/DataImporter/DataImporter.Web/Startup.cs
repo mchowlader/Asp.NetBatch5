@@ -1,3 +1,10 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using DataImporter.Transfer;
+using DataImporter.Transfer.Contexts;
+using DataImporter.User;
+using DataImporter.User.Contexts;
+using DataImporter.User.Entities;
 using DataImporter.Web.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -17,29 +24,90 @@ namespace DataImporter.Web
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IWebHostEnvironment env)
         {
-            Configuration = configuration;
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddEnvironmentVariables();
+
+            WebHostEnvironment = env;
+
+            Configuration = builder.Build();
+        }
+        
+        public IConfiguration Configuration { get; }
+        public IWebHostEnvironment WebHostEnvironment { get; set; }
+        public static ILifetimeScope AutofacContainer { get; set; }
+
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            var connectionInfo = GetConnectionStringAndAssemblyName();
+
+            builder.RegisterModule(new TransferModule(connectionInfo.connectionString, 
+                connectionInfo.migrationAssemblyName));
+
+            builder.RegisterModule(new UserModule(connectionInfo.connectionString, 
+                connectionInfo.migrationAssemblyName));
         }
 
-        public IConfiguration Configuration { get; }
+        private (string connectionString, string migrationAssemblyName) GetConnectionStringAndAssemblyName()
+        {
+            var connectionString = "DefaultConnection";
+            var connectionStringName = Configuration.GetConnectionString(connectionString);
+            var migrationAssemblyName = typeof(Startup).Assembly.FullName;
+
+            return (connectionStringName, migrationAssemblyName);
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+            var connectionInfo = GetConnectionStringAndAssemblyName();
+
+            services.AddDbContext<ApplicationDbContext>(option =>
+               option.UseSqlServer(connectionInfo.connectionString,
+                   x => x.MigrationsAssembly(connectionInfo.migrationAssemblyName)));
+
+            services.AddDbContext<TransferDbContext>(option =>
+                option.UseSqlServer(connectionInfo.connectionString,
+                    x => x.MigrationsAssembly(connectionInfo.migrationAssemblyName)));
+
+            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                // Cookie settings
+                options.Cookie.HttpOnly = true;
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+
+                options.LoginPath = "/Account/Signin";
+                options.AccessDeniedPath = "/Account/AccessDenied";
+                options.SlidingExpiration = true;
+            });
+
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(100);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
+            services.AddControllersWithViews();
+            services.AddHttpContextAccessor();
+            services.AddRazorPages();
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            AutofacContainer = app.ApplicationServices.GetAutofacRoot();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -59,13 +127,22 @@ namespace DataImporter.Web
             app.UseAuthentication();
             app.UseAuthorization();
 
+            app.UseSession();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "areas",
+                    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{Id?}");
+
+                endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{Id?}");
+
                 endpoints.MapRazorPages();
+
             });
+
         }
     }
 }
