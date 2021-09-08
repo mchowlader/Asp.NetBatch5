@@ -652,3 +652,8 @@ System.InvalidOperationException: StatusCode cannot be set because the response 
    at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseDeveloperPageExceptionFilter.HandleExceptionAsync(ErrorContext errorContext, Func`2 next)
 2021-09-08 20:56:15.155 +06:00 [INF] Application Starting up
 2021-09-08 20:59:21.210 +06:00 [INF] Application Starting up
+2021-09-08 21:10:06.922 +06:00 [INF] Application Starting up
+2021-09-08 21:19:03.274 +06:00 [INF] Application Starting up
+2021-09-08 21:37:28.489 +06:00 [INF] Application Starting up
+2021-09-08 22:32:42.612 +06:00 [INF] Application Starting up
+2021-09-08 22:51:23.986 +06:00 [INF] Application Starting up

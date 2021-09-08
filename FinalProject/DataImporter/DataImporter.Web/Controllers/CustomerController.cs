@@ -31,7 +31,10 @@ namespace DataImporter.Web.Controllers
         {
             return View();
         }
-
+        public IActionResult ImportData()
+        {
+            return View();
+        }
         public IActionResult Imports()
         {
             return View();
