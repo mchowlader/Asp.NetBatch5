@@ -1,6 +1,7 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using ExamTimeChallenge.Membership;
+using ExamTimeChallenge.Membership.BusinessObjects;
 using ExamTimeChallenge.Membership.Contexts;
 using ExamTimeChallenge.Membership.Entities;
 using ExamTimeChallenge.Membership.Services;
@@ -8,6 +9,7 @@ using ExamTimeChallenge.Training;
 using ExamTimeChallenge.Training.Contexts;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -114,15 +116,6 @@ namespace ExamTimeChallenge.Api
             });
 
             services.AddAuthentication()
-                .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
-                {
-                    options.LoginPath = new PathString("/Account/Login");
-                    options.AccessDeniedPath = new PathString("/Account/Login");
-                    options.LogoutPath = new PathString("/Account/Logout");
-                    options.Cookie.Name = "CustomerPortal.Identity";
-                    options.SlidingExpiration = true;
-                    options.ExpireTimeSpan = TimeSpan.FromDays(1);
-                })
                 .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, x =>
                 {
                     x.RequireHttpsMetadata = false;
@@ -137,14 +130,18 @@ namespace ExamTimeChallenge.Api
                         ValidAudience = Configuration["Jwt:Audience"]
                     };
                 });
-
-            services.AddSession(options =>
+            services.AddAuthorization(options =>
             {
-                options.IdleTimeout = TimeSpan.FromSeconds(100);
-                options.Cookie.HttpOnly = true;
-                options.Cookie.IsEssential = true;
+                options.AddPolicy("AccessPermission", policy =>
+                {
+                    policy.AuthenticationSchemes.Clear();
+                    policy.AuthenticationSchemes.Add(JwtBearerDefaults.AuthenticationScheme);
+                    policy.RequireAuthenticatedUser();
+                    policy.Requirements.Add(new ApiRequirement());
+                });
             });
 
+            services.AddSingleton<IAuthorizationHandler, ApiRequirementHandler>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddHttpContextAccessor();
 

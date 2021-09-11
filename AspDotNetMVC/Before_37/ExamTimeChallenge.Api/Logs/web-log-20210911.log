@@ -23,3 +23,6 @@ System.ArgumentNullException: String reference not set to an instance of a Strin
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-11 15:51:09.520 +06:00 [INF] Application Starting up
+2021-09-11 15:57:07.605 +06:00 [INF] Application Starting up
+2021-09-11 16:06:20.077 +06:00 [INF] Application Starting up
