@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DataImporter.Transfer.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,8 @@ namespace DataImporter.Transfer.Contexts
 
             base.OnModelCreating(modelBuilder);
         }
+
+        public DbSet<Group> Groups { get; set; }
 
     }
 }

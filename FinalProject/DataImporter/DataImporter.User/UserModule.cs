@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using DataImporter.Transfer.Services;
 using DataImporter.User.Contexts;
 using System;
 
@@ -27,6 +28,7 @@ namespace DataImporter.User
                 .WithParameter("connectionString", _connectionString)
                 .WithParameter("migrationAssemblyName", _migrationAssemblyName)
                 .InstancePerLifetimeScope();
+
 
 
             base.Load(builder);

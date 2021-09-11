@@ -1,5 +1,8 @@
 ﻿using Autofac;
 using DataImporter.Transfer.Contexts;
+using DataImporter.Transfer.Repositories;
+using DataImporter.Transfer.Services;
+using DataImporter.Transfer.UnitOfWorks;
 using System;
 
 namespace DataImporter.Transfer
@@ -25,6 +28,14 @@ namespace DataImporter.Transfer
             builder.RegisterType<TransferDbContext>().As<ITransferDbContext>()
                 .WithParameter("connectionString", _connectionString)
                 .WithParameter("migrationAssemblyName", _migrationAssemblyName)
+                .InstancePerLifetimeScope();
+
+
+            builder.RegisterType<GroupService>().As<IGroupService>()
+                .InstancePerLifetimeScope();
+            builder.RegisterType<TransferUnitOfWork>().As<ITransferUnitOfWork>()
+                .InstancePerLifetimeScope(); 
+            builder.RegisterType<GroupRepository>().As<IGroupRepository>()
                 .InstancePerLifetimeScope();
 
             base.Load(builder);

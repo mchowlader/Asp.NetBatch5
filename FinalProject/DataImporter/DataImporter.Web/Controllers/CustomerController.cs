@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DataImporter.Web.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,14 @@ namespace DataImporter.Web.Controllers
         }
         public IActionResult CreateGroup()
         {
-            return View();
+            var model = new CreateGroupModel();
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult CreateGroup(CreateGroupModel model)
+        {
+            model.CreateGroupName();
+            return View(model);
         }
 
         public IActionResult CustomFields()
