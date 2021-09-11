@@ -1,0 +1,10 @@
+2021-09-10 21:29:29.895 +06:00 [INF] Application Starting up
+2021-09-10 21:29:32.517 +06:00 [FTL] Application start-up failed
+System.InvalidOperationException: Process has exited, so the requested information is not available.
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_SessionId()
+   at Microsoft.Extensions.Hosting.WindowsServices.WindowsServiceHelpers.IsWindowsService()
+   at Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService(IHostBuilder hostBuilder, Action`1 configure)
+   at Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService(IHostBuilder hostBuilder)
+   at StockData.Worker.Program.CreateHostBuilder(String[] args) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\Program.cs:line 51
+   at StockData.Worker.Program.Main(String[] args) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Assignment\Assignment_4\StockData\StockData.Worker\Program.cs:line 38
