@@ -10,10 +10,6 @@ namespace DataImporter.Web.Controllers
 {
     public class CustomerController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
 
         public IActionResult Group()
         {
@@ -38,19 +34,6 @@ namespace DataImporter.Web.Controllers
             return Json(data);
         }
         
-
-
-        public IActionResult Data()
-        {
-            return View();
-        }
-
-       
-        public IActionResult CustomFields()
-        {
-            return View();
-        }
-
         public IActionResult Contacts()
         {
             return View();
@@ -59,10 +42,13 @@ namespace DataImporter.Web.Controllers
         {
             return View();
         }
+
+        [HttpPost, ValidateAntiForgeryToken]
         public IActionResult Imports()
         {
             return View();
         }
+
         [HttpPost, ValidateAntiForgeryToken]
         public IActionResult Upload()
         {
@@ -72,6 +58,20 @@ namespace DataImporter.Web.Controllers
         public IActionResult Exports()
         {
             return View();
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+
+        public IActionResult EditGroup()
+        {
+            return View();
+        }
+
+        public IActionResult DeleteGroup(int id)
+        {
+            var model = new ListGroupModel();
+            model.GroupDelete(id);
+            return RedirectToAction(nameof(Group));
         }
 
 

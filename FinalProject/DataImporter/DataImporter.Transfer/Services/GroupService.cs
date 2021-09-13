@@ -50,5 +50,10 @@ namespace DataImporter.Transfer.Services
             return (resultData, groupData.total, groupData.totalDisplay);
         }
 
+        public void GroupDelete(int id)
+        {
+            _transferUnitOfWork.Groups.Remove(id);
+            _transferUnitOfWork.Save();
+        }
     }
 }

@@ -13,5 +13,6 @@ namespace DataImporter.Transfer.Services
         (IList<Group> records, int total, int totalDisplay) GetGroups(int pageIndex, 
             int pageSize, string searchText, string sortText);
         Home CountHomeProperty();
+        void GroupDelete(int id);
     }
 }
