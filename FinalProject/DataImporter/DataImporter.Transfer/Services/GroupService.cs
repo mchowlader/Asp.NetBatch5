@@ -36,6 +36,15 @@ namespace DataImporter.Transfer.Services
             _transferUnitOfWork.Save();
         }
 
+        public Group GetGroup(int id)
+        {
+            var groupEntity = _transferUnitOfWork.Groups.GetById(id);
+
+            if (groupEntity == null) return null;
+            
+            return _mapper.Map<Group>(groupEntity);
+        }
+
         public (IList<Group> records, int total, int totalDisplay) GetGroups(int pageIndex, 
             int pageSize, string searchText, string sortText)
         {
@@ -45,7 +54,6 @@ namespace DataImporter.Transfer.Services
 
             var resultData = (from groups in groupData.data
                               select _mapper.Map<Group>(groups)).ToList();
-
 
             return (resultData, groupData.total, groupData.totalDisplay);
         }

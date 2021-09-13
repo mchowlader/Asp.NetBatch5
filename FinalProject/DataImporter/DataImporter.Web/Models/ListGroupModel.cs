@@ -11,9 +11,9 @@ namespace DataImporter.Web.Models
 {
     public class ListGroupModel
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public DateTime DateTime { get; set; }
+        //public int Id { get; set; }
+        //public string Name { get; set; }
+        //public DateTime DateTime { get; set; }
 
         private readonly IMapper _mapper;
         private readonly IGroupService _groupService;

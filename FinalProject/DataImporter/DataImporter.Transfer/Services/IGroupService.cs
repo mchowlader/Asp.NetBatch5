@@ -14,5 +14,6 @@ namespace DataImporter.Transfer.Services
             int pageSize, string searchText, string sortText);
         Home CountHomeProperty();
         void GroupDelete(int id);
+        Group GetGroup(int id);
     }
 }

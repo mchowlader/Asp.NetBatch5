@@ -15,17 +15,17 @@ namespace DataImporter.Web.Controllers
         {
             return View();
         }
-        public IActionResult CreateGroup()
-        {
-            var model = new CreateGroupModel();
-            return View(model);
-        }
+      
+        //ok
         [HttpPost]
         public IActionResult CreateGroup(CreateGroupModel model)
         {
             model.CreateGroup();
-            return View(model);
+            return RedirectToAction(nameof(Group));
+
         }
+        
+        //ok
         public JsonResult GetGroupData()
         {
             var dataTableModel = new DataTablesAjaxRequestModel(Request);
@@ -33,17 +33,7 @@ namespace DataImporter.Web.Controllers
             var data = model.GetGroups(dataTableModel);
             return Json(data);
         }
-        
-        public IActionResult Contacts()
-        {
-            return View();
-        }
-        public IActionResult ImportData()
-        {
-            return View();
-        }
 
-        [HttpPost, ValidateAntiForgeryToken]
         public IActionResult Imports()
         {
             return View();
@@ -60,13 +50,15 @@ namespace DataImporter.Web.Controllers
             return View();
         }
 
-        [HttpPost, ValidateAntiForgeryToken]
-
-        public IActionResult EditGroup()
+        public IActionResult EditGroup(int id)
         {
-            return View();
+            var model = new EditGroupModel();
+            model.EditGroup(id);
+            //return RedirectToAction(nameof(Group));
+            return RedirectToAction(nameof(Group),PartialView("_EditGroupPartial"));//problem
         }
 
+        //ok
         public IActionResult DeleteGroup(int id)
         {
             var model = new ListGroupModel();

@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DataImporter.Web.Models.Account
+namespace DataImporter.Web.Models
 {
     public class EditGroupModel
     {
@@ -30,6 +30,12 @@ namespace DataImporter.Web.Models.Account
         {
             _mapper = mapper;
             _groupService = groupService;
+        }
+
+        internal void EditGroup(int id)
+        {
+            var group = _groupService.GetGroup(id);
+            _mapper.Map(group,this);
         }
     }
 }

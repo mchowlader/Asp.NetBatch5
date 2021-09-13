@@ -13,6 +13,7 @@ namespace DataImporter.Web.Profiles
         public WebProfile()
         {
             CreateMap<Group, CreateGroupModel>().ReverseMap();
+            CreateMap<Group, EditGroupModel>().ReverseMap();
         }
     }
 }
