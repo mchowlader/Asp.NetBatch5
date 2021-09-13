@@ -6,63 +6,108 @@
     <link rel="stylesheet" href="/DataImporter/plugins/daterangepicker/daterangepicker.css">
 }
 
+<!-- Navbar -->
 <nav class="main-sidebar-custom navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <partial name="Partial/_LeftNavbarPartial" />
+
     <!-- Left navbar links -->
+    <!-- Right navbar links -->
+    <ul id="courses"  class="navbar-nav ml-auto">
+        <li class="nav-item d-none d-sm-inline-block">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="ion ion-upload"></i>
+                Upload
+            </button>
+        </li>
+    </ul>
+    <!-- Right navbar links -->
+
 </nav>
+<!-- /.navbar -->
 
 
 
 <section class="content">
-    <div class="container-fluid ">
-        <div class="row">
-            <!-- left column -->
-            <div class="col-md-12">
-                <!-- Horizontal Form -->
-                <div class="card card-info">
-                    <form class="form-inline" asp-action="Create" asp-controller="Customer" method="post" asp-antiforgery="true">
-                        <div asp-validation-summary="All" class="text-danger"></div>
-                        <div class="card-body">
-                            <div class="row row-cols-3">
 
-                                <div class="form-group row col-sm-4  ">
-                                    <label asp-for="DateTo" class="col-sm-4 col-form-label">Date To</label>
-                                    <div class="input-group date col-sm-10" id="reservationdate1" data-target-input="nearest">
-                                        <input asp-for="DateTo" type="datetime" class="form-control datetimepicker-input" id="startdate"
-                                               data-target="#reservationdate1" />
-                                        <div class="input-group-append" data-target="#reservationdate1" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+
+    <div class="card-header">
+       
+
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-12">
+                    <!-- Horizontal Form -->
+                    <div class="card card-info" style="padding-bottom:20px">
+                        <form class="form-inline" asp-action="Create" asp-controller="Customer" method="post" asp-antiforgery="true">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="card-body">
+                                <div class="row row-cols-3">
+
+                                    <div class="form-group row col-sm-4  ">
+                                        <label asp-for="DateTo" class="col-sm-4 col-form-label">Date To</label>
+                                        <div class="input-group date col-sm-10" id="reservationdate1" data-target-input="nearest">
+                                            <input asp-for="DateTo" type="datetime" class="form-control datetimepicker-input" id="startdate"
+                                                   data-target="#reservationdate1" />
+                                            <div class="input-group-append" data-target="#reservationdate1" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group row col-sm-4  ">
-                                    <label asp-for="DateFrom" class="col-sm-4 col-form-label">Date From</label>
-                                    <div class="input-group date col-sm-10" id="reservationdate2" data-target-input="nearest">
-                                        <input asp-for="DateFrom" type="datetime" class="form-control datetimepicker-input" id="startdate"
-                                               data-target="#reservationdate2" />
-                                        <div class="input-group-append" data-target="#reservationdate2" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    <div class="form-group row col-sm-4  ">
+                                        <label asp-for="DateFrom" class="col-sm-4 col-form-label">Date From</label>
+                                        <div class="input-group date col-sm-10" id="reservationdate2" data-target-input="nearest">
+                                            <input asp-for="DateFrom" type="datetime" class="form-control datetimepicker-input" id="startdate"
+                                                   data-target="#reservationdate2" />
+                                            <div class="input-group-append" data-target="#reservationdate2" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="col-sm-4" style="padding-top:22px">
-                                    <label class="col-sm-4 col-form-label "></label>
-                                    <div class="col-sm-10">
-                                        <button type="button" class="btn btn-outline-primary float-md-right ">search</button>
+                                    <div class="col-sm-4" style="padding-top:22px">
+                                        <label class="col-sm-4 col-form-label "></label>
+                                        <div class="col-sm-10">
+                                            <button type="button" class="btn btn-outline-primary float-md-right ">search</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- /.row -->
-    </div><!-- /.container-fluid -->
+
+
+      
+    </div>
 </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="file-loading">
+                    <input id="input-b9" name="input-b9[]" multiple type="file">
+                </div>
+                <div id="kartik-file-errors"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- /.content -->
 @section Scripts
 {
@@ -80,7 +125,18 @@
                 format: 'L'
             });
         });
-            //Date picker
+        //Date picker
 
+        $("#input-b9").fileinput({
+            showPreview: false,
+            showUpload: false,
+            elErrorContainer: '#kartik-file-errors',
+            allowedFileExtensions: ["jpg", "png", "gif"]
+            //uploadUrl: '/site/file-upload-single'
+        });
     </script>
+
+   
+
 }
+

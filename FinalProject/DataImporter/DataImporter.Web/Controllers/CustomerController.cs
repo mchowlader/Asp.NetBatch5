@@ -1,4 +1,5 @@
-﻿using DataImporter.Web.Models;
+﻿using DataImporter.Common.Utilities;
+using DataImporter.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -26,10 +27,25 @@ namespace DataImporter.Web.Controllers
         [HttpPost]
         public IActionResult CreateGroup(CreateGroupModel model)
         {
-            model.CreateGroupName();
+            model.CreateGroup();
             return View(model);
         }
+        public JsonResult GetGroupData()
+        {
+            var dataTableModel = new DataTablesAjaxRequestModel(Request);
+            var model = new ListGroupModel();
+            var data = model.GetGroups(dataTableModel);
+            return Json(data);
+        }
+        
 
+
+        public IActionResult Data()
+        {
+            return View();
+        }
+
+       
         public IActionResult CustomFields()
         {
             return View();
@@ -44,6 +60,11 @@ namespace DataImporter.Web.Controllers
             return View();
         }
         public IActionResult Imports()
+        {
+            return View();
+        }
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult Upload()
         {
             return View();
         }

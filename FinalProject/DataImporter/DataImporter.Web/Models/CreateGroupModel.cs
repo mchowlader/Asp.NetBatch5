@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Autofac;
 using DataImporter.Transfer.BusinessObjects;
+using System.ComponentModel.DataAnnotations;
 
 namespace DataImporter.Web.Models
 {
@@ -13,6 +14,8 @@ namespace DataImporter.Web.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        [DisplayFormat(DataFormatString = @"{0:dd\/MM\/yyyy}", ApplyFormatInEditMode = false)]
         public DateTime DateTime { get; set; }
 
         private readonly IMapper _mapper;
@@ -30,7 +33,7 @@ namespace DataImporter.Web.Models
             _groupService = groupService;
         }
 
-        internal void CreateGroupName()
+        internal void CreateGroup()
         {
             var group = _mapper.Map<Group>(this);
             _groupService.CreateGroup(group);

@@ -2735,6 +2735,20 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "DataImporter.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Autofac.Extensions.DependencyInjection": "7.1.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "bin/placeholder/DataImporter.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataImporter.Common.dll": {}
+        }
+      },
       "DataImporter.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -8908,6 +8922,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "DataImporter.Common/1.0.0": {
+      "type": "project",
+      "path": "../DataImporter.Common/DataImporter.Common.csproj",
+      "msbuildProject": "../DataImporter.Common/DataImporter.Common.csproj"
+    },
     "DataImporter.Data/1.0.0": {
       "type": "project",
       "path": "../DataImporter.Data/DataImporter.Data.csproj",
@@ -8928,6 +8947,7 @@
     "net5.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
       "Autofac.Extensions.DependencyInjection >= 7.1.0",
+      "DataImporter.Common >= 1.0.0",
       "DataImporter.Transfer >= 1.0.0",
       "DataImporter.User >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 5.0.9",
@@ -8968,6 +8988,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj": {
+              "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj"
+            },
             "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Transfer\\DataImporter.Transfer.csproj": {
               "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Transfer\\DataImporter.Transfer.csproj"
             },

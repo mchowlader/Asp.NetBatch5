@@ -10,5 +10,7 @@ namespace DataImporter.Transfer.Services
     public interface IGroupService
     {
         void CreateGroup(Group group);
+        (IList<Group> records, int total, int totalDisplay) GetGroups(int pageIndex, 
+            int pageSize, string searchText, string sortText);
     }
 }

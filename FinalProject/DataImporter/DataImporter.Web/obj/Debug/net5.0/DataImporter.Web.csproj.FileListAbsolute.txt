@@ -477,3 +477,6 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\DataImporter.Data.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\DataImporter.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\DataImporter.Common.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\DataImporter.Common.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Shared\Partial\_DeletePopupPartial.cshtml.g.cs

@@ -24,6 +24,22 @@ namespace DataImporter.Transfer.Services
         {
             _transferUnitOfWork.Groups.Add(
                 _mapper.Map<Entities.Group>(group));
+            _transferUnitOfWork.Save();
         }
+
+        public (IList<Group> records, int total, int totalDisplay) GetGroups(int pageIndex, 
+            int pageSize, string searchText, string sortText)
+        {
+            var groupData = _transferUnitOfWork.Groups.GetDynamic(
+               string.IsNullOrWhiteSpace(searchText) ? null : x => x.Name.Contains(searchText),
+               sortText, string.Empty, pageIndex, pageSize);
+
+            var resultData = (from groups in groupData.data
+                              select _mapper.Map<Group>(groups)).ToList();
+
+
+            return (resultData, groupData.total, groupData.totalDisplay);
+        }
+
     }
 }
