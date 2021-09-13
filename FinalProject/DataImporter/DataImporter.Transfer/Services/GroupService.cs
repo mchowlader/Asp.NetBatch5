@@ -20,6 +20,15 @@ namespace DataImporter.Transfer.Services
             _transferUnitOfWork = transferUnitOfWork;
         }
 
+        public Home CountHomeProperty()
+        {
+            var groupCount = _transferUnitOfWork.Groups.GetCount();
+            return new Home()
+            { 
+                Groups = groupCount 
+            };
+        }
+
         public void CreateGroup(Group group)
         {
             _transferUnitOfWork.Groups.Add(

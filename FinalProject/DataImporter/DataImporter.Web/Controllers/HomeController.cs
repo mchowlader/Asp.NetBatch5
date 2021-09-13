@@ -20,7 +20,9 @@ namespace DataImporter.Web.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var model = new HomeModel();
+            model.CountHomeProperty();
+            return View(model);
         }
 
         public IActionResult Privacy()

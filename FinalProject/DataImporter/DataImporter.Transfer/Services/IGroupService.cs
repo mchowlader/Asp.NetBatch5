@@ -12,5 +12,6 @@ namespace DataImporter.Transfer.Services
         void CreateGroup(Group group);
         (IList<Group> records, int total, int totalDisplay) GetGroups(int pageIndex, 
             int pageSize, string searchText, string sortText);
+        Home CountHomeProperty();
     }
 }

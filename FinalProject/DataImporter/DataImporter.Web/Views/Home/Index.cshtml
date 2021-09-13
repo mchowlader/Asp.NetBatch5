@@ -1,4 +1,5 @@
-﻿@section Styles
+﻿@model HomeModel
+@section Styles
 {
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="/DataImporter/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
@@ -33,12 +34,12 @@
                 <!-- small box -->
                 <div class="small-box bg-info">
                     <div class="inner">
-                        <h3>150</h3>
+                        <h3>@Model.Groups</h3>
 
                         <p>Groups</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-folder"></i>
+                        <i class="fas fa-users"></i>
                     </div>
                     <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
