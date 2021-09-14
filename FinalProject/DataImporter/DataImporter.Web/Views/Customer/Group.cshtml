@@ -110,7 +110,39 @@
     </div>
     <!-- Create Modal-->
     <!--Edit Modal -->
-    <partial name="Partial/_EditGroupPartial" />
+    @*<partial name="Partial/_EditGroupPartial" />*@
+
+    <div class="modal fade" id="modalEditGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Header-->
+                <div class="card-header">
+                </div>
+                <!--Body-->
+                <form class="form-horizontal" asp-action="EditGroup" asp-controller="Customer" method="post" asp-antiforgery="true">
+                    <div class="modal-body text-center mb-1">
+                        <h5 class="mt-1 mb-2">Edit Group</h5>
+                        <div class="md-form ml-0 mr-0">
+                            <div class="col-md-12">
+                                <input asp-for="Name" type="text" class="form-control" id="inputName" placeholder="Name">
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button asp-action="EditGroup" asp-controller="Customer" type="submit" class="btn btn-info">Update</button>
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
     <!--Edit Modal -->
 
 </section>
@@ -144,16 +176,18 @@
                             "orderable": false,
                             "targets": 2,
                             "render": function (data, type, row) {
-                                return ` <button type ="submit" class ="btn btn-info btn-sm"
-                                            onclick = "window.location.href = '/Customer/EditGroup/${data}'" value = '${data}'>
-                                            <i class = "fas fa-pencil-alt"></i>
-                                        Edit
+                                return `<button type ="submit" class ="btn btn-info show-bs-modal btn-sm"
+                                                href = "#" data-id = '${data}' value = '${data}'>
+                                               <i class = "fas fa-pencil-alt"></i>
+                                            Edit
                                         </button>
+
                                          <button type ="submit" class ="btn btn-danger show-bs-modal btn-sm"
                                                 href = "#" data-id = '${data}' value = '${data}'>
                                                 <i class = "fas fa-trash"></i>
                                             Delete
                                         </button>
+
                                         <button type ="submit" class ="btn btn-primary show-bs-modal btn-sm"
                                                 href = "#" data-id = '${data}' value = '${data}'>
                                                 <i class = "fas fa-envelope "></i>
@@ -182,6 +216,20 @@
             $("#deleteButton").click(function () {
                 $("#deleteForm").submit();
             });
+
+            $('#customer').on('click', '.show-bs-modal', function (event) {
+                var id = $(this).data("id");
+                var modal = $("#modalEditGroup");
+                $("#EditForm").val(id);
+                $("#inputName").attr("action", "/Customer/EditGroup")
+                modal.modal('show');
+            });
+
+
+            $("#updateButton").click(function () {
+                $("#modalEditGroup").submit();
+            });
+
         });
     </script>
 }

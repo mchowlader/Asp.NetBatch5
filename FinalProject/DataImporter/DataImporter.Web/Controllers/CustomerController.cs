@@ -55,7 +55,7 @@ namespace DataImporter.Web.Controllers
             var model = new EditGroupModel();
             model.EditGroup(id);
             //return RedirectToAction(nameof(Group));
-            return RedirectToAction(nameof(Group),PartialView("_EditGroupPartial"));//problem
+            return PartialView( "Partial/_EditGroupPartial", model);//problem
         }
 
         //ok
@@ -65,7 +65,12 @@ namespace DataImporter.Web.Controllers
             model.GroupDelete(id);
             return RedirectToAction(nameof(Group));
         }
-
-
+        
+        
+        //[HttpPost]
+        //public IActionResult Group(EditGroupModel model)
+        //{
+        //    return PartialView();
+        //}
     }
 }
