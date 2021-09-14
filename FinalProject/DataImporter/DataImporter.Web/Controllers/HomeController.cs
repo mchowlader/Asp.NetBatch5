@@ -1,4 +1,5 @@
 ﻿using DataImporter.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataImporter.Web.Controllers
 {
+   
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -24,7 +26,7 @@ namespace DataImporter.Web.Controllers
             model.CountHomeProperty();
             return View(model);
         }
-
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();

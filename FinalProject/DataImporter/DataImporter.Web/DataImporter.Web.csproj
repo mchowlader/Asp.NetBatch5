@@ -45,4 +45,8 @@
     <ProjectReference Include="..\DataImporter.User\DataImporter.User.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\" />
+  </ItemGroup>
+
 </Project>

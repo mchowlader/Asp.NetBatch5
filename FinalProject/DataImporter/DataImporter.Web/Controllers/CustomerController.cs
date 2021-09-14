@@ -1,5 +1,6 @@
 ﻿using DataImporter.Common.Utilities;
 using DataImporter.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -8,9 +9,10 @@ using System.Threading.Tasks;
 
 namespace DataImporter.Web.Controllers
 {
+    [Authorize]
     public class CustomerController : Controller
     {
-
+      
         public IActionResult Group()
         {
             return View();
