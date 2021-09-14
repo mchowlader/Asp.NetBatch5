@@ -67,12 +67,19 @@ namespace DataImporter.Web.Controllers
             model.GroupDelete(id);
             return RedirectToAction(nameof(Group));
         }
-        
-        
+
+
         //[HttpPost]
         //public IActionResult Group(EditGroupModel model)
         //{
         //    return PartialView();
         //}
+
+
+        public IActionResult Contacts()
+        {
+            var model = new ContactsModel();
+            return View(model);
+        }
     }
 }

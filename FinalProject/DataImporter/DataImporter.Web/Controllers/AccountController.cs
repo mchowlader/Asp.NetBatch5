@@ -1,4 +1,5 @@
-﻿using DataImporter.User.Entities;
+﻿using DataImporter.Common.Utilities;
+using DataImporter.User.Entities;
 using DataImporter.Web.Models.Account;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
@@ -21,17 +22,19 @@ namespace DataImporter.Web.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<AccountController> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly IEmailService _emailService;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             ILogger<AccountController> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender, IEmailService emailService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _emailService = emailService;
         }
 
         public async Task<IActionResult> Register(string returnUrl = null)
@@ -63,6 +66,9 @@ namespace DataImporter.Web.Controllers
                         protocol: Request.Scheme);
 
                     await _emailSender.SendEmailAsync(model.Email, "Confirm your email",
+                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+
+                    _emailService.SendEmail(model.Email, "Confirm your email", 
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
