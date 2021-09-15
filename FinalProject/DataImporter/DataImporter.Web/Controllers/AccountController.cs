@@ -51,12 +51,22 @@ namespace DataImporter.Web.Controllers
         [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterModel model ,string returnUrl = null)
         {
+
+           
+
             returnUrl ??= Url.Content("~/");
             model.ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
+                //reCapcha
+                if (!Request.Form.ContainsKey("g-recaptcha-response")) return View(model);
+                var captcha = Request.Form["g-recaptcha-response"].ToString();
+                if (!await _captcha.IsValid(captcha)) return View(model);
+
+
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await _userManager.CreateAsync(user, model.Password);
+
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
@@ -71,12 +81,12 @@ namespace DataImporter.Web.Controllers
                     await _emailSender.SendEmailAsync(model.Email, "Confirm your email",
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
-                    _emailService.SendEmail(model.Email, "Confirm your email", 
+                    _emailService.SendEmail(model.Email, "Confirm your email",
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
-                        return RedirectToAction("RegisterConfirmation", "Account" ,new { email = model.Email, returnUrl = returnUrl });
+                        return RedirectToAction("RegisterConfirmation", "Account", new { email = model.Email, returnUrl = returnUrl });
                     }
                     else
                     {
@@ -84,15 +94,12 @@ namespace DataImporter.Web.Controllers
                         return LocalRedirect(returnUrl);
                     }
                 }
+
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
-
-                //reCapcha
-                if (!Request.Form.ContainsKey("g-recaptcha-response")) return View(model);
-                var captcha = Request.Form["g-recaptcha-response"].ToString();
-                if (!await _captcha.IsValid(captcha)) return View(model);
+             
             }
 
             // If we got this far, something failed, redisplay form

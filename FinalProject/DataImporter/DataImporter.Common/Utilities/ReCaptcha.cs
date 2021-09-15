@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,18 +11,22 @@ namespace DataImporter.Common.Utilities
 {
     public class ReCaptcha
     {
-        private readonly HttpClient captchaClient;
+        private readonly HttpClient _captchaClient;
+        private ILogger<ReCaptcha> _logger;
 
-        public ReCaptcha(HttpClient captchaClient)
+        public string Secret = "<6LcjBVwcAAAAACh_LtFNsK97E5JgQApuhd3ZMn6Z>";
+
+        public ReCaptcha(HttpClient captchaClient, ILogger<ReCaptcha> logger)
         {
-            this.captchaClient = captchaClient;
+            _captchaClient = captchaClient;
+            _logger = logger;
         }
 
         public async Task<bool> IsValid(string captcha)
         {
             try
             {
-                var postTask = await captchaClient
+                var postTask = await _captchaClient
                     .PostAsync($"?secret=SECRET_KEY&response={captcha}", new StringContent(""));
                 var result = await postTask.Content.ReadAsStringAsync();
                 var resultObject = JObject.Parse(result);
@@ -30,9 +35,10 @@ namespace DataImporter.Common.Utilities
             }
             catch (Exception e)
             {
-                // TODO: log this (in elmah.io maybe?)
-                return false;
+                _logger.LogError("Failed to process captcha validation", e);
             }
+            return false;
+
         }
     }
 }
