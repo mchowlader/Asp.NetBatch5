@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authentication;
+﻿using DataImporter.Common.Utilities;
+using Microsoft.AspNetCore.Authentication;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -9,9 +10,17 @@ namespace DataImporter.Web.Models.Account
 {
     public class RegisterModel
     {
+        private readonly ReCaptcha _captcha;
+
+
         public RegisterModel()
         {
-
+         
+        }
+        public RegisterModel(/* ... */ ReCaptcha captcha)
+        {
+            // ...
+            _captcha = captcha;
         }
 
         [Required]

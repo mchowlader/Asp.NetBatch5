@@ -23,13 +23,16 @@ namespace DataImporter.Web.Controllers
         private readonly ILogger<AccountController> _logger;
         private readonly IEmailSender _emailSender;
         private readonly IEmailService _emailService;
+        private readonly ReCaptcha _captcha;
+
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             ILogger<AccountController> logger,
-            IEmailSender emailSender, IEmailService emailService)
+            IEmailSender emailSender, IEmailService emailService, ReCaptcha captcha)
         {
+            _captcha = captcha;
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
@@ -85,6 +88,11 @@ namespace DataImporter.Web.Controllers
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
+
+                //reCapcha
+                if (!Request.Form.ContainsKey("g-recaptcha-response")) return View(model);
+                var captcha = Request.Form["g-recaptcha-response"].ToString();
+                if (!await _captcha.IsValid(captcha)) return View(model);
             }
 
             // If we got this far, something failed, redisplay form

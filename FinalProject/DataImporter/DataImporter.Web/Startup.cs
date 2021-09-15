@@ -1,6 +1,7 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using DataImporter.Common;
+using DataImporter.Common.Utilities;
 using DataImporter.Transfer;
 using DataImporter.Transfer.Contexts;
 using DataImporter.User;
@@ -126,6 +127,12 @@ namespace DataImporter.Web
                 options.IdleTimeout = TimeSpan.FromSeconds(100);
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
+            });
+
+            //reCapchaa
+            services.AddHttpClient<ReCaptcha>(x =>
+            {
+                x.BaseAddress = new Uri("https://www.google.com/recaptcha/api/siteverify");
             });
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

@@ -45,7 +45,13 @@
                         <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                     </div>
                     <button type="submit" class="btn btn-primary">Register</button>
+                    <!---recapcha-->
+                    <div class="form-group">
+                        <label></label>
+                        <div class="g-recaptcha" data-sitekey="6LcjBVwcAAAAAH48h7j6tkGx7fR_jtlhWFHii13x"></div>
+                    </div>
                 </form>
+              
             </div>
             <div class="col-md-6 col-md-offset-2">
                 <section>
@@ -85,5 +91,6 @@
 
 
 @section Scripts {
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <partial name="_ValidationScriptsPartial" />
 }
