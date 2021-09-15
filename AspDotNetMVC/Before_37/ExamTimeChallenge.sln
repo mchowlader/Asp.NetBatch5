@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamTimeChallenge.Training"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamTimeChallenge.Membership", "ExamTimeChallenge.Membership\ExamTimeChallenge.Membership.csproj", "{6D4FA594-844C-4370-8490-3EA5109DB30F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamTimeChallenge.Api", "ExamTimeChallenge.Api\ExamTimeChallenge.Api.csproj", "{00B7FB8B-6819-4C5A-A8EB-518429CB5D55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamTimeChallenge.Api", "ExamTimeChallenge.Api\ExamTimeChallenge.Api.csproj", "{00B7FB8B-6819-4C5A-A8EB-518429CB5D55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
