@@ -55,7 +55,7 @@ namespace ExamTimeChallenge.Training.Services
         public void UpdateCourse(Course course)
         {
             if (course == null)
-                throw new InvalidOperationException();
+                throw new InvalidOperationException("Course was not found");
             var courseEntity = _trainingUnitOfWork.Courses.GetById(course.Id);
 
             if(courseEntity != null)

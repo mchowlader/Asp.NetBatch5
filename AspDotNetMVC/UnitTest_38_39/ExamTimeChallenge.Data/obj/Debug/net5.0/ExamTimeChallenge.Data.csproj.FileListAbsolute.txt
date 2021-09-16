@@ -34,3 +34,15 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_37\ExamTimeChallenge.D
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_37\ExamTimeChallenge.Data\obj\Debug\net5.0\ExamTimeChallenge.Data.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_37\ExamTimeChallenge.Data\obj\Debug\net5.0\ref\ExamTimeChallenge.Data.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_37\ExamTimeChallenge.Data\obj\Debug\net5.0\ExamTimeChallenge.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Data\bin\Debug\net5.0\ExamTimeChallenge.Data.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Data\bin\Debug\net5.0\ExamTimeChallenge.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Data\bin\Debug\net5.0\ref\ExamTimeChallenge.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Data\bin\Debug\net5.0\ExamTimeChallenge.Data.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Data\obj\Debug\net5.0\ExamTimeChallenge.Data.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Data\obj\Debug\net5.0\ExamTimeChallenge.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Data\obj\Debug\net5.0\ExamTimeChallenge.Data.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Data\obj\Debug\net5.0\ExamTimeChallenge.Data.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Data\obj\Debug\net5.0\ExamTimeChallenge.Data.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Data\obj\Debug\net5.0\ExamTimeChallenge.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Data\obj\Debug\net5.0\ref\ExamTimeChallenge.Data.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Data\obj\Debug\net5.0\ExamTimeChallenge.Data.pdb

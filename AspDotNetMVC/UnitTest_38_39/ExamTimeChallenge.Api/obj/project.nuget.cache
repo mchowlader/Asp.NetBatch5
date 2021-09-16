@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9qTrICr9RXWTgRbPdoShoVizPubAcnxrZo9MK2vMKG9+p+G1zQF/VRt/xiZ7+h9o+/8ir7mShSDWJyIrIsb/Qg==",
+  "dgSpecHash": "WaEL95f4So16nZPYRYp8hpH94gco6BgJuWjnNZ9QPqorjCCvNV7ipsxF4YuaPmT1K0fMa3Kuiinw6FZgrd27jw==",
   "success": true,
-  "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Before_37\\ExamTimeChallenge.Api\\ExamTimeChallenge.Api.csproj",
+  "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\UnitTest_38_39\\ExamTimeChallenge.Api\\ExamTimeChallenge.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",

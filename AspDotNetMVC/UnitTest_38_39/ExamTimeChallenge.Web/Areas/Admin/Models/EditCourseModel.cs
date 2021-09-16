@@ -30,7 +30,7 @@ namespace ExamTimeChallenge.Web.Areas.Admin.Models
             _courseService = courseService;
         }
 
-        internal void LoadModelData(int id)
+        public void LoadModelData(int id)
         {
             var course = _courseService.GetCourseData(id);
             _mapper.Map(course, this);

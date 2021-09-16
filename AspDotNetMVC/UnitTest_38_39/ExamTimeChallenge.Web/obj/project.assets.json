@@ -8954,11 +8954,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Before_37\\ExamTimeChallenge.Web\\ExamTimeChallenge.Web.csproj",
+      "projectUniqueName": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\UnitTest_38_39\\ExamTimeChallenge.Web\\ExamTimeChallenge.Web.csproj",
       "projectName": "ExamTimeChallenge.Web",
-      "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Before_37\\ExamTimeChallenge.Web\\ExamTimeChallenge.Web.csproj",
+      "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\UnitTest_38_39\\ExamTimeChallenge.Web\\ExamTimeChallenge.Web.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Before_37\\ExamTimeChallenge.Web\\obj\\",
+      "outputPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\UnitTest_38_39\\ExamTimeChallenge.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8975,11 +8975,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Before_37\\ExamTimeChallenge.Membership\\ExamTimeChallenge.Membership.csproj": {
-              "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Before_37\\ExamTimeChallenge.Membership\\ExamTimeChallenge.Membership.csproj"
+            "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\UnitTest_38_39\\ExamTimeChallenge.Membership\\ExamTimeChallenge.Membership.csproj": {
+              "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\UnitTest_38_39\\ExamTimeChallenge.Membership\\ExamTimeChallenge.Membership.csproj"
             },
-            "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Before_37\\ExamTimeChallenge.Training\\ExamTimeChallenge.Training.csproj": {
-              "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\Before_37\\ExamTimeChallenge.Training\\ExamTimeChallenge.Training.csproj"
+            "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\UnitTest_38_39\\ExamTimeChallenge.Training\\ExamTimeChallenge.Training.csproj": {
+              "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\UnitTest_38_39\\ExamTimeChallenge.Training\\ExamTimeChallenge.Training.csproj"
             }
           }
         }

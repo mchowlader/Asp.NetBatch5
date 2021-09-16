@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = ExamTimeChallenge.Web
-build_property.ProjectDir = D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\Before_37\ExamTimeChallenge.Web\
+build_property.ProjectDir = D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\UnitTest_38_39\ExamTimeChallenge.Web\
