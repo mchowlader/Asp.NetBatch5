@@ -37,42 +37,63 @@ namespace ExamTimeChallenge.Training.Tests
         {
             _mapperMock = _mock.Mock<IMapper>();
             _courseService = _mock.Create<CourseService>();
-            //_courseRepositoryMock = _mock.Mock<ICourseRepository>();
-            //_trainingUnitOfWork = _mock.Mock<ITrainingUnitOfWork>();
+            _courseRepositoryMock = _mock.Mock<ICourseRepository>();
+            _trainingUnitOfWork = _mock.Mock<ITrainingUnitOfWork>();
         }
 
         [TearDown]
         public void TestCleanup()
         {
             _mapperMock.Reset();
-            //_courseRepositoryMock.Reset();
-            //_trainingUnitOfWork.Reset();
+            _courseRepositoryMock.Reset();
+            _trainingUnitOfWork.Reset();
         }
 
         [Test]
         public void UpdateCourse_CourseDoseNotExit_ThrowsException()
         {
             //Arrange
-
             Course course = null;
-            //var id = 5;
-
-            //var courseEntity = new EO.Course()
-            //{
-            //    Title = "Asp.Net",
-            //    Fees = 30000,
-            //    Id = 5
-            //};
-
-
-            //_trainingUnitOfWork.Setup(x => x.Courses).Returns(_courseRepositoryMock.Object);
-            //_courseRepositoryMock.Setup(x => x.GetById(id)).Returns(courseEntity);
-
 
             //Act & Assert
             Should.Throw<InvalidOperationException>(
                 () => _courseService.UpdateCourse(course)
             );
         }
+
+        [Test]
+        public void UpdateCourse_CourseExit_UpdateCourse()
+        {
+            //Arrange
+            var  course = new Course
+            {
+                Title = "Asp.Net",
+                Fees = 30000,
+                Id = 5
+            };
+
+            var courseEntity = new EO.Course()
+            {
+                Title = "Asp.Net",
+                Fees = 30000,
+                Id = 5
+            };
+
+
+            _trainingUnitOfWork.Setup(x => x.Courses).Returns(_courseRepositoryMock.Object);
+            _courseRepositoryMock.Setup(x => x.GetById(course.Id)).Returns(courseEntity);
+            _trainingUnitOfWork.Setup(x => x.Save()).Verifiable();
+
+
+            //Act 
+            _courseService.UpdateCourse(course);
+
+            //Assert
+            this.ShouldSatisfyAllConditions(
+                () => _trainingUnitOfWork.VerifyAll(),
+                () => _courseRepositoryMock.VerifyAll()
+            ) ;
+        }
+
     }
 }
