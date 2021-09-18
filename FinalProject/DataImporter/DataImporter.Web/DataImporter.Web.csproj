@@ -47,6 +47,8 @@
 
   <ItemGroup>
     <Folder Include="Areas\" />
+    <Folder Include="Data\Migrations\" />
+    <Folder Include="Models\Exports\" />
   </ItemGroup>
 
 </Project>

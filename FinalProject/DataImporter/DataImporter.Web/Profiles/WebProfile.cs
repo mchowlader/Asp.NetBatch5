@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Web.Models;
+using DataImporter.Web.Models.Groups;
 using System;
 using System.Collections.Generic;
 using System.Linq;

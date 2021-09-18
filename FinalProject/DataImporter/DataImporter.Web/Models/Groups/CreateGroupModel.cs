@@ -9,7 +9,7 @@ using DataImporter.Transfer.BusinessObjects;
 using System.ComponentModel.DataAnnotations;
 using DataImporter.Common.Utilities;
 
-namespace DataImporter.Web.Models
+namespace DataImporter.Web.Models.Groups
 {
     public class CreateGroupModel
     {

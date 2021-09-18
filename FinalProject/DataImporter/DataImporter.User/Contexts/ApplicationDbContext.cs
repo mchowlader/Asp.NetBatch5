@@ -1,4 +1,6 @@
-﻿using DataImporter.User.Entities;
+﻿using DataImporter.Transfer.Entities;
+using DataImporter.User.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -38,8 +40,13 @@ namespace DataImporter.User.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<ApplicationUser>()
+                 .HasMany(x => x.Groups)
+                 .WithOne(x => x.ApplicationUser);
+
             base.OnModelCreating(modelBuilder);
         }
-      
+        public DbSet<Group> Group { get; set; }
+
     }
 }

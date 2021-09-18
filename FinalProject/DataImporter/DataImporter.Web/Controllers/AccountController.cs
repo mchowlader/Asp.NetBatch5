@@ -1,4 +1,5 @@
 ﻿using DataImporter.Common.Utilities;
+using DataImporter.Transfer.Entities;
 using DataImporter.User.Entities;
 using DataImporter.Web.Models.Account;
 using Microsoft.AspNetCore.Authentication;
@@ -59,9 +60,9 @@ namespace DataImporter.Web.Controllers
             if (ModelState.IsValid)
             {
                 //reCapcha
-                if (!Request.Form.ContainsKey("g-recaptcha-response")) return View(model);
-                var captcha = Request.Form["g-recaptcha-response"].ToString();
-                if (!await _captcha.IsValid(captcha)) return View(model);
+                //if (!Request.Form.ContainsKey("g-recaptcha-response")) return View(model);
+                //var captcha = Request.Form["g-recaptcha-response"].ToString();
+                //if (!await _captcha.IsValid(captcha)) return View(model);
 
 
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };

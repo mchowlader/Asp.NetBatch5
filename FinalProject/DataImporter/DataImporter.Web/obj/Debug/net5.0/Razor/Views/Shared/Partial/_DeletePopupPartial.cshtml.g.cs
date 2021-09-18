@@ -28,13 +28,27 @@ using DataImporter.Web.Models;
 #nullable disable
 #nullable restore
 #line 3 "D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Views\_ViewImports.cshtml"
+using DataImporter.Web.Models.Imports;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Views\_ViewImports.cshtml"
+using DataImporter.Web.Models.Groups;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Views\_ViewImports.cshtml"
 using DataImporter.Web.Models.Account;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a6d184888d408ca06081caf184deacd1e0acc932", @"/Views/Shared/Partial/_DeletePopupPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b952778a6ed706d70dc07c9fa193ecc03964d47d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5a6e936de2f68c6cb6bd4db1dc7e4ac633569ac5", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Partial__DeletePopupPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("id", new global::Microsoft.AspNetCore.Html.HtmlString("deleteForm"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -77,7 +91,7 @@ using DataImporter.Web.Models.Account;
             <div class=""modal-body"">
                 <p>Are you sure, you want to delete?</p>
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a6d184888d408ca06081caf184deacd1e0acc9325176", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a6d184888d408ca06081caf184deacd1e0acc9325629", async() => {
                 WriteLiteral("\r\n                    <input type=\"hidden\" id=\"deleteId\"");
                 BeginWriteAttribute("value", " value=\"", 646, "\"", 654, 0);
                 EndWriteAttribute();

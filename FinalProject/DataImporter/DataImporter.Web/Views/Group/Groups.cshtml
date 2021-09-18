@@ -88,7 +88,7 @@
                 <div class="card-header">
                 </div>
                 <!--Body-->
-                <form class="form-horizontal" asp-action="CreateGroup" asp-controller="Customer" method="post" asp-antiforgery="true">
+                <form class="form-horizontal" asp-action="CreateGroup" asp-controller="Group" method="post" asp-antiforgery="true">
                     <div class="modal-body text-center mb-1">
                         <h5 class="mt-1 mb-2">Create Group</h5>
                         <div class="md-form ml-0 mr-0">
@@ -98,7 +98,7 @@
                         </div>
 
                         <div class="text-center mt-4">
-                            <button asp-action="CreateGroup" asp-controller="Customer" type="submit" class="btn btn-info">Save</button>
+                            <button asp-action="CreateGroup" asp-controller="Group" type="submit" class="btn btn-info">Save</button>
 
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                 {
                     "processing": true,
                     "serverSide": true,
-                    "ajax": "/Customer/GetGroupData",
+                    "ajax": "/Group/GetGroupData",
                     "columnDefs": [
                         {
                             "orderable": false,

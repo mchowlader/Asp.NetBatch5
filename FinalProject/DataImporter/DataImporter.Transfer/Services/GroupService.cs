@@ -24,8 +24,8 @@ namespace DataImporter.Transfer.Services
         {
             var groupCount = _transferUnitOfWork.Groups.GetCount();
             return new Home()
-            { 
-                Groups = groupCount 
+            {
+                Groups = groupCount
             };
         }
 
@@ -62,6 +62,20 @@ namespace DataImporter.Transfer.Services
         {
             _transferUnitOfWork.Groups.Remove(id);
             _transferUnitOfWork.Save();
+        }
+
+        public IList<Group> LoadGroupProperty()
+        {
+            var groupsList = new List<Group>();
+            var groupEntity = _transferUnitOfWork.Groups.GetAll();
+
+            foreach (var group in groupEntity)
+            {
+                var groupData = _mapper.Map<Group>(group);
+                groupsList.Add(groupData);
+            }
+
+            return groupsList;
         }
     }
 }

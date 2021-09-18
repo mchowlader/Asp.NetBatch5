@@ -1,4 +1,5 @@
 ﻿using DataImporter.Transfer.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -37,7 +38,7 @@ namespace DataImporter.Transfer.Contexts
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<Group> Groups { get; set; }
+        public DbSet<Group> Group { get; set; }
 
     }
 }

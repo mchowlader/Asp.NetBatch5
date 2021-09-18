@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace DataImporter.Web.Migrations.ApplicationDb
+namespace DataImporter.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210914140931_AddIdentityUser")]
-    partial class AddIdentityUser
+    [Migration("20210918103142_AuthenticationTables")]
+    partial class AuthenticationTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace DataImporter.Web.Migrations.ApplicationDb
                 .HasAnnotation("ProductVersion", "5.0.9")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("DataImporter.User.Entities.ApplicationUser", b =>
+            modelBuilder.Entity("DataImporter.Transfer.Entities.ApplicationUser", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -91,6 +91,29 @@ namespace DataImporter.Web.Migrations.ApplicationDb
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("DataImporter.Transfer.Entities.Group", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<Guid?>("ApplicationUserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.ToTable("Group");
                 });
 
             modelBuilder.Entity("DataImporter.User.Entities.Role", b =>
@@ -222,6 +245,15 @@ namespace DataImporter.Web.Migrations.ApplicationDb
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("DataImporter.Transfer.Entities.Group", b =>
+                {
+                    b.HasOne("DataImporter.Transfer.Entities.ApplicationUser", "ApplicationUser")
+                        .WithMany("Groups")
+                        .HasForeignKey("ApplicationUserId");
+
+                    b.Navigation("ApplicationUser");
+                });
+
             modelBuilder.Entity("DataImporter.User.Entities.RoleClaim", b =>
                 {
                     b.HasOne("DataImporter.User.Entities.Role", null)
@@ -233,7 +265,7 @@ namespace DataImporter.Web.Migrations.ApplicationDb
 
             modelBuilder.Entity("DataImporter.User.Entities.UserClaim", b =>
                 {
-                    b.HasOne("DataImporter.User.Entities.ApplicationUser", null)
+                    b.HasOne("DataImporter.Transfer.Entities.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -242,7 +274,7 @@ namespace DataImporter.Web.Migrations.ApplicationDb
 
             modelBuilder.Entity("DataImporter.User.Entities.UserLogin", b =>
                 {
-                    b.HasOne("DataImporter.User.Entities.ApplicationUser", null)
+                    b.HasOne("DataImporter.Transfer.Entities.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -257,7 +289,7 @@ namespace DataImporter.Web.Migrations.ApplicationDb
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DataImporter.User.Entities.ApplicationUser", null)
+                    b.HasOne("DataImporter.Transfer.Entities.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -266,11 +298,16 @@ namespace DataImporter.Web.Migrations.ApplicationDb
 
             modelBuilder.Entity("DataImporter.User.Entities.UserToken", b =>
                 {
-                    b.HasOne("DataImporter.User.Entities.ApplicationUser", null)
+                    b.HasOne("DataImporter.Transfer.Entities.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("DataImporter.Transfer.Entities.ApplicationUser", b =>
+                {
+                    b.Navigation("Groups");
                 });
 #pragma warning restore 612, 618
         }

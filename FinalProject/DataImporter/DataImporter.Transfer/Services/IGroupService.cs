@@ -15,5 +15,6 @@ namespace DataImporter.Transfer.Services
         Home CountHomeProperty();
         void GroupDelete(int id);
         Group GetGroup(int id);
+        IList<Group> LoadGroupProperty();
     }
 }

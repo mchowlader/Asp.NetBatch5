@@ -24,12 +24,12 @@
                             <div class="row row-cols-3" style="padding-bottom:30px">
                                 <div class="col-sm-3">
                                     <label asp-for="Group" class="col-sm-5 col-form-label">Group</label>
-                                    <div>
-                                        <input asp-for="Group" type="text" class="form-control" id="inputName" placeholder="">
+                                    <div  class="input-group date">
+                                        <select class="form-control" asp-for="Id" asp-items="@(new SelectList(ViewBag.data,"Id","Name"))"></select>
                                     </div>
                                 </div>
 
-                                <div class="col-sm-3 ">
+                                <div class="col-sm-3 " style="padding-left:20px">
                                     <label asp-for="DateTo" class="col-sm-5 col-form-label">Date To</label>
                                     <div class="input-group date" id="reservationdate1" data-target-input="nearest">
                                         <input asp-for="DateTo" type="datetime" class="form-control datetimepicker-input" id="startdate"
@@ -41,9 +41,9 @@
                                 </div>
 
                                 <div class="col-sm-3" style="padding-left:20px">
-                                    <label asp-for="DateTo" class="col-sm-5 col-form-label">Date To</label>
+                                    <label asp-for="DateFrom" class="col-sm-6 col-form-label">Date From</label>
                                     <div class="input-group date" id="reservationdate2" data-target-input="nearest">
-                                        <input asp-for="DateTo" type="datetime" class="form-control datetimepicker-input" id="startdate"
+                                        <input asp-for="DateFrom" type="datetime" class="form-control datetimepicker-input" id="startdate"
                                                data-target="#reservationdate2" />
                                         <div class="input-group-append" data-target="#reservationdate2" data-toggle="datetimepicker">
                                             <div class="input-group-text"><i class="fa fa-calendar"></i></div>
