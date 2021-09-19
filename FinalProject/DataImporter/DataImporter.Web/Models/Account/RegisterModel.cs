@@ -17,9 +17,8 @@ namespace DataImporter.Web.Models.Account
         {
 
         }
-        public RegisterModel(/* ... */ ReCaptcha captcha)
+        public RegisterModel(ReCaptcha captcha)
         {
-            // ...
             _captcha = captcha;
         }
 

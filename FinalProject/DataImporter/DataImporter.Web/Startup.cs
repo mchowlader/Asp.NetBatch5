@@ -176,6 +176,10 @@ namespace DataImporter.Web
                     pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{Id?}");
 
                 endpoints.MapControllerRoute(
+                   name: "default",
+                   pattern: "{controller=User}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{Id?}");
 

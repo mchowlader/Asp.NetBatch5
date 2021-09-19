@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6p+Lg7JzgYv/2KpYvfJAm0retgvbER2AG6IGFfi3i9opdT6MwbxwpIfn01nm/6XJc3WNDP91ybarN69ejls6GQ==",
+  "dgSpecHash": "3pwiEO/eI3C0iOASeWKFvpc1AN7bksq5hHmGz0KgzKe5Jz+Y/p2aQDAIXj2HBXbzmCaKYspC+LnOpsTFMhj+/A==",
   "success": true,
   "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Web\\DataImporter.Web.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\lenovo\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\mailkit\\2.15.0\\mailkit.2.15.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
