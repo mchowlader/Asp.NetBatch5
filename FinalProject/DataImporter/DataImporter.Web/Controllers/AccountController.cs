@@ -22,7 +22,6 @@ namespace DataImporter.Web.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<AccountController> _logger;
-        private readonly IEmailSender _emailSender;
         private readonly IEmailService _emailService;
         private readonly ReCaptcha _captcha;
 
@@ -31,13 +30,12 @@ namespace DataImporter.Web.Controllers
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             ILogger<AccountController> logger,
-            IEmailSender emailSender, IEmailService emailService, ReCaptcha captcha)
+            IEmailService emailService, ReCaptcha captcha)
         {
             _captcha = captcha;
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
-            _emailSender = emailSender;
             _emailService = emailService;
         }
 
@@ -60,9 +58,9 @@ namespace DataImporter.Web.Controllers
             if (ModelState.IsValid)
             {
                 //reCapcha
-                //if (!Request.Form.ContainsKey("g-recaptcha-response")) return View(model);
-                //var captcha = Request.Form["g-recaptcha-response"].ToString();
-                //if (!await _captcha.IsValid(captcha)) return View(model);
+                if (!Request.Form.ContainsKey("g-recaptcha-response")) return View(model);
+                var captcha = Request.Form["g-recaptcha-response"].ToString();
+                if (!await _captcha.IsValid(captcha)) return View(model);
 
 
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
@@ -79,8 +77,6 @@ namespace DataImporter.Web.Controllers
                         values: new { area = "Identity", userId = user.Id, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
 
-                    await _emailSender.SendEmailAsync(model.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
                     _emailService.SendEmail(model.Email, "Confirm your email",
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");

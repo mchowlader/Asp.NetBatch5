@@ -27,7 +27,7 @@ namespace DataImporter.Common.Utilities
             try
             {
                 var postTask = await _captchaClient
-                    .PostAsync($"?secret=SECRET_KEY&response={captcha}", new StringContent(""));
+                    .PostAsync($"?secret=6LcjBVwcAAAAACh_LtFNsK97E5JgQApuhd3ZMn6Z&response={captcha}", new StringContent(""));
                 var result = await postTask.Content.ReadAsStringAsync();
                 var resultObject = JObject.Parse(result);
                 dynamic success = resultObject["success"];

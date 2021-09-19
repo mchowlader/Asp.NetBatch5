@@ -211,3 +211,51 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'items')
    at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2021-09-19 02:59:58.001 +06:00 [INF] Application Starting up
+2021-09-19 11:28:52.667 +06:00 [INF] Application Starting up
+2021-09-19 12:00:20.175 +06:00 [INF] Application Starting up
+2021-09-19 12:22:51.432 +06:00 [INF] User logged out.
+2021-09-19 12:24:33.217 +06:00 [INF] Application Starting up
+2021-09-19 12:24:55.074 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.UI.Services.IEmailSender' while attempting to activate 'DataImporter.Web.Controllers.AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method604(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-19 12:27:00.756 +06:00 [INF] Application Starting up
+2021-09-19 12:27:22.527 +06:00 [INF] User logged in.
+2021-09-19 12:32:28.840 +06:00 [INF] Application Starting up
+2021-09-19 12:33:13.649 +06:00 [INF] User logged out.
+2021-09-19 12:34:14.630 +06:00 [INF] Application Starting up
+2021-09-19 12:35:07.802 +06:00 [INF] Start processing HTTP request POST "https://www.google.com/recaptcha/api/siteverify?secret=6LcjBVwcAAAAACh_LtFNsK97E5JgQApuhd3ZMn6Z&response=03AGdBq24fgWOWtgrJC9aTnCABvN2H2vfYmL_G9P8vGXDwvtRWVbKBBmWOQw7IryKvMHlvn5PpJYbirzlZfKPuHpn9nvikuICl_zL71MZWjgZfC5w8LDPVp9wqvew_fLPjTuCYzFNjyKFKm2lLCaJIXHSiLQ73txys3SF7yqVJ4itS7cKkaiV1s8EnDOdDV_4O4QvuOdk4UM8_i2Kj8fSUBGNmKQAqom5ZZ5eCs4n-zjvc8ICTcA0pBFO0thN1TnQZRyJhhlDOSmo-X7rC08_cvc4sIUXSDIWz_YkE5nV5bPhW7RSfFiQuzTvBAn6XlU9HgQ3J0MJzn_VyQSSbVktgTpgKmRk3TWKzAq2vceo4l7SFwPai-l2K5rRRat3IuPhDIsxFJeSUhLCaJY2fvmFbxUyCLIHaiOCBzXGLz2LgPpmz-IZUdQNFmq2AfH7kFx7DZAqEaNpJYw5B"
+2021-09-19 12:35:07.809 +06:00 [INF] Sending HTTP request POST "https://www.google.com/recaptcha/api/siteverify?secret=6LcjBVwcAAAAACh_LtFNsK97E5JgQApuhd3ZMn6Z&response=03AGdBq24fgWOWtgrJC9aTnCABvN2H2vfYmL_G9P8vGXDwvtRWVbKBBmWOQw7IryKvMHlvn5PpJYbirzlZfKPuHpn9nvikuICl_zL71MZWjgZfC5w8LDPVp9wqvew_fLPjTuCYzFNjyKFKm2lLCaJIXHSiLQ73txys3SF7yqVJ4itS7cKkaiV1s8EnDOdDV_4O4QvuOdk4UM8_i2Kj8fSUBGNmKQAqom5ZZ5eCs4n-zjvc8ICTcA0pBFO0thN1TnQZRyJhhlDOSmo-X7rC08_cvc4sIUXSDIWz_YkE5nV5bPhW7RSfFiQuzTvBAn6XlU9HgQ3J0MJzn_VyQSSbVktgTpgKmRk3TWKzAq2vceo4l7SFwPai-l2K5rRRat3IuPhDIsxFJeSUhLCaJY2fvmFbxUyCLIHaiOCBzXGLz2LgPpmz-IZUdQNFmq2AfH7kFx7DZAqEaNpJYw5B"
+2021-09-19 12:35:08.584 +06:00 [INF] Received HTTP response headers after 769.085ms - 200
+2021-09-19 12:35:08.587 +06:00 [INF] End processing HTTP request after 793.989ms - 200
+2021-09-19 12:35:09.902 +06:00 [INF] User created a new account with password.
+2021-09-19 12:35:46.114 +06:00 [INF] User logged out.
+2021-09-19 12:37:25.796 +06:00 [INF] Start processing HTTP request POST "https://www.google.com/recaptcha/api/siteverify?secret=6LcjBVwcAAAAACh_LtFNsK97E5JgQApuhd3ZMn6Z&response="
+2021-09-19 12:37:25.796 +06:00 [INF] Sending HTTP request POST "https://www.google.com/recaptcha/api/siteverify?secret=6LcjBVwcAAAAACh_LtFNsK97E5JgQApuhd3ZMn6Z&response="
+2021-09-19 12:37:26.074 +06:00 [INF] Received HTTP response headers after 277.9272ms - 200
+2021-09-19 12:37:26.074 +06:00 [INF] End processing HTTP request after 278.4259ms - 200
+2021-09-19 12:37:58.176 +06:00 [INF] Start processing HTTP request POST "https://www.google.com/recaptcha/api/siteverify?secret=6LcjBVwcAAAAACh_LtFNsK97E5JgQApuhd3ZMn6Z&response=03AGdBq25TAkXG-qSjqpqrmhIGRGdrn1LVKOip37fLUTp6kvDOg7IDOx8Evp3PTt4nU1gTztrarYXMnM2sRM5KPbfQWoJs1AHZn5qF0DEh4Ej_TIJu6u7UqIgUi7xvyzzcWLx3tUKOl13-Jx7fzzuPW0TzItkEC5sEJH2jR5HA5ePBy20O__nHNFgByboy_T3JcdDkgRpjVLvBOPOzwPIdFGQ_b5jTXeSUrsK8L5gLm-hoeJ_r6FwLTD1NDoi-xg2xRj3oD7p2Jx2R4wxTG-wzE1pQxaJ3YYXS3RnFbOndfCUqZ-gSSvbgXchNBx3UylNX_rJCXXd27pBdDhjOkJzoWuRyMycbKlqKGt7lTBPAkroigELH15R5v1fB0CFejXw5LysISkaf127FuBaQHR13u9Pko3ZpZTNZAlwO9xAcSmqSKQUd2J3S_KakzepO5HiaVhvnOGhrlwnv"
+2021-09-19 12:37:58.177 +06:00 [INF] Sending HTTP request POST "https://www.google.com/recaptcha/api/siteverify?secret=6LcjBVwcAAAAACh_LtFNsK97E5JgQApuhd3ZMn6Z&response=03AGdBq25TAkXG-qSjqpqrmhIGRGdrn1LVKOip37fLUTp6kvDOg7IDOx8Evp3PTt4nU1gTztrarYXMnM2sRM5KPbfQWoJs1AHZn5qF0DEh4Ej_TIJu6u7UqIgUi7xvyzzcWLx3tUKOl13-Jx7fzzuPW0TzItkEC5sEJH2jR5HA5ePBy20O__nHNFgByboy_T3JcdDkgRpjVLvBOPOzwPIdFGQ_b5jTXeSUrsK8L5gLm-hoeJ_r6FwLTD1NDoi-xg2xRj3oD7p2Jx2R4wxTG-wzE1pQxaJ3YYXS3RnFbOndfCUqZ-gSSvbgXchNBx3UylNX_rJCXXd27pBdDhjOkJzoWuRyMycbKlqKGt7lTBPAkroigELH15R5v1fB0CFejXw5LysISkaf127FuBaQHR13u9Pko3ZpZTNZAlwO9xAcSmqSKQUd2J3S_KakzepO5HiaVhvnOGhrlwnv"
+2021-09-19 12:37:58.310 +06:00 [INF] Received HTTP response headers after 133.6652ms - 200
+2021-09-19 12:37:58.311 +06:00 [INF] End processing HTTP request after 134.3638ms - 200
+2021-09-19 12:38:28.598 +06:00 [INF] User created a new account with password.
+2021-09-19 12:49:08.843 +06:00 [INF] Application Starting up
+2021-09-19 13:21:44.750 +06:00 [INF] Application Starting up

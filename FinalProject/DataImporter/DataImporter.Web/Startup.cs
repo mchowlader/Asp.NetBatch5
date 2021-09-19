@@ -87,7 +87,7 @@ namespace DataImporter.Web
                 .AddUserManager<UserManager>()
                 .AddRoleManager<RoleManager>()
                 .AddSignInManager<SignInManager>()
-                .AddDefaultUI()
+                //.AddDefaultUI()
                 .AddDefaultTokenProviders();
 
             services.Configure<IdentityOptions>(options =>
