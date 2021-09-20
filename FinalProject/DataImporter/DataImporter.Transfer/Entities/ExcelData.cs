@@ -11,6 +11,7 @@ namespace DataImporter.Transfer.Entities
     {
         public int Id { get; set; }
         public int GroupId { get; set; }
+        public DateTime UploadDate { get; set; }
         public string ExcelFileName { get; set; }
         public Group Group { get; set; }
         public List<ExcelFieldData> ExcelFieldDatas { get; set; }

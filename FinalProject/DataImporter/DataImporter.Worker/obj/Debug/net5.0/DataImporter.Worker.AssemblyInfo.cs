@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("dotnet-DataImporter.Worker-7021639B-ABCF-41BD-80B3-350D1165FBE6")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataImporter.Worker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
