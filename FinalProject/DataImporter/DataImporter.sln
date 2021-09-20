@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Common", "Data
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B290AE60-EAE3-4AD6-95E2-D39F177B2C87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImporter.Worker", "DataImporter.Worker\DataImporter.Worker.csproj", "{937B725E-3300-4255-9987-1067C9102838}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{63BCCDEE-25F8-4629-9ACD-F0BE2AD27554}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63BCCDEE-25F8-4629-9ACD-F0BE2AD27554}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63BCCDEE-25F8-4629-9ACD-F0BE2AD27554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{937B725E-3300-4255-9987-1067C9102838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{937B725E-3300-4255-9987-1067C9102838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{937B725E-3300-4255-9987-1067C9102838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{937B725E-3300-4255-9987-1067C9102838}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

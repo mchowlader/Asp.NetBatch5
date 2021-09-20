@@ -49,7 +49,7 @@ namespace DataImporter.Transfer.Services
             int pageSize, string searchText, string sortText)
         {
             var groupData = _transferUnitOfWork.Groups.GetDynamic(
-               string.IsNullOrWhiteSpace(searchText) ? null : x => x.Name.Contains(searchText),
+               string.IsNullOrWhiteSpace(searchText) ? null : x => x.GroupName.Contains(searchText),
                sortText, string.Empty, pageIndex, pageSize);
 
             var resultData = (from groups in groupData.data

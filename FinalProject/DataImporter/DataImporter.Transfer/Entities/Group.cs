@@ -12,10 +12,14 @@ namespace DataImporter.Transfer.Entities
     public class Group : IEntity<int>
     {
         public int Id { get ; set ; }
-        public Guid UserId { get ; set ; }
-        public string Name { get ; set ; }
-        public DateTime DateTime { get; set; }
+        public string GroupName { get ; set ; }
+        public DateTime CreateDate { get; set; }
+        public List<Export> Exports { get; set; }
+        public List<Import> Imports { get; set; }
+        public Guid ApplicationUserId { get; set; }
+        public List<ExcelData> ExcelDatas { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
+
 
     }
 }
