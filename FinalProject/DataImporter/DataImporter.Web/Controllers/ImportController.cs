@@ -19,7 +19,7 @@ namespace DataImporter.Web.Controllers
             var model = new ImportModel();
             model.LoadGroupProperty();
             var groupData = model.groupsList;
-            groupData.Insert(0, new Transfer.BusinessObjects.Group { Id = 0, Name = "Select Group" });
+            groupData.Insert(0, new Transfer.BusinessObjects.Group { Id = 0, GroupName = "Select Group" });
             ViewBag.data = groupData;
             return View(model);
         }

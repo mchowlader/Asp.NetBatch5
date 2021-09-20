@@ -8,19 +8,27 @@ using Autofac;
 using DataImporter.Transfer.BusinessObjects;
 using System.ComponentModel.DataAnnotations;
 using DataImporter.Common.Utilities;
+using DataImporter.User.Services;
+using DataImporter.User.Entities;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Http;
 
 namespace DataImporter.Web.Models.Groups
 {
     public class CreateGroupModel
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public DateTime DateTime{ get; set; }
-        
-      
+        public string GroupName { get; set; }
+        public DateTime CreateDate { get; set; }
+        public string ApplicationUserId { get; set; }
+
+
+
         private readonly IMapper _mapper;
         private readonly IDateTimeUtility _dateTimeUtility;
         private readonly IGroupService  _groupService;
+
 
         public CreateGroupModel()
         {
@@ -39,11 +47,13 @@ namespace DataImporter.Web.Models.Groups
 
         internal void CreateGroup()
         {
+
             //var group = _mapper.Map<Group>(this);
             var group = new Group()
             {
-                Name = Name,
-                DateTime = _dateTimeUtility.Now
+                GroupName = GroupName,
+                ApplicationUserId = ApplicationUserId,
+                CreateDate = _dateTimeUtility.Now
             };
             _groupService.CreateGroup(group);
         }

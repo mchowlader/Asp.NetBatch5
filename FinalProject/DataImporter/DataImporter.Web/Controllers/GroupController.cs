@@ -1,14 +1,19 @@
 ﻿using DataImporter.Common.Utilities;
 using DataImporter.User.Contexts;
+using DataImporter.User.Entities;
+using DataImporter.User.Services;
 using DataImporter.Web.Models;
 using DataImporter.Web.Models.Groups;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Security.Claims;
 
 namespace DataImporter.Web.Controllers
 {
@@ -16,11 +21,13 @@ namespace DataImporter.Web.Controllers
     public class GroupController : Controller
     {
         private ApplicationDbContext _dbContext;
-        public GroupController(ApplicationDbContext dbContext)
+        private UserManager<ApplicationUser> _userManager;
+        public GroupController(ApplicationDbContext dbContext, UserManager<ApplicationUser> userManager)
         {
             _dbContext = dbContext;
+            _userManager = userManager;
         }
-
+       
         public IActionResult Groups()
         {
             return View();
@@ -30,6 +37,7 @@ namespace DataImporter.Web.Controllers
         [HttpPost]
         public IActionResult CreateGroup(CreateGroupModel model)
         {
+            model.ApplicationUserId = _userManager.GetUserId(HttpContext.User);
             model.CreateGroup();
             return RedirectToAction(nameof(Groups));
         }
@@ -64,7 +72,7 @@ namespace DataImporter.Web.Controllers
             var model = new ContactsModel();
             model.LoadGroupProperty();
             var groupData = model.groupsList;
-            groupData.Insert(0, new Transfer.BusinessObjects.Group { Id = 0, Name = "Select Group" });
+            groupData.Insert(0, new Transfer.BusinessObjects.Group { Id = 0, GroupName = "Select Group" });
             ViewBag.data = groupData;
             return View(model);
         }

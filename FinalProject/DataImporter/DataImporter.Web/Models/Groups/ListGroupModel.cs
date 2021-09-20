@@ -36,7 +36,7 @@ namespace DataImporter.Web.Models.Groups
                dataTableModel.PageIndex,
                dataTableModel.PageSize,
                dataTableModel.SearchText,
-               dataTableModel.GetSortText(new string[] { "Name", "DateTime" }));
+               dataTableModel.GetSortText(new string[] { "GroupName", "CreateDate", "ApplicationUserId" }));
 
             return new
             {
@@ -45,8 +45,9 @@ namespace DataImporter.Web.Models.Groups
                 data = (from record in data.records
                         select new string[]
                         {
-                                record.Name,
-                                record.DateTime.ToString(),
+                                record.GroupName,
+                                record.CreateDate.ToString(),
+                                record.ApplicationUserId.ToString(),
                                 record.Id.ToString()
                         }
                     ).ToArray()

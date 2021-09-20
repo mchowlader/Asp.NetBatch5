@@ -174,11 +174,6 @@ namespace DataImporter.Web
                     name: "areas",
                     pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{Id?}");
 
-                //excelfile read er jonno sample 
-                endpoints.MapControllerRoute(
-                   name: "default",
-                   pattern: "{controller=User}/{action=Index}/{id?}");
-
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{Id?}");
