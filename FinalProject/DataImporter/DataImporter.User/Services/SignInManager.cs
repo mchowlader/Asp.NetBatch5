@@ -1,5 +1,4 @@
-﻿using DataImporter.Transfer.Entities;
-using DataImporter.User.Entities;
+﻿using DataImporter.User.Entities;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;

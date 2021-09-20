@@ -87,7 +87,6 @@ namespace DataImporter.Web
                 .AddUserManager<UserManager>()
                 .AddRoleManager<RoleManager>()
                 .AddSignInManager<SignInManager>()
-                //.AddDefaultUI()
                 .AddDefaultTokenProviders();
 
             services.Configure<IdentityOptions>(options =>
@@ -175,6 +174,7 @@ namespace DataImporter.Web
                     name: "areas",
                     pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{Id?}");
 
+                //excelfile read er jonno sample 
                 endpoints.MapControllerRoute(
                    name: "default",
                    pattern: "{controller=User}/{action=Index}/{id?}");

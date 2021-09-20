@@ -170,6 +170,9 @@
             "projectReferences": {
               "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Data\\DataImporter.Data.csproj": {
                 "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Data\\DataImporter.Data.csproj"
+              },
+              "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.User\\DataImporter.User.csproj": {
+                "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.User\\DataImporter.User.csproj"
               }
             }
           }
@@ -247,11 +250,7 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {
-              "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Transfer\\DataImporter.Transfer.csproj": {
-                "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Transfer\\DataImporter.Transfer.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -397,6 +396,10 @@
               "version": "[4.1.0, )"
             },
             "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Data.OleDb": {
               "target": "Package",
               "version": "[5.0.0, )"
             }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using DataImporter.Transfer.Entities;
 using DataImporter.User.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
