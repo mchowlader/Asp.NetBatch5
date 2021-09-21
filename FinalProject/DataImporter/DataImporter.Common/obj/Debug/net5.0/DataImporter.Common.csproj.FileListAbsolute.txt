@@ -10,3 +10,6 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Com
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Common\obj\Debug\net5.0\DataImporter.Common.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Common\obj\Debug\net5.0\ref\DataImporter.Common.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Common\obj\Debug\net5.0\DataImporter.Common.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Common\bin\Debug\net5.0\DataImporter.User.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Common\bin\Debug\net5.0\DataImporter.User.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Common\obj\Debug\net5.0\DataImporter.Common.csproj.CopyComplete

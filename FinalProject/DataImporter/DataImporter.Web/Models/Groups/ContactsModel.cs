@@ -12,17 +12,22 @@ namespace DataImporter.Web.Models
 {
     public class ContactsModel
     {
-        private readonly IMapper _mapper;
-        private readonly IDateTimeUtility _dateTimeUtility;
-        private readonly IGroupService _groupService;
+        private IMapper _mapper;
+        private ILifetimeScope _scope;
+        private IDateTimeUtility _dateTimeUtility;
+        private IGroupService _groupService;
 
         public ContactsModel()
         {
-            _mapper = Startup.AutofacContainer.Resolve<IMapper>();
-            _dateTimeUtility = Startup.AutofacContainer.Resolve<IDateTimeUtility>();
-            _groupService = Startup.AutofacContainer.Resolve<IGroupService>();
+           
         }
-
+        public void Resolve(ILifetimeScope scope)
+        {
+            _scope = scope;
+            _mapper = _scope.Resolve<IMapper>();
+            _groupService = _scope.Resolve<IGroupService>();
+            _dateTimeUtility = _scope.Resolve<IDateTimeUtility>();
+        }
         public ContactsModel(IMapper mapper, IDateTimeUtility dateTimeUtility,
             IGroupService groupService)
         {

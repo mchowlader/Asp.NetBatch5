@@ -17,15 +17,21 @@ namespace DataImporter.Web.Models.Groups
         [DisplayFormat(DataFormatString = @"{0:dd\/MM\/yyyy}", ApplyFormatInEditMode = false)]
         public DateTime DateTime { get; set; }
 
-        private readonly IMapper _mapper;
-        private readonly IGroupService _groupService;
+        private IMapper _mapper;
+        private ILifetimeScope _scope;
+        private IGroupService _groupService;
 
         public EditGroupModel()
         {
-            _mapper = Startup.AutofacContainer.Resolve<IMapper>();
-            _groupService = Startup.AutofacContainer.Resolve<IGroupService>();
+            
         }
 
+        public void Resolve(ILifetimeScope scope)
+        {
+            _scope = scope;
+            _mapper = _scope.Resolve<IMapper>();
+            _groupService = _scope.Resolve<IGroupService>();
+        }
         public EditGroupModel(IMapper mapper, IGroupService groupService)
         {
             _mapper = mapper;

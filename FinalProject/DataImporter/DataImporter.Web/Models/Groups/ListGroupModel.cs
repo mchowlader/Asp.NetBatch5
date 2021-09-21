@@ -11,19 +11,26 @@ namespace DataImporter.Web.Models.Groups
 {
     public class ListGroupModel
     {
-        //public int Id { get; set; }
-        //public string Name { get; set; }
-        //public DateTime DateTime { get; set; }
+        public int Id { get; set; }
+        public string UserId { get; set; }
+        public string GroupName { get; set; }
+        public DateTime CreateDate { get; set; }
 
-        private readonly IMapper _mapper;
-        private readonly IGroupService _groupService;
+        private  IMapper _mapper;
+        private  ILifetimeScope _scope;
+        private  IGroupService _groupService;
 
         public ListGroupModel()
         {
-            _mapper = Startup.AutofacContainer.Resolve<IMapper>();
-            _groupService = Startup.AutofacContainer.Resolve<IGroupService>();
+            
         }
 
+        public void Resolve(ILifetimeScope scope)
+        {
+            _scope = scope;
+            _mapper = _scope.Resolve<IMapper>();
+            _groupService = _scope.Resolve<IGroupService>();
+        }
         public ListGroupModel(IMapper mapper, IGroupService groupService)
         {
             _mapper = mapper;
@@ -36,7 +43,7 @@ namespace DataImporter.Web.Models.Groups
                dataTableModel.PageIndex,
                dataTableModel.PageSize,
                dataTableModel.SearchText,
-               dataTableModel.GetSortText(new string[] { "GroupName", "CreateDate", "ApplicationUserId" }));
+               dataTableModel.GetSortText(new string[] { "GroupName", "CreateDate", "UserId" }));
 
             return new
             {
@@ -47,7 +54,7 @@ namespace DataImporter.Web.Models.Groups
                         {
                                 record.GroupName,
                                 record.CreateDate.ToString(),
-                                record.ApplicationUserId.ToString(),
+                                record.UserId.ToString(),
                                 record.Id.ToString()
                         }
                     ).ToArray()

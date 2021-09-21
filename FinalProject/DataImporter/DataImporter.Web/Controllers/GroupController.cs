@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Security.Claims;
+using Autofac;
 
 namespace DataImporter.Web.Controllers
 {
@@ -21,9 +22,11 @@ namespace DataImporter.Web.Controllers
     public class GroupController : Controller
     {
         private ApplicationDbContext _dbContext;
+        private readonly ILifetimeScope _scope;
         private UserManager<ApplicationUser> _userManager;
-        public GroupController(ApplicationDbContext dbContext, UserManager<ApplicationUser> userManager)
+        public GroupController(ILifetimeScope scope, ApplicationDbContext dbContext, UserManager<ApplicationUser> userManager)
         {
+            _scope = scope;
             _dbContext = dbContext;
             _userManager = userManager;
         }
@@ -37,8 +40,13 @@ namespace DataImporter.Web.Controllers
         [HttpPost]
         public IActionResult CreateGroup(CreateGroupModel model)
         {
-            model.ApplicationUserId = _userManager.GetUserId(HttpContext.User);
-            model.CreateGroup();
+            if(ModelState.IsValid)
+            {
+                model.Resolve(_scope);
+                model.UserId = _userManager.GetUserId(HttpContext.User);
+                model.CreateGroup();
+            }
+            
             return RedirectToAction(nameof(Groups));
         }
         
@@ -46,30 +54,33 @@ namespace DataImporter.Web.Controllers
         public JsonResult GetGroupData()
         {
             var dataTableModel = new DataTablesAjaxRequestModel(Request);
-            var model = new ListGroupModel();
+            var model = _scope.Resolve<ListGroupModel>();
+            model.UserId = _userManager.GetUserId(HttpContext.User);
             var data = model.GetGroups(dataTableModel);
             return Json(data);
         }
        
         public IActionResult EditGroup(int id)
         {
-            var model = new EditGroupModel();
+            var model = _scope.Resolve<EditGroupModel>();
+
             model.EditGroup(id);
             //return RedirectToAction(nameof(Group));
-            return PartialView( "Partial/_EditGroupPartial", model);//problem
+            //return PartialView( "Partial/_EditGroupPartial", model);//problem
+            return View();
         }
 
         //ok
         public IActionResult DeleteGroup(int id)
         {
-            var model = new ListGroupModel();
+            var model = _scope.Resolve<ListGroupModel>();
             model.GroupDelete(id);
             return RedirectToAction(nameof(Groups));
         }
 
         public IActionResult Contacts()
         {
-            var model = new ContactsModel();
+            var model = _scope.Resolve<ContactsModel>();
             model.LoadGroupProperty();
             var groupData = model.groupsList;
             groupData.Insert(0, new Transfer.BusinessObjects.Group { Id = 0, GroupName = "Select Group" });

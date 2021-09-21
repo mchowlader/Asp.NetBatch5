@@ -27,7 +27,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.User\\DataImporter.User.csproj": {
+                "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.User\\DataImporter.User.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -51,6 +55,10 @@
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[5.0.10, )"
             },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
@@ -168,6 +176,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj": {
+                "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj"
+              },
               "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Data\\DataImporter.Data.csproj": {
                 "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Data\\DataImporter.Data.csproj"
               },

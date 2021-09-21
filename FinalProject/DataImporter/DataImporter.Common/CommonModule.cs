@@ -8,9 +8,9 @@ namespace DataImporter.Common
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<DateTimeUtility>().As<IDateTimeUtility>()
-                .InstancePerLifetimeScope(); 
-            //builder.RegisterType<ReCaptcha>().AsSelf()
-            //    .InstancePerLifetimeScope();
+                .InstancePerLifetimeScope();
+            builder.RegisterType<UserService>().As<IUserService>()
+                .InstancePerLifetimeScope();
             builder.RegisterType<EmailService>().As<IEmailService>()
              
                .WithParameter("host", "smtp.gmail.com")

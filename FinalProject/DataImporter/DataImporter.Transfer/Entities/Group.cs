@@ -16,9 +16,9 @@ namespace DataImporter.Transfer.Entities
         public DateTime CreateDate { get; set; }
         public List<Export> Exports { get; set; }
         public List<Import> Imports { get; set; }
-        public Guid ApplicationUserId { get; set; }
+        public Guid UserId { get; set; }
         public List<ExcelData> ExcelDatas { get; set; }
-        public ApplicationUser ApplicationUser { get; set; }
+        public ApplicationUser User { get; set; }
 
 
     }

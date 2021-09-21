@@ -15,3 +15,5 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Tra
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Transfer\obj\Debug\net5.0\DataImporter.Transfer.csproj.CopyComplete
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Transfer\bin\Debug\net5.0\DataImporter.User.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Transfer\bin\Debug\net5.0\DataImporter.User.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Transfer\bin\Debug\net5.0\DataImporter.Common.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Transfer\bin\Debug\net5.0\DataImporter.Common.pdb

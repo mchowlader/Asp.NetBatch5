@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataImporter.Web.Data.Migrations
 {
     [DbContext(typeof(TransferDbContext))]
-    [Migration("20210920144649_AddEntity")]
+    [Migration("20210921124208_AddEntity")]
     partial class AddEntity
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,6 +33,9 @@ namespace DataImporter.Web.Data.Migrations
 
                     b.Property<int>("GroupId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("UploadDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -97,18 +100,18 @@ namespace DataImporter.Web.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<Guid>("ApplicationUserId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("GroupName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("ApplicationUserId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Groups");
                 });
@@ -233,13 +236,13 @@ namespace DataImporter.Web.Data.Migrations
 
             modelBuilder.Entity("DataImporter.Transfer.Entities.Group", b =>
                 {
-                    b.HasOne("DataImporter.User.Entities.ApplicationUser", "ApplicationUser")
+                    b.HasOne("DataImporter.User.Entities.ApplicationUser", "User")
                         .WithMany()
-                        .HasForeignKey("ApplicationUserId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ApplicationUser");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("DataImporter.Transfer.Entities.Import", b =>

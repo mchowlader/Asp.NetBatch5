@@ -16,16 +16,22 @@ namespace DataImporter.Web.Models
         public int Exports { get; set; }
 
 
-        private readonly IMapper _mapper;
-        private readonly IGroupService _groupService;
+        private IMapper _mapper;
+        private ILifetimeScope _scope;
+        private IGroupService _groupService;
 
         public HomeModel()
         {
-            _mapper = Startup.AutofacContainer.Resolve<IMapper>();
-            _groupService = Startup.AutofacContainer.Resolve<IGroupService>();
         }
 
-        internal void CountHomeProperty()
+        public void Resolve(ILifetimeScope scope)
+        {
+            _scope = scope;
+            _mapper = _scope.Resolve<IMapper>();
+            _groupService = _scope.Resolve<IGroupService>();
+        }
+
+        public void CountHomeProperty()
         {
             var count = _groupService.CountHomeProperty();
             Groups = count.Groups;

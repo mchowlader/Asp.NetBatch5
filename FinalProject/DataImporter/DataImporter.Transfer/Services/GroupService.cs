@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using DataImporter.Common.Utilities;
 using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Transfer.UnitOfWorks;
 using System;
@@ -12,16 +13,21 @@ namespace DataImporter.Transfer.Services
     public class GroupService : IGroupService
     {
         private readonly IMapper _mapper;
+        private readonly IUserService _userService;
         private readonly ITransferUnitOfWork _transferUnitOfWork;
 
-        public GroupService(IMapper mapper,ITransferUnitOfWork transferUnitOfWork)
+
+        public GroupService(IMapper mapper,ITransferUnitOfWork transferUnitOfWork,
+            IUserService userService)
         {
             _mapper = mapper;
+            _userService = userService;
             _transferUnitOfWork = transferUnitOfWork;
         }
 
         public Home CountHomeProperty()
         {
+
             var groupCount = _transferUnitOfWork.Groups.GetCount();
             return new Home()
             {
@@ -43,6 +49,16 @@ namespace DataImporter.Transfer.Services
             if (groupEntity == null) return null;
             
             return _mapper.Map<Group>(groupEntity);
+        }
+
+        public IList<Group> GetGroupByUserId()
+        {
+            return default;
+        }
+
+        public IList<Group> GetGroupByUserId(Guid id)
+        {
+            throw new NotImplementedException();
         }
 
         public (IList<Group> records, int total, int totalDisplay) GetGroups(int pageIndex, 

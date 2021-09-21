@@ -38,7 +38,7 @@ namespace DataImporter.Transfer.Contexts
             modelBuilder.Entity<ApplicationUser>()
                  .ToTable("AspNetUsers", x => x.ExcludeFromMigrations())
                   .HasMany<Group>()
-                  .WithOne(x => x.ApplicationUser);
+                  .WithOne(x => x.User);
 
             base.OnModelCreating(modelBuilder);
         }

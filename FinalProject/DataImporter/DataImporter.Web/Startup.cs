@@ -44,7 +44,7 @@ namespace DataImporter.Web
         
         public IConfiguration Configuration { get; }
         public IWebHostEnvironment WebHostEnvironment { get; set; }
-        public static ILifetimeScope AutofacContainer { get; set; }
+        public ILifetimeScope AutofacContainer { get; set; }
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
@@ -56,6 +56,7 @@ namespace DataImporter.Web
             builder.RegisterModule(new UserModule(connectionInfo.connectionString, 
                 connectionInfo.migrationAssemblyName));
             builder.RegisterModule(new CommonModule());
+            builder.RegisterModule(new WebModule());
         }
 
         private (string connectionString, string migrationAssemblyName) GetConnectionStringAndAssemblyName()
@@ -133,7 +134,7 @@ namespace DataImporter.Web
             {
                 x.BaseAddress = new Uri("https://www.google.com/recaptcha/api/siteverify");
             });
-
+            services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllersWithViews();
             services.AddHttpContextAccessor();

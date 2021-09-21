@@ -1,4 +1,5 @@
-﻿using DataImporter.Web.Models;
+﻿using Autofac;
+using DataImporter.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -14,15 +15,18 @@ namespace DataImporter.Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ILifetimeScope _scope;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILifetimeScope scope, ILogger<HomeController> logger)
         {
+            _scope = scope;
             _logger = logger;
         }
 
         public IActionResult Index()
         {
-            var model = new HomeModel();
+
+            var model = _scope.Resolve<HomeModel>();
             model.CountHomeProperty();
             return View(model);
         }

@@ -22,9 +22,9 @@ namespace DataImporter.Web.Models.Imports
 
         public ImportModel()
         {
-            _mapper = Startup.AutofacContainer.Resolve<IMapper>();
-            _dateTimeUtility = Startup.AutofacContainer.Resolve<IDateTimeUtility>();
-            _groupService = Startup.AutofacContainer.Resolve<IGroupService>();
+            //_mapper = Startup.AutofacContainer.Resolve<IMapper>();
+            //_dateTimeUtility = Startup.AutofacContainer.Resolve<IDateTimeUtility>();
+            //_groupService = Startup.AutofacContainer.Resolve<IGroupService>();
         }
 
         public ImportModel(IMapper mapper, IDateTimeUtility dateTimeUtility,
