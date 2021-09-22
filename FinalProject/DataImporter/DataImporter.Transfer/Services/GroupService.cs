@@ -27,14 +27,13 @@ namespace DataImporter.Transfer.Services
 
         public Home CountHomeProperty()
         {
-
             var groupCount = _transferUnitOfWork.Groups.GetCount();
             return new Home()
             {
                 Groups = groupCount
             };
         }
-
+        //done
         public void CreateGroup(Group group)
         {
             _transferUnitOfWork.Groups.Add(
@@ -51,45 +50,42 @@ namespace DataImporter.Transfer.Services
             return _mapper.Map<Group>(groupEntity);
         }
 
-        public IList<Group> GetGroupByUserId()
-        {
-            return default;
-        }
-
-        public IList<Group> GetGroupByUserId(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public (IList<Group> records, int total, int totalDisplay) GetGroups(int pageIndex, 
-            int pageSize, string searchText, string sortText)
+        //done
+        public (IList<Group> records, int total, int totalDisplay) GetGroupsByUserId(int pageIndex, 
+            int pageSize, string searchText, string sortText, Guid id)
         {
             var groupData = _transferUnitOfWork.Groups.GetDynamic(
                string.IsNullOrWhiteSpace(searchText) ? null : x => x.GroupName.Contains(searchText),
                sortText, string.Empty, pageIndex, pageSize);
 
             var resultData = (from groups in groupData.data
+                              where groups.UserId == id
                               select _mapper.Map<Group>(groups)).ToList();
 
             return (resultData, groupData.total, groupData.totalDisplay);
         }
 
+        //done
         public void GroupDelete(int id)
         {
             _transferUnitOfWork.Groups.Remove(id);
             _transferUnitOfWork.Save();
         }
-
-        public IList<Group> LoadGroupProperty()
+        //done
+        public IList<Group> LoadGroupProperty(Guid id)
         {
             var groupsList = new List<Group>();
             var groupEntity = _transferUnitOfWork.Groups.GetAll();
 
-            foreach (var group in groupEntity)
-            {
-                var groupData = _mapper.Map<Group>(group);
-                groupsList.Add(groupData);
-            }
+             groupsList = (from groups in groupEntity
+                              where groups.UserId == id
+                              select _mapper.Map<Group>(groups)).ToList();
+
+            //foreach (var group in groupEntity)
+            //{
+            //    var groupData = _mapper.Map<Group>(group);
+            //    groupsList.Add(groupData);
+            //}
 
             return groupsList;
         }

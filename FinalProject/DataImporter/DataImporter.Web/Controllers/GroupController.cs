@@ -30,36 +30,37 @@ namespace DataImporter.Web.Controllers
             _dbContext = dbContext;
             _userManager = userManager;
         }
-       
+
         public IActionResult Groups()
         {
             return View();
         }
-      
+
         //ok
         [HttpPost]
         public IActionResult CreateGroup(CreateGroupModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 model.Resolve(_scope);
                 model.UserId = _userManager.GetUserId(HttpContext.User);
                 model.CreateGroup();
             }
-            
+
             return RedirectToAction(nameof(Groups));
         }
-        
+
         //ok
-        public JsonResult GetGroupData()
+        public JsonResult GetGroupDataByUser()
         {
             var dataTableModel = new DataTablesAjaxRequestModel(Request);
             var model = _scope.Resolve<ListGroupModel>();
-            model.UserId = _userManager.GetUserId(HttpContext.User);
-            var data = model.GetGroups(dataTableModel);
+            //model.UserId = _userManager.GetUserId(HttpContext.User);
+            var id = Guid.Parse(_userManager.GetUserId(HttpContext.User));
+            var data = model.GetGroupsByUser(dataTableModel,id);
             return Json(data);
         }
-       
+
         public IActionResult EditGroup(int id)
         {
             var model = _scope.Resolve<EditGroupModel>();
@@ -81,27 +82,15 @@ namespace DataImporter.Web.Controllers
         public IActionResult Contacts()
         {
             var model = _scope.Resolve<ContactsModel>();
-            model.LoadGroupProperty();
+            var id = Guid.Parse(_userManager.GetUserId(HttpContext.User));
+            model.LoadGroupProperty(id);
             var groupData = model.groupsList;
             groupData.Insert(0, new Transfer.BusinessObjects.Group { Id = 0, GroupName = "Select Group" });
             ViewBag.data = groupData;
             return View(model);
         }
 
-        //public IActionResult DropDown(ContactsModel model)
-        //{
-        //    model.LoadGroupProperty();
-        //    var groupData = model.groupsList;
-        //    groupData.Insert(0, new Transfer.BusinessObjects.Group {Id = 0, Name = "Select Group" });
-        //    ViewBag.data = groupData;
-        //    return RedirectToAction(nameof(Contacts));
-        //}
-
-
-        //var cl = model.createGroupList;
-        //cl.Insert(0, new Group { Id = 0, GroupName = "Select Group" });
-        //    ViewBag.message = cl;
-        //    return View(model);
-
-}
+     
+    
+    }
 }

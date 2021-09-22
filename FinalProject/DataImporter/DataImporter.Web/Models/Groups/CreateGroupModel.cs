@@ -56,7 +56,7 @@ namespace DataImporter.Web.Models.Groups
 
         internal void CreateGroup()
         {
-              _userService.GetUserId();
+              //_userService.GetUserId();
             //var group = _mapper.Map<Group>(this);
             var group = new Group()
             {

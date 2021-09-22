@@ -10,13 +10,13 @@ namespace DataImporter.Transfer.Services
     public interface IGroupService
     {
         void CreateGroup(Group group);
-        (IList<Group> records, int total, int totalDisplay) GetGroups(int pageIndex, 
-            int pageSize, string searchText, string sortText);
+        (IList<Group> records, int total, int totalDisplay) GetGroupsByUserId(int pageIndex, 
+            int pageSize, string searchText, string sortText,Guid id);
         Home CountHomeProperty();
         void GroupDelete(int id);
         Group GetGroup(int id);
-        IList<Group> LoadGroupProperty();
-        IList<Group> GetGroupByUserId(Guid id);
+        IList<Group> LoadGroupProperty(Guid id);
+     
         
     }
 }

@@ -42,9 +42,9 @@ namespace DataImporter.Web.Models
 
         public IList<Group> groupsList { get; set; }
 
-        public void LoadGroupProperty()
+        public void LoadGroupProperty(Guid id)
         {
-            groupsList = _groupService.LoadGroupProperty();
+            groupsList = _groupService.LoadGroupProperty(id);
         }
     }
 }

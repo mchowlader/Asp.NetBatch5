@@ -37,13 +37,13 @@ namespace DataImporter.Web.Models.Groups
             _groupService = groupService;
         }
 
-        internal object GetGroups(DataTablesAjaxRequestModel dataTableModel)
+        internal object GetGroupsByUser(DataTablesAjaxRequestModel dataTableModel, Guid id)
         {
-            var data = _groupService.GetGroups(
+            var data = _groupService.GetGroupsByUserId(
                dataTableModel.PageIndex,
                dataTableModel.PageSize,
                dataTableModel.SearchText,
-               dataTableModel.GetSortText(new string[] { "GroupName", "CreateDate", "UserId" }));
+               dataTableModel.GetSortText(new string[] { "GroupName", "CreateDate"}),id);
 
             return new
             {
@@ -54,16 +54,17 @@ namespace DataImporter.Web.Models.Groups
                         {
                                 record.GroupName,
                                 record.CreateDate.ToString(),
-                                record.UserId.ToString(),
                                 record.Id.ToString()
                         }
                     ).ToArray()
             };
         }
 
-        internal void GroupDelete(int id)
+        public void GroupDelete(int id)
         {
             _groupService.GroupDelete(id);
         }
+
+       
     }
 }
