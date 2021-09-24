@@ -25,9 +25,10 @@ namespace DataImporter.Transfer.Services
             _transferUnitOfWork = transferUnitOfWork;
         }
 
-        public Home CountHomeProperty()
+        public Home CountHomeProperty(Guid id)
         {
-            var groupCount = _transferUnitOfWork.Groups.GetCount();
+            
+            var groupCount = _transferUnitOfWork.Groups.GetCount(x => x.UserId == id);
             return new Home()
             {
                 Groups = groupCount
@@ -55,11 +56,10 @@ namespace DataImporter.Transfer.Services
             int pageSize, string searchText, string sortText, Guid id)
         {
             var groupData = _transferUnitOfWork.Groups.GetDynamic(
-               string.IsNullOrWhiteSpace(searchText) ? null : x => x.GroupName.Contains(searchText),
+               string.IsNullOrWhiteSpace(searchText) ? x => x.UserId == id : x => x.GroupName.Contains(searchText),
                sortText, string.Empty, pageIndex, pageSize);
 
             var resultData = (from groups in groupData.data
-                              where groups.UserId == id
                               select _mapper.Map<Group>(groups)).ToList();
 
             return (resultData, groupData.total, groupData.totalDisplay);
@@ -75,6 +75,7 @@ namespace DataImporter.Transfer.Services
         public IList<Group> LoadGroupProperty(Guid id)
         {
             var groupsList = new List<Group>();
+            //var groupEntity = _transferUnitOfWork.Groups.GetAll();
             var groupEntity = _transferUnitOfWork.Groups.GetAll();
 
              groupsList = (from groups in groupEntity

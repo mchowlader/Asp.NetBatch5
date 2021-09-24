@@ -7,20 +7,22 @@
         <div class="modal-content">
 
             <!--Header-->
-            <div class="card-header">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Group</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <!--Body-->
-            <form class="form-horizontal" asp-action="EditGroup" asp-controller="Customer" method="post" asp-antiforgery="true">
+            <form class="form-horizontal" id = "editForm"asp-action="EditGroup" asp-controller="Group" method="post" asp-antiforgery="true">
                 <div class="modal-body text-center mb-1">
-                    <h5 class="mt-1 mb-2">Edit Group</h5>
                     <div class="md-form ml-0 mr-0">
                         <div class="col-md-12">
-                            <input asp-for="Name" type="text" class="form-control" id="inputName" name="id" placeholder="Name">
+                            <input asp-for="GroupName" type="text" class="form-control" id="EditId" placeholder="Name">
                         </div>
                     </div>
-
                     <div class="text-center mt-4">
-                        <button id="updateButton" asp-action="EditGroup" asp-controller="Customer" type="submit" class="btn btn-info">Update</button>
+                        <button asp-action="EditGroup" asp-controller="Group" id="editButton" type="submit" class="btn btn-info">Update</button>
 
                     </div>
                 </div>
@@ -30,4 +32,5 @@
         <!--/.Content-->
     </div>
 </div>
+
 <!--Modal: Login with Avatar Form-->

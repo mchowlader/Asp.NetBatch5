@@ -12,10 +12,10 @@ namespace DataImporter.Transfer.Services
         void CreateGroup(Group group);
         (IList<Group> records, int total, int totalDisplay) GetGroupsByUserId(int pageIndex, 
             int pageSize, string searchText, string sortText,Guid id);
-        Home CountHomeProperty();
+        Home CountHomeProperty(Guid id);
         void GroupDelete(int id);
         Group GetGroup(int id);
-        IList<Group> LoadGroupProperty(Guid id);
+        IList<Group> LoadGroupProperty(Guid id); //cng
      
         
     }

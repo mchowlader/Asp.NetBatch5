@@ -12,7 +12,7 @@ namespace DataImporter.Web.Models.Groups
     public class EditGroupModel
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string GroupName { get; set; }
 
         [DisplayFormat(DataFormatString = @"{0:dd\/MM\/yyyy}", ApplyFormatInEditMode = false)]
         public DateTime DateTime { get; set; }

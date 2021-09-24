@@ -56,7 +56,6 @@ namespace DataImporter.Web.Models.Groups
 
         internal void CreateGroup()
         {
-              //_userService.GetUserId();
             //var group = _mapper.Map<Group>(this);
             var group = new Group()
             {
@@ -66,5 +65,12 @@ namespace DataImporter.Web.Models.Groups
             };
             _groupService.CreateGroup(group);
         }
+
+        //edit model 
+        //internal void EditGroup(int id)
+        //{
+        //    var group = _groupService.GetGroup(id);
+        //    _mapper.Map(group, this);
+        //}
     }
 }

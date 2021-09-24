@@ -14,11 +14,21 @@ namespace DataImporter.Transfer.UnitOfWorks
     {
         public IGroupRepository Groups { get; private set; }
 
+        public IImportRepository Imports { get; private set; }
+
+        public IExportRepository Exports { get; private set; }
+
+        public IExcelDataRepository ExcelDatas { get; private set; }
+
         public TransferUnitOfWork(ITransferDbContext transferDbContext, 
-            IGroupRepository groupRepository)
+            IGroupRepository groupRepository, IImportRepository importRepository, 
+            IExportRepository exportRepository, IExcelDataRepository excelDataRepository)
            : base((DbContext)transferDbContext)
         {
             Groups = groupRepository;
+            Imports = importRepository;
+            Exports = exportRepository;
+            ExcelDatas = excelDataRepository;
         }
 
     }

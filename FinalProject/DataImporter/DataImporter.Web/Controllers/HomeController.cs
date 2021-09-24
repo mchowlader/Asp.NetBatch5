@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace DataImporter.Web.Controllers
 {
-   
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -30,8 +30,9 @@ namespace DataImporter.Web.Controllers
 
         public IActionResult Index()
         {
+            var id = Guid.Parse(_userManager.GetUserId(HttpContext.User));
             var model = _scope.Resolve<HomeModel>();
-            model.CountHomeProperty();
+            model.CountHomeProperty(id);
             return View(model);
         }
 

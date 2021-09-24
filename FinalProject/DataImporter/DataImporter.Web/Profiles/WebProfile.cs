@@ -2,6 +2,7 @@
 using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Web.Models;
 using DataImporter.Web.Models.Groups;
+using DataImporter.Web.Models.Imports;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,8 @@ namespace DataImporter.Web.Profiles
         {
             CreateMap<Group, CreateGroupModel>().ReverseMap();
             CreateMap<Group, EditGroupModel>().ReverseMap();
+            CreateMap<Group, ListGroupModel>().ReverseMap();
+            CreateMap<Import, ListImportModel>().ReverseMap();
         }
     }
 }

@@ -16,15 +16,21 @@ namespace DataImporter.Web.Models.Imports
         public string DateTo { get; set; }
         public string DateFrom { get; set; }
 
-        private readonly IMapper _mapper;
-        private readonly IDateTimeUtility _dateTimeUtility;
-        private readonly IGroupService _groupService;
+        private  IMapper _mapper;
+        private  ILifetimeScope _scope;
+        private  IDateTimeUtility _dateTimeUtility;
+        private  IGroupService _groupService;
 
         public ImportModel()
         {
-            //_mapper = Startup.AutofacContainer.Resolve<IMapper>();
-            //_dateTimeUtility = Startup.AutofacContainer.Resolve<IDateTimeUtility>();
-            //_groupService = Startup.AutofacContainer.Resolve<IGroupService>();
+            
+        }
+        public void Resolve(ILifetimeScope scope)
+        {
+            _scope = scope;
+            _mapper = _scope.Resolve<IMapper>();
+            _groupService = _scope.Resolve<IGroupService>();
+            _dateTimeUtility = _scope.Resolve<IDateTimeUtility>();
         }
 
         public ImportModel(IMapper mapper, IDateTimeUtility dateTimeUtility,

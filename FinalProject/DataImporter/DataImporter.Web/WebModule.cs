@@ -17,8 +17,11 @@ namespace DataImporter.Web
             builder.RegisterType<ListGroupModel>().AsSelf();
             builder.RegisterType<EditGroupModel>().AsSelf();
             builder.RegisterType<ContactsModel>().AsSelf();
-            builder.RegisterType<ImportModel>().AsSelf();
+
             builder.RegisterType<HomeModel>().AsSelf();
+
+            builder.RegisterType<ImportModel>().AsSelf();
+            builder.RegisterType<ListImportModel>().AsSelf();
             base.Load(builder);
         }
     }

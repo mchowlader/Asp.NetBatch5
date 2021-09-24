@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using DataImporter.Common.Utilities;
 using DataImporter.User.Entities;
 using DataImporter.Web.Models.Imports;
 using Microsoft.AspNetCore.Authorization;
@@ -15,7 +16,7 @@ namespace DataImporter.Web.Controllers
     public class ImportController : Controller
     {
         private readonly ILifetimeScope _scope;
-        private UserManager<ApplicationUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         public ImportController(ILifetimeScope scope, UserManager<ApplicationUser> userManager)
         {
             _userManager = userManager;
@@ -36,6 +37,15 @@ namespace DataImporter.Web.Controllers
             groupData.Insert(0, new Transfer.BusinessObjects.Group { Id = 0, GroupName = "Select Group" });
             ViewBag.data = groupData;
             return View(model);
+        }
+
+        public JsonResult GetImportsData()
+        {
+            var id = Guid.Parse(_userManager.GetUserId(HttpContext.User));
+            var importDataTable = new DataTablesAjaxRequestModel(Request);
+            var model = _scope.Resolve<ListImportModel>();
+            var data = model.GetImportsData(importDataTable, id);
+            return Json(data);
         }
     }
 }

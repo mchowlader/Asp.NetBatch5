@@ -31,9 +31,9 @@ namespace DataImporter.Web.Models
             _groupService = _scope.Resolve<IGroupService>();
         }
 
-        public void CountHomeProperty()
+        public void CountHomeProperty(Guid id)
         {
-            var count = _groupService.CountHomeProperty();
+            var count = _groupService.CountHomeProperty(id);
             Groups = count.Groups;
         }
 

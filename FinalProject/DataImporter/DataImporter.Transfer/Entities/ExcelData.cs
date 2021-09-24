@@ -1,4 +1,5 @@
-﻿using DataImporter.User.Entities;
+﻿using DataImporter.Data;
+using DataImporter.User.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataImporter.Transfer.Entities
 {
-    public class ExcelData
+    public class ExcelData : IEntity<int>
     {
         public int Id { get; set; }
         public int GroupId { get; set; }

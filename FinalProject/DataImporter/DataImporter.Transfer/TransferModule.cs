@@ -31,11 +31,25 @@ namespace DataImporter.Transfer
                 .InstancePerLifetimeScope();
 
 
+            builder.RegisterType<TransferUnitOfWork>().As<ITransferUnitOfWork>()
+               .InstancePerLifetimeScope();
+
             builder.RegisterType<GroupService>().As<IGroupService>()
                 .InstancePerLifetimeScope();
-            builder.RegisterType<TransferUnitOfWork>().As<ITransferUnitOfWork>()
-                .InstancePerLifetimeScope(); 
             builder.RegisterType<GroupRepository>().As<IGroupRepository>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<ImportService>().As<IImportService>()
+                .InstancePerLifetimeScope();
+            builder.RegisterType<ImportRepository>().As<IImportRepository>()
+                .InstancePerLifetimeScope(); 
+
+            builder.RegisterType<ExportService>().As<IExportService>()
+                .InstancePerLifetimeScope();
+            builder.RegisterType<ExportRepository>().As<IExportRepository>()
+                .InstancePerLifetimeScope();
+            
+            builder.RegisterType<ExcelDataRepository>().As<IExcelDataRepository>()
                 .InstancePerLifetimeScope();
 
             base.Load(builder);

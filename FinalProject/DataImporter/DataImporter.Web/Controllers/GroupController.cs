@@ -61,13 +61,28 @@ namespace DataImporter.Web.Controllers
             return Json(data);
         }
 
-        public IActionResult EditGroup(int id)
+
+        //href = "#" data-id = '${data}' value = '${data}'>
+        //onclick="window.location.href='/Group/EditGroup/${data}'" value='${data}'>
+
+
+
+        //IActionResult
+        public PartialViewResult EditGroup(int id)
         {
             var model = _scope.Resolve<EditGroupModel>();
 
             model.EditGroup(id);
-            //return RedirectToAction(nameof(Group));
-            //return PartialView( "Partial/_EditGroupPartial", model);//problem
+            //return RedirectToAction(nameof(Groups));
+            //return PartialView("Groups", model);//problem
+            return PartialView(model);//problem
+            //return RedirectToAction(nameof(Groups));
+
+            //need to correction this portion. return to partial view with load data for edit 
+        }
+
+        public IActionResult UpdateGroup()
+        {
             return View();
         }
 
@@ -90,7 +105,17 @@ namespace DataImporter.Web.Controllers
             return View(model);
         }
 
-     
-    
+        public IActionResult EmailGroup()
+        {
+            
+            return RedirectToAction(nameof(Groups));
+        }
+
+        public IActionResult ViewGroupData()
+        {
+
+            return RedirectToAction(nameof(Contacts));
+        }
+
     }
 }
