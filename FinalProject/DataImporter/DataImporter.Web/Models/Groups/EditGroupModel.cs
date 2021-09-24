@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using AutoMapper;
+using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Transfer.Services;
 using System;
 using System.Collections.Generic;
@@ -12,10 +13,11 @@ namespace DataImporter.Web.Models.Groups
     public class EditGroupModel
     {
         public int Id { get; set; }
+        public Guid UserId { get; set; }
         public string GroupName { get; set; }
 
         [DisplayFormat(DataFormatString = @"{0:dd\/MM\/yyyy}", ApplyFormatInEditMode = false)]
-        public DateTime DateTime { get; set; }
+        public DateTime CreateDate { get; set; }
 
         private IMapper _mapper;
         private ILifetimeScope _scope;
@@ -42,6 +44,18 @@ namespace DataImporter.Web.Models.Groups
         {
             var group = _groupService.GetGroup(id);
             _mapper.Map(group,this);
+        }
+
+        internal void Update()
+        {
+            var group = _mapper.Map<Group>(this);
+            //var group = new Group()
+            //{
+            //    Id = Id,
+            //    GroupName = GroupName
+            //};
+            //_mapper.Map(this, group);
+            _groupService.UpdateGroup(group);
         }
     }
 }

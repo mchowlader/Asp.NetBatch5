@@ -16,7 +16,6 @@ namespace DataImporter.Transfer.Services
         void GroupDelete(int id);
         Group GetGroup(int id);
         IList<Group> LoadGroupProperty(Guid id); //cng
-     
-        
+        void UpdateGroup(Group group);
     }
 }

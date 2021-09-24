@@ -15,6 +15,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Security.Claims;
 using Autofac;
+using Microsoft.Extensions.Logging;
 
 namespace DataImporter.Web.Controllers
 {
@@ -24,32 +25,41 @@ namespace DataImporter.Web.Controllers
         private ApplicationDbContext _dbContext;
         private readonly ILifetimeScope _scope;
         private UserManager<ApplicationUser> _userManager;
-        public GroupController(ILifetimeScope scope, ApplicationDbContext dbContext, UserManager<ApplicationUser> userManager)
+        private readonly ILogger<GroupController> _logger;
+
+        public GroupController(ILifetimeScope scope, ApplicationDbContext dbContext,
+            UserManager<ApplicationUser> userManager, ILogger<GroupController> logger)
         {
+            _logger = logger;
             _scope = scope;
             _dbContext = dbContext;
             _userManager = userManager;
         }
 
-        public IActionResult Groups()
+        
+        public IActionResult Create()
         {
-            return View();
+            var model = _scope.Resolve<CreateGroupModel>();
+            return View(model);
         }
-
         //ok
-        [HttpPost]
-        public IActionResult CreateGroup(CreateGroupModel model)
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult Create(CreateGroupModel model)
         {
             if (ModelState.IsValid)
             {
                 model.Resolve(_scope);
-                model.UserId = _userManager.GetUserId(HttpContext.User);
+                model.UserId = Guid.Parse(_userManager.GetUserId(HttpContext.User));
                 model.CreateGroup();
             }
 
-            return RedirectToAction(nameof(Groups));
-        }
+            return View(model);
 
+        }
+        public IActionResult Groups()
+        {
+            return View();
+        }
         //ok
         public JsonResult GetGroupDataByUser()
         {
@@ -60,30 +70,35 @@ namespace DataImporter.Web.Controllers
             var data = model.GetGroupsByUser(dataTableModel,id);
             return Json(data);
         }
-
-
-        //href = "#" data-id = '${data}' value = '${data}'>
-        //onclick="window.location.href='/Group/EditGroup/${data}'" value='${data}'>
-
-
-
-        //IActionResult
-        public PartialViewResult EditGroup(int id)
+        //ok
+        public IActionResult Edit(int id)
         {
             var model = _scope.Resolve<EditGroupModel>();
-
             model.EditGroup(id);
-            //return RedirectToAction(nameof(Groups));
-            //return PartialView("Groups", model);//problem
-            return PartialView(model);//problem
-            //return RedirectToAction(nameof(Groups));
-
-            //need to correction this portion. return to partial view with load data for edit 
+            return View(model);
         }
-
-        public IActionResult UpdateGroup()
+        //ok
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult Edit(EditGroupModel model)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                if (ModelState.IsValid)
+                {
+                    try
+                    {
+                        model.Resolve(_scope);
+                        model.Update();
+                    }
+                    catch (Exception ex)
+                    {
+                        ModelState.AddModelError("", "Failed to update group");
+                        _logger.LogError(ex, "Update Course Failed");
+                    }
+                }
+            }
+
+            return View(model);
         }
 
         //ok

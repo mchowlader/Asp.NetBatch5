@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using DataImporter.Transfer.BusinessObjects;
+using BO = DataImporter.Transfer.BusinessObjects;
+using EO = DataImporter.Transfer.Entities;
 using DataImporter.Web.Models;
 using DataImporter.Web.Models.Groups;
 using DataImporter.Web.Models.Imports;
@@ -14,10 +15,10 @@ namespace DataImporter.Web.Profiles
     {
         public WebProfile()
         {
-            CreateMap<Group, CreateGroupModel>().ReverseMap();
-            CreateMap<Group, EditGroupModel>().ReverseMap();
-            CreateMap<Group, ListGroupModel>().ReverseMap();
-            CreateMap<Import, ListImportModel>().ReverseMap();
+            CreateMap<BO.Group, CreateGroupModel>().ReverseMap();
+            CreateMap<BO.Group, EditGroupModel>().ReverseMap();
+            CreateMap<BO.Group, ListGroupModel>().ReverseMap();
+            CreateMap<BO.Import, ListImportModel>().ReverseMap();
         }
     }
 }

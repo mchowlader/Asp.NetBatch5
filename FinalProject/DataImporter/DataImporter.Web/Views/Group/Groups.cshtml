@@ -1,4 +1,4 @@
-﻿@model Tuple<CreateGroupModel, EditGroupModel, ListGroupModel>
+﻿@model ListGroupModel
 @section Styles
 {
     <link rel="stylesheet" href="/DataImporter/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
@@ -8,18 +8,6 @@
     <!-- Left navbar links -->
     <partial name="Partial/_LeftNavbarPartial" />
     <!-- Left navbar links -->
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item d-none d-sm-inline-block">
-            <div class="text-center">
-                <a href="/Customer/Group" class=" btn btn-primary" data-toggle="modal" data-target="#modalLoginAvatar">
-                    Create
-                    <i class="ion ion-edit"></i>
-                </a>
-            </div>
-        </li>
-    </ul>
-    <!-- Right navbar links -->
 </nav>
 <!-- /.navbar -->
 <!-- Content Header (Page header) -->
@@ -75,16 +63,37 @@
     </div>
     <!-- /.row -->
     <!-- Create Modal -->
-    <partial name="Partial/_CreateGroupPartial" />
+    <div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+            <!--Content-->
+            <div class="modal-content">
 
-    <!--Edit Modal -->
-    <partial name="Partial/_EditGroupPartial" />
+                <!--Header-->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create Group</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!--Body-->
+                <form class="form-horizontal" asp-action="CreateGroup" asp-controller="Group" method="post" asp-antiforgery="true">
+                    <div class="modal-body text-center mb-1">
+                        <div class="md-form ml-0 mr-0">
+                            <div class="col-md-12">
+                                <input asp-for="GroupName" type="text" class="form-control" id="inputName" placeholder="Name">
+                            </div>
+                        </div>
 
-
-    <!--Email Modal -->
-    <partial name="Partial/_EmailGroupPartial" />
-
-
+                        <div class="text-center mt-4">
+                            <button asp-action="CreateGroup" asp-controller="Group" type="submit" class="btn btn-info">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
 </section>
 <!-- /.content -->
 @section Scripts{
@@ -114,26 +123,26 @@
                             "orderable": false,
                             "targets": 2,
                             "render": function (data, type, row) {
-                                return `<button type ="submit" class ="btn btn-info show-bs-modal-edit btn-sm"
-                                                            onclick="window.location.href='/Group/EditGroup/${data}'" value='${data}'>
-                                                           <i class = "fas fa-pencil-alt"></i>
-                                                        Edit
-                                                    </button>
-                                                     <button type ="submit" class ="btn btn-danger show-bs-modal-delete btn-sm"
-                                                            href = "#" data-id = '${data}' value = '${data}'>
-                                                            <i class = "fas fa-trash"></i>
-                                                        Delete
-                                                    </button>
-                                                    <button type ="submit" class ="btn btn-primary show-bs-modal-email btn-sm"
-                                                            href = "#" data-id = '${data}' value = '${data}'>
-                                                            <i class = "fas fa-envelope "></i>
-                                                        E-Mail
-                                                    </button>
-                                                    <button type ="submit" class ="btn btn-success show-bs-modal-view btn-sm"
-                                                            onclick="window.location.href='/Group/ViewGroupData/${data}'" value='${id}'>
-                                                            <i class = " fas fa-eye"></i>
-                                                        View
-                                                    </button>`;
+                                return `<button type="submit" class="btn btn-info btn-sm" 
+                                        onclick="window.location.href='/Group/edit/${data}'" value='${data}'>
+                                        <i class="fas fa-pencil-alt"></i>
+                                        Edit
+                                    </button>
+                                    <button type ="submit" class ="btn btn-danger show-bs-modal-delete btn-sm"
+                                        href = "#" data-id = '${data}' value = '${data}'>
+                                        <i class = "fas fa-trash"></i>
+                                    Delete
+                                </button>
+                                <button type ="submit" class ="btn btn-primary show-bs-modal-email btn-sm"
+                                            href = "#" data-id = '${data}' value = '${data}'>
+                                            <i class = "fas fa-envelope "></i>
+                                    E-Mail
+                                </button>
+                                <button type ="submit" class ="btn btn-success show-bs-modal-view btn-sm"
+                                        href = "#" data-id = '${data}' value = '${data}'>
+                                        <i class = " fas fa-eye"></i>
+                                    View
+                                </button>`;
                             }
                         }
                     ]
@@ -151,17 +160,6 @@
                 $("#deleteForm").submit();
             });
 
-            $('#customer').on('click', '.show-bs-modal-edit', function (event) {
-                var id = $(this).data("id");
-                var modal = $("#modalEditGroup");
-                $("#editId").val(id);
-                $("#editForm").attr("action", "/Group/EditGroup")
-                modal.modal('show');
-            });
-            $("#updateButton").click(function () {
-                $("#editForm").submit();
-            });
-
             $('#customer').on('click', '.show-bs-modal-email', function (event) {
                 var id = $(this).data("id");
                 var modal = $("#modalEmailGroup");
@@ -173,17 +171,6 @@
                 $("#emailForm").submit();
             });
 
-
-            $('#customer').on('click', '.show-bs-modal-view', function (event) {
-                var id = $(this).data("id");
-                var view = $("#ContactGroup");
-                $("#emailId").val(id);
-                $("#emailForm").val(id).attr("action", "/Group/Contacs")
-                modal.modal('show');
-            });
-            $("#emailButton").click(function () {
-                $("#emailForm").submit();
-            });
 
         });
     </script>

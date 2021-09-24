@@ -64,13 +64,5 @@ namespace DataImporter.Web.Models.Groups
         {
             _groupService.GroupDelete(id);
         }
-
-
-        //edit model 
-        //internal void EditGroup(int id)
-        //{
-        //    var group = _groupService.GetGroup(id);
-        //    _mapper.Map(group, this);
-        //}
     }
 }

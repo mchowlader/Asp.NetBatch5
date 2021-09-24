@@ -21,7 +21,7 @@ namespace DataImporter.Web.Models.Groups
         public int Id { get; set; }
         public string GroupName { get; set; }
         public DateTime CreateDate { get; set; }
-        public string UserId { get; set; }
+        public Guid UserId { get; set; }
 
         private IUserService _userService;
         private IMapper _mapper;
@@ -66,11 +66,5 @@ namespace DataImporter.Web.Models.Groups
             _groupService.CreateGroup(group);
         }
 
-        //edit model 
-        //internal void EditGroup(int id)
-        //{
-        //    var group = _groupService.GetGroup(id);
-        //    _mapper.Map(group, this);
-        //}
     }
 }

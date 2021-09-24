@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using DataImporter.Common.Exceptions;
 using DataImporter.Common.Utilities;
 using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Transfer.UnitOfWorks;
@@ -90,5 +91,30 @@ namespace DataImporter.Transfer.Services
 
             return groupsList;
         }
+
+        public void UpdateGroup(Group group)
+        {
+            if (group == null)
+                throw new InvalidOperationException("Group is missing");
+
+            if (IsTitleAlreadyUsed(group.GroupName, group.Id))
+                throw new DuplicateTitleException("Group title already used in other group.");
+
+            var groupEntity = _transferUnitOfWork.Groups.GetById(group.Id);
+
+            if (groupEntity != null)
+            {
+                _mapper.Map(group, groupEntity);
+                _transferUnitOfWork.Save();
+            }
+            else
+                throw new InvalidOperationException("Couldn't find group");
+        }
+
+        private bool IsTitleAlreadyUsed(string title) =>
+          _transferUnitOfWork.Groups.GetCount(x => x.GroupName == title) > 0;
+
+        private bool IsTitleAlreadyUsed(string title, int id) =>
+            _transferUnitOfWork.Groups.GetCount(x => x.GroupName == title && x.Id != id) > 0;
     }
 }
