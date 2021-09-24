@@ -486,3 +486,6 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Shared\Partial\_CreateGroupPartial.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Group\Create.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Group\Edit.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\EPPlus.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Import\File.cshtml.g.cs

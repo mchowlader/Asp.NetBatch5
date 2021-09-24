@@ -3,6 +3,7 @@ using AutoMapper;
 using DataImporter.Common.Utilities;
 using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Transfer.Services;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +16,18 @@ namespace DataImporter.Web.Models.Imports
         public int Id { get; set; }
         public string DateTo { get; set; }
         public string DateFrom { get; set; }
+        public IFormFile XlsFile { get; set; }
+        public int GroupId { get; set; }
+        public string GroupName { get; set; }
+        public string ExcelFileName { get; set; }
+        public DateTime ImportDate { get; set; }
 
         private IMapper _mapper;
         private ILifetimeScope _scope;
         private IDateTimeUtility _dateTimeUtility;
         private IImportService  _importService;
+        private IGroupService _groupService;
+
 
         public ListImportModel()
         {
@@ -28,22 +36,25 @@ namespace DataImporter.Web.Models.Imports
         public void Resolve(ILifetimeScope scope)
         {
             _scope = scope;
+            _groupService = _scope.Resolve<IGroupService>();
             _mapper = _scope.Resolve<IMapper>();
             _importService = _scope.Resolve<IImportService>();
             _dateTimeUtility = _scope.Resolve<IDateTimeUtility>();
         }
         public ListImportModel(IMapper mapper, IDateTimeUtility dateTimeUtility,
-            IImportService importService)
+            IImportService importService, IGroupService groupService)
         {
             _mapper = mapper;
+            _groupService = groupService;
             _dateTimeUtility = dateTimeUtility;
             _importService = importService;
         }
-        //public IList<Group> groupsList { get; set; }
-        //internal void LoadGroupProperty(Guid id)
-        //{
-        //    groupsList = _importService.LoadGroupProperty(id);
-        //}
+        public IList<Group> groupsList { get; set; }
+
+        public void LoadGroupProperty(Guid id)
+        {
+            groupsList = _groupService.LoadGroupProperty(id);
+        }
 
 
 
