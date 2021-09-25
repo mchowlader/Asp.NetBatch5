@@ -124,6 +124,9 @@ namespace DataImporter.Web.Data.Migrations
                     b.Property<string>("ExcelFileName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("FilePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("GroupId")
                         .HasColumnType("int");
 

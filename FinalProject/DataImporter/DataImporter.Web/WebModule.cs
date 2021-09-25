@@ -20,8 +20,9 @@ namespace DataImporter.Web
 
             builder.RegisterType<HomeModel>().AsSelf();
 
-            builder.RegisterType<ImportModel>().AsSelf();
+            builder.RegisterType<UploadModel>().AsSelf();
             builder.RegisterType<ListImportModel>().AsSelf();
+            builder.RegisterType<CreateImportModel>().AsSelf();
             base.Load(builder);
         }
     }

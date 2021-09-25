@@ -14,6 +14,7 @@ namespace DataImporter.Transfer.BusinessObjects
         public string GroupName { get; set; }
         public string ExcelFileName { get; set; }
         public DateTime ImportDate { get; set; }
-        public Group Group { get; set; }
+        public string FilePath { get; set; }
+
     }
 }

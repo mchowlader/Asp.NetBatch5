@@ -488,4 +488,7 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Group\Edit.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\EPPlus.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
-D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Import\File.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\bin\Debug\net5.0\ExcelDataReader.DataSet.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Test\Index.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Import\Test.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Import\Upload.cshtml.g.cs

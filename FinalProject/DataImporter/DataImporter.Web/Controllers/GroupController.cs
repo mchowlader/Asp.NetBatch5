@@ -120,11 +120,7 @@ namespace DataImporter.Web.Controllers
             return View(model);
         }
 
-        public IActionResult EmailGroup()
-        {
-            
-            return RedirectToAction(nameof(Groups));
-        }
+       
 
         public IActionResult ViewGroupData()
         {

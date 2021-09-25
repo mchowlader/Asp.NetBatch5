@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Transfer.UnitOfWorks;
+using Microsoft.AspNetCore.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace DataImporter.Transfer.Services
     public class ImportService : IImportService
     {
         private readonly IMapper _mapper;
+        private IWebHostEnvironment _webHostEnvironment;
         private readonly ITransferUnitOfWork _transferUnitOfWork;
 
 
@@ -54,7 +56,22 @@ namespace DataImporter.Transfer.Services
             return (resultData, importsData.total, importsData.totalDisplay);
         }
 
-    
+        public void UploadExcelFile(Import importsData)
+        {
+            var groupEntity = _transferUnitOfWork.Groups.GetById(importsData.GroupId);
+            _transferUnitOfWork.Imports.Add(
+                new Entities.Import()
+                {
+                    FilePath = importsData.FilePath,
+                    GroupId = importsData.GroupId,
+                    GroupName = groupEntity.GroupName,
+                    ImportDate = importsData.ImportDate,
+                    ExcelFileName = importsData.ExcelFileName,
+                });
+            _transferUnitOfWork.Save();
+        }
+
+
 
         //public IList<Group> LoadGroupProperty(Guid id)
         //{

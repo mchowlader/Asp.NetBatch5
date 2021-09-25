@@ -41,15 +41,15 @@
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>Create Date</th>
-                                <th style="width:275px">Action</th>
+                                <th>Create Date </th>
+                                <th style="width:350px">Action</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
                                 <th>Name</th>
                                 <th>Create Date</th>
-                                <th style="width:275px">Action</th>
+                                <th style="width:350px">Action</th>
                             </tr>
                         </tfoot>
                     </table>
@@ -133,10 +133,10 @@
                                         <i class = "fas fa-trash"></i>
                                     Delete
                                 </button>
-                                <button type ="submit" class ="btn btn-primary show-bs-modal-email btn-sm"
-                                            href = "#" data-id = '${data}' value = '${data}'>
-                                            <i class = "fas fa-envelope "></i>
-                                    E-Mail
+                                <button type ="submit" class ="btn btn-primary show-bs-modal-upload btn-sm"
+                                        onclick="window.location.href='/Import/Upload/${data}'" value='${data}'>
+                                        <i class="fa fa-upload"></i>
+                                    Upload
                                 </button>
                                 <button type ="submit" class ="btn btn-success show-bs-modal-view btn-sm"
                                         href = "#" data-id = '${data}' value = '${data}'>
