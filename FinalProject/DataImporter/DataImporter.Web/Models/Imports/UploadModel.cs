@@ -82,16 +82,16 @@ namespace DataImporter.Web.Models.Imports
                 {
                     DataSet result = excelReader.AsDataSet();
 
-                    DataTable dt = result.Tables[0];
+                    DataTable dataTable = result.Tables[0];
 
 
-                    for (var i = 0; i < dt.Rows.Count && i < 5; i++)
+                    for (var i = 0; i < dataTable.Rows.Count && i < 5; i++)
                     {
-                        var array = new string[dt.Columns.Count];
+                        var array = new string[dataTable.Columns.Count];
 
                         for (var j = 0; j < array.Length; j++)
                         {
-                            array[j] = dt.Rows[i][j].ToString();
+                            array[j] = dataTable.Rows[i][j].ToString();
                         }
 
                         RowData.Add(new TableData { ColumnData = array });

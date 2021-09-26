@@ -62,10 +62,6 @@ namespace DataImporter.Web.Models.Imports
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public void LoadGroupProperty(Guid id)
-        {
-            groupsList = _groupService.LoadGroupProperty(id);
-        }
 
         public object GetImportsData(DataTablesAjaxRequestModel importDataTable, Guid id)
         {

@@ -44,7 +44,6 @@ namespace DataImporter.Web.Models.Imports
         public void Resolve(ILifetimeScope scope)
         {
             _scope = scope;
-            //_Upload = _scope.Resolve<UploadModel>();
             _groupService = _scope.Resolve<IGroupService>();
             _mapper = _scope.Resolve<IMapper>();
             _importService = _scope.Resolve<IImportService>();
@@ -53,9 +52,8 @@ namespace DataImporter.Web.Models.Imports
         }
         public CreateImportModel(IMapper mapper, IDateTimeUtility dateTimeUtility,
             IImportService importService, IGroupService groupService,
-            IWebHostEnvironment webHostEnvironment, UploadModel Upload)
+            IWebHostEnvironment webHostEnvironment)
         {
-            _Upload = Upload;
             _mapper = mapper;
             _groupService = groupService;
             _dateTimeUtility = dateTimeUtility;

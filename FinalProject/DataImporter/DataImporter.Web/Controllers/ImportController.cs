@@ -32,22 +32,6 @@ namespace DataImporter.Web.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Imports()
-        {
-            var model = _scope.Resolve<UploadModel>();
-            var id = Guid.Parse(_userManager.GetUserId(HttpContext.User));
-            model.LoadGroupProperty(id);
-            var groupData = model.groupsList;
-            groupData.Insert(0, new Transfer.BusinessObjects.Group { Id = 0, GroupName = "Select Group" });
-            ViewBag.data = groupData;
-            return View(model);
-        }
-
         //ok
         public IActionResult Upload()
         {
@@ -80,7 +64,11 @@ namespace DataImporter.Web.Controllers
             //model.CreateImportHistory(groupId);
             return View(model);
         }
-
+        //ok
+        public IActionResult Imports()
+        {
+            return View();
+        }
         //importsHistory
         public JsonResult GetImportsData()
         {

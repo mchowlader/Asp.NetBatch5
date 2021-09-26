@@ -1,4 +1,4 @@
-﻿@model UploadModel
+﻿@model ListImportModel
 
 @section Styles
 {
@@ -73,7 +73,41 @@
 
 </section>
 
-
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Import History</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="importData" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>GroupName</th>
+                                <th>ExcelFileName</th>
+                                <th>ImportDate</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>GroupName</th>
+                                <th>ExcelFileName</th>
+                                <th>ImportDate</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
 
 
 
@@ -101,7 +135,7 @@
     <script>
 
         $(function () {
-            $("#customer").DataTable(
+            $("#importData").DataTable(
                 {
                     "processing": true,
                     "serverSide": true,
