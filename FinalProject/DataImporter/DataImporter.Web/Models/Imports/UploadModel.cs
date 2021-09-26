@@ -3,11 +3,13 @@ using AutoMapper;
 using DataImporter.Common.Utilities;
 using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Transfer.Services;
+using ExcelDataReader;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,11 +24,13 @@ namespace DataImporter.Web.Models.Imports
         public string DateFrom { get; set; }
         public IFormFile XlsFile { get; set; }
         public string FilePath { get; set; }
+        public string FileName { get; set; }
         public string GroupName { get; set; }
         public string ExcelFileName { get; set; }
         public DateTime ImportDate { get; set; }
-        public IList<string> lists { get; set; }
+        public IList<string> Lists { get; set; }
         public IList<Group> groupsList { get; set; }
+        public List<UploadModel> DataSet = new List<UploadModel>();
 
 
         private IMapper _mapper;
@@ -69,33 +73,52 @@ namespace DataImporter.Web.Models.Imports
             groupsList = _groupService.LoadGroupProperty(id);
         }
 
-
-        public (string path, string fileName, string filePath, string excelFileName) DirectoryPath()
+        public void PreviewExcelData()
         {
-           
-            string path = Path.Combine(this._webHostEnvironment.WebRootPath, "Uploads");
 
-            if (!Directory.Exists(path))
+            using (var stream = System.IO.File.Open(FilePath, FileMode.Open, 
+                FileAccess.Read))
             {
-                Directory.CreateDirectory(path);
+                using (var excelReader = ExcelReaderFactory.CreateReader(stream))
+                {
+                    DataSet result = excelReader.AsDataSet();
+
+                    DataTable dt = result.Tables[0];
+
+
+                    for (var i = 0; i < dt.Rows.Count && i < 5; i++)
+                    {
+                        var array = new string[dt.Columns.Count];
+
+                        for (var j = 0; j < array.Length; j++)
+                        {
+                            array[j] = dt.Rows[i][j].ToString();
+                        }
+
+                        DataSet.Add(new UploadModel { Lists = array });
+                    }
+
+                    
+                }
             }
-            string fileName = Path.GetFileName(XlsFile.FileName);
-            string fileUploadPath = Path.Combine(path, fileName);
-            string excelFileName = Path.GetFileNameWithoutExtension(XlsFile.FileName);
-
-            return (path, fileName, fileUploadPath, excelFileName);
-
         }
+
 
         public void UploadExcelFile()
         {
-
             if (XlsFile != null)
             {
-                var directoryPathInfo = DirectoryPath();
+                string path = Path.Combine(this._webHostEnvironment.WebRootPath, "Uploads");
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
 
-                FileInfo file = new FileInfo(Path.Combine(directoryPathInfo.path,
-                    directoryPathInfo.fileName));
+                string fileName = Path.GetFileName(XlsFile.FileName);
+                FilePath = Path.Combine(path, fileName);
+
+
+                FileInfo file = new FileInfo(Path.Combine(path, fileName));
                 using (var stream = new MemoryStream())
                 {
                     XlsFile.CopyToAsync(stream);

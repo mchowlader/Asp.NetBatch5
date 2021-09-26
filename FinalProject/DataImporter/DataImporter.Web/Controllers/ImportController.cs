@@ -62,14 +62,23 @@ namespace DataImporter.Web.Controllers
                 model.Resolve(_scope);
                 model.UploadExcelFile();
             }
+            return RedirectToAction(nameof(PreviewExcel),model);
+        }
+        public IActionResult PreviewExcel(UploadModel model)
+        {
+            //var model = _scope.Resolve<UploadModel>();
+            if (ModelState.IsValid)
+            {
+                model.Resolve(_scope);
+                model.PreviewExcelData();
+            }
             return View(model);
         }
-
         //tomorrow work start here
         public IActionResult CreateImport(int groupId)
         {
             var model = _scope.Resolve<CreateImportModel>();
-            model.CreateImportHistory(groupId);
+            //model.CreateImportHistory(groupId);
             return View(model);
         }
 
@@ -83,73 +92,5 @@ namespace DataImporter.Web.Controllers
             return Json(data);
         }
        
-        public IActionResult Test()
-        {
-            var model = _scope.Resolve<ListImportModel>();
-            return View(model);
-        }
-
-        [HttpPost]
-        public IActionResult Test(ListImportModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                model.Resolve(_scope);
-
-                if (model.XlsFile != null)
-                {
-                    string path = Path.Combine(this._webHostEnvironment.WebRootPath, "Uploads");
-                    if (!Directory.Exists(path))
-                    {
-                        Directory.CreateDirectory(path);
-                    }
-
-                    string fileName = Path.GetFileName(model.XlsFile.FileName);
-                    string filePath = Path.Combine(path, fileName);
-
-
-                    FileInfo file = new FileInfo(Path.Combine(path, fileName));
-                    using (var stream = new MemoryStream())
-                    {
-                        model.XlsFile.CopyToAsync(stream);
-                        using (var package = new ExcelPackage(stream))
-                        {
-                            package.SaveAs(file);
-                            //save excel file in your wwwroot folder and get this excel file from wwwroot
-                        }
-                    }
-
-                    using (var stream = System.IO.File.Open(filePath, FileMode.Open, FileAccess.Read))
-                    {
-                        using (var excelReader = ExcelReaderFactory.CreateReader(stream))
-                        {
-                            DataSet result = excelReader.AsDataSet();
-
-                            //excelReader.IsFirstRowAsColumnNames = true;
-                            DataTable dt = result.Tables[0];
-
-                            var dataSet = new List<ListImportModel>();
-
-                            for(var i = 0; i < dt.Rows.Count && i < 5; i++)
-                            {
-                                var array = new string[dt.Columns.Count];
-
-                                for(var j = 0; j < array.Length; j++)
-                                {
-                                    array[j] = dt.Rows[i][j].ToString();
-                                }
-
-                                dataSet.Add(new ListImportModel { lists = array });
-                            }
-                            return (IActionResult)dataSet;//problem
-                        }
-                    }
-                }
-            }
-            return View();
-        }
-
-
-
     }
 }

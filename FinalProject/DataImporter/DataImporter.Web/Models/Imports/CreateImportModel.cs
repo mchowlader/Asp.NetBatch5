@@ -64,18 +64,18 @@ namespace DataImporter.Web.Models.Imports
         }
 
 
-        public void CreateImportHistory(int groupId)
-        {
-            var directoryPathInfo = _Upload.DirectoryPath();
+        //public void CreateImportHistory(int groupId)
+        //{
+        //    var directoryPathInfo = _Upload.DirectoryPath(xlsFile);
 
-            var importsData = new Import()
-            {
-                GroupId = GroupId,
-                ImportDate = _dateTimeUtility.Now,
-                ExcelFileName = directoryPathInfo.excelFileName,
-                FilePath = directoryPathInfo.filePath,
-            };
-            _importService.UploadExcelFile(importsData);
-        }
+        //    var importsData = new Import()
+        //    {
+        //        GroupId = GroupId,
+        //        ImportDate = _dateTimeUtility.Now,
+        //        ExcelFileName = directoryPathInfo.excelFileName,
+        //        FilePath = directoryPathInfo.filePath,
+        //    };
+        //    _importService.UploadExcelFile(importsData);
+        //}
     }
 }
