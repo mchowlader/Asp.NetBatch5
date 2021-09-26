@@ -35,36 +35,48 @@
     </div><!-- /.container-fluid -->
 </section>
 
-@*<section>
-        <div class="card-body">
-            if (Model != null)
-            {
-            <table>
+<section>
+    <div class="card-body">
+        @if (Model != null)
+        {
+            var hd = false;
+            <table border="1" cellpadding="5" cellspacing="20">
                 <thead>
                     <tr>
-                        @foreach (DataColumn col in Model.DataSet)
+                        @foreach (var row in Model.RowData)
                         {
-                            <th>@col.ColumnName</th>
+                            @foreach (var column in row.ColumnData)
+                            {
+                                <th>@Html.DisplayFor(model => column)</th>
+                            }
+                            break;
                         }
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (DataRow row in Model.Rows)
+
+                    @foreach (var row in Model.RowData)
                     {
+
+                        if (hd == false)
+                        {
+                            hd = true;
+                            continue;
+                        }
                         <tr>
-                            @foreach (DataColumn col in Model.Columns)
+                            @foreach (var column in row.ColumnData)
                             {
-                                <td>@row[col.ColumnName]</td>
+                                <td>@Html.DisplayFor(model => column)</td>
                             }
                         </tr>
                     }
+
                 </tbody>
             </table>
-            }
-            }
+        }
 
-        </div>
-    </section>*@
+    </div>
+    </section>
 
 @section Scripts{
     <script src="/DataImporter/plugins/datatables/jquery.dataTables.min.js"></script>

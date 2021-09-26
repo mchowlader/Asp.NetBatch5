@@ -66,7 +66,6 @@ namespace DataImporter.Web.Controllers
         }
         public IActionResult PreviewExcel(UploadModel model)
         {
-            //var model = _scope.Resolve<UploadModel>();
             if (ModelState.IsValid)
             {
                 model.Resolve(_scope);
@@ -92,5 +91,7 @@ namespace DataImporter.Web.Controllers
             return Json(data);
         }
        
+      
+
     }
 }

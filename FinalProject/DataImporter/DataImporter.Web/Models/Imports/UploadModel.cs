@@ -28,9 +28,8 @@ namespace DataImporter.Web.Models.Imports
         public string GroupName { get; set; }
         public string ExcelFileName { get; set; }
         public DateTime ImportDate { get; set; }
-        public IList<string> Lists { get; set; }
         public IList<Group> groupsList { get; set; }
-        public List<UploadModel> DataSet = new List<UploadModel>();
+        public List<TableData> RowData = new List<TableData>();
 
 
         private IMapper _mapper;
@@ -95,7 +94,7 @@ namespace DataImporter.Web.Models.Imports
                             array[j] = dt.Rows[i][j].ToString();
                         }
 
-                        DataSet.Add(new UploadModel { Lists = array });
+                        RowData.Add(new TableData { ColumnData = array });
                     }
 
                     
