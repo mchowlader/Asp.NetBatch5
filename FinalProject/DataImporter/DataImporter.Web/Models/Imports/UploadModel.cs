@@ -113,11 +113,11 @@ namespace DataImporter.Web.Models.Imports
                     Directory.CreateDirectory(path);
                 }
 
-                string fileName = Path.GetFileName(XlsFile.FileName);
-                FilePath = Path.Combine(path, fileName);
+                FileName = Path.GetFileName(XlsFile.FileName);
+                FilePath = Path.Combine(path, FileName);
 
 
-                FileInfo file = new FileInfo(Path.Combine(path, fileName));
+                FileInfo file = new FileInfo(Path.Combine(path, FileName));
                 using (var stream = new MemoryStream())
                 {
                     XlsFile.CopyToAsync(stream);
@@ -129,6 +129,19 @@ namespace DataImporter.Web.Models.Imports
 
             }
             
+        }
+
+
+        public void CreateImportHistory(int groupId)
+        {
+            var importsData = new Import()
+            {
+                GroupId = groupId,
+                ImportDate = _dateTimeUtility.Now,
+                ExcelFileName = ExcelFileName,
+                FilePath = FilePath,
+            };
+            _importService.UploadExcelFile(importsData);
         }
     }
 }

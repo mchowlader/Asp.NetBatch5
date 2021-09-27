@@ -62,11 +62,13 @@ namespace DataImporter.Transfer.Services
             _transferUnitOfWork.Imports.Add(
                 new Entities.Import()
                 {
-                    FilePath = importsData.FilePath,
+                    Status = importsData.Status,
                     GroupId = importsData.GroupId,
+                    FilePath = importsData.FilePath,
                     GroupName = groupEntity.GroupName,
                     ImportDate = importsData.ImportDate,
-                    ExcelFileName = importsData.ExcelFileName,
+                    ExcelFileName = importsData.ExcelFileName
+
                 });
             _transferUnitOfWork.Save();
         }

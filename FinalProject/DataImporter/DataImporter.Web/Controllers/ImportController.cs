@@ -56,12 +56,18 @@ namespace DataImporter.Web.Controllers
                 model.PreviewExcelData();
             }
             return View(model);
+
         }
         //tomorrow work start here
-        public IActionResult CreateImport(int groupId)
+        public IActionResult CreateImport(UploadModel model)
         {
-            var model = _scope.Resolve<CreateImportModel>();
-            //model.CreateImportHistory(groupId);
+            var Createmodel = _scope.Resolve<CreateImportModel>();
+            if(ModelState.IsValid)
+            {
+                model.Resolve(_scope);
+                Createmodel.CreateImportHistory(model.Id, model.FilePath,model.FileName);
+
+            }
             return View(model);
         }
         //ok

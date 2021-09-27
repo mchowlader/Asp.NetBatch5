@@ -20,7 +20,7 @@ namespace DataImporter.Web.Models.Imports
         public int GroupId { get; set; }
         public string DateTo { get; set; }
         public string DateFrom { get; set; }
-        public IFormFile XlsFile { get; set; }
+        //public IFormFile XlsFile { get; set; }
         public string FilePath { get; set; }
         public string GroupName { get; set; }
         public string ExcelFileName { get; set; }
@@ -35,7 +35,6 @@ namespace DataImporter.Web.Models.Imports
         private IImportService _importService;
         private IGroupService _groupService;
         private IWebHostEnvironment _webHostEnvironment;
-        private UploadModel  _Upload;
 
         public CreateImportModel()
         {
@@ -62,18 +61,19 @@ namespace DataImporter.Web.Models.Imports
         }
 
 
-        //public void CreateImportHistory(int groupId)
-        //{
-        //    var directoryPathInfo = _Upload.DirectoryPath(xlsFile);
+        public void CreateImportHistory(int id, string filePath, string fileName)
+        {
+            //var directoryPathInfo = _Upload.DirectoryPath(xlsFile);
 
-        //    var importsData = new Import()
-        //    {
-        //        GroupId = GroupId,
-        //        ImportDate = _dateTimeUtility.Now,
-        //        ExcelFileName = directoryPathInfo.excelFileName,
-        //        FilePath = directoryPathInfo.filePath,
-        //    };
-        //    _importService.UploadExcelFile(importsData);
-        //}
+            var importsData = new Import
+            {
+                GroupId = id,
+                ImportDate = _dateTimeUtility.Now,
+                ExcelFileName = fileName,
+                FilePath = filePath,
+                Status = "Pending"
+            };
+            _importService.UploadExcelFile(importsData);
+        }
     }
 }
