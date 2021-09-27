@@ -492,3 +492,4 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Import\Test.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Import\Upload.cshtml.g.cs
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Import\PreviewExcel.cshtml.g.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\obj\Debug\net5.0\Razor\Views\Shared\_AccountLayout.cshtml.g.cs

@@ -27,6 +27,7 @@ namespace DataImporter.Web.Models.Imports
         public string FileName { get; set; }
         public string GroupName { get; set; }
         public string ExcelFileName { get; set; }
+        public string FileExtension { get; set; }
         public DateTime ImportDate { get; set; }
         public IList<Group> groupsList { get; set; }
         public List<TableData> RowData = new List<TableData>();
@@ -112,12 +113,15 @@ namespace DataImporter.Web.Models.Imports
                 {
                     Directory.CreateDirectory(path);
                 }
-
                 FileName = Path.GetFileName(XlsFile.FileName);
                 FilePath = Path.Combine(path, FileName);
+                ExcelFileName = Path.GetFileNameWithoutExtension(FileName);
+                FileExtension = Path.GetExtension(XlsFile.FileName);
+
+                if(DuplicateFileExit(FilePath))  throw new InvalidOperationException("File Already Exit");
 
 
-                FileInfo file = new FileInfo(Path.Combine(path, FileName));
+                FileInfo file = new FileInfo(Path.Combine(FileName));
                 using (var stream = new MemoryStream())
                 {
                     XlsFile.CopyToAsync(stream);
@@ -143,5 +147,8 @@ namespace DataImporter.Web.Models.Imports
             };
             _importService.UploadExcelFile(importsData);
         }
+
+
+        private bool DuplicateFileExit(string filePath) => Directory.Exists(filePath) ?  true: false;
     }
 }

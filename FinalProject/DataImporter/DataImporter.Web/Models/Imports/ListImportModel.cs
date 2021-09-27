@@ -69,7 +69,7 @@ namespace DataImporter.Web.Models.Imports
                importDataTable.PageIndex,
                importDataTable.PageSize,
                importDataTable.SearchText,
-               importDataTable.GetSortText(new string[] { "GroupName", "ExcelFileName", "ImportDate" }),id);
+               importDataTable.GetSortText(new string[] { "GroupName", "ExcelFileName", "ImportDate", "Status" }),id);
 
             return new
             {
@@ -81,6 +81,7 @@ namespace DataImporter.Web.Models.Imports
                                 record.GroupName,
                                 record.ExcelFileName,
                                 record.ImportDate.ToString(),
+                                record.Status
                         }
                     ).ToArray()
             };

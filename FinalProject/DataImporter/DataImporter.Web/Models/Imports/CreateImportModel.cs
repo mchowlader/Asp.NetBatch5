@@ -33,7 +33,6 @@ namespace DataImporter.Web.Models.Imports
         private ILifetimeScope _scope;
         private IDateTimeUtility _dateTimeUtility;
         private IImportService _importService;
-        private IGroupService _groupService;
         private IWebHostEnvironment _webHostEnvironment;
 
         public CreateImportModel()
@@ -43,18 +42,16 @@ namespace DataImporter.Web.Models.Imports
         public void Resolve(ILifetimeScope scope)
         {
             _scope = scope;
-            _groupService = _scope.Resolve<IGroupService>();
             _mapper = _scope.Resolve<IMapper>();
             _importService = _scope.Resolve<IImportService>();
             _dateTimeUtility = _scope.Resolve<IDateTimeUtility>();
             _webHostEnvironment = _scope.Resolve<IWebHostEnvironment>();
         }
         public CreateImportModel(IMapper mapper, IDateTimeUtility dateTimeUtility,
-            IImportService importService, IGroupService groupService,
+            IImportService importService,
             IWebHostEnvironment webHostEnvironment)
         {
             _mapper = mapper;
-            _groupService = groupService;
             _dateTimeUtility = dateTimeUtility;
             _importService = importService;
             _webHostEnvironment = webHostEnvironment;
@@ -63,7 +60,6 @@ namespace DataImporter.Web.Models.Imports
 
         public void CreateImportHistory(int id, string filePath, string fileName)
         {
-            //var directoryPathInfo = _Upload.DirectoryPath(xlsFile);
 
             var importsData = new Import
             {

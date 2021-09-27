@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
@@ -22,12 +23,14 @@ namespace DataImporter.Web.Controllers
     public class ImportController : Controller
     {
         private readonly ILifetimeScope _scope;
+        private readonly ILogger<ImportController> _logger;
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly UserManager<ApplicationUser> _userManager;
         public ImportController(ILifetimeScope scope, UserManager<ApplicationUser> userManager,
-            IWebHostEnvironment webHostEnvironment)
+            IWebHostEnvironment webHostEnvironment, ILogger<ImportController> logger)
         {
             _scope = scope;
+            _logger = logger;
             _userManager = userManager;
             _webHostEnvironment = webHostEnvironment;
         }
@@ -54,11 +57,12 @@ namespace DataImporter.Web.Controllers
             {
                 model.Resolve(_scope);
                 model.PreviewExcelData();
+               
             }
             return View(model);
 
         }
-        //tomorrow work start here
+        //ok
         public IActionResult CreateImport(UploadModel model)
         {
             var Createmodel = _scope.Resolve<CreateImportModel>();
@@ -68,14 +72,14 @@ namespace DataImporter.Web.Controllers
                 Createmodel.CreateImportHistory(model.Id, model.FilePath,model.FileName);
 
             }
-            return View(model);
+            return RedirectToAction(nameof(Imports));
         }
         //ok
         public IActionResult Imports()
         {
             return View();
         }
-        //importsHistory
+        //ok
         public JsonResult GetImportsData()
         {
             var id = Guid.Parse(_userManager.GetUserId(HttpContext.User));

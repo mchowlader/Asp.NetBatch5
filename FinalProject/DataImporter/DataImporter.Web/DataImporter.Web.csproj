@@ -52,7 +52,6 @@
   <ItemGroup>
     <Folder Include="Areas\" />
     <Folder Include="Data\" />
-    <Folder Include="Data\Migrations\" />
     <Folder Include="Models\Exports\" />
     <Folder Include="wwwroot\Uploads\" />
   </ItemGroup>
