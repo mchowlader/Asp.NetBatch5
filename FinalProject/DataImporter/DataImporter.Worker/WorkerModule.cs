@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using DataImporter.Worker.Model;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -24,8 +25,8 @@ namespace DataImporter.Worker
 
         protected override void Load(ContainerBuilder builder)
         {
-            //builder.RegisterType<Model>().AsSelf();
-           
+            builder.RegisterType<ImportInsertModel>().AsSelf();
+
             base.Load(builder);
         }
     }

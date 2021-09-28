@@ -13,9 +13,7 @@ namespace DataImporter.Transfer.Services
     public class ImportService : IImportService
     {
         private readonly IMapper _mapper;
-        private IWebHostEnvironment _webHostEnvironment;
         private readonly ITransferUnitOfWork _transferUnitOfWork;
-
 
         public ImportService(IMapper mapper, ITransferUnitOfWork transferUnitOfWork)
         {
@@ -72,20 +70,5 @@ namespace DataImporter.Transfer.Services
                 });
             _transferUnitOfWork.Save();
         }
-
-
-
-        //public IList<Group> LoadGroupProperty(Guid id)
-        //{
-        //    var groupsList = new List<Group>();
-        //    var groupEntity = _transferUnitOfWork.Groups.GetAll();
-
-        //    groupsList = (from groups in groupEntity
-        //                  where groups.UserId == id
-        //                  select _mapper.Map<Group>(groups)).ToList();
-
-        //    return groupsList;
-        //}
-
     }
 }

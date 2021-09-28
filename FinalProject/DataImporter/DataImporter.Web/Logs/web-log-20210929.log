@@ -1,0 +1,74 @@
+2021-09-29 01:06:54.179 +06:00 [INF] Application Starting up
+2021-09-29 01:07:52.273 +06:00 [INF] Start processing HTTP request POST "https://www.google.com/recaptcha/api/siteverify?secret=6LcjBVwcAAAAACh_LtFNsK97E5JgQApuhd3ZMn6Z&response=03AGdBq24k2HwSN9xN_uY6N2zGDcIdmGeu4-3-0d4snn8XDKD1lb-UtBmcE83Fudsar8bIOd_e1LL1uJiQcmmJjKjmTerBT3CwiBsrwjntTqPnyXkeFPwfCoyLZjcO-7hKLQgUROhodH_8W_ivFystDAT3xHNj7SoI44ySvRIjzZ1i2YiKNXmVH763gtb35GVtjbAnV6ie9njx1WtmZOCBNK9m83mH6WSC2UpHaLWeMGbhxrmmAyU021xu8hAABuTrnMImiggwWaQVxlHZBS8O5yuy2Vv8kipxLyCNgzNCXU7jgcnBowOwtmYwF3VjN_Pa4YfcDZZlwFA_7xQhXTrHqh7UQ2z_P1MVQ_VQRl5VN1W-oQeQalHRlSw1AbV5TyfRhCfhFPfQ0yX3ELzqdTBXD8cnOP8HYxtx5mWy9yoFmXDFU2lz7-wZlulQT9Bc7rSZUKlzpReOxgaIv-5QbgEtTekFdlWE21I4yWsxT37Ps1Br4PudLhcgOGE"
+2021-09-29 01:07:52.282 +06:00 [INF] Sending HTTP request POST "https://www.google.com/recaptcha/api/siteverify?secret=6LcjBVwcAAAAACh_LtFNsK97E5JgQApuhd3ZMn6Z&response=03AGdBq24k2HwSN9xN_uY6N2zGDcIdmGeu4-3-0d4snn8XDKD1lb-UtBmcE83Fudsar8bIOd_e1LL1uJiQcmmJjKjmTerBT3CwiBsrwjntTqPnyXkeFPwfCoyLZjcO-7hKLQgUROhodH_8W_ivFystDAT3xHNj7SoI44ySvRIjzZ1i2YiKNXmVH763gtb35GVtjbAnV6ie9njx1WtmZOCBNK9m83mH6WSC2UpHaLWeMGbhxrmmAyU021xu8hAABuTrnMImiggwWaQVxlHZBS8O5yuy2Vv8kipxLyCNgzNCXU7jgcnBowOwtmYwF3VjN_Pa4YfcDZZlwFA_7xQhXTrHqh7UQ2z_P1MVQ_VQRl5VN1W-oQeQalHRlSw1AbV5TyfRhCfhFPfQ0yX3ELzqdTBXD8cnOP8HYxtx5mWy9yoFmXDFU2lz7-wZlulQT9Bc7rSZUKlzpReOxgaIv-5QbgEtTekFdlWE21I4yWsxT37Ps1Br4PudLhcgOGE"
+2021-09-29 01:07:52.858 +06:00 [INF] Received HTTP response headers after 570.9532ms - 200
+2021-09-29 01:07:52.860 +06:00 [INF] End processing HTTP request after 597.3233ms - 200
+2021-09-29 01:07:53.362 +06:00 [INF] User created a new account with password.
+2021-09-29 01:12:23.844 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: Select Excel File
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 124
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-29 01:13:06.733 +06:00 [INF] Application Starting up
+2021-09-29 01:13:22.133 +06:00 [INF] User logged in.
+2021-09-29 01:15:53.960 +06:00 [INF] Application Starting up
+2021-09-29 01:16:22.652 +06:00 [INF] User logged in.
+2021-09-29 01:18:46.438 +06:00 [INF] Application Starting up
+2021-09-29 01:19:01.201 +06:00 [INF] User logged in.
+2021-09-29 01:21:27.256 +06:00 [INF] Application Starting up
+2021-09-29 01:21:38.577 +06:00 [INF] User logged in.
+2021-09-29 01:22:34.771 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: Select Excel File
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 139
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-29 01:23:06.751 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: File Already Exit
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 123
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-29 01:27:27.221 +06:00 [INF] Application Starting up
+2021-09-29 01:27:38.256 +06:00 [INF] User logged in.
+2021-09-29 01:28:25.002 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: Select Excel File
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 124
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-29 01:29:22.731 +06:00 [INF] Application Starting up
+2021-09-29 01:30:19.821 +06:00 [INF] User logged in.
+2021-09-29 01:31:14.916 +06:00 [ERR] File Already Exit
+System.IO.InvalidDataException: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+   at OfficeOpenXml.Packaging.ZipPackage..ctor(Stream stream)
+   at OfficeOpenXml.ExcelPackage.Load(Stream input, Stream output, String Password)
+   at OfficeOpenXml.ExcelPackage.Load(Stream input)
+   at OfficeOpenXml.ExcelPackage..ctor(Stream newStream)
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 131
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-29 01:31:38.970 +06:00 [ERR] File Already Exit
+System.IO.InvalidDataException: The file is not an valid Package file. If the file is encrypted, please supply the password in the constructor.
+   at OfficeOpenXml.Packaging.ZipPackage..ctor(Stream stream)
+   at OfficeOpenXml.ExcelPackage.Load(Stream input, Stream output, String Password)
+   at OfficeOpenXml.ExcelPackage.Load(Stream input)
+   at OfficeOpenXml.ExcelPackage..ctor(Stream newStream)
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 131
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-29 01:34:36.212 +06:00 [INF] Application Starting up
+2021-09-29 01:34:47.224 +06:00 [INF] User logged in.
+2021-09-29 01:35:23.215 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: File Already Exit
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 124
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-29 01:37:48.567 +06:00 [INF] Application Starting up
+2021-09-29 01:38:32.039 +06:00 [INF] User logged in.
+2021-09-29 01:39:08.551 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: Select Excel File
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 125
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-29 01:41:20.807 +06:00 [INF] Application Starting up
+2021-09-29 01:41:35.024 +06:00 [INF] User logged in.
+2021-09-29 01:43:13.488 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: Select Excel File
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 140
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-29 01:43:25.152 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: Select Excel File
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 140
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-29 01:45:52.277 +06:00 [INF] Application Starting up
+2021-09-29 01:46:05.830 +06:00 [INF] User logged in.

@@ -46,6 +46,7 @@ namespace DataImporter.Transfer.Contexts
         public DbSet<Group> Groups { get; set; }
         public DbSet<Import> Imports { get; set; }
         public DbSet<Export> Exports { get; set; }
+        public DbSet<ColumnData> ColumnDatas { get; set; }
         public DbSet<ExcelData> ExcelDatas { get; set; }
         public DbSet<ExcelFieldData> ExcelFieldDatas { get; set; }
 

@@ -53,7 +53,7 @@ namespace DataImporter.Web.Controllers
                 }
                 catch(Exception ex)
                 {
-                    ModelState.AddModelError("", "File Already Exit");
+                    ModelState.AddModelError("", "File Upload Failed");
                     _logger.LogError(ex, "File Already Exit");
                     return View(model);
                 }

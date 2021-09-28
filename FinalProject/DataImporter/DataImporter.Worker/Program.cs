@@ -48,7 +48,7 @@ namespace DataImporter.Worker
                 Log.CloseAndFlush();
             }
         }
-        public static ILifetimeScope AutofacContainer { get; set; }
+        public  ILifetimeScope AutofacContainer { get; set; }
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .UseWindowsService()
@@ -67,7 +67,7 @@ namespace DataImporter.Worker
                     _migrationAssemblyName = typeof(Worker).Assembly.FullName;
 
                     services.AddHostedService<Worker>();
-
+                    services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
                     services.AddDbContext<TransferDbContext>(options =>
                         options.UseSqlServer(_connectionString, b =>
                             b.MigrationsAssembly(_migrationAssemblyName)));

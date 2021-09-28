@@ -104,6 +104,7 @@ namespace DataImporter.Web.Models.Imports
         }
 
 
+
         public void UploadExcelFile()
         {
             if (XlsFile != null)
@@ -124,7 +125,7 @@ namespace DataImporter.Web.Models.Imports
                 if (!InvalidFileUoload(FileName)) throw new InvalidOperationException("Select Excel File");
 
 
-                FileInfo file = new FileInfo(Path.Combine(path,FileName));
+                FileInfo file = new FileInfo(Path.Combine(path, FileName));
                 using (var stream = new MemoryStream())
                 {
                     XlsFile.CopyToAsync(stream);
@@ -135,8 +136,8 @@ namespace DataImporter.Web.Models.Imports
                 }
 
             }
-
-            throw new InvalidOperationException("Select Excel File");
+            else
+                throw new InvalidOperationException("Select Excel File");
 
         }
 
@@ -154,7 +155,16 @@ namespace DataImporter.Web.Models.Imports
         }
 
 
-       private bool DuplicateFileExit(string filePath) => File.Exists(filePath) ? true : false;
-       private bool InvalidFileUoload(string fileName) => Path.GetFileNameWithoutExtension(fileName) == ".Xlsr" ? true : false;
+        private bool DuplicateFileExit(string filePath) => File.Exists(filePath) ? true : false;
+        private bool InvalidFileUoload(string fileName) => Path.GetExtension(XlsFile.FileName) == ".xlsx" ? true : false;
+        //private bool InvalidFileUoload(string fileName)
+        //{
+        //    var n = Path.GetFileNameWithoutExtension(fileName);
+        //    if (n == ".xlsx")
+        //        return true;
+        //    else
+        //        return false;
+        //    //=> Path.GetFileNameWithoutExtension(fileName) == ".xlsx" ? true : false;
+        //}
     }
 }
