@@ -101,3 +101,19 @@ System.InvalidOperationException: File Already Exit
 System.InvalidOperationException: File Already Exit
    at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 122
    at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-28 17:31:57.481 +06:00 [INF] Application Starting up
+2021-09-28 17:33:33.764 +06:00 [INF] User logged in.
+2021-09-28 17:35:09.923 +06:00 [INF] Application Starting up
+2021-09-28 17:36:26.694 +06:00 [INF] User logged in.
+2021-09-28 17:36:57.641 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: Select Excel File
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 124
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-28 17:38:28.706 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: Select Excel File
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 124
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-28 17:38:49.447 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: Select Excel File
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 139
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52

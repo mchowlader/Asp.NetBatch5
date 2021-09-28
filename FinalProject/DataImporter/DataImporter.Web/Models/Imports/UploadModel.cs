@@ -118,8 +118,10 @@ namespace DataImporter.Web.Models.Imports
                 FilePath = Path.Combine(path, FileName);
                 ExcelFileName = Path.GetFileNameWithoutExtension(FileName);
                 FileExtension = Path.GetExtension(XlsFile.FileName);
+                //if () throw new InvalidOperationException("File Already Exit");
 
                 if (DuplicateFileExit(FilePath)) throw new InvalidOperationException("File Already Exit");
+                if (!InvalidFileUoload(FileName)) throw new InvalidOperationException("Select Excel File");
 
 
                 FileInfo file = new FileInfo(Path.Combine(path,FileName));
@@ -133,6 +135,8 @@ namespace DataImporter.Web.Models.Imports
                 }
 
             }
+
+            throw new InvalidOperationException("Select Excel File");
 
         }
 
@@ -151,5 +155,6 @@ namespace DataImporter.Web.Models.Imports
 
 
        private bool DuplicateFileExit(string filePath) => File.Exists(filePath) ? true : false;
+       private bool InvalidFileUoload(string fileName) => Path.GetFileNameWithoutExtension(fileName) == ".Xlsr" ? true : false;
     }
 }
