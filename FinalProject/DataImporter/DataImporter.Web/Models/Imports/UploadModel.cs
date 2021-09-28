@@ -66,7 +66,7 @@ namespace DataImporter.Web.Models.Imports
             _webHostEnvironment = webHostEnvironment;
         }
 
-      
+
 
         public void LoadGroupProperty(Guid id)
         {
@@ -76,7 +76,7 @@ namespace DataImporter.Web.Models.Imports
         public void PreviewExcelData()
         {
 
-            using (var stream = System.IO.File.Open(FilePath, FileMode.Open, 
+            using (var stream = System.IO.File.Open(FilePath, FileMode.Open,
                 FileAccess.Read))
             {
                 using (var excelReader = ExcelReaderFactory.CreateReader(stream))
@@ -98,7 +98,7 @@ namespace DataImporter.Web.Models.Imports
                         RowData.Add(new TableData { ColumnData = array });
                     }
 
-                    
+
                 }
             }
         }
@@ -113,15 +113,16 @@ namespace DataImporter.Web.Models.Imports
                 {
                     Directory.CreateDirectory(path);
                 }
+
                 FileName = Path.GetFileName(XlsFile.FileName);
                 FilePath = Path.Combine(path, FileName);
                 ExcelFileName = Path.GetFileNameWithoutExtension(FileName);
                 FileExtension = Path.GetExtension(XlsFile.FileName);
 
-                if(DuplicateFileExit(FilePath))  throw new InvalidOperationException("File Already Exit");
+                if (DuplicateFileExit(FilePath)) throw new InvalidOperationException("File Already Exit");
 
 
-                FileInfo file = new FileInfo(Path.Combine(FileName));
+                FileInfo file = new FileInfo(Path.Combine(path,FileName));
                 using (var stream = new MemoryStream())
                 {
                     XlsFile.CopyToAsync(stream);
@@ -132,7 +133,7 @@ namespace DataImporter.Web.Models.Imports
                 }
 
             }
-            
+
         }
 
 
@@ -149,6 +150,6 @@ namespace DataImporter.Web.Models.Imports
         }
 
 
-        private bool DuplicateFileExit(string filePath) => Directory.Exists(filePath) ?  true: false;
+       private bool DuplicateFileExit(string filePath) => File.Exists(filePath) ? true : false;
     }
 }

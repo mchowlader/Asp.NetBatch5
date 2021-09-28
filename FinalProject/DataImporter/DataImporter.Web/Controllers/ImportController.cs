@@ -47,7 +47,16 @@ namespace DataImporter.Web.Controllers
             if(ModelState.IsValid)
             {
                 model.Resolve(_scope);
-                model.UploadExcelFile();
+                try
+                {
+                    model.UploadExcelFile();
+                }
+                catch(Exception ex)
+                {
+                    ModelState.AddModelError("", "File Already Exit");
+                    _logger.LogError(ex, "File Already Exit");
+                    return View(model);
+                }
             }
             return RedirectToAction(nameof(PreviewExcel),model);
         }

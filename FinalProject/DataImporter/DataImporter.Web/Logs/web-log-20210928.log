@@ -11,3 +11,93 @@
 2021-09-28 00:26:56.753 +06:00 [INF] Application Starting up
 2021-09-28 00:27:15.130 +06:00 [INF] User logged in.
 2021-09-28 00:28:23.862 +06:00 [INF] User logged in.
+2021-09-28 00:32:27.903 +06:00 [INF] Application Starting up
+2021-09-28 00:32:56.672 +06:00 [INF] User logged in.
+2021-09-28 00:33:08.450 +06:00 [INF] User logged out.
+2021-09-28 00:33:53.751 +06:00 [INF] Start processing HTTP request POST "https://www.google.com/recaptcha/api/siteverify?secret=6LcjBVwcAAAAACh_LtFNsK97E5JgQApuhd3ZMn6Z&response=03AGdBq26MsQddDE9pp872MN5aD-r0v9OjRzKtaKjNkuVyGA3cXX6U43OkPt4x4YLZd75v_gg0K72qD6KAG5_IwXSpQPEH4opqTL81MsNDRnz5yUU5An9Xkqx4B71Jhpn1a9KkDRzjvgV1H4Km3NljK5AULETDJMTrzCE3VOuRjXfob6nytsJ3uvYDt7Ab8XMuaNrixdQ3LsSTXuHFKOP7RytptFAJjyI1iyCML7gzLnaoXWILnZsYfnkupmop6fSQhNFa8ye9ehRSAauiWnkcvnFnvjp6Ir41BT7xFLdEFQdB2SkPTV2VpRyT1mR5yOMOw5XhHT47Ihm26i6bLfRqBuhzbMNdSzdnIHzHOQHFjXp9odH3mJ01m-4Tv9gsk1pb5Q_jgdIBii_EDRMS3zHySRlt0OVEpfBkG3STis40Mn9YCRMSBnv68zhridQTfN-1M-XEtYiIy8Ki"
+2021-09-28 00:33:53.754 +06:00 [INF] Sending HTTP request POST "https://www.google.com/recaptcha/api/siteverify?secret=6LcjBVwcAAAAACh_LtFNsK97E5JgQApuhd3ZMn6Z&response=03AGdBq26MsQddDE9pp872MN5aD-r0v9OjRzKtaKjNkuVyGA3cXX6U43OkPt4x4YLZd75v_gg0K72qD6KAG5_IwXSpQPEH4opqTL81MsNDRnz5yUU5An9Xkqx4B71Jhpn1a9KkDRzjvgV1H4Km3NljK5AULETDJMTrzCE3VOuRjXfob6nytsJ3uvYDt7Ab8XMuaNrixdQ3LsSTXuHFKOP7RytptFAJjyI1iyCML7gzLnaoXWILnZsYfnkupmop6fSQhNFa8ye9ehRSAauiWnkcvnFnvjp6Ir41BT7xFLdEFQdB2SkPTV2VpRyT1mR5yOMOw5XhHT47Ihm26i6bLfRqBuhzbMNdSzdnIHzHOQHFjXp9odH3mJ01m-4Tv9gsk1pb5Q_jgdIBii_EDRMS3zHySRlt0OVEpfBkG3STis40Mn9YCRMSBnv68zhridQTfN-1M-XEtYiIy8Ki"
+2021-09-28 00:33:54.611 +06:00 [INF] Received HTTP response headers after 850.4812ms - 200
+2021-09-28 00:33:54.613 +06:00 [INF] End processing HTTP request after 866.9239ms - 200
+2021-09-28 00:33:55.051 +06:00 [INF] User created a new account with password.
+2021-09-28 00:34:08.693 +06:00 [INF] User logged out.
+2021-09-28 00:34:18.527 +06:00 [INF] User logged in.
+2021-09-28 00:48:50.869 +06:00 [INF] Application Starting up
+2021-09-28 00:49:14.545 +06:00 [INF] User logged in.
+2021-09-28 12:23:40.498 +06:00 [INF] Application Starting up
+2021-09-28 12:23:57.698 +06:00 [INF] User logged in.
+2021-09-28 12:27:32.197 +06:00 [INF] Application Starting up
+2021-09-28 12:27:46.606 +06:00 [INF] User logged in.
+2021-09-28 12:31:16.123 +06:00 [INF] Application Starting up
+2021-09-28 12:31:34.264 +06:00 [INF] User logged in.
+2021-09-28 12:34:15.611 +06:00 [INF] Application Starting up
+2021-09-28 12:34:26.854 +06:00 [INF] User logged in.
+2021-09-28 13:24:33.352 +06:00 [INF] Application Starting up
+2021-09-28 13:24:48.876 +06:00 [INF] User logged in.
+2021-09-28 13:28:48.506 +06:00 [INF] Application Starting up
+2021-09-28 13:29:02.047 +06:00 [INF] User logged in.
+2021-09-28 13:30:39.227 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: File Already Exit
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 121
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-28 13:31:32.956 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: File Already Exit
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 121
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-28 13:33:11.184 +06:00 [INF] Application Starting up
+2021-09-28 13:33:23.612 +06:00 [INF] User logged in.
+2021-09-28 13:33:54.240 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: File Already Exit
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 121
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-28 13:34:33.359 +06:00 [INF] Application Starting up
+2021-09-28 13:34:44.430 +06:00 [INF] User logged in.
+2021-09-28 13:35:11.641 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: File Already Exit
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 121
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
+2021-09-28 13:36:22.187 +06:00 [INF] Application Starting up
+2021-09-28 13:36:34.854 +06:00 [INF] User logged in.
+2021-09-28 13:38:49.772 +06:00 [INF] Application Starting up
+2021-09-28 13:39:01.049 +06:00 [INF] User logged in.
+2021-09-28 13:41:29.203 +06:00 [INF] Application Starting up
+2021-09-28 13:41:40.293 +06:00 [INF] User logged in.
+2021-09-28 13:42:56.210 +06:00 [INF] Application Starting up
+2021-09-28 13:43:06.951 +06:00 [INF] User logged in.
+2021-09-28 13:45:07.126 +06:00 [INF] Application Starting up
+2021-09-28 13:46:31.642 +06:00 [INF] Application Starting up
+2021-09-28 13:46:43.791 +06:00 [INF] User logged in.
+2021-09-28 13:48:25.152 +06:00 [INF] Application Starting up
+2021-09-28 13:48:37.970 +06:00 [INF] User logged in.
+2021-09-28 13:53:30.623 +06:00 [INF] Application Starting up
+2021-09-28 13:53:44.311 +06:00 [INF] User logged in.
+2021-09-28 13:57:26.467 +06:00 [INF] Application Starting up
+2021-09-28 13:57:41.886 +06:00 [INF] User logged in.
+2021-09-28 14:02:26.786 +06:00 [INF] Application Starting up
+2021-09-28 14:02:41.308 +06:00 [INF] User logged in.
+2021-09-28 16:24:55.645 +06:00 [INF] Application Starting up
+2021-09-28 16:25:15.090 +06:00 [INF] User logged in.
+2021-09-28 16:34:06.121 +06:00 [INF] Application Starting up
+2021-09-28 16:34:17.120 +06:00 [INF] User logged in.
+2021-09-28 16:35:07.883 +06:00 [INF] Application Starting up
+2021-09-28 16:35:19.447 +06:00 [INF] User logged in.
+2021-09-28 16:47:54.487 +06:00 [INF] Application Starting up
+2021-09-28 16:48:19.026 +06:00 [INF] User logged in.
+2021-09-28 16:51:33.310 +06:00 [INF] Application Starting up
+2021-09-28 16:52:05.261 +06:00 [INF] User logged in.
+2021-09-28 16:56:42.791 +06:00 [INF] Application Starting up
+2021-09-28 16:57:03.983 +06:00 [INF] User logged in.
+2021-09-28 16:59:33.610 +06:00 [INF] Application Starting up
+2021-09-28 16:59:52.039 +06:00 [INF] User logged in.
+2021-09-28 17:01:50.393 +06:00 [INF] Application Starting up
+2021-09-28 17:02:10.178 +06:00 [INF] User logged in.
+2021-09-28 17:03:45.501 +06:00 [INF] Application Starting up
+2021-09-28 17:04:05.645 +06:00 [INF] User logged in.
+2021-09-28 17:07:25.670 +06:00 [INF] Application Starting up
+2021-09-28 17:07:46.279 +06:00 [INF] User logged in.
+2021-09-28 17:11:47.497 +06:00 [INF] Application Starting up
+2021-09-28 17:12:06.643 +06:00 [INF] User logged in.
+2021-09-28 17:12:20.545 +06:00 [INF] User logged in.
+2021-09-28 17:12:38.789 +06:00 [ERR] File Already Exit
+System.InvalidOperationException: File Already Exit
+   at DataImporter.Web.Models.Imports.UploadModel.UploadExcelFile() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\UploadModel.cs:line 122
+   at DataImporter.Web.Controllers.ImportController.Upload(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 52
