@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataImporter.Transfer.Services
 {
-    public interface IExcelDataService
+    public interface IColumnDataService
     {
-        
+        List<string> FileMatching(int groupId);
     }
 }

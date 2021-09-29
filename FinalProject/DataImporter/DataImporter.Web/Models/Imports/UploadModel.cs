@@ -66,8 +66,6 @@ namespace DataImporter.Web.Models.Imports
             _webHostEnvironment = webHostEnvironment;
         }
 
-
-
         public void LoadGroupProperty(Guid id)
         {
             groupsList = _groupService.LoadGroupProperty(id);
@@ -76,8 +74,7 @@ namespace DataImporter.Web.Models.Imports
         public void PreviewExcelData()
         {
 
-            using (var stream = System.IO.File.Open(FilePath, FileMode.Open,
-                FileAccess.Read))
+            using (var stream = File.Open(FilePath, FileMode.Open, FileAccess.Read))
             {
                 using (var excelReader = ExcelReaderFactory.CreateReader(stream))
                 {
@@ -97,7 +94,6 @@ namespace DataImporter.Web.Models.Imports
 
                         RowData.Add(new TableData { ColumnData = array });
                     }
-
 
                 }
             }
@@ -119,10 +115,12 @@ namespace DataImporter.Web.Models.Imports
                 FilePath = Path.Combine(path, FileName);
                 ExcelFileName = Path.GetFileNameWithoutExtension(FileName);
                 FileExtension = Path.GetExtension(XlsFile.FileName);
-                //if () throw new InvalidOperationException("File Already Exit");
 
-                if (DuplicateFileExit(FilePath)) throw new InvalidOperationException("File Already Exit");
-                if (!InvalidFileUoload(FileName)) throw new InvalidOperationException("Select Excel File");
+                if (DuplicateFileExit(FilePath)) 
+                    throw new InvalidOperationException("File Already Exit");
+
+                if (!InvalidFileUoload(FileName)) 
+                    throw new InvalidOperationException("Select Excel File");
 
 
                 FileInfo file = new FileInfo(Path.Combine(path, FileName));
@@ -155,16 +153,10 @@ namespace DataImporter.Web.Models.Imports
         }
 
 
-        private bool DuplicateFileExit(string filePath) => File.Exists(filePath) ? true : false;
-        private bool InvalidFileUoload(string fileName) => Path.GetExtension(XlsFile.FileName) == ".xlsx" ? true : false;
-        //private bool InvalidFileUoload(string fileName)
-        //{
-        //    var n = Path.GetFileNameWithoutExtension(fileName);
-        //    if (n == ".xlsx")
-        //        return true;
-        //    else
-        //        return false;
-        //    //=> Path.GetFileNameWithoutExtension(fileName) == ".xlsx" ? true : false;
-        //}
+        private bool DuplicateFileExit(string filePath) 
+            => File.Exists(filePath) ? true : false;
+        private bool InvalidFileUoload(string fileName) 
+            => Path.GetExtension(XlsFile.FileName) == ".xlsx" ? true : false;
+        
     }
 }

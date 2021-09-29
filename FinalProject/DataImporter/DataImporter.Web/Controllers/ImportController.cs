@@ -58,8 +58,39 @@ namespace DataImporter.Web.Controllers
                     return View(model);
                 }
             }
-            return RedirectToAction(nameof(PreviewExcel),model);
+            return RedirectToAction(nameof(FileMatching),model);
         }
+
+        //start
+        public IActionResult FileMatching(UploadModel model)
+        {
+            var Createmodel = _scope.Resolve<CreateImportModel>();
+            if (ModelState.IsValid)
+            {
+                model.Resolve(_scope);
+
+                try
+                {
+                    if (Createmodel.FileMatching(model.Id, model.FilePath))
+                    {
+                        return RedirectToAction(nameof(PreviewExcel), model);
+                    }
+                    else
+                        return RedirectToAction(nameof(PreviewExcel), model);
+
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "Excel Column Dose not Match");
+                    _logger.LogError(ex, "Excel Column Dose not Match");
+                    return RedirectToAction(nameof(Upload));
+                }
+                
+            }
+            return RedirectToAction(nameof(PreviewExcel), model);
+
+        }
+
         public IActionResult PreviewExcel(UploadModel model)
         {
             if (ModelState.IsValid)
@@ -78,7 +109,7 @@ namespace DataImporter.Web.Controllers
             if(ModelState.IsValid)
             {
                 model.Resolve(_scope);
-                Createmodel.CreateImportHistory(model.Id, model.FilePath,model.FileName);
+                Createmodel.CreateImportHistory(model.Id, model.FilePath,model.ExcelFileName);
 
             }
             return RedirectToAction(nameof(Imports));
