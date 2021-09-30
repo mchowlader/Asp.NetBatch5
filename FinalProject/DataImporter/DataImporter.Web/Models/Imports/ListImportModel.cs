@@ -16,17 +16,17 @@ namespace DataImporter.Web.Models.Imports
 {
     public class ListImportModel
     {
-        public int Id { get; set; }
-        public int GroupId { get; set; }
+        //public int Id { get; set; }
+        //public int GroupId { get; set; }
         public string DateTo { get; set; }
         public string DateFrom { get; set; }
-        public IFormFile XlsFile { get; set; }
-        public string FilePath { get; set; }
+        //public IFormFile XlsFile { get; set; }
+        //public string FilePath { get; set; }
         public string GroupName { get; set; }
         public string ExcelFileName { get; set; }
         public DateTime ImportDate { get; set; }
-        public IList<string> lists { get; set; }
-        public IList<Group> groupsList { get; set; }
+        //public IList<string> lists { get; set; }
+        //public IList<Group> groupsList { get; set; }
 
 
         private IMapper _mapper;

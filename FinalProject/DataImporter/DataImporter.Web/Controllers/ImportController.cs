@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using DataImporter.Common.Utilities;
+using DataImporter.ExcelFileReader;
 using DataImporter.User.Entities;
 using DataImporter.Web.Models.Imports;
 using ExcelDataReader;
@@ -100,7 +101,7 @@ namespace DataImporter.Web.Controllers
             if (ModelState.IsValid)
             {
                 model.Resolve(_scope);
-                model.PreviewExcelData();
+                model.PreviewExcelData(model.FilePath);
                
             }
             return View(model);
@@ -110,7 +111,9 @@ namespace DataImporter.Web.Controllers
         public IActionResult CreateImport(UploadModel model)
         {
             var createmodel = _scope.Resolve<CreateImportModel>();
-            if(ModelState.IsValid)
+           
+
+            if (ModelState.IsValid)
             {
                 model.Resolve(_scope);
 

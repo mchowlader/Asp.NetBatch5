@@ -47,7 +47,9 @@
                     <input type="hidden" asp-for="Id" />
                     <input type="hidden" asp-for="FileName" />
                     <input type="hidden" asp-for="FilePath" />
-                    <input type="hidden" asp-for="RowData" />
+                    <input type="hidden" asp-for="ColumnDatas" />
+                    <input type="hidden" asp-for="ExcelFileName" />
+
 
                     <!-- /.card-header -->
                     <div class="card-body">
@@ -58,7 +60,7 @@
                             <table id="Import" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        @foreach (var row in Model.RowData)
+                                        @foreach (var row in Model.ColumnDatas)
                                         {
                                             @foreach (var column in row.ColumnData)
                                             {
@@ -69,7 +71,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach (var row in Model.RowData)
+                                    @foreach (var row in Model.ColumnDatas)
                                     {
 
                                         if (condition == false)

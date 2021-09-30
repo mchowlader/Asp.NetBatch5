@@ -3361,6 +3361,20 @@
           "bin/placeholder/DataImporter.Data.dll": {}
         }
       },
+      "DataImporter.ExcelFileReader/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ExcelDataReader": "3.6.0",
+          "ExcelDataReader.DataSet": "3.6.0"
+        },
+        "compile": {
+          "bin/placeholder/DataImporter.ExcelFileReader.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataImporter.ExcelFileReader.dll": {}
+        }
+      },
       "DataImporter.Transfer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -10543,6 +10557,11 @@
       "path": "../DataImporter.Data/DataImporter.Data.csproj",
       "msbuildProject": "../DataImporter.Data/DataImporter.Data.csproj"
     },
+    "DataImporter.ExcelFileReader/1.0.0": {
+      "type": "project",
+      "path": "../DataImporter.ExcelFileReader/DataImporter.ExcelFileReader.csproj",
+      "msbuildProject": "../DataImporter.ExcelFileReader/DataImporter.ExcelFileReader.csproj"
+    },
     "DataImporter.Transfer/1.0.0": {
       "type": "project",
       "path": "../DataImporter.Transfer/DataImporter.Transfer.csproj",
@@ -10559,6 +10578,7 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
       "Autofac.Extensions.DependencyInjection >= 7.1.0",
       "DataImporter.Common >= 1.0.0",
+      "DataImporter.ExcelFileReader >= 1.0.0",
       "DataImporter.Transfer >= 1.0.0",
       "DataImporter.User >= 1.0.0",
       "EPPlus >= 4.5.3.3",
@@ -10605,6 +10625,9 @@
           "projectReferences": {
             "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj": {
               "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Common\\DataImporter.Common.csproj"
+            },
+            "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.ExcelFileReader\\DataImporter.ExcelFileReader.csproj": {
+              "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.ExcelFileReader\\DataImporter.ExcelFileReader.csproj"
             },
             "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Transfer\\DataImporter.Transfer.csproj": {
               "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Transfer\\DataImporter.Transfer.csproj"

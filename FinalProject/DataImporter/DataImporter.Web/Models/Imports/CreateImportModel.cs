@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using AutoMapper;
 using DataImporter.Common.Utilities;
+using DataImporter.ExcelFileReader;
 using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Transfer.Services;
 using ExcelDataReader;
@@ -19,26 +20,14 @@ namespace DataImporter.Web.Models.Imports
     public class CreateImportModel
     {
         public int Id { get; set; }
-        public int GroupId { get; set; }
         public string DateTo { get; set; }
         public string DateFrom { get; set; }
-        public string FilePath { get; set; }
-        public string GroupName { get; set; }
-        public string ExcelFileName { get; set; }
-        public DateTime ImportDate { get; set; }
-        public IList<string> lists { get; set; }
-        public IList<Group> groupsList { get; set; }
-
-        public List<TableData> ColumnList = new List<TableData>();
-
-
 
         private IMapper _mapper;
         private ILifetimeScope _scope;
         private IDateTimeUtility _dateTimeUtility;
         private IImportService _importService;
         private IColumnDataService _columnDataService;
-        private IWebHostEnvironment _webHostEnvironment;
 
         public CreateImportModel()
         {
@@ -51,19 +40,17 @@ namespace DataImporter.Web.Models.Imports
             _importService = _scope.Resolve<IImportService>();
             _columnDataService = _scope.Resolve<IColumnDataService>();
             _dateTimeUtility = _scope.Resolve<IDateTimeUtility>();
-            _webHostEnvironment = _scope.Resolve<IWebHostEnvironment>();
         }
         public CreateImportModel(IMapper mapper, IDateTimeUtility dateTimeUtility,
-            IImportService importService, IColumnDataService  columnDataService,
-            IWebHostEnvironment webHostEnvironment)
+            IImportService importService, IColumnDataService  columnDataService)
         {
             _mapper = mapper;
             _columnDataService = columnDataService;
             _dateTimeUtility = dateTimeUtility;
             _importService = importService;
-            _webHostEnvironment = webHostEnvironment;
         }
 
+        HelperExcelDataRead helperExcelDataRead = new HelperExcelDataRead();
 
         public void CreateImportHistory(int id, string filePath, string excelFileName)
         {
@@ -87,38 +74,17 @@ namespace DataImporter.Web.Models.Imports
 
             if (columnList != null)
             {
-                using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
+
+            var columnDatas = helperExcelDataRead.ReadExcelData(1, filePath);
+
+                for (var m = 0; m < columnList.Count; m++)
                 {
-                    using (var excelReader = ExcelReaderFactory.CreateReader(stream))
+                    if (columnDatas[0].ColumnData.Count == columnList.Count && columnDatas[0].ColumnData[m] == columnList[m])
                     {
-                        DataSet result = excelReader.AsDataSet();
-
-                        DataTable dataTable = result.Tables[0];
-
-                        for (var i = 0; i < 1; i++)
-                        {
-                            var array = new string[dataTable.Columns.Count];
-
-                            for (var j = 0; j < array.Length; j++)
-                            {
-                                array[j] = dataTable.Rows[i][j].ToString();
-                            }
-                            ColumnList.Add(new TableData { ColumnData = array });
-
-
-                            for (var m = 0; m < columnList.Count; m++)
-                            {
-                                if (array.Length == columnList.Count && array[m] == columnList[m])
-                                {
-                                    continue;
-                                }
-                                else
-                                    throw new InvalidProgramException("Excel Column Dose not Match");
-                            }
-
-                        }
-
+                        continue;
                     }
+                    else
+                        throw new InvalidProgramException("Excel Column Dose not Match");
                 }
 
                 return true;
@@ -132,38 +98,15 @@ namespace DataImporter.Web.Models.Imports
         public void InsertTableHeader(int id, string filePath)
         {
 
-            using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
-            {
-                using (var excelReader = ExcelReaderFactory.CreateReader(stream))
-                {
-                    DataSet result = excelReader.AsDataSet();
-
-                    DataTable dataTable = result.Tables[0];
+            var columnDatas = helperExcelDataRead.ReadExcelData(1, filePath);
 
 
-                    for (var i = 0; i < 1; i++)
-                    {
-                        var array = new string[dataTable.Columns.Count];
-
-                        for (var j = 0; j < array.Length; j++)
-                        {
-                            array[j] = dataTable.Rows[i][j].ToString();
-
-                        }
-                        ColumnList.Add(new TableData { ColumnData = array });
-
-                    }
-
-                }
-            }
-
-
-            for (var m = 0; m < ColumnList[0].ColumnData.Count; m++)
+            for (var m = 0; m < columnDatas[0].ColumnData.Count; m++)
             {
                 var column = new ColumnData()
                 {
                     GroupId = id,
-                    ColumnName = ColumnList[0].ColumnData[m],
+                    ColumnName = columnDatas[0].ColumnData[m],
                     ColumnNumber = m
                 };
 

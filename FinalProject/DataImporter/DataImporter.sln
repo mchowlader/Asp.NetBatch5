@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Common", "Data
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B290AE60-EAE3-4AD6-95E2-D39F177B2C87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImporter.Worker", "DataImporter.Worker\DataImporter.Worker.csproj", "{937B725E-3300-4255-9987-1067C9102838}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Worker", "DataImporter.Worker\DataImporter.Worker.csproj", "{937B725E-3300-4255-9987-1067C9102838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImporter.ExcelFileReader", "DataImporter.ExcelFileReader\DataImporter.ExcelFileReader.csproj", "{001482F9-6C39-410E-9449-ED89D9295966}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{937B725E-3300-4255-9987-1067C9102838}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{937B725E-3300-4255-9987-1067C9102838}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{937B725E-3300-4255-9987-1067C9102838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001482F9-6C39-410E-9449-ED89D9295966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001482F9-6C39-410E-9449-ED89D9295966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001482F9-6C39-410E-9449-ED89D9295966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001482F9-6C39-410E-9449-ED89D9295966}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

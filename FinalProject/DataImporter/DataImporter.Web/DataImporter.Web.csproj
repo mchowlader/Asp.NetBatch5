@@ -45,6 +45,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataImporter.Common\DataImporter.Common.csproj" />
+    <ProjectReference Include="..\DataImporter.ExcelFileReader\DataImporter.ExcelFileReader.csproj" />
     <ProjectReference Include="..\DataImporter.Transfer\DataImporter.Transfer.csproj" />
     <ProjectReference Include="..\DataImporter.User\DataImporter.User.csproj" />
   </ItemGroup>

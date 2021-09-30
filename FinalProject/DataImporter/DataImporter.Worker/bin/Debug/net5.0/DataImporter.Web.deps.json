@@ -36,6 +36,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "Autofac.Extensions.DependencyInjection": "7.1.0",
           "DataImporter.Common": "1.0.0",
+          "DataImporter.ExcelFileReader": "1.0.0",
           "DataImporter.Transfer": "1.0.0",
           "DataImporter.User": "1.0.0",
           "EPPlus": "4.5.3.3",
@@ -2750,6 +2751,18 @@
         },
         "compile": {
           "DataImporter.Data.dll": {}
+        }
+      },
+      "DataImporter.ExcelFileReader/1.0.0": {
+        "dependencies": {
+          "ExcelDataReader": "3.6.0",
+          "ExcelDataReader.DataSet": "3.6.0"
+        },
+        "runtime": {
+          "DataImporter.ExcelFileReader.dll": {}
+        },
+        "compile": {
+          "DataImporter.ExcelFileReader.dll": {}
         }
       },
       "DataImporter.Transfer/1.0.0": {
@@ -5953,6 +5966,11 @@
       "sha512": ""
     },
     "DataImporter.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataImporter.ExcelFileReader/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

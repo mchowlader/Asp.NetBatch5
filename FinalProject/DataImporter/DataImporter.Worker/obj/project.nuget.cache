@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fPm7HOv29xqipuKvAFOfwWviYPBT/w2dFSU4uBcgfO/6i3wtD+kiQJhw8Va0MqaE2fvmDASrOKww6IT6ccQM2g==",
+  "dgSpecHash": "wS7zSNx29Xmlnh+4No7vLPOmSsjmV1QPqqPMLV17s/R0ohUrN6/tNr1ck5ARDdUE7bHMT3izNulWJYq1nNEKuA==",
   "success": true,
   "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.Worker\\DataImporter.Worker.csproj",
   "expectedPackageFiles": [

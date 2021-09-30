@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using AutoMapper;
 using DataImporter.Common.Utilities;
+using DataImporter.ExcelFileReader;
 using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Transfer.Services;
 using ExcelDataReader;
@@ -19,18 +20,18 @@ namespace DataImporter.Web.Models.Imports
     public class UploadModel
     {
         public int Id { get; set; }
-        public int GroupId { get; set; }
+        //public int GroupId { get; set; }
         public string DateTo { get; set; }
         public string DateFrom { get; set; }
         public IFormFile XlsFile { get; set; }
         public string FilePath { get; set; }
         public string FileName { get; set; }
-        public string GroupName { get; set; }
+        //public string GroupName { get; set; }
         public string ExcelFileName { get; set; }
         public string FileExtension { get; set; }
         public DateTime ImportDate { get; set; }
         public IList<Group> groupsList { get; set; }
-        public List<TableData> RowData { get; set; }
+        public List<DataStore> ColumnDatas { get; set; }
 
 
         private IMapper _mapper;
@@ -66,38 +67,17 @@ namespace DataImporter.Web.Models.Imports
             _webHostEnvironment = webHostEnvironment;
         }
 
+        HelperExcelDataRead helperExcelDataRead = new HelperExcelDataRead();
+
+
         public void LoadGroupProperty(Guid id)
         {
             groupsList = _groupService.LoadGroupProperty(id);
         }
 
-        public void PreviewExcelData()
+        public void PreviewExcelData(string filePath)
         {
-            using (var stream = File.Open(FilePath, FileMode.Open, FileAccess.Read))
-            {
-                using (var excelReader = ExcelReaderFactory.CreateReader(stream))
-                {
-                    DataSet result = excelReader.AsDataSet();
-
-                    DataTable dataTable = result.Tables[0];
-
-                    RowData = new List<TableData>();
-
-
-                    for (var i = 0; i < dataTable.Rows.Count && i < 5; i++)
-                    {
-                        var array = new string[dataTable.Columns.Count];
-
-                        for (var j = 0; j < array.Length; j++)
-                        {
-                            array[j] = dataTable.Rows[i][j].ToString();
-                        }
-
-                        RowData.Add(new TableData { ColumnData = array });
-                    }
-
-                }
-            }
+           ColumnDatas = helperExcelDataRead.ReadExcelData(5, filePath);
         }
 
 

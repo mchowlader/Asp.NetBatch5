@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace DataImporter.Web.Models.Imports
+namespace DataImporter.ExcelFileReader
 {
-    public class TableData
+    public class DataStore
     {
         public IList<string> ColumnData { get; set; }
     }
