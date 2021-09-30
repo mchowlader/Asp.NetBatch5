@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 
 namespace DataImporter.Web.Models.Imports
 {
-    public class UploadModel
+    public class HelperImportModel
     {
         public int Id { get; set; }
         public int GroupId { get; set; }
@@ -32,6 +32,9 @@ namespace DataImporter.Web.Models.Imports
         public IList<Group> groupsList { get; set; }
         public List<TableData> RowData { get; set; }
 
+        public List<string> ColumnList = new List<string>();
+
+
 
         private IMapper _mapper;
         private ILifetimeScope _scope;
@@ -42,7 +45,7 @@ namespace DataImporter.Web.Models.Imports
 
 
 
-        public UploadModel()
+        public HelperImportModel()
         {
 
         }
@@ -55,7 +58,8 @@ namespace DataImporter.Web.Models.Imports
             _dateTimeUtility = _scope.Resolve<IDateTimeUtility>();
             _webHostEnvironment = _scope.Resolve<IWebHostEnvironment>();
         }
-        public UploadModel(IMapper mapper, IDateTimeUtility dateTimeUtility,
+
+        public HelperImportModel(IMapper mapper, IDateTimeUtility dateTimeUtility,
             IImportService importService, IGroupService groupService,
             IWebHostEnvironment webHostEnvironment)
         {
@@ -66,46 +70,10 @@ namespace DataImporter.Web.Models.Imports
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public void LoadGroupProperty(Guid id)
+
+        public (string path,string filePath, string fileName, string excelFileName, string fileExtension) FileInfo()
         {
-            groupsList = _groupService.LoadGroupProperty(id);
-        }
-
-        public void PreviewExcelData()
-        {
-            using (var stream = File.Open(FilePath, FileMode.Open, FileAccess.Read))
-            {
-                using (var excelReader = ExcelReaderFactory.CreateReader(stream))
-                {
-                    DataSet result = excelReader.AsDataSet();
-
-                    DataTable dataTable = result.Tables[0];
-
-                    RowData = new List<TableData>();
-
-
-                    for (var i = 0; i < dataTable.Rows.Count && i < 5; i++)
-                    {
-                        var array = new string[dataTable.Columns.Count];
-
-                        for (var j = 0; j < array.Length; j++)
-                        {
-                            array[j] = dataTable.Rows[i][j].ToString();
-                        }
-
-                        RowData.Add(new TableData { ColumnData = array });
-                    }
-
-                }
-            }
-        }
-
-
-
-        public void UploadExcelFile()
-        {
-            if (XlsFile != null)
-            {
+           
                 string path = Path.Combine(this._webHostEnvironment.WebRootPath, "Uploads");
                 if (!Directory.Exists(path))
                 {
@@ -117,48 +85,49 @@ namespace DataImporter.Web.Models.Imports
                 ExcelFileName = Path.GetFileNameWithoutExtension(FileName);
                 FileExtension = Path.GetExtension(XlsFile.FileName);
 
-                if (DuplicateFileExit(FilePath)) 
-                    throw new InvalidOperationException("File Already Exit");
+                //FileInfo file = new FileInfo(Path.Combine(path, FileName));
+                //using (var stream = new MemoryStream())
+                //{
+                //    XlsFile.CopyToAsync(stream);
+                //    using (var package = new ExcelPackage(stream))
+                //    {
+                //        package.SaveAs(file);
+                //    }
+                //}
 
-                if (!InvalidFileUoload(FileName)) 
-                    throw new InvalidOperationException("Select Excel File");
-
-
-                FileInfo file = new FileInfo(Path.Combine(path, FileName));
-                using (var stream = new MemoryStream())
-                {
-                    XlsFile.CopyToAsync(stream);
-                    using (var package = new ExcelPackage(stream))
-                    {
-                        package.SaveAs(file);
-                    }
-                }
-
-            }
-            else
-                throw new InvalidOperationException("Select Excel File");
-
+            return (path, FilePath, FileName, ExcelFileName, FileExtension);
 
         }
 
 
-        public void CreateImportHistory(int groupId)
+        public List<string> ExelReadInfo()
         {
-            var importsData = new Import()
+            using (var stream = File.Open(FilePath, FileMode.Open, FileAccess.Read))
             {
-                GroupId = groupId,
-                ImportDate = _dateTimeUtility.Now,
-                ExcelFileName = ExcelFileName,
-                FilePath = FilePath,
-            };
-            _importService.UploadExcelFile(importsData);
+                using (var excelReader = ExcelReaderFactory.CreateReader(stream))
+                {
+                    DataSet result = excelReader.AsDataSet();
+
+                    DataTable dataTable = result.Tables[0];
+
+                    for (var i = 0; i < 1; i++)
+                    {
+                        var array = new string[dataTable.Columns.Count];
+
+                        for (var j = 0; j < array.Length; j++)
+                        {
+                            array[j] = dataTable.Rows[i][j].ToString();
+
+                            ColumnList.Add(array.ToString());
+                        }
+
+                    }
+
+                }
+            }
+
+            return ColumnList;
+
         }
-
-
-        private bool DuplicateFileExit(string filePath) 
-            => File.Exists(filePath) ? true : false;
-        private bool InvalidFileUoload(string fileName) 
-            => Path.GetExtension(XlsFile.FileName) == ".xlsx" ? true : false;
-        
     }
 }

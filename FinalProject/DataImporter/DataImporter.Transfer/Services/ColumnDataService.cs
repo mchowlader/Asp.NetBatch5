@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Transfer.UnitOfWorks;
 using System;
 using System.Collections.Generic;
@@ -39,6 +40,20 @@ namespace DataImporter.Transfer.Services
                 return null;
             }
             
+        }
+
+        public void InsertColumnHeader(ColumnData column)
+        {
+            var x = new Entities.ColumnData()
+            {
+                ColumnName = column.ColumnName,
+                ColumnNumber = column.ColumnNumber,
+                GroupId = column.GroupId
+            };
+
+            _transferUnitOfWork.ColumnDatas.Add(x);
+            //_mapper.Map<Entities.ColumnData>(column)
+            _transferUnitOfWork.Save();
         }
 
         private bool ExitGroupId(int groupId) => 

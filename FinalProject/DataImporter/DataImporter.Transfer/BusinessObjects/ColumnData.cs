@@ -12,7 +12,7 @@ namespace DataImporter.Transfer.BusinessObjects
         public int Id { get; set; }
         public int GroupId { get; set; }
         public string ColumnName { get; set; }
-        public string ColumnNumber { get; set; }
+        public int ColumnNumber { get; set; }
 
     }
 }

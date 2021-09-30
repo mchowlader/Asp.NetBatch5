@@ -61,22 +61,26 @@ namespace DataImporter.Web.Controllers
             return RedirectToAction(nameof(FileMatching),model);
         }
 
-        //start
+        //ok
         public IActionResult FileMatching(UploadModel model)
         {
-            var Createmodel = _scope.Resolve<CreateImportModel>();
+            var createmodel = _scope.Resolve<CreateImportModel>();
             if (ModelState.IsValid)
             {
                 model.Resolve(_scope);
 
                 try
                 {
-                    if (Createmodel.FileMatching(model.Id, model.FilePath))
+                    if (createmodel.FileMatching(model.Id, model.FilePath))
                     {
                         return RedirectToAction(nameof(PreviewExcel), model);
                     }
                     else
+                    {
+                        createmodel.InsertTableHeader(model.Id, model.FilePath);
                         return RedirectToAction(nameof(PreviewExcel), model);
+
+                    }
 
                 }
                 catch (Exception ex)
@@ -105,11 +109,13 @@ namespace DataImporter.Web.Controllers
         //ok
         public IActionResult CreateImport(UploadModel model)
         {
-            var Createmodel = _scope.Resolve<CreateImportModel>();
+            var createmodel = _scope.Resolve<CreateImportModel>();
             if(ModelState.IsValid)
             {
                 model.Resolve(_scope);
-                Createmodel.CreateImportHistory(model.Id, model.FilePath,model.ExcelFileName);
+
+                createmodel.CreateImportHistory(model.Id, model.FilePath,model.ExcelFileName);
+
 
             }
             return RedirectToAction(nameof(Imports));

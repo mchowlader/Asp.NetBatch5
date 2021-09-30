@@ -29,7 +29,7 @@ namespace DataImporter.Web.Models.Imports
         public IList<string> lists { get; set; }
         public IList<Group> groupsList { get; set; }
 
-        public List<string> ColumnList = new List<string>();
+        public List<TableData> ColumnList = new List<TableData>();
 
 
 
@@ -83,7 +83,7 @@ namespace DataImporter.Web.Models.Imports
         {
             List<string> columnList = new List<string>();
 
-            columnList =  _columnDataService.FileMatching(groupId);
+            columnList = _columnDataService.FileMatching(groupId);
 
             if (columnList != null)
             {
@@ -102,10 +102,9 @@ namespace DataImporter.Web.Models.Imports
                             for (var j = 0; j < array.Length; j++)
                             {
                                 array[j] = dataTable.Rows[i][j].ToString();
-
-                                ColumnList.Add(array.ToString());
-
                             }
+                            ColumnList.Add(new TableData { ColumnData = array });
+
 
                             for (var m = 0; m < columnList.Count; m++)
                             {
@@ -127,7 +126,51 @@ namespace DataImporter.Web.Models.Imports
 
             else
                 return false;
-           
+
+        }
+
+        public void InsertTableHeader(int id, string filePath)
+        {
+
+            using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
+            {
+                using (var excelReader = ExcelReaderFactory.CreateReader(stream))
+                {
+                    DataSet result = excelReader.AsDataSet();
+
+                    DataTable dataTable = result.Tables[0];
+
+
+                    for (var i = 0; i < 1; i++)
+                    {
+                        var array = new string[dataTable.Columns.Count];
+
+                        for (var j = 0; j < array.Length; j++)
+                        {
+                            array[j] = dataTable.Rows[i][j].ToString();
+
+                        }
+                        ColumnList.Add(new TableData { ColumnData = array });
+
+                    }
+
+                }
+            }
+
+
+            for (var m = 0; m < ColumnList[0].ColumnData.Count; m++)
+            {
+                var column = new ColumnData()
+                {
+                    GroupId = id,
+                    ColumnName = ColumnList[0].ColumnData[m],
+                    ColumnNumber = m
+                };
+
+                _columnDataService.InsertColumnHeader(column);
+
+            }
+
         }
     }
 }
