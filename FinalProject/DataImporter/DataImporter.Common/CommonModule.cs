@@ -9,8 +9,6 @@ namespace DataImporter.Common
         {
             builder.RegisterType<DateTimeUtility>().As<IDateTimeUtility>()
                 .InstancePerLifetimeScope();
-            builder.RegisterType<UserService>().As<IUserService>()
-                .InstancePerLifetimeScope();
             builder.RegisterType<EmailService>().As<IEmailService>()
              
                .WithParameter("host", "smtp.gmail.com")

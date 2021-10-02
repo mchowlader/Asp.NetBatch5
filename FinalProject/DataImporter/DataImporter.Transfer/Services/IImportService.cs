@@ -12,5 +12,6 @@ namespace DataImporter.Transfer.Services
         (IList<Import> records, int total, int totalDisplay) GetImportsData(int pageIndex,
             int pageSize, string searchText, string sortText, Guid id);
         void UploadExcelFile(Import importsData);
+        List<Import> GetPendingItem();
     }
 }

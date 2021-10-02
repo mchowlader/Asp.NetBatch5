@@ -54,6 +54,20 @@ namespace DataImporter.Transfer.Services
             return (resultData, importsData.total, importsData.totalDisplay);
         }
 
+        public List<Import> GetPendingItem()
+        {
+            List<Import> pendingItemList = new List<Import>();
+            var groupEntity = _transferUnitOfWork.Imports.Get(m => m.Status.Contains("Pending"), "Group");
+
+            foreach(var group in groupEntity)
+            {
+                var import = _mapper.Map<Import>(group);
+                pendingItemList.Add(import);
+            }
+
+            return pendingItemList;
+        }
+
         public void UploadExcelFile(Import importsData)
         {
             var groupEntity = _transferUnitOfWork.Groups.GetById(importsData.GroupId);

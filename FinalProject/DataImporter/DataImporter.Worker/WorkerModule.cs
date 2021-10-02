@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using DataImporter.ExcelFileReader;
 using DataImporter.Worker.Model;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -25,7 +26,8 @@ namespace DataImporter.Worker
 
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<ImportInsertModel>().AsSelf();
+            builder.RegisterType<ImportModel>().AsSelf();
+            builder.RegisterType<HelperExcelDataRead>().AsSelf();
 
             base.Load(builder);
         }

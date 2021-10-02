@@ -49,14 +49,8 @@ namespace DataImporter.Web.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("ExcelFileName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("GroupId")
                         .HasColumnType("int");
-
-                    b.Property<DateTime>("UploadDate")
-                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 

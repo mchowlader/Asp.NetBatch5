@@ -454,6 +454,5 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Wor
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Worker\bin\Debug\net5.0\EPPlus.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Worker\bin\Debug\net5.0\ExcelDataReader.DataSet.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Worker\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
-D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Worker\bin\Debug\net5.0\DataImporter.Web.StaticWebAssets.xml
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Worker\bin\Debug\net5.0\DataImporter.ExcelFileReader.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Worker\bin\Debug\net5.0\DataImporter.ExcelFileReader.pdb

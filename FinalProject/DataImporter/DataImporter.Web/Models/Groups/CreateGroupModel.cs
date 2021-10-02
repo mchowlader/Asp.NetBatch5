@@ -23,14 +23,10 @@ namespace DataImporter.Web.Models.Groups
         public DateTime CreateDate { get; set; }
         public Guid UserId { get; set; }
 
-        private IUserService _userService;
         private IMapper _mapper;
         private IDateTimeUtility _dateTimeUtility;
         private IGroupService  _groupService;
         private ILifetimeScope _scope;
-
-
-
 
         public CreateGroupModel()
         {
@@ -46,15 +42,14 @@ namespace DataImporter.Web.Models.Groups
         }
 
         public CreateGroupModel(IMapper mapper, IDateTimeUtility dateTimeUtility, 
-            IGroupService groupService, IUserService userService)
+            IGroupService groupService)
         {
             _mapper = mapper;
-            _userService = userService;
             _dateTimeUtility = dateTimeUtility;
             _groupService = groupService;
         }
 
-        internal void CreateGroup()
+        public void CreateGroup()
         {
             //var group = _mapper.Map<Group>(this);
             var group = new Group()

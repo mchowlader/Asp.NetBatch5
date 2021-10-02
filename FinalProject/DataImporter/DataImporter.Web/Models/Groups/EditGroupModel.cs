@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataImporter.Web.Models.Groups
 {
-    public class EditGroupModel
+    public class EditGroupModel 
     {
         public int Id { get; set; }
         public Guid UserId { get; set; }

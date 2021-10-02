@@ -266,3 +266,7 @@ Error Number:547,State:0,Class:16
 System.InvalidProgramException: Excel Column Dose not Match
    at DataImporter.Web.Models.Imports.CreateImportModel.FileMatching(Int32 groupId, String filePath) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Imports\CreateImportModel.cs:line 87
    at DataImporter.Web.Controllers.ImportController.FileMatching(UploadModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\ImportController.cs:line 75
+2021-10-01 15:35:14.130 +06:00 [INF] Application Starting up
+2021-10-01 15:36:14.818 +06:00 [INF] User logged out.
+2021-10-01 15:52:09.673 +06:00 [INF] User logged in.
+2021-10-01 19:24:24.427 +06:00 [INF] Application Starting up

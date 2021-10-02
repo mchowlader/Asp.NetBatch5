@@ -14,15 +14,12 @@ namespace DataImporter.Transfer.Services
     public class GroupService : IGroupService
     {
         private readonly IMapper _mapper;
-        private readonly IUserService _userService;
         private readonly ITransferUnitOfWork _transferUnitOfWork;
 
 
-        public GroupService(IMapper mapper,ITransferUnitOfWork transferUnitOfWork,
-            IUserService userService)
+        public GroupService(IMapper mapper,ITransferUnitOfWork transferUnitOfWork)
         {
             _mapper = mapper;
-            _userService = userService;
             _transferUnitOfWork = transferUnitOfWork;
         }
 

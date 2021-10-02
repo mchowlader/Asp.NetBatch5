@@ -8,9 +8,13 @@ namespace DataImporter.ExcelFileReader
 {
     public class HelperExcelDataRead
     {
-
         public List<DataStore> ReadExcelData(int nedColmun , string filePath)
         {
+            if(nedColmun < 0 )
+            {
+                nedColmun = int.MaxValue;
+            }
+
             var RowData = new List<DataStore>();
 
             using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
