@@ -56,6 +56,16 @@ namespace DataImporter.Transfer
                .InstancePerLifetimeScope();
             builder.RegisterType<ColumnDataRepository>().As<IColumnDataRepository>()
                 .InstancePerLifetimeScope();
+            
+            builder.RegisterType<ExcelDataRepository>().As<IExcelDataRepository>()
+                .InstancePerLifetimeScope();
+            builder.RegisterType<ExcelDataService>().As<IExcelDataService>()
+             .InstancePerLifetimeScope();
+            
+            builder.RegisterType<ExcelFieldRepository>().As<IExcelFieldRepository>()
+                .InstancePerLifetimeScope();
+            builder.RegisterType<ExcelFieldService>().As<IExcelFieldService>()
+             .InstancePerLifetimeScope();
 
 
             base.Load(builder);

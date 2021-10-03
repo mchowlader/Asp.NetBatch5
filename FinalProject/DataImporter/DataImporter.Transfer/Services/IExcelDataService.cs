@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataImporter.Transfer.BusinessObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace DataImporter.Transfer.Services
 {
     public interface IExcelDataService
     {
-        
+        void ExcelDataRow(ExcelData excelData);
+        List<ExcelData> GetExcelDataId();
+        List<ExcelData> GetExcelDataById(int groupId);
     }
 }

@@ -15,5 +15,6 @@ namespace DataImporter.Transfer.UnitOfWorks
         IExportRepository Exports { get; }
         IExcelDataRepository  ExcelDatas { get; }
         IColumnDataRepository ColumnDatas { get; }
+        IExcelFieldRepository ExcelFields { get; }
     }
 }

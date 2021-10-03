@@ -13,5 +13,8 @@ namespace DataImporter.Transfer.Services
             int pageSize, string searchText, string sortText, Guid id);
         void UploadExcelFile(Import importsData);
         List<Import> GetPendingItem();
+        void StatusUpdate(int groupId);
+        void UpdateProcessStatus(int groupId);
+        void DeleteDoneItem();
     }
 }

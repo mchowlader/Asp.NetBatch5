@@ -14,90 +14,97 @@ namespace DataImporter.Worker.Model
     public class ImportModel
     {
         private IImportService _importService;
+        private IExcelDataService _excelDataService;
         private IColumnDataService _columnDataService;
+        private IExcelFieldService _excelFieldService;
         private ILifetimeScope _scope;
         private HelperExcelDataRead _helperExcelDataRead;
         public ImportModel()
         {
             
         }
-        public void Resolve(ILifetimeScope scope, IImportService importService, IColumnDataService columnDataService, 
-            HelperExcelDataRead helperExcelDataRead)
+        public void Resolve(ILifetimeScope scope)
         {
             _scope = scope;
-            _columnDataService = columnDataService;
+            _columnDataService = _scope.Resolve<IColumnDataService>();
+            _excelFieldService = _scope.Resolve<IExcelFieldService>();
+            _excelDataService = _scope.Resolve<IExcelDataService>();
             _importService = _scope.Resolve<IImportService>();
             _helperExcelDataRead = _scope.Resolve<HelperExcelDataRead>();
         }
 
-        public ImportModel(IImportService importService, IColumnDataService columnDataService, HelperExcelDataRead helperExcelDataRead)
+        public ImportModel(IImportService importService, IColumnDataService columnDataService,
+            HelperExcelDataRead helperExcelDataRead, IExcelDataService excelDataService, 
+            IExcelFieldService excelFieldService)
         {
+
             _importService = importService;
+            _excelDataService = excelDataService;
             _columnDataService = columnDataService;
             _helperExcelDataRead = helperExcelDataRead;
+            _excelFieldService = excelFieldService;
 
         }
 
-        List<Import> PendingItemList = new List<Import>();
+        public int GroupId { get; set; }
+        public string Path { get; set; }
+        public List<Import> PendingItemList { get; set; }
 
         public void GetPendingItem()
         {
              PendingItemList = _importService.GetPendingItem();
         }
 
-
-
-
-      
-
-
-
-
-
-
-
-
-        public void DeleteFile()
+        public void ExcelDataInser()
         {
+            foreach (var item in PendingItemList)
+            {
 
+                if (item.Status == "Pending")
+                {
+                    _importService.StatusUpdate(item.GroupId);
+
+                    Path = item.FilePath;
+                    GroupId = item.GroupId;
+                    var allExcelData = 0;
+                    var AllExcelRowData = _helperExcelDataRead.ReadExcelData(allExcelData, Path);
+
+                    for (var m = 1; m < AllExcelRowData.Count; m++)
+                    {
+                        var excelData = new ExcelData()
+                        {
+                            GroupId = item.GroupId
+
+                        };
+
+                        _excelDataService.ExcelDataRow(excelData);
+
+                        var excelDataList = _excelDataService.GetExcelDataById(GroupId);
+
+                        var excelDataLastItem = excelDataList.LastOrDefault();
+                        var ColumnDataList = _columnDataService.GetColumnDataById(GroupId);
+
+                        for (var n = 0; n < ColumnDataList.Count; n++)
+                        {
+                            var excelFieldDat = new ExcelFieldData()
+                            {
+                                Name = ColumnDataList[n].ColumnName,
+                                Value = AllExcelRowData[m].ColumnData[n],
+                                ExcelDataId = excelDataLastItem.Id
+                            };
+
+                            _excelFieldService.InsertExcedFieldData(excelFieldDat);
+
+                        }
+
+                    }
+
+                    _importService.UpdateProcessStatus(item.GroupId);
+
+                }
+            }
         }
 
-
-
-
-
-        //public void ExcelValueUpload()
-        //{
-        //    string[] HeaderKey;
-        //    string[] FieldValues;
-
-        //    var path = @"D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\wwwroot\Uploads\FamilyDetails.xlsx";
-
-
-
-        //   var columnList = _helperExcelDataRead.ReadExcelData(1, path);
-               
-
-        //        for (var i = 0; i < columnList[0].ColumnData.Count; i++)
-        //        {
-        //            FieldValues = new string[columnList[0].ColumnData.Count];
-        //            HeaderKey = new string[columnList[0].ColumnData.Count];
-
-        //            for (var j = 0; j < FieldValues.Length; j++)
-        //            {
-        //                if (i == 0)
-        //                    HeaderKey[j] = columnList[0].ColumnData[i][j].ToString();
-        //                else
-        //                    FieldValues[j] = columnList[0].ColumnData[i][j].ToString();
-        //            }
-
-        //            IDictionary<string, string> ExcelDataRead = new Dictionary<string, string>();
-
-        //            for (var j = 0; j < FieldValues.Length; j++)
-        //            {
-        //                ExcelDataRead.Add(HeaderKey[j], FieldValues[j]);
-        //            }
-        //        }
-        //    }
-        }
+       
+    }
 }

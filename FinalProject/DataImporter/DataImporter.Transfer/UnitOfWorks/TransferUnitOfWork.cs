@@ -17,11 +17,12 @@ namespace DataImporter.Transfer.UnitOfWorks
         public IExportRepository Exports { get; private set; }
         public IExcelDataRepository ExcelDatas { get; private set; }
         public IColumnDataRepository ColumnDatas { get; private set; }
+        public IExcelFieldRepository ExcelFields { get; private set; }
 
         public TransferUnitOfWork(ITransferDbContext transferDbContext, 
             IGroupRepository groupRepository, IImportRepository importRepository, 
             IExportRepository exportRepository, IExcelDataRepository excelDataRepository,
-            IColumnDataRepository columnDataRepository)
+            IColumnDataRepository columnDataRepository, IExcelFieldRepository excelFieldRepository)
            : base((DbContext)transferDbContext)
         {
             Groups = groupRepository;
@@ -29,6 +30,7 @@ namespace DataImporter.Transfer.UnitOfWorks
             Exports = exportRepository;
             ExcelDatas = excelDataRepository;
             ColumnDatas = columnDataRepository;
+            ExcelFields = excelFieldRepository;
         }
 
     }

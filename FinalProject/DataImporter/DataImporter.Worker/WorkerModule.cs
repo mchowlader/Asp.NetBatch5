@@ -28,6 +28,7 @@ namespace DataImporter.Worker
         {
             builder.RegisterType<ImportModel>().AsSelf();
             builder.RegisterType<HelperExcelDataRead>().AsSelf();
+            builder.RegisterType<DeleteModel>().AsSelf();
 
             base.Load(builder);
         }

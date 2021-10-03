@@ -10,7 +10,7 @@ namespace DataImporter.ExcelFileReader
     {
         public List<DataStore> ReadExcelData(int nedColmun , string filePath)
         {
-            if(nedColmun < 0 )
+            if(nedColmun <= 0)
             {
                 nedColmun = int.MaxValue;
             }

@@ -13,10 +13,12 @@ namespace DataImporter.Worker
     {
         private readonly ILogger<Worker> _logger;
         private readonly ImportModel _importModel;
+        private readonly DeleteModel _deleteModel;
 
-        public Worker(ILogger<Worker> logger, ImportModel importModel)
+        public Worker(ILogger<Worker> logger, ImportModel importModel, DeleteModel deleteModel)
         {
             _logger = logger;
+            _deleteModel = deleteModel;
             _importModel = importModel;
         }
 
@@ -24,9 +26,11 @@ namespace DataImporter.Worker
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                //_importModel.DeleteFile();
                 //_importModel.ExcelValueUpload();
                 _importModel.GetPendingItem();
+                _importModel.ExcelDataInser();
+                _deleteModel.DeleteFile();
+                //_importModel.InsertExcedFieldData();
 
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 await Task.Delay(1000, stoppingToken);

@@ -4,6 +4,7 @@ using DataImporter.Transfer.UnitOfWorks;
 using Microsoft.AspNetCore.Hosting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,17 @@ namespace DataImporter.Transfer.Services
         {
             _mapper = mapper;
             _transferUnitOfWork = transferUnitOfWork;
+        }
+
+        public void DeleteDoneItem()
+        {
+            var importEntity = _transferUnitOfWork.Imports.Get(m => m.Status == "Done", "Group");
+
+            foreach(var import in importEntity)
+            {
+                if (import != null)
+                    File.Delete(import.FilePath);
+            }
         }
 
         public (IList<Import> records, int total, int totalDisplay) GetImportsData(int pageIndex,
@@ -57,15 +69,43 @@ namespace DataImporter.Transfer.Services
         public List<Import> GetPendingItem()
         {
             List<Import> pendingItemList = new List<Import>();
-            var groupEntity = _transferUnitOfWork.Imports.Get(m => m.Status.Contains("Pending"), "Group");
+            var importEntity = _transferUnitOfWork.Imports.Get(m => m.Status.Contains("Pending"), "Group");
 
-            foreach(var group in groupEntity)
+            foreach(var imports in importEntity)
             {
-                var import = _mapper.Map<Import>(group);
+                var import = _mapper.Map<Import>(imports);
                 pendingItemList.Add(import);
             }
 
             return pendingItemList;
+        }
+
+        public void StatusUpdate(int groupId)
+        {
+            var importEntity = _transferUnitOfWork.Imports.Get(m => m.GroupId == groupId, "Group");
+            if (importEntity != null)
+            {
+                foreach(var import in importEntity)
+                {
+                    import.Status = "Processing";
+
+                }
+                _transferUnitOfWork.Save();
+            }
+        }
+
+        public void UpdateProcessStatus(int groupId)
+        {
+            var importEntity = _transferUnitOfWork.Imports.Get(m => m.GroupId == groupId, "Group");
+            if (importEntity != null)
+            {
+                foreach (var import in importEntity)
+                {
+                    import.Status = "Done";
+
+                }
+                _transferUnitOfWork.Save();
+            }
         }
 
         public void UploadExcelFile(Import importsData)

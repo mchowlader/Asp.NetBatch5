@@ -11,5 +11,6 @@ namespace DataImporter.Transfer.Services
     {
         List<string> FileMatching(int groupId);
         void InsertColumnHeader(ColumnData column);
+        List<ColumnData> GetColumnDataById(int groupId);
     }
 }

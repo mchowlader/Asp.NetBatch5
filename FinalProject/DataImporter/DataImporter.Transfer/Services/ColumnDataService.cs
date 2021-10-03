@@ -42,7 +42,27 @@ namespace DataImporter.Transfer.Services
             
         }
 
-        
+        public List<ColumnData> GetColumnDataById(int groupId)
+        {
+
+            List<ColumnData> ColumnDataList = new List<ColumnData>();
+            var colmunDataEntity = _transferUnitOfWork.ColumnDatas.Get(m => m.GroupId == groupId, "Group");
+
+            foreach(var item in colmunDataEntity)
+            {
+                var columnDataObj = _mapper.Map<ColumnData>(item);
+                //var columnDataObj = new ColumnData()
+                //{ 
+                //    ColumnName = item.ColumnName,
+                //    ColumnNumber = item.ColumnNumber,
+                //    GroupId = item.GroupId
+                
+                //};
+                ColumnDataList.Add(columnDataObj);
+            }
+
+            return ColumnDataList;
+        }
 
         public void InsertColumnHeader(ColumnData column)
         {
