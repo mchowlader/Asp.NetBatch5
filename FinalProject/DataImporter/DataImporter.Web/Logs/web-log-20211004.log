@@ -125,3 +125,9 @@ Error Number:10061,State:0,Class:20
 2021-10-04 00:58:55.077 +06:00 [INF] Application Starting up
 2021-10-04 00:59:43.518 +06:00 [INF] User logged out.
 2021-10-04 00:59:53.042 +06:00 [INF] User logged in.
+2021-10-04 11:10:47.227 +06:00 [INF] Application Starting up
+2021-10-04 11:17:32.871 +06:00 [ERR] Update Course Failed
+DataImporter.Common.Exceptions.DuplicateTitleException: Group title already used in other group.
+   at DataImporter.Transfer.Services.GroupService.UpdateGroup(Group group) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Transfer\Services\GroupService.cs:line 98
+   at DataImporter.Web.Models.Groups.EditGroupModel.Update()
+   at DataImporter.Web.Controllers.GroupController.Edit(EditGroupModel model)

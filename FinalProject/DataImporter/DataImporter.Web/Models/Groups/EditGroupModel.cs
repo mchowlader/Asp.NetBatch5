@@ -50,12 +50,6 @@ namespace DataImporter.Web.Models.Groups
         public void Update()
         {
             var group = _mapper.Map<Group>(this);
-            //var group = new Group()
-            //{
-            //    Id = Id,
-            //    GroupName = GroupName
-            //};
-            //_mapper.Map(this, group);
             _groupService.UpdateGroup(group);
         }
     }
