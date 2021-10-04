@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "5/BHUEhU/NqQuMaFIghfrzkp6jZJtYp2DuUWspaFC65vqU9lc7HJqPkZJb6BNMPVZROp4dnKgRJMm12BwRUMzA==",
+  "dgSpecHash": "HrmtkLlBP0RPf+zs2f/bIVq/fQzcoTrBbLp8kJdWhvca9qaORDkt06yI51vpwil0+hjTtL2OpP1i7UAwOCB9XA==",
   "success": true,
   "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\FinalProject\\DataImporter\\DataImporter.ExcelFileReader\\DataImporter.ExcelFileReader.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
-    "C:\\Users\\lenovo\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512"
+    "C:\\Users\\lenovo\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.10\\microsoft.netcore.app.runtime.win-x64.5.0.10.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.10\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.10.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.10\\microsoft.aspnetcore.app.runtime.win-x64.5.0.10.nupkg.sha512"
   ],
   "logs": []
 }

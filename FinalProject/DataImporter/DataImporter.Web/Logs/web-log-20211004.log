@@ -131,3 +131,6 @@ DataImporter.Common.Exceptions.DuplicateTitleException: Group title already used
    at DataImporter.Transfer.Services.GroupService.UpdateGroup(Group group) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Transfer\Services\GroupService.cs:line 98
    at DataImporter.Web.Models.Groups.EditGroupModel.Update()
    at DataImporter.Web.Controllers.GroupController.Edit(EditGroupModel model)
+2021-10-04 11:21:11.640 +06:00 [INF] Application Starting up
+2021-10-04 12:19:00.270 +06:00 [INF] Application Starting up
+2021-10-04 12:49:35.097 +06:00 [INF] Application Starting up
