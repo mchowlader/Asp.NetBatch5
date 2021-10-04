@@ -111,7 +111,6 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\DataImporter.Web.runtimeconfig.dev.json
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\appsettings.Development.json
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\appsettings.json
-D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\DataImporter.Web.StaticWebAssets.xml
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\DataImporter.Web.exe
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Antiforgery.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll

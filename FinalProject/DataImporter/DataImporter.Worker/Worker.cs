@@ -26,11 +26,9 @@ namespace DataImporter.Worker
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                //_importModel.ExcelValueUpload();
                 _importModel.GetPendingItem();
                 _importModel.ExcelDataInser();
                 _deleteModel.DeleteFile();
-                //_importModel.InsertExcedFieldData();
 
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 await Task.Delay(1000, stoppingToken);

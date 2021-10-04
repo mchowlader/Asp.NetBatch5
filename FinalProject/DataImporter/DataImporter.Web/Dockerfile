@@ -17,4 +17,4 @@ RUN dotnet publish "DataImporter.Web.csproj" -c Release -o /app
 FROM build AS final
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "DataImporter.Web.dll"]
+#ENTRYPOINT ["dotnet", "DataImporter.Web.dll"]

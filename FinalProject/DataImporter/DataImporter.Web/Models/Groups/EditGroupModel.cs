@@ -40,13 +40,14 @@ namespace DataImporter.Web.Models.Groups
             _groupService = groupService;
         }
 
-        internal void EditGroup(int id)
+        public void EditGroup(int id)
         {
             var group = _groupService.GetGroup(id);
+
             _mapper.Map(group,this);
         }
 
-        internal void Update()
+        public void Update()
         {
             var group = _mapper.Map<Group>(this);
             //var group = new Group()
