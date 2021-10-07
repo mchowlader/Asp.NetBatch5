@@ -57,12 +57,6 @@ namespace DataImporter.Transfer.Services
                 }
             }
 
-            //var groupData1 = _transferUnitOfWork.Groups.GetAll();
-            //var resultData2 = (from import in importsData.data
-            //                  join groups in groupData1 on import.GroupId equals groups.Id
-            //                  where import.GroupId == groups.Id
-            //                  select _mapper.Map<Group>(import)).ToList();
-
             return (resultData, importsData.total, importsData.totalDisplay);
         }
 
