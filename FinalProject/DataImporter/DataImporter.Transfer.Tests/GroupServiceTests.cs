@@ -9,6 +9,7 @@ using Moq;
 using NUnit.Framework;
 using Shouldly;
 using System;
+using EO = DataImporter.Transfer.Entities;
 
 namespace DataImporter.Transfer.Tests
 {
@@ -16,7 +17,7 @@ namespace DataImporter.Transfer.Tests
     {
 
         private AutoMock _mock;
-        private Mock<ITransferUnitOfWork> _traingUnitOfWork;
+        private Mock<ITransferUnitOfWork> _transferUnitOfWork;
         private Mock<IGroupRepository> _groupRepository;
         private Mock<IMapper> _mapperMock;
         private IGroupService _groupService;
@@ -38,7 +39,7 @@ namespace DataImporter.Transfer.Tests
         public void Setup()
         {
             _mapperMock = _mock.Mock<IMapper>();
-            _traingUnitOfWork = _mock.Mock<ITransferUnitOfWork>();
+            _transferUnitOfWork = _mock.Mock<ITransferUnitOfWork>();
             _groupRepository = _mock.Mock<IGroupRepository>();
             _groupService = _mock.Create<GroupService>();
             _dateTimeUtility = _mock.Create<DateTimeUtility>();
@@ -48,9 +49,10 @@ namespace DataImporter.Transfer.Tests
         public void TearDown()
         {
             _mapperMock?.Reset();
-            _traingUnitOfWork?.Reset();
+            _transferUnitOfWork?.Reset();
             _groupRepository?.Reset();
         }
+
         [Test]
         public void GroupCreate_GroupNameDoseNotExit_ThrowsException()
         {
@@ -62,6 +64,7 @@ namespace DataImporter.Transfer.Tests
                 () => _groupService.CreateGroup(group)
             );
         }
+
         [Test]
         public void GroupCreate_GroupDoseNotExit_ThrowsException()
         {
@@ -78,5 +81,42 @@ namespace DataImporter.Transfer.Tests
                 () => _groupService.CreateGroup(group)
             );
         }
+
+        [Test]
+        public void UpdateGroup_GroupExit_UpdateGroup()
+        {
+            //Arrange
+            var group = new Group
+            {
+                Id = 4,
+                GroupName = "Asp",
+                CreateDate = _dateTimeUtility.Now,
+                UserId = Guid.Parse("0cb2f149-b11f-4faf-9f20-08d9859583c4")
+            };
+
+            var groupEntity = new EO.Group
+            {
+               Id = 4,
+               GroupName = "Asp.Net",
+               CreateDate = _dateTimeUtility.Now,
+               UserId = Guid.Parse("0cb2f149-b11f-4faf-9f20-08d9859583c4")
+            };
+
+            _transferUnitOfWork.Setup(x => x.Groups).Returns(_groupRepository.Object);
+
+            _groupRepository.Setup(x => x.GetById(group.Id)).Returns(groupEntity);
+            _transferUnitOfWork.Setup(x => x.Save()).Verifiable();
+
+
+            //Act 
+            _groupService.UpdateGroup(group);
+
+            //Assert
+            this.ShouldSatisfyAllConditions(
+                () => _transferUnitOfWork.VerifyAll(),
+                () => _groupRepository.VerifyAll()
+            );
+        }
+
     }
 }
