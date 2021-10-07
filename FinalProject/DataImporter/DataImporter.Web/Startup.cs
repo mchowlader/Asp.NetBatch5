@@ -2,6 +2,7 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using DataImporter.Common;
 using DataImporter.Common.Utilities;
+using DataImporter.ExcelFileCreate;
 using DataImporter.Transfer;
 using DataImporter.Transfer.Contexts;
 using DataImporter.Transfer.Entities;
@@ -57,6 +58,7 @@ namespace DataImporter.Web
                 connectionInfo.migrationAssemblyName));
             builder.RegisterModule(new CommonModule());
             builder.RegisterModule(new WebModule());
+            builder.RegisterModule(new CreateExcelModule());
         }
 
         private (string connectionString, string migrationAssemblyName) GetConnectionStringAndAssemblyName()

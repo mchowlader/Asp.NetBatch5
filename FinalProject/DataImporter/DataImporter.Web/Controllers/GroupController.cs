@@ -109,19 +109,35 @@ namespace DataImporter.Web.Controllers
             return RedirectToAction(nameof(Groups));
         }
 
-        public IActionResult Contacts()
+        public IActionResult Contacts(int id)
         {
             var model = _scope.Resolve<ContactsModel>();
-            var id = Guid.Parse(_userManager.GetUserId(HttpContext.User));
-            model.LoadGroupProperty(id);
+            model.Id = id;
+            var userId = Guid.Parse(_userManager.GetUserId(HttpContext.User));
+            model.LoadGroupProperty(userId);
             var groupData = model.groupsList;
             groupData.Insert(0, new Transfer.BusinessObjects.Group { Id = 0, GroupName = "Select Group" });
             ViewBag.data = groupData;
+
             return View(model);
         }
 
-       
+        public JsonResult GetAllData(int id)
+        {
+          
+            var dataTableModel = new DataTablesAjaxRequestModel(Request);
+            var model = _scope.Resolve<ContactsModel>();
+            var userId = Guid.Parse(_userManager.GetUserId(HttpContext.User));
+            var data = model.GetAllData(dataTableModel, userId, id);
+            //var data2 = model.GetAllDataTest2( userId, id);
 
+            return Json(data);
+
+        }
+
+
+        //test
+       
         public IActionResult ViewGroupData()
         {
 

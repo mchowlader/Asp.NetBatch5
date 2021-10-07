@@ -86,6 +86,8 @@ namespace DataImporter.Web.Models.Imports
         {
             if (XlsFile != null)
             {
+                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
                 string path = Path.Combine(this._webHostEnvironment.WebRootPath, "Uploads");
                 if (!Directory.Exists(path))
                 {

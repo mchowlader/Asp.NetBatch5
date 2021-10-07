@@ -1,4 +1,5 @@
-﻿using DataImporter.Transfer.BusinessObjects;
+﻿using DataImporter.ExcelFileReader;
+using DataImporter.Transfer.BusinessObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,5 +18,8 @@ namespace DataImporter.Transfer.Services
         Group GetGroup(int id);
         IList<Group> LoadGroupProperty(Guid id); //cng
         void UpdateGroup(Group group);
+        (IList<ExcelFieldData> records, int total, int totalDisplay) GetAllData(int pageIndex, int pageSize, 
+            string searchText, string sortText, int id, Guid userId);
+
     }
 }

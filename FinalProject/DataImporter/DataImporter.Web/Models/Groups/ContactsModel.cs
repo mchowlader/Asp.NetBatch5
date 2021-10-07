@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using AutoMapper;
 using DataImporter.Common.Utilities;
+using DataImporter.ExcelFileReader;
 using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Transfer.Services;
 using System;
@@ -36,15 +37,46 @@ namespace DataImporter.Web.Models
             _groupService = groupService;
         }
         public int Id { get; set; }
+        public Guid UserId { get; set; }
         public string Group { get; set; }
         public string DateTo { get; set; }
         public string DateFrom { get; set; }
 
+        public List<DataStore> TestingListData { get; set; }
+        //testing
+        public IList<ExcelFieldData> Datalist { get; set; }
+
         public IList<Group> groupsList { get; set; }
 
-        public void LoadGroupProperty(Guid id)
+        public void LoadGroupProperty(Guid userId)
         {
-            groupsList = _groupService.LoadGroupProperty(id);
+
+            groupsList = _groupService.LoadGroupProperty(userId);
         }
+
+        //need
+        public object GetAllData(DataTablesAjaxRequestModel dataTableModel, Guid userId, int id)
+        {
+            var data = _groupService.GetAllData(
+              dataTableModel.PageIndex,
+              dataTableModel.PageSize,
+              dataTableModel.SearchText,
+              dataTableModel.GetSortText(new string[] { "Name", "Value" }), id, userId);
+
+            return new
+            {
+                recordsTotal = data.total,
+                recordsFiltered = data.totalDisplay,
+                data = (from record in data.records
+                        select new string[]
+                        {
+                                record.Name,
+                                record.Value.ToString(),
+                        }
+                    ).ToArray()
+            };
+        }
+
     }
+
 }

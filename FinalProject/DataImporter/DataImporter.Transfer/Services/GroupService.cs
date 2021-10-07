@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
 using DataImporter.Common.Exceptions;
 using DataImporter.Common.Utilities;
+using DataImporter.ExcelFileReader;
 using DataImporter.Transfer.BusinessObjects;
 using DataImporter.Transfer.UnitOfWorks;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,7 +24,6 @@ namespace DataImporter.Transfer.Services
             _mapper = mapper;
             _transferUnitOfWork = transferUnitOfWork;
         }
-
         public Home CountHomeProperty(Guid id)
         {
             
@@ -40,6 +41,32 @@ namespace DataImporter.Transfer.Services
             _transferUnitOfWork.Save();
         }
 
+        //needthismethod
+        public (IList<ExcelFieldData> records, int total, int totalDisplay) GetAllData(int pageIndex, int pageSize, 
+            string searchText, string sortText, int id, Guid userId)
+        {
+            var excelData = _transferUnitOfWork.ExcelDatas.Get(m => m.GroupId == id, "Group");
+            var resultData = new List<ExcelFieldData>();
+            foreach(var excel in excelData)
+            {
+                var excelFieldData = _transferUnitOfWork.ExcelFields.Get(m => m.ExcelDataId == excel.Id, "ExcelData");
+
+
+                resultData = (from ED in excelData
+                                   join EFD in excelFieldData on ED.Id equals EFD.ExcelDataId
+                                   where ED.Id == EFD.ExcelDataId
+                                   select _mapper.Map<ExcelFieldData>(EFD)).ToList();
+
+            }
+
+
+
+
+            return (resultData, resultData.Count, resultData.Count);
+        }
+
+      
+        //done
         public Group GetGroup(int id)
         {
             var groupEntity = _transferUnitOfWork.Groups.GetById(id);
@@ -73,18 +100,11 @@ namespace DataImporter.Transfer.Services
         public IList<Group> LoadGroupProperty(Guid id)
         {
             var groupsList = new List<Group>();
-            //var groupEntity = _transferUnitOfWork.Groups.GetAll();
             var groupEntity = _transferUnitOfWork.Groups.GetAll();
 
              groupsList = (from groups in groupEntity
                               where groups.UserId == id
                               select _mapper.Map<Group>(groups)).ToList();
-
-            //foreach (var group in groupEntity)
-            //{
-            //    var groupData = _mapper.Map<Group>(group);
-            //    groupsList.Add(groupData);
-            //}
 
             return groupsList;
         }

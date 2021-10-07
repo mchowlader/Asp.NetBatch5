@@ -64,5 +64,7 @@ namespace DataImporter.Web.Models.Groups
         {
             _groupService.GroupDelete(id);
         }
+
+       
     }
 }

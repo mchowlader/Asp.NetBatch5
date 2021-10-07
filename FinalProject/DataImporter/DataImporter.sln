@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.ExcelFileReade
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImportServiceTest", "ImportServiceTest\ImportServiceTest.csproj", "{D35C575C-80DA-4934-9FC1-07E00608391B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImporter.Transfer.Tests", "DataImporter.Transfer.Tests\DataImporter.Transfer.Tests.csproj", "{0427253C-770D-4867-A598-EB57DC8EAE5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Transfer.Tests", "DataImporter.Transfer.Tests\DataImporter.Transfer.Tests.csproj", "{0427253C-770D-4867-A598-EB57DC8EAE5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImporter.Web.Tests", "DataImporter.Web.Tests\DataImporter.Web.Tests.csproj", "{101CC668-5B9E-430A-92B8-E770976323A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImporter.Web.Tests", "DataImporter.Web.Tests\DataImporter.Web.Tests.csproj", "{101CC668-5B9E-430A-92B8-E770976323A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImporter.ExcelFileCreate", "DataImporter.ExcelFileCreate\DataImporter.ExcelFileCreate.csproj", "{BEDE6A49-3E32-4DD2-860F-F302CABB05F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{101CC668-5B9E-430A-92B8-E770976323A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{101CC668-5B9E-430A-92B8-E770976323A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{101CC668-5B9E-430A-92B8-E770976323A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEDE6A49-3E32-4DD2-860F-F302CABB05F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEDE6A49-3E32-4DD2-860F-F302CABB05F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEDE6A49-3E32-4DD2-860F-F302CABB05F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEDE6A49-3E32-4DD2-860F-F302CABB05F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

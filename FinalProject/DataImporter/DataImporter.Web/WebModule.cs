@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using DataImporter.Web.Models;
+using DataImporter.Web.Models.Exports;
 using DataImporter.Web.Models.Groups;
 using DataImporter.Web.Models.Imports;
 using System;
@@ -23,6 +24,9 @@ namespace DataImporter.Web
             builder.RegisterType<UploadModel>().AsSelf();
             builder.RegisterType<ListImportModel>().AsSelf();
             builder.RegisterType<CreateImportModel>().AsSelf();
+            builder.RegisterType<ExportModel>().AsSelf();
+            builder.RegisterType<DownloadModel>().AsSelf();
+
             base.Load(builder);
         }
     }

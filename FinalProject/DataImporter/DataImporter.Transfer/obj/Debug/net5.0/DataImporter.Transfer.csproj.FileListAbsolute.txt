@@ -17,3 +17,5 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Tra
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Transfer\bin\Debug\net5.0\DataImporter.User.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Transfer\bin\Debug\net5.0\DataImporter.Common.dll
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Transfer\bin\Debug\net5.0\DataImporter.Common.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Transfer\bin\Debug\net5.0\DataImporter.ExcelFileReader.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Transfer\bin\Debug\net5.0\DataImporter.ExcelFileReader.pdb

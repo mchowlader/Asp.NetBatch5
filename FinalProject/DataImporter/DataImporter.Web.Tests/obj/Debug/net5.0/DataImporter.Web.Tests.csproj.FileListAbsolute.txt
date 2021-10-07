@@ -539,3 +539,6 @@ D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\DataImporter.ExcelFileReader.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\DataImporter.Transfer.pdb
 D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\DataImporter.User.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\DataImporter.ExcelFileCreate.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web.Tests\bin\Debug\net5.0\DataImporter.ExcelFileCreate.pdb

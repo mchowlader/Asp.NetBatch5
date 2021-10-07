@@ -53,15 +53,15 @@
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>Create Date </th>
-                                <th style="width:350px">Action</th>
+                                <th>Create Date</th>
+                                <th style="width:400px">Action</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
                                 <th>Name</th>
                                 <th>Create Date</th>
-                                <th style="width:350px">Action</th>
+                                <th style="width:400px">Action</th>
                             </tr>
                         </tfoot>
                     </table>
@@ -135,7 +135,7 @@
                             "orderable": false,
                             "targets": 2,
                             "render": function (data, type, row) {
-                                return `<button type="submit" class="btn btn-info btn-sm" 
+                                return `<button type="submit" class="btn btn-info btn-sm"
                                         onclick="window.location.href='/Group/edit/${data}'" value='${data}'>
                                         <i class="fas fa-pencil-alt"></i>
                                         Edit
@@ -150,9 +150,15 @@
                                         <i class="fa fa-upload"></i>
                                     Upload
                                 </button>
-                                <button type ="submit" class ="btn btn-success show-bs-modal-view btn-sm"
-                                        href = "#" data-id = '${data}' value = '${data}'>
-                                        <i class = " fas fa-eye"></i>
+                                <button type ="submit" class ="btn btn-success show-bs-modal-Download btn-sm"
+                                       onclick="window.location.href='/Export/ExportToExcel/${data}'" value='${data}'>
+                                        <i class="fas fa-pencil-alt"></i>
+                                    Download
+                                </button>
+
+                                 <button type ="submit" class ="btn btn-secondary show-bs-modal-view btn-sm"
+                                       onclick="window.location.href='/Group/Contacts/${data}'" value='${data}'>
+                                        <i class="fas fa-pencil-alt"></i>
                                     View
                                 </button>`;
                             }
@@ -170,17 +176,6 @@
             });
             $("#deleteButton").click(function () {
                 $("#deleteForm").submit();
-            });
-
-            $('#customer').on('click', '.show-bs-modal-email', function (event) {
-                var id = $(this).data("id");
-                var modal = $("#modalEmailGroup");
-                $("#emailId").val(id);
-                $("#emailForm").attr("action", "/Group/EmailGroup")
-                modal.modal('show');
-            });
-            $("#emailButton").click(function () {
-                $("#emailForm").submit();
             });
 
 

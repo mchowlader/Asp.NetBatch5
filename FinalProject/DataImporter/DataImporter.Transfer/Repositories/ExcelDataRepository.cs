@@ -15,7 +15,7 @@ namespace DataImporter.Transfer.Repositories
         public ExcelDataRepository(ITransferDbContext transferDbContext)
            : base((DbContext)transferDbContext)
         {
-
+            
         }
     }
 }
