@@ -49,8 +49,17 @@ namespace DataImporter.Web.Controllers
             if (ModelState.IsValid)
             {
                 model.Resolve(_scope);
-                model.UserId = Guid.Parse(_userManager.GetUserId(HttpContext.User));
-                model.CreateGroup();
+                try
+                {
+                    model.UserId = Guid.Parse(_userManager.GetUserId(HttpContext.User));
+                    model.CreateGroup();
+                }
+                catch(Exception ex)
+                {
+                    ModelState.AddModelError("", "Group Create Failed");
+                    _logger.LogError(ex, "Group Create Failed");
+                }
+                
             }
 
             return View(model);

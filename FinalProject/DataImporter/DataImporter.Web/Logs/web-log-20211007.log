@@ -295,3 +295,10 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 2021-10-07 17:08:00.847 +06:00 [INF] Application Starting up
 2021-10-07 17:17:36.458 +06:00 [INF] Application Starting up
 2021-10-07 18:51:41.254 +06:00 [INF] Application Starting up
+2021-10-07 19:52:46.001 +06:00 [INF] Application Starting up
+2021-10-07 19:54:23.688 +06:00 [ERR] Group Create Failed
+System.InvalidOperationException: course missing
+   at DataImporter.Transfer.Services.GroupService.CreateGroup(Group group)
+   at DataImporter.Web.Models.Groups.CreateGroupModel.CreateGroup() in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Models\Groups\CreateGroupModel.cs:line 61
+   at DataImporter.Web.Controllers.GroupController.Create(CreateGroupModel model) in D:\DevSkill\dotNet\Code\Asp.NetBatch5\FinalProject\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 55
+2021-10-07 19:55:44.149 +06:00 [INF] Application Starting up

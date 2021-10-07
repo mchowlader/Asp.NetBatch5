@@ -51,7 +51,6 @@ namespace DataImporter.Web.Models.Groups
 
         public void CreateGroup()
         {
-            //var group = _mapper.Map<Group>(this);
             var group = new Group()
             {
                 GroupName = GroupName,

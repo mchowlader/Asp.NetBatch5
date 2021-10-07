@@ -36,6 +36,12 @@ namespace DataImporter.Transfer.Services
         //done
         public void CreateGroup(Group group)
         {
+            if (group == null)
+                throw new InvalidOperationException("course missing");
+
+            if (group.GroupName == null)
+                throw new InvalidOperationException("course name missing");
+
             _transferUnitOfWork.Groups.Add(
                 _mapper.Map<Entities.Group>(group));
             _transferUnitOfWork.Save();
