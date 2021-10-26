@@ -78,7 +78,7 @@ namespace DataImporter.Transfer.Tests
             _importRepository.Setup(x => x.GetById(id)).Returns(importEntity);
             _transferUnitOfWork.Setup(x => x.Save()).Verifiable();
             //Act 
-            _importService.StatusUpdate(id);
+            _importService.StatusUpdate();
 
             //Assert
             this.ShouldSatisfyAllConditions(
