@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\bin\Debug\net5.0\FuncAndAction.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\bin\Debug\net5.0\FuncAndAction.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\bin\Debug\net5.0\FuncAndAction.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\bin\Debug\net5.0\FuncAndAction.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\bin\Debug\net5.0\FuncAndAction.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\bin\Debug\net5.0\ref\FuncAndAction.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\bin\Debug\net5.0\FuncAndAction.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\obj\Debug\net5.0\FuncAndAction.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\obj\Debug\net5.0\FuncAndAction.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\obj\Debug\net5.0\FuncAndAction.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\obj\Debug\net5.0\FuncAndAction.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\obj\Debug\net5.0\FuncAndAction.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\obj\Debug\net5.0\FuncAndAction.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\obj\Debug\net5.0\ref\FuncAndAction.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\obj\Debug\net5.0\FuncAndAction.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\FuncAndAction\obj\Debug\net5.0\FuncAndAction.genruntimeconfig.cache

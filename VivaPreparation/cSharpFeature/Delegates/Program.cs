@@ -11,6 +11,7 @@ namespace Delegates
             var printer = new Printer();
             var text = "Hello World";
             var logic = new Perform(printer.Print2);
+
             ProcessText(text,logic);
         }
 
