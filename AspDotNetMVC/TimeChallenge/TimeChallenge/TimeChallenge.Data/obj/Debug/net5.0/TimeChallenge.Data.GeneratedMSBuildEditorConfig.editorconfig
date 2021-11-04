@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = TimeChallenge.Data
-build_property.ProjectDir = D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge.Data\
+build_property.ProjectDir = D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\TimeChallenge\TimeChallenge\TimeChallenge.Data\

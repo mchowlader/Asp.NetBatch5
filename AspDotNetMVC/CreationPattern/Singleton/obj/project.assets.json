@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Temporary\\CreationPattern\\Singleton\\Singleton.csproj",
+      "projectUniqueName": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\CreationPattern\\Singleton\\Singleton.csproj",
       "projectName": "Singleton",
-      "projectPath": "D:\\Temporary\\CreationPattern\\Singleton\\Singleton.csproj",
+      "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\CreationPattern\\Singleton\\Singleton.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\Temporary\\CreationPattern\\Singleton\\obj\\",
+      "outputPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\CreationPattern\\Singleton\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

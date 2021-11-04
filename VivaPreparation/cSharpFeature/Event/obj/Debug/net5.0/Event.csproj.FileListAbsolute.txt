@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\bin\Debug\net5.0\Event.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\bin\Debug\net5.0\Event.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\bin\Debug\net5.0\Event.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\bin\Debug\net5.0\Event.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\bin\Debug\net5.0\Event.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\bin\Debug\net5.0\ref\Event.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\bin\Debug\net5.0\Event.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\obj\Debug\net5.0\Event.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\obj\Debug\net5.0\Event.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\obj\Debug\net5.0\Event.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\obj\Debug\net5.0\Event.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\obj\Debug\net5.0\Event.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\obj\Debug\net5.0\Event.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\obj\Debug\net5.0\ref\Event.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\obj\Debug\net5.0\Event.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\VivaPreparation\cSharpFeature\Event\obj\Debug\net5.0\Event.genruntimeconfig.cache

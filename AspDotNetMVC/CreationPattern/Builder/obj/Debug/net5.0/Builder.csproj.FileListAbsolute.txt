@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\bin\Debug\net5.0\Builder.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\bin\Debug\net5.0\Builder.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\bin\Debug\net5.0\Builder.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\bin\Debug\net5.0\Builder.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\bin\Debug\net5.0\Builder.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\bin\Debug\net5.0\ref\Builder.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\bin\Debug\net5.0\Builder.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\obj\Debug\net5.0\Builder.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\obj\Debug\net5.0\Builder.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\obj\Debug\net5.0\Builder.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\obj\Debug\net5.0\Builder.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\obj\Debug\net5.0\Builder.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\obj\Debug\net5.0\Builder.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\obj\Debug\net5.0\ref\Builder.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\obj\Debug\net5.0\Builder.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\Builder\obj\Debug\net5.0\Builder.genruntimeconfig.cache

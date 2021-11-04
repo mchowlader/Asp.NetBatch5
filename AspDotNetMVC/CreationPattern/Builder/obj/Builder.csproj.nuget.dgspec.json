@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Temporary\\CreationPattern\\Builder\\Builder.csproj": {}
+    "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\CreationPattern\\Builder\\Builder.csproj": {}
   },
   "projects": {
-    "D:\\Temporary\\CreationPattern\\Builder\\Builder.csproj": {
+    "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\CreationPattern\\Builder\\Builder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Temporary\\CreationPattern\\Builder\\Builder.csproj",
+        "projectUniqueName": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\CreationPattern\\Builder\\Builder.csproj",
         "projectName": "Builder",
-        "projectPath": "D:\\Temporary\\CreationPattern\\Builder\\Builder.csproj",
+        "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\CreationPattern\\Builder\\Builder.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Temporary\\CreationPattern\\Builder\\obj\\",
+        "outputPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\CreationPattern\\Builder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

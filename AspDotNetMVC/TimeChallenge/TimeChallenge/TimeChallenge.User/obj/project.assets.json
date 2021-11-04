@@ -5909,11 +5909,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\TimeChallenge\\TimeChallenge.User\\TimeChallenge.User.csproj",
+      "projectUniqueName": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\TimeChallenge\\TimeChallenge\\TimeChallenge.User\\TimeChallenge.User.csproj",
       "projectName": "TimeChallenge.User",
-      "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\TimeChallenge\\TimeChallenge.User\\TimeChallenge.User.csproj",
+      "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\TimeChallenge\\TimeChallenge\\TimeChallenge.User\\TimeChallenge.User.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\TimeChallenge\\TimeChallenge.User\\obj\\",
+      "outputPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\TimeChallenge\\TimeChallenge\\TimeChallenge.User\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5930,8 +5930,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\TimeChallenge\\TimeChallenge.Data\\TimeChallenge.Data.csproj": {
-              "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\TimeChallenge\\TimeChallenge.Data\\TimeChallenge.Data.csproj"
+            "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\TimeChallenge\\TimeChallenge\\TimeChallenge.Data\\TimeChallenge.Data.csproj": {
+              "projectPath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\TimeChallenge\\TimeChallenge\\TimeChallenge.Data\\TimeChallenge.Data.csproj"
             }
           }
         }
@@ -5978,7 +5978,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,16 @@
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\bin\Debug\net5.0\AbastractFactory.exe
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\bin\Debug\net5.0\AbastractFactory.deps.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\bin\Debug\net5.0\AbastractFactory.runtimeconfig.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\bin\Debug\net5.0\AbastractFactory.runtimeconfig.dev.json
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\bin\Debug\net5.0\AbastractFactory.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\bin\Debug\net5.0\ref\AbastractFactory.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\bin\Debug\net5.0\AbastractFactory.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\obj\Debug\net5.0\AbastractFactory.csproj.AssemblyReference.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\obj\Debug\net5.0\AbastractFactory.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\obj\Debug\net5.0\AbastractFactory.AssemblyInfoInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\obj\Debug\net5.0\AbastractFactory.AssemblyInfo.cs
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\obj\Debug\net5.0\AbastractFactory.csproj.CoreCompileInputs.cache
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\obj\Debug\net5.0\AbastractFactory.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\obj\Debug\net5.0\ref\AbastractFactory.dll
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\obj\Debug\net5.0\AbastractFactory.pdb
+D:\DevSkill\dotNet\Code\Asp.NetBatch5\AspDotNetMVC\CreationPattern\AbastractFactory\obj\Debug\net5.0\AbastractFactory.genruntimeconfig.cache

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0K3T+GACgkinvmQ5AIPcdINyJW4FZh4o3M+XXC904j/alARkarwtlTqEsS1tIkz/Bg4psR6iHWKTjZUubBYxDg==",
+  "dgSpecHash": "Gxr7uYQEn1eBWBV0azUhlUL9HmJoETGg4eIEpULXhDN8Vz5Enieq98i8jxLpb+EMnC20li/6XsvJcltoSTEVJA==",
   "success": true,
-  "projectFilePath": "D:\\Temporary\\CreationPattern\\Factory\\Factory.csproj",
+  "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\CreationPattern\\Factory\\Factory.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

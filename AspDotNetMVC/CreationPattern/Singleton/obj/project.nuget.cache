@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GK7jlElphwtVTkliXaZkg5cf+7B/OQwMOYR/Bw/Jo6OwcGxuKbJkFrNcdL/K8D+q/tpfIYfnHgxzNfxWQQ66kw==",
+  "dgSpecHash": "e2JkFEip8dxASh60QbiKkhdoxkBm+z1ts0CsrH4fPXEkOTJEGKJwyZWPdFxtCmsrb2BwHPlD95tf8c5laBE5Og==",
   "success": true,
-  "projectFilePath": "D:\\Temporary\\CreationPattern\\Singleton\\Singleton.csproj",
+  "projectFilePath": "D:\\DevSkill\\dotNet\\Code\\Asp.NetBatch5\\AspDotNetMVC\\CreationPattern\\Singleton\\Singleton.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

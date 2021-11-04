@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ExamTimeChallenge.Web.Areas.Admin.Controllers
 {
-    [Area("Admin"), Authorize(Roles = "Admin")]
+    [Area("Admin")]
     public class CourseController : Controller
     {
         private readonly ILogger<CourseController> _logger;
